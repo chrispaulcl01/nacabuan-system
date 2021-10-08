@@ -27,7 +27,12 @@ namespace WindowsFormsApplication1
             this.txtPReports.Text += Environment.NewLine;
             this.txtPReports.Text += Environment.NewLine;
             this.txtPReports.Text += val.TotalSalesToday + "                                                    " + val.TotalSalesMonth + "                                 " + val.TotalSalesYear;
-            
+
+            this.reportViewer1.RefreshReport();
+            this.reportViewer2.RefreshReport();
+            this.reportViewer3.RefreshReport();
+            this.reportViewer4.RefreshReport();
+            this.reportViewer5.RefreshReport();
         }
     }
 }
