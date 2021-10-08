@@ -1,0 +1,353 @@
+c:\users\client\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Guna.UI.dll
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\XanderUI.dll
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Home.resources
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Profile.resources
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\MySql.Data.DLL
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.calendar.resources
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Patient_list.resources
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Symptoms.resources
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Renci.SshNet.dll
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\dje\WindowsFormsApplication1.resources.dll
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Symptoms.dje.resources
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\dje\WindowsFormsApplication1.resources.dll
+C:\Users\Client\Documents\Visual Studio 2015\Projects\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Staff_Memberfrm.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\dje\WindowsFormsApplication1.resources.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\MySql.Data.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Google.Protobuf.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Zstandard.Net.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Renci.SshNet.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\System.Buffers.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\MySql.Data.xml
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.WindowsFormsApplication1.exe.config
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.calendar.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboard.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Patient_list.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Home.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Reportfrm.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Staff_Memberfrm.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Symptoms.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Symptoms.dje.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\dje\WindowsFormsApplication1.resources.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboardfrm.resources
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.WindowsFormsApplication1.exe.config
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.calendar.resources
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboardfrm.resources
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Patient_list.resources
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Home.resources
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Reportfrm.resources
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Staff_Memberfrm.resources
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Symptoms.resources
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Symptoms.dje.resources
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\dje\WindowsFormsApplication1.resources.dll
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\MySql.Data.dll
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Google.Protobuf.dll
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Zstandard.Net.dll
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Renci.SshNet.dll
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\System.Buffers.dll
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\MySql.Data.xml
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\dje\WindowsFormsApplication1.resources.dll
+C:\Users\Client\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmRX.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.calendar.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboardfrm.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmRX.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Patient_list.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Home.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Reportfrm.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Staff_Memberfrm.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe.config
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.calendar.resources
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboardfrm.resources
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmRX.resources
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Patient_list.resources
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Home.resources
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Reportfrm.resources
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Staff_Memberfrm.resources
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Symptoms.resources
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Symptoms.dje.resources
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\dje\WindowsFormsApplication1.resources.dll
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Google.Protobuf.dll
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Zstandard.Net.dll
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Renci.SshNet.dll
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\System.Memory.dll
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\System.Buffers.dll
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\MySql.Data.xml
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\dje\WindowsFormsApplication1.resources.dll
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
+C:\Users\ChistianPaul\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.WindowsFormsApplication1.exe.config
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.calendar.resources
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Cosultationfrm.resources
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboardfrm.resources
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmRX.resources
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Patient_list.resources
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Home.resources
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Reportfrm.resources
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Staff_Memberfrm.resources
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Symptoms.resources
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Symptoms.dje.resources
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\dje\WindowsFormsApplication1.resources.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\MySql.Data.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Google.Protobuf.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Zstandard.Net.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Renci.SshNet.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\System.Memory.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\System.Buffers.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\MySql.Data.xml
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\dje\WindowsFormsApplication1.resources.dll
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Client\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Consultationfrm.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\dje\WindowsFormsApplication1.resources.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Guna.UI.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\MySql.Data.DLL
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\XanderUI.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Renci.SshNet.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.calendar.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Consultationfrm.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboardfrm.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmRX.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Patient_list.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Home.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PaymentTransactfrm.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Reportfrm.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Staff_Memberfrm.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Symptoms.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Symptoms.dje.resources
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\dje\WindowsFormsApplication1.resources.dll
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Client\Downloads\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Renci.SshNet.dll
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.calendar.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Consultationfrm.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboardfrm.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmRX.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Patient_list.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Home.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PaymentTransactfrm.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Reportfrm.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Staff_Memberfrm.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.TransactionHistory.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.calendar.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Consultationfrm.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboardfrm.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmRX.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Patient_list.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Home.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PaymentTransactfrm.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Reportfrm.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Staff_Memberfrm.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.TransactionHistory.resources
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Renci.SshNet.dll
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\ChistianPaul\Documents\thesis\DSS for Pet Medical Diagnosis (1)\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PatientListViewer.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\MySql.Data.dll
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Google.Protobuf.dll
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Zstandard.Net.dll
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\Renci.SshNet.dll
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\System.Buffers.dll
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\MySql.Data.xml
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.WindowsFormsApplication1.exe.config
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.calendar.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Consultationfrm.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboardfrm.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmRX.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PatientListViewer.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Patient_list.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Home.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PaymentTransactfrm.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Reportfrm.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Staff_Memberfrm.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.TransactionHistory.resources
+C:\Users\Client\Pictures\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.calendar.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Consultationfrm.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboardfrm.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmRX.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Patient_list.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Home.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PaymentTransactfrm.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Reportfrm.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Staff_Memberfrm.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.TransactionHistory.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PatientInfoViewer.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PatientListEditor.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Rxviewer.resources
+C:\Users\ChistianPaul\Documents\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PatientInfoViewer.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PatientListEditor.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PaymentTransactfrm.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Rxviewer.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.TransactionHistory.resources
+C:\Users\ChistianPaul\Desktop\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.calendar.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Consultationfrm.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboardfrm.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmRX.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PatientInfoViewer.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PatientListEditor.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Patient_list.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Home.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PaymentTransactfrm.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Rxviewer.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Staff_Memberfrm.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.TransactionHistory.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ReportTable.resources
+C:\Users\ChistianPaul\Desktop\Desktop fayls\DSS for Pet Medical Diagnosis\DSS for Pet Medical Diagnosis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.btnPReport.resources
