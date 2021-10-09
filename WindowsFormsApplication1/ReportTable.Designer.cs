@@ -32,7 +32,7 @@ namespace WindowsFormsApplication1
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.rprtReportTable = new Microsoft.Reporting.WinForms.ReportViewer();
             this.gunaShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,7 +43,7 @@ namespace WindowsFormsApplication1
             this.gunaShadowPanel1.Controls.Add(this.iconButton1);
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel2);
             this.gunaShadowPanel1.Location = new System.Drawing.Point(-1, -2);
-            this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.gunaShadowPanel1.Size = new System.Drawing.Size(1472, 85);
@@ -55,7 +55,7 @@ namespace WindowsFormsApplication1
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.Location = new System.Drawing.Point(1393, 16);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(61, 55);
             this.iconButton1.TabIndex = 2;
@@ -75,12 +75,13 @@ namespace WindowsFormsApplication1
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "Reports";
             // 
-            // reportViewer1
+            // rprtReportTable
             // 
-            this.reportViewer1.Location = new System.Drawing.Point(29, 90);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(1404, 661);
-            this.reportViewer1.TabIndex = 120;
+            this.rprtReportTable.LocalReport.ReportEmbeddedResource = "WindowsFormsApplication1.rprtReportTable.rdlc";
+            this.rprtReportTable.Location = new System.Drawing.Point(29, 90);
+            this.rprtReportTable.Name = "rprtReportTable";
+            this.rprtReportTable.Size = new System.Drawing.Size(1424, 661);
+            this.rprtReportTable.TabIndex = 120;
             // 
             // ReportTable
             // 
@@ -89,10 +90,10 @@ namespace WindowsFormsApplication1
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1469, 763);
-            this.Controls.Add(this.reportViewer1);
+            this.Controls.Add(this.rprtReportTable);
             this.Controls.Add(this.gunaShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ReportTable";
             this.Text = "ReportTable";
             this.Load += new System.EventHandler(this.ReportTable_Load);
@@ -106,6 +107,6 @@ namespace WindowsFormsApplication1
         private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Microsoft.Reporting.WinForms.ReportViewer rprtReportTable;
     }
 }
