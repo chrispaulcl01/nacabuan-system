@@ -97,9 +97,14 @@ namespace WindowsFormsApplication1
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Application.OpenForms["Login"].Show();
-            
+            if(MessageBox.Show("Are you sure you want to logout?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) 
+                == System.Windows.Forms.DialogResult.Yes)
+            {
+                Login frmLogin
+                    = new Login();
+                frmLogin.Show();
+                this.Hide();
+            }
         }
 
         private void btnReports_Click(object sender, EventArgs e)

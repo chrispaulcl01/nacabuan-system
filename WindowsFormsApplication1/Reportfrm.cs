@@ -44,7 +44,7 @@ namespace WindowsFormsApplication1
             this.txtTotalYear.Text = val.TotalSalesYear;
 
             patient.Totalpatient(this.ChartDatePick.Text.Substring(this.ChartDatePick.Text.Length - 2));
-            this.txtTotalpatient.Text = val.Totalpatient;
+            this.txtTotalpatient.Text = val.Totalpatient.ToString();
 
             if (String.IsNullOrWhiteSpace(this.txtTotalDog.Text))
             {
@@ -127,7 +127,7 @@ namespace WindowsFormsApplication1
             this.txtTotalYear.Text = val.TotalSalesYear;
 
             patient.Totalpatient(this.ChartDatePick.Text.Substring(this.ChartDatePick.Text.Length - 2));
-            this.txtTotalpatient.Text = val.Totalpatient;
+            this.txtTotalpatient.Text = val.Totalpatient.ToString();
 
             if (String.IsNullOrWhiteSpace(this.txtTotalDog.Text))
             {
@@ -188,6 +188,13 @@ namespace WindowsFormsApplication1
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
+            val.TotalSalesToday = this.txtTotalDay.Text;
+            val.TotalSalesMonth = this.txtTotalMonth.Text;
+            val.TotalSalesYear = this.txtTotalYear.Text;
+            val.Totalcat = int.Parse(this.txtTotalCat.Text);
+            val.Totaldogs = int.Parse(this.txtTotalDog.Text);
+            val.Totalbird = int.Parse(this.txtTotalBird.Text);
+            val.Totalpatient = int.Parse(this.txtTotalpatient.Text);
             ReportTable rt = new ReportTable();
             rt.Show();
         }

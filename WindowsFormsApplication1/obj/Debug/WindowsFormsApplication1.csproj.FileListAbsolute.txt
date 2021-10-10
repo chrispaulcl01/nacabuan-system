@@ -357,7 +357,6 @@ D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\obj\Debug\
 D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
 D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboardfrm.resources
 D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmRX.resources
-D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
 D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PatientInfoViewer.resources
 D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PatientListEditor.resources
 D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Patient_list.resources
@@ -403,3 +402,5 @@ D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\bin\Debug\
 D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
 D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\obj\Debug\RdlCompile.cache
 D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\obj\Debug\RdlCompile.compiled
+D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+D:\system_collab\paul_system\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources

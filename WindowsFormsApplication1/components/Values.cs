@@ -287,8 +287,8 @@ namespace WindowsFormsApplication1.components
             set { totalSalesYear = value; }
         }
 
-        public static string totalpatient;
-        public string Totalpatient
+        public static int totalpatient;
+        public int Totalpatient
         {
             get { return totalpatient; }
             set { totalpatient = value; }

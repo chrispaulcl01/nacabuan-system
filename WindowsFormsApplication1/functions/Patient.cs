@@ -762,7 +762,7 @@ namespace WindowsFormsApplication1.functions
                         da.Fill(dt);
 
                         connection.Open();
-                        val.Totalpatient = cmd.ExecuteScalar().ToString();
+                        val.Totalpatient = int.Parse(cmd.ExecuteScalar().ToString());
                     }
                 }
             }
