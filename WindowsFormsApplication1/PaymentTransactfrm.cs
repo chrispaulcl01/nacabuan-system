@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Reporting.WinForms;
 
 namespace WindowsFormsApplication1
 {
@@ -25,7 +26,9 @@ namespace WindowsFormsApplication1
             this.txtPetID.Text = val.PetID;
             this.txtPatientName.Text = val.Patientname;
             this.txtOwnersName.Text = val.OwnersName;
-            this.reportViewer2.RefreshReport();
+            this.rvReciept.RefreshReport();
+
+           
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -53,7 +56,16 @@ namespace WindowsFormsApplication1
             {
                 double calculate = (double.Parse(txtAmountpay.Text) - double.Parse(txtTotalAmountfee.Text));
                 this.txtChange.Text = calculate.ToString();
-            }    
+            }
+
+            ReportParameterCollection parameters = new ReportParameterCollection();
+            parameters.Add(new ReportParameter("rpPetID", val.PetID));
+            parameters.Add(new ReportParameter("rpDate", val.Date));
+            parameters.Add(new ReportParameter("rpOwnersNmae", val.OwnersName));
+            parameters.Add(new ReportParameter("rpPatientName", val.Patientname.ToString()));
+            parameters.Add(new ReportParameter("rpTotalAmountFee", txtTotalAmountfee.ToString()));
+            parameters.Add(new ReportParameter("rpTotalAmountPay", txtAmountpay.ToString()));
+            parameters.Add(new ReportParameter("rpChange", txtChange.ToString()));
         }
 
         private void gunaPanel1_Paint(object sender, PaintEventArgs e)

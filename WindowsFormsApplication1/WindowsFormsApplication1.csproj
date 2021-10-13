@@ -231,6 +231,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reciept.rdlc" />
     <EmbeddedResource Include="Reportfrm.resx">
       <DependentUpon>Reportfrm.cs</DependentUpon>
     </EmbeddedResource>
