@@ -132,6 +132,11 @@ namespace WindowsFormsApplication1
                 txtPassword.Text = "";
             }
         }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
 }

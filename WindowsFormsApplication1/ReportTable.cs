@@ -35,5 +35,10 @@ namespace WindowsFormsApplication1
             this.rprtReportTable.LocalReport.SetParameters(parameters);
             this.rprtReportTable.RefreshReport();
         }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

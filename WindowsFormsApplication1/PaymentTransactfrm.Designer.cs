@@ -51,7 +51,6 @@
             this.btnSave = new Guna.UI.WinForms.GunaGradientButton();
             this.btnPrint = new Guna.UI.WinForms.GunaGradientButton();
             this.gunaGradientButton4 = new Guna.UI.WinForms.GunaGradientButton();
-            this.txtReciept = new System.Windows.Forms.RichTextBox();
             this.gunaShadowPanel1.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -414,15 +413,6 @@
             this.gunaGradientButton4.Text = "BACK";
             this.gunaGradientButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtReciept
-            // 
-            this.txtReciept.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReciept.Location = new System.Drawing.Point(749, 120);
-            this.txtReciept.Name = "txtReciept";
-            this.txtReciept.Size = new System.Drawing.Size(370, 477);
-            this.txtReciept.TabIndex = 247;
-            this.txtReciept.Text = "";
-            // 
             // PaymentTransactfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,7 +422,6 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.gunaGradientButton4);
-            this.Controls.Add(this.txtReciept);
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.txtOwnersName);
             this.Controls.Add(this.txtPetID);
@@ -480,6 +469,5 @@
         private Guna.UI.WinForms.GunaGradientButton btnSave;
         private Guna.UI.WinForms.GunaGradientButton btnPrint;
         private Guna.UI.WinForms.GunaGradientButton gunaGradientButton4;
-        private System.Windows.Forms.RichTextBox txtReciept;
     }
 }

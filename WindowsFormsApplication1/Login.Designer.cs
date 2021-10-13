@@ -112,6 +112,7 @@
             this.iconButton2.TabIndex = 63;
             this.iconButton2.Text = "x";
             this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // panel3
             // 
