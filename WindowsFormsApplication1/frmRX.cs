@@ -57,16 +57,16 @@ namespace WindowsFormsApplication1
                 if (patient.PrescriptionRx(this.txtID.Text, val.OwnersName, val.Patientname, this.txtEditor.Text))
                 {
                     MessageBox.Show("Prescription Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    PaymentTransactfrm payfrm = new PaymentTransactfrm();
+                    payfrm.Show();
+                    Application.OpenForms["frmRX"].Hide();
+                    Application.OpenForms["Home"].Hide();
                 }
                 else
                 {
                     MessageBox.Show("Error! Saved Prescription", "Missing", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
-                PaymentTransactfrm payfrm = new PaymentTransactfrm();
-                payfrm.Show();
-                Application.OpenForms["frmRX"].Hide();
-                Application.OpenForms["Home"].Hide();
             }   
             
         }

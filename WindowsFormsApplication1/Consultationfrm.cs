@@ -124,16 +124,20 @@ namespace WindowsFormsApplication1
                         MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         patient.DeletePatientlist(this.txtPetID.Text);
+
+                        if(patient.PatientInfoViewer(this.txtPetID.Text))
+                        {
+                            this.Close();
+
+                            frmRX rx = new frmRX();
+                            rx.Show();
+                        }
                     }
                 }
                 else
                 {
                     MessageBox.Show("Failed to Saved!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                this.Close();
-
-                frmRX rx = new frmRX();
-                rx.Show();
             }
 
             

@@ -27,8 +27,6 @@ namespace WindowsFormsApplication1
             this.txtPatientName.Text = val.Patientname;
             this.txtOwnersName.Text = val.OwnersName;
             this.rvReciept.RefreshReport();
-
-           
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -58,6 +56,7 @@ namespace WindowsFormsApplication1
                 this.txtChange.Text = calculate.ToString();
             }
 
+            this.rvReciept.Clear();
             ReportParameterCollection parameters = new ReportParameterCollection();
             parameters.Add(new ReportParameter("rpPetID", val.PetID));
             parameters.Add(new ReportParameter("rpDate", val.Date));
@@ -91,18 +90,19 @@ namespace WindowsFormsApplication1
             }
             else
             {
-                if (patient.Reciept(this.txtPetID.Text, val.OwnersName, val.Patientname, this.txtTotalAmountfee.Text, this.txtAmountpay.Text, this.txtChange.Text))
+                if (patient.Reciept(this.txtPetID.Text, val.OwnersName, val.Patientname, this.txtTotalAmountfee.Text, this.txtAmountpay.Text, 
+                    this.txtChange.Text))
                 {
                     MessageBox.Show("Reciept Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    Home home = new Home();
+                    home.Show();
+                    Application.OpenForms["PaymentTransactfrm"].Hide();
                 }
                 else
                 {
                     MessageBox.Show("Error! Saved Reciept", "Missing", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
-                Home home = new Home();
-                home.Show();
-                Application.OpenForms["PaymentTransactfrm"].Hide();
             }
             
         }
