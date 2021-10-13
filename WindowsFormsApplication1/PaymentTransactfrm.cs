@@ -66,6 +66,8 @@ namespace WindowsFormsApplication1
             parameters.Add(new ReportParameter("rpTotalAmountFee", txtTotalAmountfee.ToString()));
             parameters.Add(new ReportParameter("rpTotalAmountPay", txtAmountpay.ToString()));
             parameters.Add(new ReportParameter("rpChange", txtChange.ToString()));
+            this.rvReciept.LocalReport.SetParameters(parameters);
+            this.rvReciept.RefreshReport();
         }
 
         private void gunaPanel1_Paint(object sender, PaintEventArgs e)
