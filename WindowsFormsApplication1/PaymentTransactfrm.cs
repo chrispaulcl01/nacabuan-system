@@ -25,6 +25,7 @@ namespace WindowsFormsApplication1
             this.txtPetID.Text = val.PetID;
             this.txtPatientName.Text = val.Patientname;
             this.txtOwnersName.Text = val.OwnersName;
+            this.reportViewer2.RefreshReport();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -52,30 +53,6 @@ namespace WindowsFormsApplication1
             {
                 double calculate = (double.Parse(txtAmountpay.Text) - double.Parse(txtTotalAmountfee.Text));
                 this.txtChange.Text = calculate.ToString();
-                this.txtReciept.Clear();
-                this.txtReciept.Text += "     Information System for Pet Medical Diagnosis";
-                this.txtReciept.Text += Environment.NewLine;
-                this.txtReciept.Text += Environment.NewLine;
-                this.txtReciept.Text += "             Roxas City Capix Philippines 5800";
-                this.txtReciept.Text += Environment.NewLine;
-                this.txtReciept.Text += Environment.NewLine;
-                this.txtReciept.Text += "************************************************************";
-                this.txtReciept.Text += Environment.NewLine;
-                this.txtReciept.Text += "                                    RECEIPT";
-                this.txtReciept.Text += Environment.NewLine;
-                this.txtReciept.Text += "************************************************************";
-                this.txtReciept.Text += Environment.NewLine;
-                this.txtReciept.Text += "Owners Name: " + val.OwnersName + "                     Date: " + DateTime.Now.ToString("MM/dd/yyyy");
-                this.txtReciept.Text += Environment.NewLine;
-                this.txtReciept.Text += "Patient Name" + val.Patientname;
-                this.txtReciept.Text += Environment.NewLine;
-                this.txtReciept.Text += "Total Payment Fee:          P" + this.txtTotalAmountfee.Text;
-                this.txtReciept.Text += Environment.NewLine;
-                this.txtReciept.Text += "Total Amount Paid:           P" + this.txtAmountpay.Text;
-                this.txtReciept.Text += Environment.NewLine;
-                this.txtReciept.Text += "Change:                             P" + this.txtChange.Text;
-                this.txtReciept.Text += Environment.NewLine;
-                this.txtReciept.Text += Environment.NewLine;
             }    
         }
 
