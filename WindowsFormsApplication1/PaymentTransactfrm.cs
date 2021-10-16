@@ -26,7 +26,6 @@ namespace WindowsFormsApplication1
             this.txtPetID.Text = val.PetID;
             this.txtPatientName.Text = val.Patientname;
             this.txtOwnersName.Text = val.OwnersName;
-            this.rvReciept.RefreshReport();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -60,10 +59,10 @@ namespace WindowsFormsApplication1
             ReportParameterCollection parameters = new ReportParameterCollection();
             parameters.Add(new ReportParameter("rpPetID", txtPetID.Text));
             parameters.Add(new ReportParameter("rpDate", DateTime.Now.ToString("MM/dd/y")));
-            parameters.Add(new ReportParameter("rpOwnersNmae", txtOwnersName.Text));
+            parameters.Add(new ReportParameter("rpOwnersName", txtOwnersName.Text));
             parameters.Add(new ReportParameter("rpPatientName", txtPatientName.Text));
             parameters.Add(new ReportParameter("rpTotalAmountFee", txtTotalAmountfee.Text));
-            parameters.Add(new ReportParameter("rpTotalAmountPay", txtAmountpay.Text));
+            parameters.Add(new ReportParameter("rpTotalAmountpay", txtAmountpay.Text));
             parameters.Add(new ReportParameter("rpChange", txtChange.Text));
             this.rvReciept.LocalReport.SetParameters(parameters);
             this.rvReciept.RefreshReport();
