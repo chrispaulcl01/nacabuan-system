@@ -58,13 +58,13 @@ namespace WindowsFormsApplication1
 
             this.rvReciept.Clear();
             ReportParameterCollection parameters = new ReportParameterCollection();
-            parameters.Add(new ReportParameter("rpPetID", val.PetID));
-            parameters.Add(new ReportParameter("rpDate", val.Date));
-            parameters.Add(new ReportParameter("rpOwnersNmae", val.OwnersName));
-            parameters.Add(new ReportParameter("rpPatientName", val.Patientname.ToString()));
-            parameters.Add(new ReportParameter("rpTotalAmountFee", txtTotalAmountfee.ToString()));
-            parameters.Add(new ReportParameter("rpTotalAmountPay", txtAmountpay.ToString()));
-            parameters.Add(new ReportParameter("rpChange", txtChange.ToString()));
+            parameters.Add(new ReportParameter("rpPetID", txtPetID.Text));
+            parameters.Add(new ReportParameter("rpDate", DateTime.Now.ToString("MM/dd/y")));
+            parameters.Add(new ReportParameter("rpOwnersNmae", txtOwnersName.Text));
+            parameters.Add(new ReportParameter("rpPatientName", txtPatientName.Text));
+            parameters.Add(new ReportParameter("rpTotalAmountFee", txtTotalAmountfee.Text));
+            parameters.Add(new ReportParameter("rpTotalAmountPay", txtAmountpay.Text));
+            parameters.Add(new ReportParameter("rpChange", txtChange.Text));
             this.rvReciept.LocalReport.SetParameters(parameters);
             this.rvReciept.RefreshReport();
         }

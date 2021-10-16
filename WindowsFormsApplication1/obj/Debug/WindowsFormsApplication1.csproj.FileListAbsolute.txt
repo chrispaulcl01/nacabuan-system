@@ -442,4 +442,3 @@ C:\Users\ChistianPaul\Desktop\thesis\New folder\nacabuan-system\WindowsFormsAppl
 C:\Users\ChistianPaul\Desktop\thesis\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
 C:\Users\ChistianPaul\Desktop\thesis\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\ChistianPaul\Desktop\thesis\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
-C:\Users\ChistianPaul\Desktop\thesis\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
