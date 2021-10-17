@@ -34,7 +34,7 @@ namespace WindowsFormsApplication1
             this.txtContactNo.Text = val.Contactno;
             this.cmbGender.Text = val.Gender;
             this.bdayDatepicker.Text = val.Birthday;
-            
+            this.txtAge.Text = val.Age;
             this.cmbAnimalSpecies.Text = val.Animalspecies;
             this.txtAnimalBreed.Text = val.Animalbreed;
         }

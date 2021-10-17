@@ -87,17 +87,21 @@ namespace WindowsFormsApplication1
 
         private void btnView_Click(object sender, EventArgs e)
         {
-            if (patient.PatientInfoViewer(this.txtPetidPList.Text)) 
-            {
-                PatientInfoViewer Pviewer = new PatientInfoViewer();
-                Pviewer.Show();
-            }
             
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             patient.NameFilter(txtSearch.Text, GridPatienlist);
+        }
+
+        private void btnView_Click_1(object sender, EventArgs e)
+        {
+            if (patient.PatientInfoViewer(this.txtPetidPList.Text))
+            {
+                PatientInfoViewer Pviewer = new PatientInfoViewer();
+                Pviewer.Show();
+            }
         }
     }
 }

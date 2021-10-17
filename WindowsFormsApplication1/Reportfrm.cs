@@ -106,6 +106,23 @@ namespace WindowsFormsApplication1
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
+        }   
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            val.TotalSalesToday = this.txtTotalDay.Text;
+            val.TotalSalesMonth = this.txtTotalMonth.Text;
+            val.TotalSalesYear = this.txtTotalYear.Text;
+            val.Totalcat = int.Parse(this.txtTotalCat.Text);
+            val.Totaldogs = int.Parse(this.txtTotalDog.Text);
+            val.Totalbird = int.Parse(this.txtTotalBird.Text);
+            val.Totalpatient = int.Parse(this.txtTotalpatient.Text);
+            ReportTable rt = new ReportTable();
+            rt.Show();
+        }
+
+        private void btnCheck_Click_1(object sender, EventArgs e)
+        {
             this.ChartDatePick.Text = DateTime.Now.ToString("MM/dd/yy");
 
             patient.CountTotalPatientDog(this.ChartDatePick.Text.Substring(0, 2), this.ChartDatePick.Text.Substring(this.ChartDatePick.Text.Length - 2));
@@ -185,18 +202,6 @@ namespace WindowsFormsApplication1
             this.ChartSales.Series[0].Points.AddXY("Month", this.txtTotalMonth.Text.ToString());
             this.ChartSales.Series[0].Points.AddXY("Year", this.txtTotalYear.Text.ToString());
         }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            val.TotalSalesToday = this.txtTotalDay.Text;
-            val.TotalSalesMonth = this.txtTotalMonth.Text;
-            val.TotalSalesYear = this.txtTotalYear.Text;
-            val.Totalcat = int.Parse(this.txtTotalCat.Text);
-            val.Totaldogs = int.Parse(this.txtTotalDog.Text);
-            val.Totalbird = int.Parse(this.txtTotalBird.Text);
-            val.Totalpatient = int.Parse(this.txtTotalpatient.Text);
-            ReportTable rt = new ReportTable();
-            rt.Show();
-        }
     }
+    
 }

@@ -330,6 +330,7 @@
             this.btnCheck.Text = "Check";
             this.btnCheck.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCheck.UseVisualStyleBackColor = false;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click_1);
             // 
             // iconButton1
             // 
