@@ -293,5 +293,13 @@ namespace WindowsFormsApplication1.components
             get { return totalpatient; }
             set { totalpatient = value; }
         }
+
+        public static string reportdate;
+        public string ReportDate
+        {
+            get { return reportdate; }
+            set { reportdate= value; }
+        }
     }
+
 }

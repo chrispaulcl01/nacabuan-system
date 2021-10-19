@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
+
       <Body>
         <ReportItems>
           <Textbox Name="Textbox1">
@@ -17,7 +18,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>3.52785cm</Top>
+            <Top>4.30424cm</Top>
             <Left>1.6584cm</Left>
             <Height>0.6cm</Height>
             <Width>4.68017cm</Width>
@@ -46,7 +47,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>4.30424cm</Top>
+            <Top>5.08063cm</Top>
             <Left>1.6584cm</Left>
             <Height>0.6cm</Height>
             <Width>4.68017cm</Width>
@@ -76,7 +77,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.08063cm</Top>
+            <Top>5.85702cm</Top>
             <Left>1.6584cm</Left>
             <Height>0.6cm</Height>
             <Width>4.68017cm</Width>
@@ -106,7 +107,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>6.86328cm</Top>
+            <Top>7.63967cm</Top>
             <Left>1.65841cm</Left>
             <Height>0.6cm</Height>
             <Width>4.68017cm</Width>
@@ -136,7 +137,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>7.63967cm</Top>
+            <Top>8.41606cm</Top>
             <Left>1.65841cm</Left>
             <Height>0.6cm</Height>
             <Width>4.68017cm</Width>
@@ -166,7 +167,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>8.41606cm</Top>
+            <Top>9.19245cm</Top>
             <Left>1.6584cm</Left>
             <Height>0.6cm</Height>
             <Width>4.68017cm</Width>
@@ -196,7 +197,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>9.19243cm</Top>
+            <Top>9.96882cm</Top>
             <Left>1.65841cm</Left>
             <Height>0.6cm</Height>
             <Width>4.68017cm</Width>
@@ -226,7 +227,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pTotalSalesOfTheDay</rd:DefaultName>
-            <Top>3.52785cm</Top>
+            <Top>4.30424cm</Top>
             <Left>9.19373cm</Left>
             <Height>0.6cm</Height>
             <Width>4.2145cm</Width>
@@ -256,7 +257,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pTotalSalesOfTheMonth</rd:DefaultName>
-            <Top>4.30424cm</Top>
+            <Top>5.08063cm</Top>
             <Left>9.19373cm</Left>
             <Height>0.6cm</Height>
             <Width>4.2145cm</Width>
@@ -286,7 +287,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pTotalSalesOfTheYear</rd:DefaultName>
-            <Top>5.08063cm</Top>
+            <Top>5.85702cm</Top>
             <Left>9.19373cm</Left>
             <Height>0.6cm</Height>
             <Width>4.2145cm</Width>
@@ -316,7 +317,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pTotalPatientsCats</rd:DefaultName>
-            <Top>6.86328cm</Top>
+            <Top>7.63967cm</Top>
             <Left>9.19374cm</Left>
             <Height>0.6cm</Height>
             <Width>4.2145cm</Width>
@@ -346,7 +347,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pTotalPatientsDogs</rd:DefaultName>
-            <Top>7.63967cm</Top>
+            <Top>8.41606cm</Top>
             <Left>9.19374cm</Left>
             <Height>0.6cm</Height>
             <Width>4.2145cm</Width>
@@ -376,7 +377,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pTotalPatients</rd:DefaultName>
-            <Top>9.19243cm</Top>
+            <Top>9.96882cm</Top>
             <Left>9.19374cm</Left>
             <Height>0.6cm</Height>
             <Width>4.2145cm</Width>
@@ -406,7 +407,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pTotalPatientsBird</rd:DefaultName>
-            <Top>8.41606cm</Top>
+            <Top>9.19245cm</Top>
             <Left>9.19374cm</Left>
             <Height>0.6cm</Height>
             <Width>4.2145cm</Width>
@@ -487,8 +488,8 @@
             </Style>
           </Textbox>
           <Line Name="Line1">
-            <Top>2.80141cm</Top>
-            <Left>1.65841cm</Left>
+            <Top>3.5687cm</Top>
+            <Left>1.6584cm</Left>
             <Height>0cm</Height>
             <Width>11.74983cm</Width>
             <ZIndex>16</ZIndex>
@@ -499,8 +500,8 @@
             </Style>
           </Line>
           <Line Name="Line2">
-            <Top>2.9778cm</Top>
-            <Left>1.65841cm</Left>
+            <Top>3.74509cm</Top>
+            <Left>1.6584cm</Left>
             <Height>0cm</Height>
             <Width>11.74983cm</Width>
             <ZIndex>17</ZIndex>
@@ -511,7 +512,7 @@
             </Style>
           </Line>
           <Line Name="Line3">
-            <Top>6.27591cm</Top>
+            <Top>7.0523cm</Top>
             <Left>1.65841cm</Left>
             <Height>0cm</Height>
             <Width>11.74983cm</Width>
@@ -522,11 +523,71 @@
               </Border>
             </Style>
           </Line>
+          <Textbox Name="Textbox11">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!pDate.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox9</rd:DefaultName>
+            <Top>2.75704cm</Top>
+            <Left>7.01767cm</Left>
+            <Height>0.6cm</Height>
+            <Width>3.46604cm</Width>
+            <ZIndex>19</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox9">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>DATE:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>2.75704cm</Top>
+            <Left>5.83882cm</Left>
+            <Height>0.70583cm</Height>
+            <Width>1.34642cm</Width>
+            <ZIndex>20</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>4.15in</Height>
+        <Height>4.95208in</Height>
         <Style />
       </Body>
-      <Width>5.90625in</Width>
+      <Width>5.91667in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
@@ -537,6 +598,7 @@
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
+ 
   <ReportParameters>
     <ReportParameter Name="pTotalSalesOfTheDay">
       <DataType>String</DataType>
@@ -566,8 +628,12 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="pDate">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
-
+  
   <EmbeddedImages>
     <EmbeddedImage Name="logo">
       <MIMEType>image/png</MIMEType>

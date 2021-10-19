@@ -117,6 +117,7 @@ namespace WindowsFormsApplication1
             val.Totaldogs = int.Parse(this.txtTotalDog.Text);
             val.Totalbird = int.Parse(this.txtTotalBird.Text);
             val.Totalpatient = int.Parse(this.txtTotalpatient.Text);
+            val.ReportDate = this.ChartDatePick.Text;
             ReportTable rt = new ReportTable();
             rt.Show();
         }

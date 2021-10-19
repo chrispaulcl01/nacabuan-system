@@ -51,6 +51,8 @@
             this.btnSave = new Guna.UI.WinForms.GunaGradientButton();
             this.gunaGradientButton4 = new Guna.UI.WinForms.GunaGradientButton();
             this.rvReciept = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.txtCashierName = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label4 = new System.Windows.Forms.Label();
             this.gunaShadowPanel1.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -106,7 +108,7 @@
             this.txtOwnersName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtOwnersName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtOwnersName.isPassword = false;
-            this.txtOwnersName.Location = new System.Drawing.Point(304, 195);
+            this.txtOwnersName.Location = new System.Drawing.Point(313, 162);
             this.txtOwnersName.Margin = new System.Windows.Forms.Padding(4);
             this.txtOwnersName.Name = "txtOwnersName";
             this.txtOwnersName.Size = new System.Drawing.Size(222, 32);
@@ -123,10 +125,10 @@
             this.txtPetID.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPetID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPetID.isPassword = false;
-            this.txtPetID.Location = new System.Drawing.Point(263, 116);
+            this.txtPetID.Location = new System.Drawing.Point(101, 78);
             this.txtPetID.Margin = new System.Windows.Forms.Padding(4);
             this.txtPetID.Name = "txtPetID";
-            this.txtPetID.Size = new System.Drawing.Size(166, 30);
+            this.txtPetID.Size = new System.Drawing.Size(89, 30);
             this.txtPetID.TabIndex = 232;
             this.txtPetID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -136,7 +138,7 @@
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(186, 120);
+            this.label26.Location = new System.Drawing.Point(24, 82);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(75, 23);
             this.label26.TabIndex = 231;
@@ -152,7 +154,7 @@
             this.txtPatientName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPatientName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPatientName.isPassword = false;
-            this.txtPatientName.Location = new System.Drawing.Point(304, 246);
+            this.txtPatientName.Location = new System.Drawing.Point(313, 213);
             this.txtPatientName.Margin = new System.Windows.Forms.Padding(4);
             this.txtPatientName.Name = "txtPatientName";
             this.txtPatientName.Size = new System.Drawing.Size(222, 32);
@@ -165,7 +167,7 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(177, 202);
+            this.label19.Location = new System.Drawing.Point(186, 169);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(121, 19);
             this.label19.TabIndex = 229;
@@ -177,7 +179,7 @@
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(177, 255);
+            this.label25.Location = new System.Drawing.Point(186, 222);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(117, 19);
             this.label25.TabIndex = 228;
@@ -395,6 +397,35 @@
             this.rvReciept.TabIndex = 253;
             this.rvReciept.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.FullPage;
             // 
+            // txtCashierName
+            // 
+            this.txtCashierName.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtCashierName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCashierName.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtCashierName.BorderThickness = 3;
+            this.txtCashierName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCashierName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtCashierName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCashierName.isPassword = false;
+            this.txtCashierName.Location = new System.Drawing.Point(313, 262);
+            this.txtCashierName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCashierName.Name = "txtCashierName";
+            this.txtCashierName.Size = new System.Drawing.Size(222, 32);
+            this.txtCashierName.TabIndex = 255;
+            this.txtCashierName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(183, 269);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(119, 19);
+            this.label4.TabIndex = 256;
+            this.label4.Text = "Cashier name";
+            // 
             // PaymentTransactfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -403,6 +434,8 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1040, 640);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtCashierName);
             this.Controls.Add(this.rvReciept);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.gunaGradientButton4);
@@ -453,5 +486,7 @@
         private Guna.UI.WinForms.GunaGradientButton btnSave;
         private Guna.UI.WinForms.GunaGradientButton gunaGradientButton4;
         private Microsoft.Reporting.WinForms.ReportViewer rvReciept;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtCashierName;
+        private System.Windows.Forms.Label label4;
     }
 }

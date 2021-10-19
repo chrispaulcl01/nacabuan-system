@@ -30,11 +30,11 @@ namespace WindowsFormsApplication1
         private void InitializeComponent()
         {
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.rprtReportTable = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.gunaShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +51,32 @@ namespace WindowsFormsApplication1
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.gunaShadowPanel1.Size = new System.Drawing.Size(1104, 69);
             this.gunaShadowPanel1.TabIndex = 119;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.BackColor = System.Drawing.Color.White;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton3.IconColor = System.Drawing.Color.Black;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.Location = new System.Drawing.Point(989, 17);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(41, 35);
+            this.iconButton3.TabIndex = 4;
+            this.iconButton3.Text = "X";
+            this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.Location = new System.Drawing.Point(-14, -13);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(75, 23);
+            this.iconButton2.TabIndex = 3;
+            this.iconButton2.Text = "iconButton2";
+            this.iconButton2.UseVisualStyleBackColor = true;
             // 
             // iconButton1
             // 
@@ -79,37 +105,12 @@ namespace WindowsFormsApplication1
             // rprtReportTable
             // 
             this.rprtReportTable.LocalReport.ReportEmbeddedResource = "WindowsFormsApplication1.rprtReportTable.rdlc";
-            this.rprtReportTable.Location = new System.Drawing.Point(22, 73);
-            this.rprtReportTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rprtReportTable.Location = new System.Drawing.Point(271, 73);
+            this.rprtReportTable.Margin = new System.Windows.Forms.Padding(2);
             this.rprtReportTable.Name = "rprtReportTable";
-            this.rprtReportTable.Size = new System.Drawing.Size(1068, 537);
+            this.rprtReportTable.Size = new System.Drawing.Size(500, 520);
             this.rprtReportTable.TabIndex = 120;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(-14, -13);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(75, 23);
-            this.iconButton2.TabIndex = 3;
-            this.iconButton2.Text = "iconButton2";
-            this.iconButton2.UseVisualStyleBackColor = true;
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.BackColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(989, 17);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(41, 35);
-            this.iconButton3.TabIndex = 4;
-            this.iconButton3.Text = "X";
-            this.iconButton3.UseVisualStyleBackColor = false;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            this.rprtReportTable.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.FullPage;
             // 
             // ReportTable
             // 

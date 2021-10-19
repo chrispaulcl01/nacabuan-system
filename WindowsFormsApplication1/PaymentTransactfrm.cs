@@ -64,6 +64,7 @@ namespace WindowsFormsApplication1
             parameters.Add(new ReportParameter("rpTotalAmountFee", txtTotalAmountfee.Text));
             parameters.Add(new ReportParameter("rpTotalAmountpay", txtAmountpay.Text));
             parameters.Add(new ReportParameter("rpChange", txtChange.Text));
+            parameters.Add(new ReportParameter("rpCashier", txtCashierName.Text));
             this.rvReciept.LocalReport.SetParameters(parameters);
             this.rvReciept.RefreshReport();
         }

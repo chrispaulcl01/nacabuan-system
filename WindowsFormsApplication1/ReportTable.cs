@@ -32,10 +32,11 @@ namespace WindowsFormsApplication1
             parameters.Add(new ReportParameter("pTotalPatientsDogs", val.Totaldogs.ToString()));
             parameters.Add(new ReportParameter("pTotalPatientsBirds", val.Totalbird.ToString()));
             parameters.Add(new ReportParameter("pTotalPatients", val.Totalpatient.ToString()));
+            parameters.Add(new ReportParameter("pDate", val.ReportDate.ToString()));
             this.rprtReportTable.LocalReport.SetParameters(parameters);
             this.rprtReportTable.RefreshReport();
         }
-
+        
         private void iconButton3_Click(object sender, EventArgs e)
         {
             this.Close();
