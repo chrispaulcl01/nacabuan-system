@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Reporting.WinForms;
 
 namespace WindowsFormsApplication1
 {
@@ -73,31 +74,16 @@ namespace WindowsFormsApplication1
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            this.txtRXprinted.Clear();
-            this.txtRXprinted.Text += "             Infrmation System for Pet Diagnosis";
-            this.txtRXprinted.Text += Environment.NewLine;
-            this.txtRXprinted.Text += "              Roxas City Capiz Philippines 5800";
-            this.txtRXprinted.Text += Environment.NewLine;
-            this.txtRXprinted.Text += "***********************************************************";
-            this.txtRXprinted.Text += Environment.NewLine;
-            this.txtRXprinted.Text += "Ownner Name: " + val.OwnersName;
-            this.txtRXprinted.Text += Environment.NewLine;
-            this.txtRXprinted.Text += "Patient Name: " + val.Patientname;
-            this.txtRXprinted.Text += Environment.NewLine;
-            this.txtRXprinted.Text += "Date: " + DateTime.Now.ToString("MM/dd/yyyy");
-            this.txtRXprinted.Text += Environment.NewLine;
-            this.txtRXprinted.Text += "Time: " + DateTime.Now.ToString("hh:mm tt");
-            this.txtRXprinted.Text += Environment.NewLine;
-            this.txtRXprinted.Text += Environment.NewLine;
-            this.txtRXprinted.Text += "Prescription: ";
-            this.txtRXprinted.Text += Environment.NewLine;
-            this.txtRXprinted.Text += txtEditor.Text;
-            this.txtRXprinted.Text += Environment.NewLine;
-            this.txtRXprinted.Text += Environment.NewLine;
-            this.txtRXprinted.Text += Environment.NewLine;
-            this.txtRXprinted.Text += "                      ---------------------------------------------------";
-            this.txtRXprinted.Text += Environment.NewLine;
-            this.txtRXprinted.Text += "                          Doctor signature over printed name";
+            this.rprtRX.Clear();
+            ReportParameterCollection parameters = new ReportParameterCollection();
+            parameters.Add(new ReportParameter("rpPetID", txtID.Text));
+            parameters.Add(new ReportParameter("rpDate", DateTime.Now.ToString("MM/dd/y")));
+            parameters.Add(new ReportParameter("rpOwnersName", val.OwnersName));
+            parameters.Add(new ReportParameter("rpPatientName", val.Patientname));
+            parameters.Add(new ReportParameter("rpPrescription", txtEditor.Text));
+
+            this.rprtRX.LocalReport.SetParameters(parameters);
+            this.rprtRX.RefreshReport();
         }
     }
 }
