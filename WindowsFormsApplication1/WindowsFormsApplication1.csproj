@@ -239,6 +239,7 @@
       <DependentUpon>ReportTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rprtReportTable.rdlc" />
+    <EmbeddedResource Include="rprtRx.rdlc" />
     <EmbeddedResource Include="Rxviewer.resx">
       <DependentUpon>Rxviewer.cs</DependentUpon>
     </EmbeddedResource>

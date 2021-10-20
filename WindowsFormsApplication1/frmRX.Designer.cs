@@ -40,6 +40,7 @@
             this.btnSaveRX = new Guna.UI.WinForms.GunaGradientButton();
             this.txtEditor = new Guna.UI.WinForms.GunaTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rprtRX = new Microsoft.Reporting.WinForms.ReportViewer();
             this.gunaShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,27 +49,30 @@
             this.txtID.BackColor = System.Drawing.Color.MistyRose;
             this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(111, 116);
+            this.txtID.Location = new System.Drawing.Point(148, 143);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(93, 17);
+            this.txtID.Size = new System.Drawing.Size(124, 22);
             this.txtID.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 113);
+            this.label1.Location = new System.Drawing.Point(45, 139);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 23);
+            this.label1.Size = new System.Drawing.Size(92, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Pet Id:";
             // 
             // txtRXprinted
             // 
             this.txtRXprinted.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRXprinted.Location = new System.Drawing.Point(615, 113);
+            this.txtRXprinted.Location = new System.Drawing.Point(820, 139);
+            this.txtRXprinted.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRXprinted.Name = "txtRXprinted";
-            this.txtRXprinted.Size = new System.Drawing.Size(370, 477);
+            this.txtRXprinted.Size = new System.Drawing.Size(492, 586);
             this.txtRXprinted.TabIndex = 2;
             this.txtRXprinted.Text = "";
             this.txtRXprinted.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -79,10 +83,11 @@
             this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
             this.gunaShadowPanel1.Controls.Add(this.button5);
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel2);
-            this.gunaShadowPanel1.Location = new System.Drawing.Point(-1, 4);
+            this.gunaShadowPanel1.Location = new System.Drawing.Point(-1, 5);
+            this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(1364, 69);
+            this.gunaShadowPanel1.Size = new System.Drawing.Size(1819, 85);
             this.gunaShadowPanel1.TabIndex = 93;
             // 
             // button5
@@ -91,9 +96,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(1293, 11);
+            this.button5.Location = new System.Drawing.Point(1724, 14);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(45, 43);
+            this.button5.Size = new System.Drawing.Size(60, 53);
             this.button5.TabIndex = 83;
             this.button5.Text = "X";
             this.button5.UseVisualStyleBackColor = false;
@@ -105,9 +111,10 @@
             this.gunaLabel2.BackColor = System.Drawing.Color.White;
             this.gunaLabel2.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.gunaLabel2.Location = new System.Drawing.Point(34, 22);
+            this.gunaLabel2.Location = new System.Drawing.Point(45, 27);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(58, 29);
+            this.gunaLabel2.Size = new System.Drawing.Size(72, 38);
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "RX.";
             this.gunaLabel2.Click += new System.EventHandler(this.gunaLabel2_Click);
@@ -115,9 +122,10 @@
             // btnGenerate
             // 
             this.btnGenerate.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerate.Location = new System.Drawing.Point(457, 596);
+            this.btnGenerate.Location = new System.Drawing.Point(609, 734);
+            this.btnGenerate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(127, 49);
+            this.btnGenerate.Size = new System.Drawing.Size(169, 60);
             this.btnGenerate.TabIndex = 94;
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.UseVisualStyleBackColor = true;
@@ -137,7 +145,8 @@
             this.gunaGradientButton1.Image = null;
             this.gunaGradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaGradientButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaGradientButton1.Location = new System.Drawing.Point(676, 605);
+            this.gunaGradientButton1.Location = new System.Drawing.Point(901, 745);
+            this.gunaGradientButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaGradientButton1.Name = "gunaGradientButton1";
             this.gunaGradientButton1.OnHoverBaseColor1 = System.Drawing.Color.MistyRose;
             this.gunaGradientButton1.OnHoverBaseColor2 = System.Drawing.Color.Salmon;
@@ -145,7 +154,7 @@
             this.gunaGradientButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaGradientButton1.OnHoverImage = null;
             this.gunaGradientButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaGradientButton1.Size = new System.Drawing.Size(99, 40);
+            this.gunaGradientButton1.Size = new System.Drawing.Size(132, 49);
             this.gunaGradientButton1.TabIndex = 116;
             this.gunaGradientButton1.Text = "BACK";
             this.gunaGradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -165,7 +174,8 @@
             this.gunaGradientButton2.Image = null;
             this.gunaGradientButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaGradientButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaGradientButton2.Location = new System.Drawing.Point(886, 605);
+            this.gunaGradientButton2.Location = new System.Drawing.Point(1181, 745);
+            this.gunaGradientButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaGradientButton2.Name = "gunaGradientButton2";
             this.gunaGradientButton2.OnHoverBaseColor1 = System.Drawing.Color.MistyRose;
             this.gunaGradientButton2.OnHoverBaseColor2 = System.Drawing.Color.Salmon;
@@ -173,7 +183,7 @@
             this.gunaGradientButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaGradientButton2.OnHoverImage = null;
             this.gunaGradientButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaGradientButton2.Size = new System.Drawing.Size(99, 40);
+            this.gunaGradientButton2.Size = new System.Drawing.Size(132, 49);
             this.gunaGradientButton2.TabIndex = 117;
             this.gunaGradientButton2.Text = "PRINT";
             this.gunaGradientButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -192,7 +202,8 @@
             this.btnSaveRX.Image = null;
             this.btnSaveRX.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnSaveRX.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnSaveRX.Location = new System.Drawing.Point(781, 605);
+            this.btnSaveRX.Location = new System.Drawing.Point(1041, 745);
+            this.btnSaveRX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSaveRX.Name = "btnSaveRX";
             this.btnSaveRX.OnHoverBaseColor1 = System.Drawing.Color.MistyRose;
             this.btnSaveRX.OnHoverBaseColor2 = System.Drawing.Color.Salmon;
@@ -200,7 +211,7 @@
             this.btnSaveRX.OnHoverForeColor = System.Drawing.Color.White;
             this.btnSaveRX.OnHoverImage = null;
             this.btnSaveRX.OnPressedColor = System.Drawing.Color.Black;
-            this.btnSaveRX.Size = new System.Drawing.Size(99, 40);
+            this.btnSaveRX.Size = new System.Drawing.Size(132, 49);
             this.btnSaveRX.TabIndex = 118;
             this.btnSaveRX.Text = "SAVE";
             this.btnSaveRX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -215,28 +226,39 @@
             this.txtEditor.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtEditor.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtEditor.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtEditor.Location = new System.Drawing.Point(245, 113);
+            this.txtEditor.Location = new System.Drawing.Point(327, 139);
+            this.txtEditor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEditor.MultiLine = true;
             this.txtEditor.Name = "txtEditor";
             this.txtEditor.PasswordChar = '\0';
-            this.txtEditor.Size = new System.Drawing.Size(339, 477);
+            this.txtEditor.Size = new System.Drawing.Size(452, 587);
             this.txtEditor.TabIndex = 119;
             this.txtEditor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(110, 133);
+            this.panel1.Location = new System.Drawing.Point(147, 164);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(80, 5);
+            this.panel1.Size = new System.Drawing.Size(107, 6);
             this.panel1.TabIndex = 120;
+            // 
+            // rprtRX
+            // 
+            this.rprtRX.LocalReport.ReportEmbeddedResource = "WindowsFormsApplication1.rprtRx.rdlc";
+            this.rprtRX.Location = new System.Drawing.Point(820, 139);
+            this.rprtRX.Name = "rprtRX";
+            this.rprtRX.Size = new System.Drawing.Size(492, 586);
+            this.rprtRX.TabIndex = 121;
             // 
             // frmRX
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.ClientSize = new System.Drawing.Size(1821, 922);
+            this.Controls.Add(this.rprtRX);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtEditor);
             this.Controls.Add(this.btnSaveRX);
@@ -248,6 +270,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmRX";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -274,5 +297,6 @@
         private Guna.UI.WinForms.GunaTextBox txtEditor;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel1;
+        private Microsoft.Reporting.WinForms.ReportViewer rprtRX;
     }
 }
