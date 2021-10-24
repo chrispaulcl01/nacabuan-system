@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Dashboardfrm : Form
+    public partial class CheckUp : Form
     {
-        public Dashboardfrm()
+        public CheckUp()
         {
             InitializeComponent();
         }

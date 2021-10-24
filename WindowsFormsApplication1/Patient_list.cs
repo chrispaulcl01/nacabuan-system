@@ -38,7 +38,7 @@ namespace WindowsFormsApplication1
 
         private void gunaButton1_Click(object sender, EventArgs e)
         { 
-            Dashboardfrm ac = new Dashboardfrm();
+            CheckUp ac = new CheckUp();
             ac.Show();
         }
 

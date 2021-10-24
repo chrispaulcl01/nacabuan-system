@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class Dashboardfrm
+    partial class CheckUp
     {
         /// <summary>
         /// Required designer variable.
@@ -75,13 +75,13 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel2.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.gunaLabel2.Location = new System.Drawing.Point(42, 21);
+            this.gunaLabel2.Location = new System.Drawing.Point(15, 9);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(178, 29);
+            this.gunaLabel2.Size = new System.Drawing.Size(212, 23);
             this.gunaLabel2.TabIndex = 1;
-            this.gunaLabel2.Text = "SCHEDULING";
+            this.gunaLabel2.Text = "Check Up Scheduling";
             // 
             // gunaShadowPanel1
             // 
@@ -92,7 +92,7 @@
             this.gunaShadowPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(1102, 69);
+            this.gunaShadowPanel1.Size = new System.Drawing.Size(1102, 43);
             this.gunaShadowPanel1.TabIndex = 91;
             // 
             // txtContactNo
@@ -187,7 +187,7 @@
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(16, 92);
+            this.label26.Location = new System.Drawing.Point(16, 57);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(75, 23);
             this.label26.TabIndex = 172;
@@ -204,10 +204,10 @@
             this.txtPetID.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPetID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPetID.isPassword = false;
-            this.txtPetID.Location = new System.Drawing.Point(98, 85);
+            this.txtPetID.Location = new System.Drawing.Point(98, 50);
             this.txtPetID.Margin = new System.Windows.Forms.Padding(4);
             this.txtPetID.Name = "txtPetID";
-            this.txtPetID.Size = new System.Drawing.Size(166, 30);
+            this.txtPetID.Size = new System.Drawing.Size(89, 30);
             this.txtPetID.TabIndex = 173;
             this.txtPetID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -250,7 +250,7 @@
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.txtContactNo);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(520, 167);
+            this.panel1.Location = new System.Drawing.Point(520, 132);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(489, 203);
             this.panel1.TabIndex = 197;
@@ -337,7 +337,7 @@
             this.panel2.Controls.Add(this.label25);
             this.panel2.Controls.Add(this.label23);
             this.panel2.Controls.Add(this.label24);
-            this.panel2.Location = new System.Drawing.Point(98, 167);
+            this.panel2.Location = new System.Drawing.Point(98, 132);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(384, 404);
             this.panel2.TabIndex = 198;
@@ -578,7 +578,7 @@
             this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click_1);
             // 
-            // Dashboardfrm
+            // CheckUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -595,7 +595,7 @@
             this.Controls.Add(this.label26);
             this.Controls.Add(this.gunaShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Dashboardfrm";
+            this.Name = "CheckUp";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";

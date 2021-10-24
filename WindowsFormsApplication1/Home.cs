@@ -115,12 +115,12 @@ namespace WindowsFormsApplication1
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             Home_panel.Controls.Clear();
-            Dashboardfrm ac = new Dashboardfrm();
-            ac.TopLevel = false;
-            Home_panel.Controls.Add(ac);
-            ac.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            ac.Dock = DockStyle.Fill;
-            ac.Show();
+            Scheduling sh = new Scheduling();
+            sh.TopLevel = false;
+            Home_panel.Controls.Add(sh);
+            sh.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            sh.Dock = DockStyle.Fill;
+            sh.Show();
         }
 
         private void Cliniccal_btn_Click_1(object sender, EventArgs e)

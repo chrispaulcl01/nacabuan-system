@@ -513,7 +513,6 @@ C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\Windo
 C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.calendar.resources
 C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Consultationfrm.resources
 C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Diagnosis.resources
-C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Dashboardfrm.resources
 C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmRX.resources
 C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
 C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PatientInfoViewer.resources
@@ -535,3 +534,7 @@ C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\Windo
 C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.CheckUp.resources
+C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Operation.resources
+C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Pregrancy.resources
+C:\Users\ChistianPaul\Desktop\thesis\New folder\New folder\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Scheduling.resources

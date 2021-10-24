@@ -119,7 +119,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 135);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(264, 614);
+            this.panel1.Size = new System.Drawing.Size(222, 614);
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -134,7 +134,7 @@
             this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReports.Location = new System.Drawing.Point(18, 413);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(224, 48);
+            this.btnReports.Size = new System.Drawing.Size(189, 48);
             this.btnReports.TabIndex = 205;
             this.btnReports.Text = "REPORTS";
             this.btnReports.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -152,7 +152,7 @@
             this.btnLogout.ForeColor = System.Drawing.Color.Black;
             this.btnLogout.Image = null;
             this.btnLogout.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnLogout.Location = new System.Drawing.Point(35, 555);
+            this.btnLogout.Location = new System.Drawing.Point(7, 555);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnLogout.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -176,7 +176,7 @@
             this.btnStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStaff.Location = new System.Drawing.Point(18, 353);
             this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(224, 48);
+            this.btnStaff.Size = new System.Drawing.Size(189, 48);
             this.btnStaff.TabIndex = 204;
             this.btnStaff.Text = "        STAFF MEMBERS";
             this.btnStaff.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -187,7 +187,7 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(59, 56);
+            this.gunaLabel2.Location = new System.Drawing.Point(37, 55);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(154, 17);
             this.gunaLabel2.TabIndex = 16;
@@ -205,7 +205,7 @@
             this.btnTransHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTransHistory.Location = new System.Drawing.Point(18, 294);
             this.btnTransHistory.Name = "btnTransHistory";
-            this.btnTransHistory.Size = new System.Drawing.Size(224, 48);
+            this.btnTransHistory.Size = new System.Drawing.Size(189, 48);
             this.btnTransHistory.TabIndex = 203;
             this.btnTransHistory.Text = "      TRANSACTION HISTORY";
             this.btnTransHistory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -233,7 +233,7 @@
             this.Cliniccal_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Cliniccal_btn.Location = new System.Drawing.Point(18, 180);
             this.Cliniccal_btn.Name = "Cliniccal_btn";
-            this.Cliniccal_btn.Size = new System.Drawing.Size(224, 48);
+            this.Cliniccal_btn.Size = new System.Drawing.Size(189, 48);
             this.Cliniccal_btn.TabIndex = 202;
             this.Cliniccal_btn.Text = " CLINIC CALENDAR";
             this.Cliniccal_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -251,7 +251,7 @@
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.Location = new System.Drawing.Point(18, 116);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(224, 48);
+            this.btnDashboard.Size = new System.Drawing.Size(189, 48);
             this.btnDashboard.TabIndex = 201;
             this.btnDashboard.Text = "SCHEDULING";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -269,7 +269,7 @@
             this.PatientList_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PatientList_btn.Location = new System.Drawing.Point(18, 239);
             this.PatientList_btn.Name = "PatientList_btn";
-            this.PatientList_btn.Size = new System.Drawing.Size(224, 48);
+            this.PatientList_btn.Size = new System.Drawing.Size(189, 48);
             this.PatientList_btn.TabIndex = 202;
             this.PatientList_btn.Text = " PATIENT LIST";
             this.PatientList_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -282,10 +282,10 @@
             this.Home_panel.BackColor = System.Drawing.Color.Snow;
             this.Home_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Home_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Home_panel.Location = new System.Drawing.Point(264, 135);
+            this.Home_panel.Location = new System.Drawing.Point(222, 135);
             this.Home_panel.Margin = new System.Windows.Forms.Padding(0);
             this.Home_panel.Name = "Home_panel";
-            this.Home_panel.Size = new System.Drawing.Size(1102, 614);
+            this.Home_panel.Size = new System.Drawing.Size(1144, 614);
             this.Home_panel.TabIndex = 7;
             this.Home_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.Home_panel_Paint);
             // 
