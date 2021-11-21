@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApplication1
 {
-    partial class Scheduling
+    partial class ServicesAndOperation
     {
         /// <summary>
         /// Required designer variable.
@@ -31,8 +31,7 @@ namespace WindowsFormsApplication1
         {
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.btnChechUp = new FontAwesome.Sharp.IconButton();
-            this.btnPregnancy = new FontAwesome.Sharp.IconButton();
+            this.btnServices = new FontAwesome.Sharp.IconButton();
             this.btnOperation = new FontAwesome.Sharp.IconButton();
             this.panelScheduling = new System.Windows.Forms.Panel();
             this.gunaShadowPanel1.SuspendLayout();
@@ -58,41 +57,25 @@ namespace WindowsFormsApplication1
             this.gunaLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gunaLabel2.Location = new System.Drawing.Point(42, 21);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(195, 29);
+            this.gunaLabel2.Size = new System.Drawing.Size(301, 29);
             this.gunaLabel2.TabIndex = 1;
-            this.gunaLabel2.Text = "Scheduling List";
+            this.gunaLabel2.Text = "Services and Operations";
             // 
-            // btnChechUp
+            // btnServices
             // 
-            this.btnChechUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnChechUp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnChechUp.Font = new System.Drawing.Font("Rockwell", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChechUp.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnChechUp.IconColor = System.Drawing.Color.Black;
-            this.btnChechUp.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnChechUp.Location = new System.Drawing.Point(24, 88);
-            this.btnChechUp.Name = "btnChechUp";
-            this.btnChechUp.Size = new System.Drawing.Size(92, 54);
-            this.btnChechUp.TabIndex = 94;
-            this.btnChechUp.Text = "CheckUp";
-            this.btnChechUp.UseVisualStyleBackColor = false;
-            this.btnChechUp.Click += new System.EventHandler(this.btnChechUp_Click);
-            // 
-            // btnPregnancy
-            // 
-            this.btnPregnancy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnPregnancy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPregnancy.Font = new System.Drawing.Font("Rockwell", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPregnancy.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnPregnancy.IconColor = System.Drawing.Color.Black;
-            this.btnPregnancy.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPregnancy.Location = new System.Drawing.Point(117, 88);
-            this.btnPregnancy.Name = "btnPregnancy";
-            this.btnPregnancy.Size = new System.Drawing.Size(92, 54);
-            this.btnPregnancy.TabIndex = 95;
-            this.btnPregnancy.Text = "Pregnancy";
-            this.btnPregnancy.UseVisualStyleBackColor = false;
-            this.btnPregnancy.Click += new System.EventHandler(this.btnPregnancy_Click);
+            this.btnServices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnServices.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnServices.Font = new System.Drawing.Font("Rockwell", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnServices.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnServices.IconColor = System.Drawing.Color.Black;
+            this.btnServices.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnServices.Location = new System.Drawing.Point(24, 88);
+            this.btnServices.Name = "btnServices";
+            this.btnServices.Size = new System.Drawing.Size(92, 54);
+            this.btnServices.TabIndex = 94;
+            this.btnServices.Text = "Services";
+            this.btnServices.UseVisualStyleBackColor = false;
+            this.btnServices.Click += new System.EventHandler(this.btnServices_Click);
             // 
             // btnOperation
             // 
@@ -102,11 +85,11 @@ namespace WindowsFormsApplication1
             this.btnOperation.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnOperation.IconColor = System.Drawing.Color.Black;
             this.btnOperation.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOperation.Location = new System.Drawing.Point(210, 88);
+            this.btnOperation.Location = new System.Drawing.Point(117, 88);
             this.btnOperation.Name = "btnOperation";
             this.btnOperation.Size = new System.Drawing.Size(92, 54);
             this.btnOperation.TabIndex = 96;
-            this.btnOperation.Text = "Operation";
+            this.btnOperation.Text = "Operations";
             this.btnOperation.UseVisualStyleBackColor = false;
             this.btnOperation.Click += new System.EventHandler(this.btnOperation_Click);
             // 
@@ -117,7 +100,7 @@ namespace WindowsFormsApplication1
             this.panelScheduling.Size = new System.Drawing.Size(1047, 447);
             this.panelScheduling.TabIndex = 97;
             // 
-            // Scheduling
+            // ServicesAndOperation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -126,11 +109,10 @@ namespace WindowsFormsApplication1
             this.ClientSize = new System.Drawing.Size(1102, 620);
             this.Controls.Add(this.panelScheduling);
             this.Controls.Add(this.btnOperation);
-            this.Controls.Add(this.btnPregnancy);
-            this.Controls.Add(this.btnChechUp);
+            this.Controls.Add(this.btnServices);
             this.Controls.Add(this.gunaShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Scheduling";
+            this.Name = "ServicesAndOperation";
             this.Text = "Scheduling";
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
@@ -142,8 +124,7 @@ namespace WindowsFormsApplication1
 
         private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private FontAwesome.Sharp.IconButton btnChechUp;
-        private FontAwesome.Sharp.IconButton btnPregnancy;
+        private FontAwesome.Sharp.IconButton btnServices;
         private FontAwesome.Sharp.IconButton btnOperation;
         private System.Windows.Forms.Panel panelScheduling;
     }

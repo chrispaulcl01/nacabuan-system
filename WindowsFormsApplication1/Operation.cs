@@ -21,5 +21,41 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void btnPregnacy_Click(object sender, EventArgs e)
+        {
+            PregnancyCesarean preg = new PregnancyCesarean();
+            preg.Show();
+        }
+
+        private void btnEyeOP_Click(object sender, EventArgs e)
+        {
+            EyeOperation eye = new EyeOperation();
+            eye.Show();
+        }
+
+        private void btnEarsOP_Click(object sender, EventArgs e)
+        {
+            EarOperation ear = new EarOperation();
+            ear.Show();
+        }
+
+        private void btnMammaryOP_Click(object sender, EventArgs e)
+        {
+            MammartOperation mam = new MammartOperation();
+            mam.Show();
+        }
+
+        private void btnCrastration_Click(object sender, EventArgs e)
+        {
+            Crastration cras = new Crastration();
+            cras.Show();
+        }
+
+        private void btnLygaeide_Click(object sender, EventArgs e)
+        {
+            Lygaeidae ly = new Lygaeidae();
+            ly.Show();
+        }
     }
 }

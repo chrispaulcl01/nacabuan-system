@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Scheduling : Form
+    public partial class ServicesAndOperation : Form
     {
-        public Scheduling()
+        public ServicesAndOperation()
         {
             InitializeComponent();
         }
 
-        private void btnChechUp_Click(object sender, EventArgs e)
+        private void btnServices_Click(object sender, EventArgs e)
         {
             panelScheduling.Controls.Clear();
-            CheckUp ac = new CheckUp();
-            ac.TopLevel = false;
-            panelScheduling.Controls.Add(ac);
-            ac.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            ac.Dock = DockStyle.Fill;
-            ac.Show();
+            Services ser = new Services();
+            ser.TopLevel = false;
+            panelScheduling.Controls.Add(ser);
+            ser.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            ser.Dock = DockStyle.Fill;
+            ser.Show();
         }
 
         private void btnPregnancy_Click(object sender, EventArgs e)

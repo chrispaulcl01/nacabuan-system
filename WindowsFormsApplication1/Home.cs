@@ -115,7 +115,7 @@ namespace WindowsFormsApplication1
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             Home_panel.Controls.Clear();
-            Scheduling sh = new Scheduling();
+            ServicesAndOperation sh = new ServicesAndOperation();
             sh.TopLevel = false;
             Home_panel.Controls.Add(sh);
             sh.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

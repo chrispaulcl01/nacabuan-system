@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WindowsFormsApplication1</RootNamespace>
     <AssemblyName>WindowsFormsApplication1</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -82,11 +83,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BloodTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloodTest.Designer.cs">
+      <DependentUpon>BloodTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="calendar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="calendar.Designer.cs">
       <DependentUpon>calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CDTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDTest.Designer.cs">
+      <DependentUpon>CDTest.cs</DependentUpon>
     </Compile>
     <Compile Include="components\Connections.cs" />
     <Compile Include="components\Values.cs" />
@@ -96,11 +109,41 @@
     <Compile Include="Consultationfrm.Designer.cs">
       <DependentUpon>Consultationfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CPTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CPTest.Designer.cs">
+      <DependentUpon>CPTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crastration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crastration.Designer.cs">
+      <DependentUpon>Crastration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deworming.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deworming.Designer.cs">
+      <DependentUpon>Deworming.cs</DependentUpon>
+    </Compile>
     <Compile Include="Diagnosis.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Diagnosis.Designer.cs">
       <DependentUpon>Diagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EarOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarOperation.Designer.cs">
+      <DependentUpon>EarOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EyeOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EyeOperation.Designer.cs">
+      <DependentUpon>EyeOperation.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRX.cs">
       <SubType>Form</SubType>
@@ -124,6 +167,18 @@
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lygaeidae.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lygaeidae.Designer.cs">
+      <DependentUpon>Lygaeidae.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MammartOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MammartOperation.Designer.cs">
+      <DependentUpon>MammartOperation.cs</DependentUpon>
     </Compile>
     <Compile Include="Operation.cs">
       <SubType>Form</SubType>
@@ -161,6 +216,12 @@
     <Compile Include="PaymentTransactfrm.Designer.cs">
       <DependentUpon>PaymentTransactfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PregnancyCesarean.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregnancyCesarean.Designer.cs">
+      <DependentUpon>PregnancyCesarean.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pregrancy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,11 +248,23 @@
     <Compile Include="Rxviewer.Designer.cs">
       <DependentUpon>Rxviewer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Scheduling.cs">
+    <Compile Include="Services.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Scheduling.Designer.cs">
-      <DependentUpon>Scheduling.cs</DependentUpon>
+    <Compile Include="Services.Designer.cs">
+      <DependentUpon>Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesAndOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicesAndOperation.Designer.cs">
+      <DependentUpon>ServicesAndOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SkinTreatment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkinTreatment.Designer.cs">
+      <DependentUpon>SkinTreatment.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Staff_Memberfrm.cs">
@@ -206,11 +279,32 @@
     <Compile Include="TransactionHistory.Designer.cs">
       <DependentUpon>TransactionHistory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vaccination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vaccination.Designer.cs">
+      <DependentUpon>Vaccination.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BloodTest.resx">
+      <DependentUpon>BloodTest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="calendar.resx">
       <DependentUpon>calendar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CDTest.resx">
+      <DependentUpon>CDTest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultationfrm.resx">
       <DependentUpon>Consultationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPTest.resx">
+      <DependentUpon>CPTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crastration.resx">
+      <DependentUpon>Crastration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deworming.resx">
+      <DependentUpon>Deworming.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Diagnosis.resx">
       <DependentUpon>Diagnosis.cs</DependentUpon>
@@ -218,11 +312,23 @@
     <EmbeddedResource Include="CheckUp.resx">
       <DependentUpon>CheckUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EarOperation.resx">
+      <DependentUpon>EarOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EyeOperation.resx">
+      <DependentUpon>EyeOperation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRX.resx">
       <DependentUpon>frmRX.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lygaeidae.resx">
+      <DependentUpon>Lygaeidae.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MammartOperation.resx">
+      <DependentUpon>MammartOperation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Operation.resx">
       <DependentUpon>Operation.cs</DependentUpon>
@@ -241,6 +347,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentTransactfrm.resx">
       <DependentUpon>PaymentTransactfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregnancyCesarean.resx">
+      <DependentUpon>PregnancyCesarean.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pregrancy.resx">
       <DependentUpon>Pregrancy.cs</DependentUpon>
@@ -267,14 +376,23 @@
     <EmbeddedResource Include="Rxviewer.resx">
       <DependentUpon>Rxviewer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Scheduling.resx">
-      <DependentUpon>Scheduling.cs</DependentUpon>
+    <EmbeddedResource Include="Services.resx">
+      <DependentUpon>Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicesAndOperation.resx">
+      <DependentUpon>ServicesAndOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkinTreatment.resx">
+      <DependentUpon>SkinTreatment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff_Memberfrm.resx">
       <DependentUpon>Staff_Memberfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransactionHistory.resx">
       <DependentUpon>TransactionHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vaccination.resx">
+      <DependentUpon>Vaccination.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -286,6 +404,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="webfonts\fa-brands-400.eot" />
+    <None Include="webfonts\fa-brands-400.ttf" />
+    <None Include="webfonts\fa-brands-400.woff" />
+    <None Include="webfonts\fa-brands-400.woff2" />
+    <None Include="webfonts\fa-regular-400.eot" />
+    <None Include="webfonts\fa-regular-400.ttf" />
+    <None Include="webfonts\fa-regular-400.woff" />
+    <None Include="webfonts\fa-regular-400.woff2" />
+    <None Include="webfonts\fa-solid-900.eot" />
+    <None Include="webfonts\fa-solid-900.ttf" />
+    <None Include="webfonts\fa-solid-900.woff" />
+    <None Include="webfonts\fa-solid-900.woff2" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -300,6 +430,47 @@
     <None Include="Resources\68-687504_s.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\all.css" />
+    <Content Include="Content\all.min.css" />
+    <Content Include="Content\brands.css" />
+    <Content Include="Content\brands.min.css" />
+    <Content Include="Content\fontawesome.css" />
+    <Content Include="Content\fontawesome.min.css" />
+    <Content Include="Content\regular.css" />
+    <Content Include="Content\regular.min.css" />
+    <Content Include="Content\solid.css" />
+    <Content Include="Content\solid.min.css" />
+    <Content Include="Content\svg-with-js.css" />
+    <Content Include="Content\svg-with-js.min.css" />
+    <Content Include="Content\v4-shims.css" />
+    <Content Include="Content\v4-shims.min.css" />
+    <None Include="Resources\pregnancy.jpg" />
+    <None Include="Resources\catEyes.jpg" />
+    <None Include="Resources\Untitled.png" />
+    <None Include="Resources\dogear.jpg" />
+    <None Include="Resources\cat and dog.jpg" />
+    <None Include="Resources\dog1.jpg" />
+    <None Include="Resources\meow.jpg" />
+    <None Include="Resources\dogvac.jpg" />
+    <None Include="Resources\dog11.jpg" />
+    <None Include="Resources\puppy-deworming-main-768x511.jpg" />
+    <None Include="Resources\blood.jpg" />
+    <None Include="Resources\lab-test-tubes.jpg" />
+    <None Include="Resources\who_essential_labs920.jpg" />
+    <Content Include="Scripts\fontawesome\all.js" />
+    <Content Include="Scripts\fontawesome\all.min.js" />
+    <Content Include="Scripts\fontawesome\brands.js" />
+    <Content Include="Scripts\fontawesome\brands.min.js" />
+    <Content Include="Scripts\fontawesome\conflict-detection.js" />
+    <Content Include="Scripts\fontawesome\conflict-detection.min.js" />
+    <Content Include="Scripts\fontawesome\fontawesome.js" />
+    <Content Include="Scripts\fontawesome\fontawesome.min.js" />
+    <Content Include="Scripts\fontawesome\regular.js" />
+    <Content Include="Scripts\fontawesome\regular.min.js" />
+    <Content Include="Scripts\fontawesome\solid.js" />
+    <Content Include="Scripts\fontawesome\solid.min.js" />
+    <Content Include="Scripts\fontawesome\v4-shims.js" />
+    <Content Include="Scripts\fontawesome\v4-shims.min.js" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -313,6 +484,9 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

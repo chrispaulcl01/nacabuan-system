@@ -253,7 +253,7 @@
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(189, 48);
             this.btnDashboard.TabIndex = 201;
-            this.btnDashboard.Text = "SCHEDULING";
+            this.btnDashboard.Text = "SERVICES AND OPERATIONS";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
