@@ -21,5 +21,20 @@ namespace WindowsFormsApplication1
         {
             this.Close();
         }
+
+        private void Vaccination_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaDateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

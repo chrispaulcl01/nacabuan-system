@@ -34,6 +34,7 @@ namespace WindowsFormsApplication1
             this.btnServices = new FontAwesome.Sharp.IconButton();
             this.btnOperation = new FontAwesome.Sharp.IconButton();
             this.panelScheduling = new System.Windows.Forms.Panel();
+            this.btnSchedService = new FontAwesome.Sharp.IconButton();
             this.gunaShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,6 +101,22 @@ namespace WindowsFormsApplication1
             this.panelScheduling.Size = new System.Drawing.Size(1047, 447);
             this.panelScheduling.TabIndex = 97;
             // 
+            // btnSchedService
+            // 
+            this.btnSchedService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnSchedService.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSchedService.Font = new System.Drawing.Font("Rockwell", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSchedService.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnSchedService.IconColor = System.Drawing.Color.Black;
+            this.btnSchedService.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSchedService.Location = new System.Drawing.Point(210, 88);
+            this.btnSchedService.Name = "btnSchedService";
+            this.btnSchedService.Size = new System.Drawing.Size(92, 54);
+            this.btnSchedService.TabIndex = 98;
+            this.btnSchedService.Text = "Sched Services";
+            this.btnSchedService.UseVisualStyleBackColor = false;
+            this.btnSchedService.Click += new System.EventHandler(this.btnSchedService_Click);
+            // 
             // ServicesAndOperation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -107,6 +124,7 @@ namespace WindowsFormsApplication1
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1102, 620);
+            this.Controls.Add(this.btnSchedService);
             this.Controls.Add(this.panelScheduling);
             this.Controls.Add(this.btnOperation);
             this.Controls.Add(this.btnServices);
@@ -127,5 +145,6 @@ namespace WindowsFormsApplication1
         private FontAwesome.Sharp.IconButton btnServices;
         private FontAwesome.Sharp.IconButton btnOperation;
         private System.Windows.Forms.Panel panelScheduling;
+        private FontAwesome.Sharp.IconButton btnSchedService;
     }
 }

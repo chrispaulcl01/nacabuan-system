@@ -176,9 +176,11 @@
     </Compile>
     <Compile Include="MammartOperation.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="MammartOperation.Designer.cs">
       <DependentUpon>MammartOperation.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Operation.cs">
       <SubType>Form</SubType>
@@ -248,6 +250,12 @@
     <Compile Include="Rxviewer.Designer.cs">
       <DependentUpon>Rxviewer.cs</DependentUpon>
     </Compile>
+    <Compile Include="SchedService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedService.Designer.cs">
+      <DependentUpon>SchedService.cs</DependentUpon>
+    </Compile>
     <Compile Include="Services.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +280,12 @@
     </Compile>
     <Compile Include="Staff_Memberfrm.Designer.cs">
       <DependentUpon>Staff_Memberfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestParasite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestParasite.Designer.cs">
+      <DependentUpon>TestParasite.cs</DependentUpon>
     </Compile>
     <Compile Include="TransactionHistory.cs">
       <SubType>Form</SubType>
@@ -329,6 +343,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MammartOperation.resx">
       <DependentUpon>MammartOperation.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Operation.resx">
       <DependentUpon>Operation.cs</DependentUpon>
@@ -375,6 +390,9 @@
     <EmbeddedResource Include="rprtRx.rdlc" />
     <EmbeddedResource Include="Rxviewer.resx">
       <DependentUpon>Rxviewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedService.resx">
+      <DependentUpon>SchedService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Services.resx">
       <DependentUpon>Services.cs</DependentUpon>
@@ -457,6 +475,18 @@
     <None Include="Resources\blood.jpg" />
     <None Include="Resources\lab-test-tubes.jpg" />
     <None Include="Resources\who_essential_labs920.jpg" />
+    <None Include="Resources\vaccine.png" />
+    <None Include="Resources\vet %281%29.png" />
+    <None Include="Resources\veterinarian.png" />
+    <None Include="Resources\groomer.png" />
+    <None Include="Resources\vet %282%29.png" />
+    <None Include="Resources\medicine %281%29.png" />
+    <None Include="Resources\bandage.png" />
+    <None Include="Resources\pet-care.png" />
+    <None Include="Resources\medicine.png" />
+    <None Include="Resources\vet %281%291.png" />
+    <None Include="Resources\health.png" />
+    <None Include="Resources\groomer1.png" />
     <Content Include="Scripts\fontawesome\all.js" />
     <Content Include="Scripts\fontawesome\all.min.js" />
     <Content Include="Scripts\fontawesome\brands.js" />

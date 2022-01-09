@@ -49,5 +49,16 @@ namespace WindowsFormsApplication1
             op.Dock = DockStyle.Fill;
             op.Show();
         }
+
+        private void btnSchedService_Click(object sender, EventArgs e)
+        {
+            panelScheduling.Controls.Clear();
+            SchedService schedService = new SchedService();
+            schedService.TopLevel = false;
+            panelScheduling.Controls.Add(schedService);
+            schedService.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            schedService.Dock = DockStyle.Fill;
+            schedService.Show();
+        }
     }
 }

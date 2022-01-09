@@ -235,7 +235,7 @@
             this.Cliniccal_btn.Name = "Cliniccal_btn";
             this.Cliniccal_btn.Size = new System.Drawing.Size(189, 48);
             this.Cliniccal_btn.TabIndex = 202;
-            this.Cliniccal_btn.Text = " CLINIC CALENDAR";
+            this.Cliniccal_btn.Text = "SCHEDULES";
             this.Cliniccal_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Cliniccal_btn.UseVisualStyleBackColor = false;
             this.Cliniccal_btn.Click += new System.EventHandler(this.Cliniccal_btn_Click_1);
