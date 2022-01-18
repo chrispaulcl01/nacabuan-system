@@ -94,7 +94,7 @@
             this.btnBloodTest.Name = "btnBloodTest";
             this.btnBloodTest.Size = new System.Drawing.Size(170, 270);
             this.btnBloodTest.TabIndex = 103;
-            this.btnBloodTest.Text = "t";
+            this.btnBloodTest.Text = "Blood Parasite";
             this.btnBloodTest.UseVisualStyleBackColor = false;
             this.btnBloodTest.Click += new System.EventHandler(this.btnBloodTest_Click);
             // 

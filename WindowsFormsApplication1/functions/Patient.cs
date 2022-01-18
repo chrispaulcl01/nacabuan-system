@@ -333,7 +333,7 @@ namespace WindowsFormsApplication1.functions
             catch (Exception ex)
             {
                 Console.WriteLine("error View Patient" + ex.ToString());
-                
+
             }
         }
 
@@ -810,9 +810,325 @@ namespace WindowsFormsApplication1.functions
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine("Error saving pregnancy cesarean: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool SaveEarPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_currmed,
+            string operation, DateTime op_date, string op_time)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.earoperation(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_currmed, operation, op_date, op_time)
+                                values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_currmed, @operation, @op_date, @op_time)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@pet_currmed", pet_currmed);
+                        cmd.Parameters.AddWithValue("@operation", operation);
+                        cmd.Parameters.AddWithValue("@op_date", op_date);
+                        cmd.Parameters.AddWithValue("@op_time", op_time);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+
+        }
+
+        public bool SaveEyePatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_currmed,
+            string operation, DateTime op_date, string op_time)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.eyeoperation(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_currmed, operation, op_date, op_time)
+                                values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_currmed, @operation, @op_date, @op_time)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@pet_currmed", pet_currmed);
+                        cmd.Parameters.AddWithValue("@operation", operation);
+                        cmd.Parameters.AddWithValue("@op_date", op_date);
+                        cmd.Parameters.AddWithValue("@op_time", op_time);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool SaveSkinTreatment(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_skinallergies, string pet_existdisease,
+            string operation, DateTime op_date, string op_time)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.skintreatmen(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_skinallergies, pet_existdisease, operation, op_date, op_time)
+                                values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_skinallergies, @pet_existdisease, @operation, @op_date, @op_time)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_skinallergies", pet_skinallergies);
+                        cmd.Parameters.AddWithValue("@pet_existdisease", pet_existdisease);
+                        cmd.Parameters.AddWithValue("@operation", operation);
+                        cmd.Parameters.AddWithValue("@op_date", op_date);
+                        cmd.Parameters.AddWithValue("@op_time", op_time);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool SaveCDTestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
+            string pet_testkit, string operation, DateTime op_date, string op_time)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.CDTest(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, pet_testkit, operation, op_date, op_time)
+                                values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease, pet_testkit, @operation, @op_date, @op_time)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@pet_existdisease", pet_existdisease);
+                        cmd.Parameters.AddWithValue("@pet_testkit", pet_testkit);
+                        cmd.Parameters.AddWithValue("@operation", operation);
+                        cmd.Parameters.AddWithValue("@op_date", op_date);
+                        cmd.Parameters.AddWithValue("@op_time", op_time);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool SaveCPTestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
+            string pet_testkit, string operation, DateTime op_date, string op_time)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.CPTest(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, pet_testkit, operation, op_date, op_time)
+                                values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease, pet_testkit, @operation, @op_date, @op_time)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@pet_existdisease", pet_existdisease);
+                        cmd.Parameters.AddWithValue("@pet_testkit", pet_testkit);
+                        cmd.Parameters.AddWithValue("@operation", operation);
+                        cmd.Parameters.AddWithValue("@op_date", op_date);
+                        cmd.Parameters.AddWithValue("@op_time", op_time);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool SaveMammryPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
+            string typevax, DateTime vaxdate)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.mammarry(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, typevax, vaxdate)
+                                values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease, @typevax, @vaxdate)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@pet_existdisease", pet_existdisease);
+                        cmd.Parameters.AddWithValue("@typevax", typevax);
+                        cmd.Parameters.AddWithValue("@vaxdate", vaxdate);
+                        
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool SaveBloodtestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
+            string typevax, DateTime vaxdate)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.bloodparasite(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, typevax, vaxdate)
+                                values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease, @typevax, @vaxdate)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@pet_existdisease", pet_existdisease);
+                        cmd.Parameters.AddWithValue("@typevax", typevax);
+                        cmd.Parameters.AddWithValue("@vaxdate", vaxdate);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
                 return false;
             }
         }

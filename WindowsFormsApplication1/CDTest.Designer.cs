@@ -32,49 +32,53 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtPetID = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtTestKitResult = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtWeight = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label25 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.cmbAnimalBreed = new Guna.UI.WinForms.GunaComboBox();
+            this.txtPatientName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bdayDatepicker = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.label21 = new System.Windows.Forms.Label();
             this.cmbAnimalSpecies = new Guna.UI.WinForms.GunaComboBox();
-            this.gunaComboBox3 = new Guna.UI.WinForms.GunaComboBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.cmbAllergies = new Guna.UI.WinForms.GunaComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.cmbGender = new Guna.UI.WinForms.GunaComboBox();
+            this.txtExistDisease = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtAge = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label10 = new System.Windows.Forms.Label();
-            this.bunifuMetroTextbox3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtPatientName = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.gunaComboBox4 = new Guna.UI.WinForms.GunaComboBox();
-            this.bunifuMetroTextbox4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
+            this.cmbOperation = new Guna.UI.WinForms.GunaComboBox();
+            this.txtOpTime = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label9 = new System.Windows.Forms.Label();
+            this.DateOperation = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.bunifuMetroTextbox6 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtOwnersName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.txtPhoneNumber = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.bunifuMetroTextbox7 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtAddress = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnBackPreg = new FontAwesome.Sharp.IconButton();
+            this.btnSaveCDTest = new FontAwesome.Sharp.IconButton();
             this.gunaShadowPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -134,49 +138,51 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Snow;
-            this.panel2.Controls.Add(this.bunifuMetroTextbox7);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.bunifuMetroTextbox1);
+            this.panel2.Controls.Add(this.txtPetID);
             this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.txtTestKitResult);
+            this.panel2.Controls.Add(this.label24);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label23);
+            this.panel2.Controls.Add(this.txtWeight);
+            this.panel2.Controls.Add(this.label25);
             this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label22);
             this.panel2.Controls.Add(this.cmbAnimalBreed);
+            this.panel2.Controls.Add(this.txtPatientName);
             this.panel2.Controls.Add(this.bdayDatepicker);
+            this.panel2.Controls.Add(this.label21);
             this.panel2.Controls.Add(this.cmbAnimalSpecies);
-            this.panel2.Controls.Add(this.gunaComboBox3);
+            this.panel2.Controls.Add(this.label20);
+            this.panel2.Controls.Add(this.cmbAllergies);
+            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.cmbGender);
+            this.panel2.Controls.Add(this.txtExistDisease);
             this.panel2.Controls.Add(this.txtAge);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.bunifuMetroTextbox3);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.txtPatientName);
-            this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.label25);
-            this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.label24);
             this.panel2.Location = new System.Drawing.Point(327, 130);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(384, 520);
             this.panel2.TabIndex = 202;
             // 
-            // bunifuMetroTextbox1
+            // txtPetID
             // 
-            this.bunifuMetroTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox1.BorderThickness = 3;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(172, 366);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(154, 32);
-            this.bunifuMetroTextbox1.TabIndex = 208;
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPetID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPetID.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPetID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetID.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPetID.BorderThickness = 3;
+            this.txtPetID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPetID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPetID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetID.isPassword = false;
+            this.txtPetID.Location = new System.Drawing.Point(265, 51);
+            this.txtPetID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPetID.Name = "txtPetID";
+            this.txtPetID.Size = new System.Drawing.Size(89, 32);
+            this.txtPetID.TabIndex = 245;
+            this.txtPetID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // panel3
             // 
@@ -213,16 +219,118 @@
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(188, 58);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 19);
+            this.label14.TabIndex = 244;
+            this.label14.Text = "Pet ID";
+            // 
+            // txtTestKitResult
+            // 
+            this.txtTestKitResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtTestKitResult.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtTestKitResult.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTestKitResult.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtTestKitResult.BorderThickness = 3;
+            this.txtTestKitResult.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTestKitResult.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtTestKitResult.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTestKitResult.isPassword = false;
+            this.txtTestKitResult.Location = new System.Drawing.Point(170, 470);
+            this.txtTestKitResult.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTestKitResult.Name = "txtTestKitResult";
+            this.txtTestKitResult.Size = new System.Drawing.Size(98, 32);
+            this.txtTestKitResult.TabIndex = 243;
+            this.txtTestKitResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(45, 284);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(120, 19);
+            this.label24.TabIndex = 231;
+            this.label24.Text = "Animal Species";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(44, 476);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(114, 19);
+            this.label4.TabIndex = 242;
+            this.label4.Text = "Test kit Result:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(45, 197);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(93, 19);
+            this.label23.TabIndex = 233;
+            this.label23.Text = "Pet Gender";
+            // 
+            // txtWeight
+            // 
+            this.txtWeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtWeight.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtWeight.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtWeight.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtWeight.BorderThickness = 3;
+            this.txtWeight.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtWeight.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtWeight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtWeight.isPassword = false;
+            this.txtWeight.Location = new System.Drawing.Point(167, 355);
+            this.txtWeight.Margin = new System.Windows.Forms.Padding(4);
+            this.txtWeight.Name = "txtWeight";
+            this.txtWeight.Size = new System.Drawing.Size(154, 32);
+            this.txtWeight.TabIndex = 241;
+            this.txtWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(45, 118);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(80, 19);
+            this.label25.TabIndex = 225;
+            this.label25.Text = "Pet Name";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 372);
+            this.label1.Location = new System.Drawing.Point(45, 361);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 19);
-            this.label1.TabIndex = 95;
+            this.label1.TabIndex = 224;
             this.label1.Text = "Weight";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(45, 321);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(108, 19);
+            this.label22.TabIndex = 234;
+            this.label22.Text = "Animal Breed";
             // 
             // cmbAnimalBreed
             // 
@@ -235,12 +343,32 @@
             this.cmbAnimalBreed.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbAnimalBreed.ForeColor = System.Drawing.Color.Black;
             this.cmbAnimalBreed.FormattingEnabled = true;
-            this.cmbAnimalBreed.Location = new System.Drawing.Point(174, 332);
+            this.cmbAnimalBreed.Items.AddRange(new object[] {
+            "awaw"});
+            this.cmbAnimalBreed.Location = new System.Drawing.Point(169, 321);
             this.cmbAnimalBreed.Name = "cmbAnimalBreed";
             this.cmbAnimalBreed.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbAnimalBreed.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cmbAnimalBreed.Size = new System.Drawing.Size(153, 26);
-            this.cmbAnimalBreed.TabIndex = 205;
+            this.cmbAnimalBreed.TabIndex = 240;
+            // 
+            // txtPatientName
+            // 
+            this.txtPatientName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPatientName.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPatientName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPatientName.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPatientName.BorderThickness = 3;
+            this.txtPatientName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPatientName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPatientName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPatientName.isPassword = false;
+            this.txtPatientName.Location = new System.Drawing.Point(169, 112);
+            this.txtPatientName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPatientName.Name = "txtPatientName";
+            this.txtPatientName.Size = new System.Drawing.Size(154, 32);
+            this.txtPatientName.TabIndex = 228;
+            this.txtPatientName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bdayDatepicker
             // 
@@ -253,7 +381,7 @@
             this.bdayDatepicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bdayDatepicker.ForeColor = System.Drawing.Color.Black;
             this.bdayDatepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.bdayDatepicker.Location = new System.Drawing.Point(176, 247);
+            this.bdayDatepicker.Location = new System.Drawing.Point(171, 236);
             this.bdayDatepicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.bdayDatepicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.bdayDatepicker.Name = "bdayDatepicker";
@@ -262,9 +390,20 @@
             this.bdayDatepicker.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.bdayDatepicker.OnPressedColor = System.Drawing.Color.Black;
             this.bdayDatepicker.Size = new System.Drawing.Size(153, 31);
-            this.bdayDatepicker.TabIndex = 204;
+            this.bdayDatepicker.TabIndex = 239;
             this.bdayDatepicker.Text = "8/14/2021";
             this.bdayDatepicker.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(45, 242);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(107, 19);
+            this.label21.TabIndex = 235;
+            this.label21.Text = "Pet Birthdate ";
             // 
             // cmbAnimalSpecies
             // 
@@ -281,33 +420,55 @@
             "DOG",
             "CATS",
             "BIRD"});
-            this.cmbAnimalSpecies.Location = new System.Drawing.Point(175, 293);
+            this.cmbAnimalSpecies.Location = new System.Drawing.Point(170, 282);
             this.cmbAnimalSpecies.Name = "cmbAnimalSpecies";
             this.cmbAnimalSpecies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbAnimalSpecies.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cmbAnimalSpecies.Size = new System.Drawing.Size(129, 26);
-            this.cmbAnimalSpecies.TabIndex = 203;
+            this.cmbAnimalSpecies.TabIndex = 238;
             // 
-            // gunaComboBox3
+            // label20
             // 
-            this.gunaComboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.gunaComboBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaComboBox3.BorderColor = System.Drawing.Color.Silver;
-            this.gunaComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox3.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox3.FormattingEnabled = true;
-            this.gunaComboBox3.Items.AddRange(new object[] {
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(45, 154);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(66, 19);
+            this.label20.TabIndex = 226;
+            this.label20.Text = "Pet Age";
+            // 
+            // cmbAllergies
+            // 
+            this.cmbAllergies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.cmbAllergies.BaseColor = System.Drawing.Color.White;
+            this.cmbAllergies.BorderColor = System.Drawing.Color.Silver;
+            this.cmbAllergies.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbAllergies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAllergies.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbAllergies.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbAllergies.ForeColor = System.Drawing.Color.Black;
+            this.cmbAllergies.FormattingEnabled = true;
+            this.cmbAllergies.Items.AddRange(new object[] {
             "Female",
             "Male"});
-            this.gunaComboBox3.Location = new System.Drawing.Point(175, 407);
-            this.gunaComboBox3.Name = "gunaComboBox3";
-            this.gunaComboBox3.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox3.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox3.Size = new System.Drawing.Size(129, 26);
-            this.gunaComboBox3.TabIndex = 202;
+            this.cmbAllergies.Location = new System.Drawing.Point(170, 396);
+            this.cmbAllergies.Name = "cmbAllergies";
+            this.cmbAllergies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbAllergies.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbAllergies.Size = new System.Drawing.Size(129, 26);
+            this.cmbAllergies.TabIndex = 237;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(42, 438);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(128, 19);
+            this.label6.TabIndex = 227;
+            this.label6.Text = "Existing Disease";
             // 
             // cmbGender
             // 
@@ -323,12 +484,30 @@
             this.cmbGender.Items.AddRange(new object[] {
             "Female",
             "Male"});
-            this.cmbGender.Location = new System.Drawing.Point(176, 205);
+            this.cmbGender.Location = new System.Drawing.Point(171, 194);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbGender.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cmbGender.Size = new System.Drawing.Size(129, 26);
-            this.cmbGender.TabIndex = 202;
+            this.cmbGender.TabIndex = 236;
+            // 
+            // txtExistDisease
+            // 
+            this.txtExistDisease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtExistDisease.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtExistDisease.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtExistDisease.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtExistDisease.BorderThickness = 3;
+            this.txtExistDisease.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtExistDisease.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtExistDisease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtExistDisease.isPassword = false;
+            this.txtExistDisease.Location = new System.Drawing.Point(169, 433);
+            this.txtExistDisease.Margin = new System.Windows.Forms.Padding(4);
+            this.txtExistDisease.Name = "txtExistDisease";
+            this.txtExistDisease.Size = new System.Drawing.Size(154, 32);
+            this.txtExistDisease.TabIndex = 229;
+            this.txtExistDisease.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtAge
             // 
@@ -341,11 +520,11 @@
             this.txtAge.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAge.isPassword = false;
-            this.txtAge.Location = new System.Drawing.Point(174, 163);
+            this.txtAge.Location = new System.Drawing.Point(169, 152);
             this.txtAge.Margin = new System.Windows.Forms.Padding(4);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(154, 32);
-            this.txtAge.TabIndex = 165;
+            this.txtAge.TabIndex = 230;
             this.txtAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label10
@@ -353,135 +532,22 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(49, 411);
+            this.label10.Location = new System.Drawing.Point(44, 400);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(78, 19);
-            this.label10.TabIndex = 198;
+            this.label10.TabIndex = 232;
             this.label10.Text = "Allelrgies";
-            // 
-            // bunifuMetroTextbox3
-            // 
-            this.bunifuMetroTextbox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox3.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox3.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox3.BorderThickness = 3;
-            this.bunifuMetroTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox3.isPassword = false;
-            this.bunifuMetroTextbox3.Location = new System.Drawing.Point(205, 443);
-            this.bunifuMetroTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox3.Name = "bunifuMetroTextbox3";
-            this.bunifuMetroTextbox3.Size = new System.Drawing.Size(154, 32);
-            this.bunifuMetroTextbox3.TabIndex = 165;
-            this.bunifuMetroTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(47, 449);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(128, 19);
-            this.label6.TabIndex = 159;
-            this.label6.Text = "Existing Disease";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(50, 165);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(66, 19);
-            this.label20.TabIndex = 159;
-            this.label20.Text = "Pet Age";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(50, 253);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(107, 19);
-            this.label21.TabIndex = 200;
-            this.label21.Text = "Pet Birthdate ";
-            // 
-            // txtPatientName
-            // 
-            this.txtPatientName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtPatientName.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtPatientName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPatientName.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtPatientName.BorderThickness = 3;
-            this.txtPatientName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPatientName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPatientName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPatientName.isPassword = false;
-            this.txtPatientName.Location = new System.Drawing.Point(174, 123);
-            this.txtPatientName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPatientName.Name = "txtPatientName";
-            this.txtPatientName.Size = new System.Drawing.Size(154, 32);
-            this.txtPatientName.TabIndex = 162;
-            this.txtPatientName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(50, 332);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(108, 19);
-            this.label22.TabIndex = 199;
-            this.label22.Text = "Animal Breed";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(50, 129);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(80, 19);
-            this.label25.TabIndex = 154;
-            this.label25.Text = "Pet Name";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(50, 208);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(93, 19);
-            this.label23.TabIndex = 198;
-            this.label23.Text = "Pet Gender";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(50, 295);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(120, 19);
-            this.label24.TabIndex = 197;
-            this.label24.Text = "Animal Species";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Snow;
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.gunaComboBox4);
-            this.panel1.Controls.Add(this.bunifuMetroTextbox4);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.gunaDateTimePicker1);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.cmbOperation);
+            this.panel1.Controls.Add(this.txtOpTime);
             this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.DateOperation);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(768, 130);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(384, 231);
@@ -492,50 +558,11 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(23, 165);
+            this.label7.Location = new System.Drawing.Point(46, 160);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(124, 19);
-            this.label7.TabIndex = 211;
+            this.label7.TabIndex = 217;
             this.label7.Text = "Operation Time";
-            // 
-            // gunaComboBox4
-            // 
-            this.gunaComboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.gunaComboBox4.BaseColor = System.Drawing.Color.White;
-            this.gunaComboBox4.BorderColor = System.Drawing.Color.Silver;
-            this.gunaComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox4.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox4.FormattingEnabled = true;
-            this.gunaComboBox4.Items.AddRange(new object[] {
-            "Female",
-            "Male"});
-            this.gunaComboBox4.Location = new System.Drawing.Point(154, 70);
-            this.gunaComboBox4.Name = "gunaComboBox4";
-            this.gunaComboBox4.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox4.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox4.Size = new System.Drawing.Size(129, 26);
-            this.gunaComboBox4.TabIndex = 209;
-            // 
-            // bunifuMetroTextbox4
-            // 
-            this.bunifuMetroTextbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox4.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox4.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox4.BorderThickness = 3;
-            this.bunifuMetroTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox4.isPassword = false;
-            this.bunifuMetroTextbox4.Location = new System.Drawing.Point(154, 159);
-            this.bunifuMetroTextbox4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox4.Name = "bunifuMetroTextbox4";
-            this.bunifuMetroTextbox4.Size = new System.Drawing.Size(154, 32);
-            this.bunifuMetroTextbox4.TabIndex = 162;
-            this.bunifuMetroTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // panel4
             // 
@@ -572,131 +599,123 @@
             this.iconPictureBox2.TabIndex = 0;
             this.iconPictureBox2.TabStop = false;
             // 
-            // gunaDateTimePicker1
+            // cmbOperation
             // 
-            this.gunaDateTimePicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.gunaDateTimePicker1.BaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaDateTimePicker1.CustomFormat = null;
-            this.gunaDateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(154, 112);
-            this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
-            this.gunaDateTimePicker1.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Size = new System.Drawing.Size(106, 31);
-            this.gunaDateTimePicker1.TabIndex = 206;
-            this.gunaDateTimePicker1.Text = "9/9/2021";
-            this.gunaDateTimePicker1.Value = new System.DateTime(2021, 9, 9, 14, 54, 26, 0);
+            this.cmbOperation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.cmbOperation.BaseColor = System.Drawing.Color.White;
+            this.cmbOperation.BorderColor = System.Drawing.Color.Silver;
+            this.cmbOperation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbOperation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOperation.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbOperation.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbOperation.ForeColor = System.Drawing.Color.Black;
+            this.cmbOperation.FormattingEnabled = true;
+            this.cmbOperation.Items.AddRange(new object[] {
+            "Female",
+            "Male"});
+            this.cmbOperation.Location = new System.Drawing.Point(177, 65);
+            this.cmbOperation.Name = "cmbOperation";
+            this.cmbOperation.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbOperation.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbOperation.Size = new System.Drawing.Size(129, 26);
+            this.cmbOperation.TabIndex = 216;
             // 
-            // label5
+            // txtOpTime
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 119);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 17);
-            this.label5.TabIndex = 201;
-            this.label5.Text = "Operation Date:";
+            this.txtOpTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtOpTime.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtOpTime.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOpTime.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtOpTime.BorderThickness = 3;
+            this.txtOpTime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOpTime.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtOpTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOpTime.isPassword = false;
+            this.txtOpTime.Location = new System.Drawing.Point(177, 154);
+            this.txtOpTime.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOpTime.Name = "txtOpTime";
+            this.txtOpTime.Size = new System.Drawing.Size(154, 32);
+            this.txtOpTime.TabIndex = 213;
+            this.txtOpTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(23, 75);
+            this.label9.Location = new System.Drawing.Point(46, 70);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(84, 19);
-            this.label9.TabIndex = 154;
+            this.label9.TabIndex = 212;
             this.label9.Text = "Operation";
+            // 
+            // DateOperation
+            // 
+            this.DateOperation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.DateOperation.BaseColor = System.Drawing.Color.White;
+            this.DateOperation.BorderColor = System.Drawing.Color.Silver;
+            this.DateOperation.CustomFormat = null;
+            this.DateOperation.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DateOperation.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DateOperation.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateOperation.ForeColor = System.Drawing.Color.Black;
+            this.DateOperation.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateOperation.Location = new System.Drawing.Point(177, 107);
+            this.DateOperation.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateOperation.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateOperation.Name = "DateOperation";
+            this.DateOperation.OnHoverBaseColor = System.Drawing.Color.White;
+            this.DateOperation.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DateOperation.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DateOperation.OnPressedColor = System.Drawing.Color.Black;
+            this.DateOperation.Size = new System.Drawing.Size(106, 31);
+            this.DateOperation.TabIndex = 215;
+            this.DateOperation.Text = "9/9/2021";
+            this.DateOperation.Value = new System.DateTime(2021, 9, 9, 14, 54, 26, 0);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(47, 114);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(121, 17);
+            this.label5.TabIndex = 214;
+            this.label5.Text = "Operation Date:";
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Snow;
-            this.panel5.Controls.Add(this.bunifuMetroTextbox6);
-            this.panel5.Controls.Add(this.bunifuMetroTextbox5);
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Controls.Add(this.bunifuMetroTextbox2);
+            this.panel5.Controls.Add(this.txtOwnersName);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.label12);
+            this.panel5.Controls.Add(this.txtPhoneNumber);
+            this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label13);
+            this.panel5.Controls.Add(this.txtAddress);
+            this.panel5.Controls.Add(this.label12);
             this.panel5.Location = new System.Drawing.Point(768, 401);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(384, 231);
             this.panel5.TabIndex = 215;
             // 
-            // bunifuMetroTextbox6
+            // txtOwnersName
             // 
-            this.bunifuMetroTextbox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox6.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox6.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox6.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox6.BorderThickness = 3;
-            this.bunifuMetroTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox6.isPassword = false;
-            this.bunifuMetroTextbox6.Location = new System.Drawing.Point(154, 70);
-            this.bunifuMetroTextbox6.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox6.Name = "bunifuMetroTextbox6";
-            this.bunifuMetroTextbox6.Size = new System.Drawing.Size(154, 32);
-            this.bunifuMetroTextbox6.TabIndex = 213;
-            this.bunifuMetroTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMetroTextbox5
-            // 
-            this.bunifuMetroTextbox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox5.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox5.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox5.BorderThickness = 3;
-            this.bunifuMetroTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox5.isPassword = false;
-            this.bunifuMetroTextbox5.Location = new System.Drawing.Point(154, 112);
-            this.bunifuMetroTextbox5.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox5.Name = "bunifuMetroTextbox5";
-            this.bunifuMetroTextbox5.Size = new System.Drawing.Size(154, 32);
-            this.bunifuMetroTextbox5.TabIndex = 212;
-            this.bunifuMetroTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(23, 161);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 19);
-            this.label8.TabIndex = 211;
-            this.label8.Text = "Address";
-            // 
-            // bunifuMetroTextbox2
-            // 
-            this.bunifuMetroTextbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox2.BorderThickness = 3;
-            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.isPassword = false;
-            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(154, 155);
-            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
-            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(154, 32);
-            this.bunifuMetroTextbox2.TabIndex = 162;
-            this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtOwnersName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtOwnersName.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtOwnersName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOwnersName.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtOwnersName.BorderThickness = 3;
+            this.txtOwnersName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOwnersName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtOwnersName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOwnersName.isPassword = false;
+            this.txtOwnersName.Location = new System.Drawing.Point(177, 77);
+            this.txtOwnersName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOwnersName.Name = "txtOwnersName";
+            this.txtOwnersName.Size = new System.Drawing.Size(154, 32);
+            this.txtOwnersName.TabIndex = 219;
+            this.txtOwnersName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // panel6
             // 
@@ -733,56 +752,99 @@
             this.iconPictureBox3.TabIndex = 0;
             this.iconPictureBox3.TabStop = false;
             // 
-            // label12
+            // txtPhoneNumber
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(24, 119);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(115, 17);
-            this.label12.TabIndex = 201;
-            this.label12.Text = "Phone Number";
+            this.txtPhoneNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPhoneNumber.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPhoneNumber.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPhoneNumber.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPhoneNumber.BorderThickness = 3;
+            this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPhoneNumber.isPassword = false;
+            this.txtPhoneNumber.Location = new System.Drawing.Point(177, 119);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(154, 32);
+            this.txtPhoneNumber.TabIndex = 218;
+            this.txtPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(46, 168);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(70, 19);
+            this.label8.TabIndex = 217;
+            this.label8.Text = "Address";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(23, 75);
+            this.label13.Location = new System.Drawing.Point(46, 82);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(114, 19);
-            this.label13.TabIndex = 154;
+            this.label13.TabIndex = 214;
             this.label13.Text = "Owners Name";
             // 
-            // bunifuMetroTextbox7
+            // txtAddress
             // 
-            this.bunifuMetroTextbox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox7.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox7.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox7.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox7.BorderThickness = 3;
-            this.bunifuMetroTextbox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox7.isPassword = false;
-            this.bunifuMetroTextbox7.Location = new System.Drawing.Point(249, 62);
-            this.bunifuMetroTextbox7.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox7.Name = "bunifuMetroTextbox7";
-            this.bunifuMetroTextbox7.Size = new System.Drawing.Size(98, 32);
-            this.bunifuMetroTextbox7.TabIndex = 212;
-            this.bunifuMetroTextbox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtAddress.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtAddress.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAddress.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtAddress.BorderThickness = 3;
+            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAddress.isPassword = false;
+            this.txtAddress.Location = new System.Drawing.Point(177, 162);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(154, 32);
+            this.txtAddress.TabIndex = 215;
+            this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // label4
+            // label12
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(140, 70);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 19);
-            this.label4.TabIndex = 211;
-            this.label4.Text = "Test kit Result:";
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(47, 126);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(115, 17);
+            this.label12.TabIndex = 216;
+            this.label12.Text = "Phone Number";
+            // 
+            // btnBackPreg
+            // 
+            this.btnBackPreg.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnBackPreg.IconColor = System.Drawing.Color.Black;
+            this.btnBackPreg.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBackPreg.Location = new System.Drawing.Point(1175, 681);
+            this.btnBackPreg.Name = "btnBackPreg";
+            this.btnBackPreg.Size = new System.Drawing.Size(79, 47);
+            this.btnBackPreg.TabIndex = 221;
+            this.btnBackPreg.Text = "Back";
+            this.btnBackPreg.UseVisualStyleBackColor = true;
+            // 
+            // btnSaveCDTest
+            // 
+            this.btnSaveCDTest.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnSaveCDTest.IconColor = System.Drawing.Color.Black;
+            this.btnSaveCDTest.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSaveCDTest.Location = new System.Drawing.Point(1260, 681);
+            this.btnSaveCDTest.Name = "btnSaveCDTest";
+            this.btnSaveCDTest.Size = new System.Drawing.Size(79, 47);
+            this.btnSaveCDTest.TabIndex = 220;
+            this.btnSaveCDTest.Text = "Save";
+            this.btnSaveCDTest.UseVisualStyleBackColor = true;
+            this.btnSaveCDTest.Click += new System.EventHandler(this.btnSaveCDTest_Click);
             // 
             // CDTest
             // 
@@ -791,6 +853,8 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.Controls.Add(this.btnBackPreg);
+            this.Controls.Add(this.btnSaveCDTest);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -825,48 +889,52 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaComboBox cmbAnimalBreed;
-        private Guna.UI.WinForms.GunaDateTimePicker bdayDatepicker;
-        private Guna.UI.WinForms.GunaComboBox cmbAnimalSpecies;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox3;
-        private Guna.UI.WinForms.GunaComboBox cmbGender;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtAge;
-        private System.Windows.Forms.Label label10;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtPatientName;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label7;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox4;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox4;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
-        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel5;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox6;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox5;
-        private System.Windows.Forms.Label label8;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label11;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox7;
+        private FontAwesome.Sharp.IconButton btnBackPreg;
+        private FontAwesome.Sharp.IconButton btnSaveCDTest;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtPetID;
+        private System.Windows.Forms.Label label14;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtTestKitResult;
+        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label23;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtWeight;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label22;
+        private Guna.UI.WinForms.GunaComboBox cmbAnimalBreed;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtPatientName;
+        private Guna.UI.WinForms.GunaDateTimePicker bdayDatepicker;
+        private System.Windows.Forms.Label label21;
+        private Guna.UI.WinForms.GunaComboBox cmbAnimalSpecies;
+        private System.Windows.Forms.Label label20;
+        private Guna.UI.WinForms.GunaComboBox cmbAllergies;
+        private System.Windows.Forms.Label label6;
+        private Guna.UI.WinForms.GunaComboBox cmbGender;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtExistDisease;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtAge;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI.WinForms.GunaComboBox cmbOperation;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtOpTime;
+        private System.Windows.Forms.Label label9;
+        private Guna.UI.WinForms.GunaDateTimePicker DateOperation;
+        private System.Windows.Forms.Label label5;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtOwnersName;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtPhoneNumber;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label13;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtAddress;
+        private System.Windows.Forms.Label label12;
     }
 }

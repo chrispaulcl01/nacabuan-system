@@ -42,5 +42,20 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("failed to save", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void btnBackPreg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPetID_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
