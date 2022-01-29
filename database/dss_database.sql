@@ -255,24 +255,67 @@ CREATE TABLE dss_database.CPTest (
 );
 
 CREATE TABLE dss_database.vaccination (
-    id                  INT(8) NOT NULL AUTO_INCREMENT,
-    pet_id       VARCHAR(10) NOT NULL,
-    owners_name					VARCHAR(55) NOT NULL,
-    address					VARCHAR(55)NOT NULL,
-    pet_age					INT(10) NOT NULL,
+    id                          INT(8) NOT NULL AUTO_INCREMENT,
+    pet_id                      VARCHAR(10) NOT NULL,
+    owners_name				 	VARCHAR(55) NOT NULL,
+    address					    VARCHAR(55)NOT NULL,
+    pet_age					    INT(10) NOT NULL,
     pet_gender					VARCHAR(55) NOT NULL,
     pet_bday					VARCHAR(55) NOT NULL,
     pet_species					VARCHAR(55) NOT NULL,
     pet_breed					VARCHAR(55) NOT NULL,
     pet_weight					VARCHAR(55) NOT NULL,
-    pet_allergies					VARCHAR(55) NOT NULL,
-    pet_currentmed					VARCHAR(55) NOT NULL,
-    pet_question					VARCHAR(55) NOT NULL,
+    pet_allergies				VARCHAR(55) NOT NULL,
+    pet_currentmed				VARCHAR(55) NOT NULL,
+    pet_question				VARCHAR(55) NOT NULL,
     sched_date					VARCHAR(55) NOT NULL,
-    type_vaccine					VARCHAR(55) NOT NULL,
-    dosage					VARCHAR(55) NOT NULL,
+    type_vaccine				VARCHAR(55) NOT NULL,
+    dosage					    VARCHAR(55) NOT NULL,
     PRIMARY KEY(id)
 );
+
+CREATE TABLE dss_database.crastration (
+    id                         INT(8) NOT NULL AUTO_INCREMENT,
+    pet_id                     VARCHAR(10) NOT NULL,
+    owners_name				   VARCHAR(55) NOT NULL,
+    phone_num			       VARCHAR (55) NOT NULL,
+    address					   VARCHAR(55)NOT NULL,
+    pet_name                   VARCHAR(55) NOT NULL,
+    pet_age					   INT(10) NOT NULL,
+    pet_gender				   VARCHAR(55) NOT NULL,
+    pet_bday				   VARCHAR(55) NOT NULL,
+    pet_species				   VARCHAR(55) NOT NULL,
+    pet_breed				   VARCHAR(55) NOT NULL,
+    pet_weight				   VARCHAR(55) NOT NULL,
+    pet_allergies			   VARCHAR(55) NOT NULL,
+    pet_existdisease		   VARCHAR(55) NOT NULL,
+    operation				   VARCHAR(55) NOT NULL,
+    op_date					   DATE,
+    op_time					   VARCHAR(55) NOT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE dss_database.lygaeidae (
+    id                         INT(8) NOT NULL AUTO_INCREMENT,
+    pet_id                     VARCHAR(10) NOT NULL,
+    owners_name				   VARCHAR(55) NOT NULL,
+    phone_num			       VARCHAR (55) NOT NULL,
+    address					   VARCHAR(55)NOT NULL,
+    pet_name                   VARCHAR(55) NOT NULL,
+    pet_age					   INT(10) NOT NULL,
+    pet_gender				   VARCHAR(55) NOT NULL,
+    pet_bday				   VARCHAR(55) NOT NULL,
+    pet_species				   VARCHAR(55) NOT NULL,
+    pet_breed				   VARCHAR(55) NOT NULL,
+    pet_weight				   VARCHAR(55) NOT NULL,
+    pet_allergies			   VARCHAR(55) NOT NULL,
+    pet_existdisease		   VARCHAR(55) NOT NULL,
+    operation				   VARCHAR(55) NOT NULL,
+    op_date					   DATE,
+    op_time					   VARCHAR(55) NOT NULL,
+    PRIMARY KEY(id)
+);
+
 
 CREATE TABLE dss_database.mammarry (
     id                  INT(8) NOT NULL AUTO_INCREMENT,
@@ -311,6 +354,120 @@ CREATE TABLE dss_database.bloodparasite (
     pet_existdisease					VARCHAR(55) NOT NULL,
     typevax					VARCHAR(55) NOT NULL,
     vaxdate                 DATE,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE dss_database.mammary_result (
+    id                          INT(8) NOT NULL AUTO_INCREMENT,
+    pet_id                      VARCHAR(10) NOT NULL,
+    superchen					VARCHAR(55) NOT NULL,
+    totalprotein			    VARCHAR (55) NOT NULL,
+    albumin					    VARCHAR(55)NOT NULL,
+    globulin                    VARCHAR(55) NOT NULL,
+    ag_Ration					VARCHAR(55) NOT NULL,
+    AST_SGOT					VARCHAR(55) NOT NULL,
+    ALT_SGPT					VARCHAR(55) NOT NULL,
+    alk_phosphatese				VARCHAR(55) NOT NULL,
+    gct					        VARCHAR(55) NOT NULL,
+    totalbilirubin				VARCHAR(55) NOT NULL,
+    bun					        VARCHAR(55) NOT NULL,
+    creatinine					VARCHAR(55) NOT NULL,
+    renaltech					VARCHAR(55) NOT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE dss_database.mammary_adult_reference_range (
+    id                          INT(8) NOT NULL AUTO_INCREMENT,
+    pet_id                      VARCHAR(10) NOT NULL,
+    superchen					VARCHAR(55) NOT NULL,
+    totalprotein			    VARCHAR (55) NOT NULL,
+    albumin					    VARCHAR(55)NOT NULL,
+    globulin                    VARCHAR(55) NOT NULL,
+    ag_Ration					VARCHAR(55) NOT NULL,
+    AST_SGOT					VARCHAR(55) NOT NULL,
+    ALT_SGPT					VARCHAR(55) NOT NULL,
+    alk_phosphatese				VARCHAR(55) NOT NULL,
+    gct					        VARCHAR(55) NOT NULL,
+    totalbilirubin				VARCHAR(55) NOT NULL,
+    bun					        VARCHAR(55) NOT NULL,
+    creatinine					VARCHAR(55) NOT NULL,
+    renaltech					VARCHAR(55) NOT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE dss_database.mammary_units (
+    id                          INT(8) NOT NULL AUTO_INCREMENT,
+    pet_id                      VARCHAR(10) NOT NULL,
+    superchen					VARCHAR(55) NOT NULL,
+    totalprotein			    VARCHAR (55) NOT NULL,
+    albumin					    VARCHAR(55)NOT NULL,
+    globulin                    VARCHAR(55) NOT NULL,
+    ag_Ration					VARCHAR(55) NOT NULL,
+    AST_SGOT					VARCHAR(55) NOT NULL,
+    ALT_SGPT					VARCHAR(55) NOT NULL,
+    alk_phosphatese				VARCHAR(55) NOT NULL,
+    gct					        VARCHAR(55) NOT NULL,
+    totalbilirubin				VARCHAR(55) NOT NULL,
+    bun					        VARCHAR(55) NOT NULL,
+    creatinine					VARCHAR(55) NOT NULL,
+    renaltech					VARCHAR(55) NOT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE dss_database.bloodtest_result (
+    id                          INT(8) NOT NULL AUTO_INCREMENT,
+    pet_id                      VARCHAR(10) NOT NULL,
+    superchen					VARCHAR(55) NOT NULL,
+    totalprotein			    VARCHAR (55) NOT NULL,
+    albumin					    VARCHAR(55)NOT NULL,
+    globulin                    VARCHAR(55) NOT NULL,
+    ag_Ration					VARCHAR(55) NOT NULL,
+    AST_SGOT					VARCHAR(55) NOT NULL,
+    ALT_SGPT					VARCHAR(55) NOT NULL,
+    alk_phosphatese				VARCHAR(55) NOT NULL,
+    gct					        VARCHAR(55) NOT NULL,
+    totalbilirubin				VARCHAR(55) NOT NULL,
+    bun					        VARCHAR(55) NOT NULL,
+    creatinine					VARCHAR(55) NOT NULL,
+    renaltech					VARCHAR(55) NOT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE dss_database.bloodtest_adult_reference_range (
+    id                          INT(8) NOT NULL AUTO_INCREMENT,
+    pet_id                      VARCHAR(10) NOT NULL,
+    superchen					VARCHAR(55) NOT NULL,
+    totalprotein			    VARCHAR (55) NOT NULL,
+    albumin					    VARCHAR(55)NOT NULL,
+    globulin                    VARCHAR(55) NOT NULL,
+    ag_Ration					VARCHAR(55) NOT NULL,
+    AST_SGOT					VARCHAR(55) NOT NULL,
+    ALT_SGPT					VARCHAR(55) NOT NULL,
+    alk_phosphatese				VARCHAR(55) NOT NULL,
+    gct					        VARCHAR(55) NOT NULL,
+    totalbilirubin				VARCHAR(55) NOT NULL,
+    bun					        VARCHAR(55) NOT NULL,
+    creatinine					VARCHAR(55) NOT NULL,
+    renaltech					VARCHAR(55) NOT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE dss_database.bloodtest_units (
+    id                          INT(8) NOT NULL AUTO_INCREMENT,
+    pet_id                      VARCHAR(10) NOT NULL,
+    superchen					VARCHAR(55) NOT NULL,
+    totalprotein			    VARCHAR (55) NOT NULL,
+    albumin					    VARCHAR(55)NOT NULL,
+    globulin                    VARCHAR(55) NOT NULL,
+    ag_Ration					VARCHAR(55) NOT NULL,
+    AST_SGOT					VARCHAR(55) NOT NULL,
+    ALT_SGPT					VARCHAR(55) NOT NULL,
+    alk_phosphatese				VARCHAR(55) NOT NULL,
+    gct					        VARCHAR(55) NOT NULL,
+    totalbilirubin				VARCHAR(55) NOT NULL,
+    bun					        VARCHAR(55) NOT NULL,
+    creatinine					VARCHAR(55) NOT NULL,
+    renaltech					VARCHAR(55) NOT NULL,
     PRIMARY KEY(id)
 );
 

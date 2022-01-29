@@ -43,7 +43,17 @@ namespace WindowsFormsApplication1
             if (patient.SaveMammryPatient(txtPetID.Text, txtOwnersName.Text, txtPhoneNumber.Text, txtAddress.Text, txtPatientName.Text,
                 int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
                 txtWeight.Text, cmbAllergies.Text, txtExistDiesease.Text, txtTypevax.Text, VaxDate.Value.Date))
+                
             {
+                patient.SavePatientMammaryResult(txtPetID.Text, txtResultSuperchen.Text, txtResultTotalprotein.Text, txtResultAlbumin.Text, txtResultGlobulin.Text, txtResultAGration.Text, txtResultASTsgot.Text, txtResultALTsgpt.Text,
+                txtResultAlkPhosphatase.Text, txtResultGct.Text, txtResultTotalBilirubin.Text, txtResultBun.Text, txtResultCreatinine.Text, txtResultRenalTech.Text);
+
+                patient.SavePatientMammaryRange(txtPetID.Text, txtRangeSuperchen.Text, txtRangeTotalProtein.Text, txtRangeAlbumin.Text, txtRangeGlobulin.Text, txtRangeAGratio.Text, txtRangeASTsgot.Text, txtRangeALTsgpt.Text,
+                txtRangealkPhos.Text, txtRangeGCT.Text, txtRangeTotalBilirubin.Text, txtRangeBun.Text, txtRangeCreatinine.Text, txtRangeRenalTech.Text);
+                
+                patient.SavePatientMammaryUnits(txtPetID.Text, txtUnitsSuperchen.Text, txtUnitsTotalprotein.Text, txtUnitsAlbimin.Text, txtUnitsGlobulin.Text, txtUnitsAGratio.Text, txtUnitsASTsgot.Text, txtUnitsALTsgpt.Text,
+                txtUnitsALKphos.Text, txtUnitsGCT.Text, txtUnitsTotalbilirubin.Text, txtUnitsBUN.Text, txtUnitsCreatinine.Text, txtUnitsRenalTech.Text);
+
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else

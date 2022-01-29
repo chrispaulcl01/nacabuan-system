@@ -76,6 +76,7 @@
             this.btnLygaeide.TabIndex = 100;
             this.btnLygaeide.Text = "Lygaeidae";
             this.btnLygaeide.UseVisualStyleBackColor = false;
+            this.btnLygaeide.Click += new System.EventHandler(this.btnLygaeide_Click);
             // 
             // btnCrastration
             // 
@@ -93,6 +94,7 @@
             this.btnCrastration.TabIndex = 99;
             this.btnCrastration.Text = "Crastration";
             this.btnCrastration.UseVisualStyleBackColor = false;
+            this.btnCrastration.Click += new System.EventHandler(this.btnCrastration_Click);
             // 
             // btnVaccination
             // 
@@ -110,6 +112,7 @@
             this.btnVaccination.TabIndex = 101;
             this.btnVaccination.Text = "Vaccination";
             this.btnVaccination.UseVisualStyleBackColor = false;
+            this.btnVaccination.Click += new System.EventHandler(this.btnVaccination_Click);
             // 
             // SchedService
             // 

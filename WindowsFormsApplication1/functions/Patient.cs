@@ -22,7 +22,7 @@ namespace WindowsFormsApplication1.functions
                 {
                     string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owner Name', patient_name AS 'Patient Name', 
                                     gender AS 'Gender', birthday AS 'Birthdate', age AS 'Age'
-                                    FROM dss_database.add_animal WHERE date_format(date, '%m/%d/%y') = @date";
+                                    FROM dss_database.vaccination WHERE date_format(date, '%m/%d/%y') = @date";
 
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
                     {
@@ -91,9 +91,9 @@ namespace WindowsFormsApplication1.functions
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
-                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owner Name', patient_name AS 'Patient Name', 
-                                    gender AS 'Gender', birthday AS 'Birthdate', age AS 'Age', animal_breed AS 'Animal Breed'
-                                    FROM dss_database.add_animal";
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Operation'
+                                    FROM dss_database.crastration";
 
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
                     {
@@ -1074,7 +1074,7 @@ namespace WindowsFormsApplication1.functions
                         cmd.Parameters.AddWithValue("@pet_existdisease", pet_existdisease);
                         cmd.Parameters.AddWithValue("@typevax", typevax);
                         cmd.Parameters.AddWithValue("@vaxdate", vaxdate);
-                        
+
                         connection.Open();
                         cmd.ExecuteReader();
 
@@ -1132,5 +1132,353 @@ namespace WindowsFormsApplication1.functions
                 return false;
             }
         }
+
+        public bool SavePatientMammaryResult(string pet_id, string superchen, string totalprotein, string albumin, string globulin, string ag_Ration,
+            string AST_SGOT, string ALT_SGPT, string alk_phosphatese, string gct, string totalbilirubin, string bun, string creatinine,
+            string renaltech)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.mammary_result(pet_id, superchen, totalprotein, albumin, globulin, ag_Ration,
+                                AST_SGOT, ALT_SGPT, alk_phosphatese, gct, totalbilirubin, bun, creatinine, renaltech)
+                                values(@pet_id, @superchen, @totalprotein, @albumin, @globulin, @ag_Ration,
+                                @AST_SGOT, @ALT_SGPT, @alk_phosphatese, @gct, @totalbilirubin, @bun, @creatinine,@renaltech)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@superchen", superchen);
+                        cmd.Parameters.AddWithValue("@totalprotein", totalprotein);
+                        cmd.Parameters.AddWithValue("@albumin", albumin);
+                        cmd.Parameters.AddWithValue("@globulin", globulin);
+                        cmd.Parameters.AddWithValue("@ag_Ration", ag_Ration);
+                        cmd.Parameters.AddWithValue("@AST_SGOT", AST_SGOT);
+                        cmd.Parameters.AddWithValue("@ALT_SGPT", ALT_SGPT);
+                        cmd.Parameters.AddWithValue("@alk_phosphatese", alk_phosphatese);
+                        cmd.Parameters.AddWithValue("@gct", gct);
+                        cmd.Parameters.AddWithValue("@totalbilirubin", totalbilirubin);
+                        cmd.Parameters.AddWithValue("@bun", bun);
+                        cmd.Parameters.AddWithValue("@creatinine", creatinine);
+                        cmd.Parameters.AddWithValue("@renaltech", renaltech);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool SavePatientMammaryRange(string pet_id, string superchen, string totalprotein, string albumin, string globulin, string ag_Ration,
+            string AST_SGOT, string ALT_SGPT, string alk_phosphatese, string gct, string totalbilirubin, string bun, string creatinine,
+            string renaltech)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.mammary_adult_reference_range(pet_id, superchen, totalprotein, albumin, globulin, ag_Ration,
+                                AST_SGOT, ALT_SGPT, alk_phosphatese, gct, totalbilirubin, bun, creatinine, renaltech)
+                                values(@pet_id, @superchen, @totalprotein, @albumin, @globulin, @ag_Ration,
+                                @AST_SGOT, @ALT_SGPT, @alk_phosphatese, @gct, @totalbilirubin, @bun, @creatinine,@renaltech)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@superchen", superchen);
+                        cmd.Parameters.AddWithValue("@totalprotein", totalprotein);
+                        cmd.Parameters.AddWithValue("@albumin", albumin);
+                        cmd.Parameters.AddWithValue("@globulin", globulin);
+                        cmd.Parameters.AddWithValue("@ag_Ration", ag_Ration);
+                        cmd.Parameters.AddWithValue("@AST_SGOT", AST_SGOT);
+                        cmd.Parameters.AddWithValue("@ALT_SGPT", ALT_SGPT);
+                        cmd.Parameters.AddWithValue("@alk_phosphatese", alk_phosphatese);
+                        cmd.Parameters.AddWithValue("@gct", gct);
+                        cmd.Parameters.AddWithValue("@totalbilirubin", totalbilirubin);
+                        cmd.Parameters.AddWithValue("@bun", bun);
+                        cmd.Parameters.AddWithValue("@creatinine", creatinine);
+                        cmd.Parameters.AddWithValue("@renaltech", renaltech);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool SavePatientMammaryUnits(string pet_id, string superchen, string totalprotein, string albumin, string globulin, string ag_Ration,
+            string AST_SGOT, string ALT_SGPT, string alk_phosphatese, string gct, string totalbilirubin, string bun, string creatinine,
+            string renaltech)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.mammary_units(pet_id, superchen, totalprotein, albumin, globulin, ag_Ration,
+                                AST_SGOT, ALT_SGPT, alk_phosphatese, gct, totalbilirubin, bun, creatinine, renaltech)
+                                values(@pet_id, @superchen, @totalprotein, @albumin, @globulin, @ag_Ration,
+                                @AST_SGOT, @ALT_SGPT, @alk_phosphatese, @gct, @totalbilirubin, @bun, @creatinine,@renaltech)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@superchen", superchen);
+                        cmd.Parameters.AddWithValue("@totalprotein", totalprotein);
+                        cmd.Parameters.AddWithValue("@albumin", albumin);
+                        cmd.Parameters.AddWithValue("@globulin", globulin);
+                        cmd.Parameters.AddWithValue("@ag_Ration", ag_Ration);
+                        cmd.Parameters.AddWithValue("@AST_SGOT", AST_SGOT);
+                        cmd.Parameters.AddWithValue("@ALT_SGPT", ALT_SGPT);
+                        cmd.Parameters.AddWithValue("@alk_phosphatese", alk_phosphatese);
+                        cmd.Parameters.AddWithValue("@gct", gct);
+                        cmd.Parameters.AddWithValue("@totalbilirubin", totalbilirubin);
+                        cmd.Parameters.AddWithValue("@bun", bun);
+                        cmd.Parameters.AddWithValue("@creatinine", creatinine);
+                        cmd.Parameters.AddWithValue("@renaltech", renaltech);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool SavePatientBloodTestResult(string pet_id, string superchen, string totalprotein, string albumin, string globulin, string ag_Ration,
+            string AST_SGOT, string ALT_SGPT, string alk_phosphatese, string gct, string totalbilirubin, string bun, string creatinine,
+            string renaltech)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.bloodtest_result(pet_id, superchen, totalprotein, albumin, globulin, ag_Ration,
+                                AST_SGOT, ALT_SGPT, alk_phosphatese, gct, totalbilirubin, bun, creatinine, renaltech)
+                                values(@pet_id, @superchen, @totalprotein, @albumin, @globulin, @ag_Ration,
+                                @AST_SGOT, @ALT_SGPT, @alk_phosphatese, @gct, @totalbilirubin, @bun, @creatinine,@renaltech)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@superchen", superchen);
+                        cmd.Parameters.AddWithValue("@totalprotein", totalprotein);
+                        cmd.Parameters.AddWithValue("@albumin", albumin);
+                        cmd.Parameters.AddWithValue("@globulin", globulin);
+                        cmd.Parameters.AddWithValue("@ag_Ration", ag_Ration);
+                        cmd.Parameters.AddWithValue("@AST_SGOT", AST_SGOT);
+                        cmd.Parameters.AddWithValue("@ALT_SGPT", ALT_SGPT);
+                        cmd.Parameters.AddWithValue("@alk_phosphatese", alk_phosphatese);
+                        cmd.Parameters.AddWithValue("@gct", gct);
+                        cmd.Parameters.AddWithValue("@totalbilirubin", totalbilirubin);
+                        cmd.Parameters.AddWithValue("@bun", bun);
+                        cmd.Parameters.AddWithValue("@creatinine", creatinine);
+                        cmd.Parameters.AddWithValue("@renaltech", renaltech);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool SavePatientBloodTestRange(string pet_id, string superchen, string totalprotein, string albumin, string globulin, string ag_Ration,
+            string AST_SGOT, string ALT_SGPT, string alk_phosphatese, string gct, string totalbilirubin, string bun, string creatinine,
+            string renaltech)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.bloodtest_adult_reference_range(pet_id, superchen, totalprotein, albumin, globulin, ag_Ration,
+                                AST_SGOT, ALT_SGPT, alk_phosphatese, gct, totalbilirubin, bun, creatinine, renaltech)
+                                values(@pet_id, @superchen, @totalprotein, @albumin, @globulin, @ag_Ration,
+                                @AST_SGOT, @ALT_SGPT, @alk_phosphatese, @gct, @totalbilirubin, @bun, @creatinine,@renaltech)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@superchen", superchen);
+                        cmd.Parameters.AddWithValue("@totalprotein", totalprotein);
+                        cmd.Parameters.AddWithValue("@albumin", albumin);
+                        cmd.Parameters.AddWithValue("@globulin", globulin);
+                        cmd.Parameters.AddWithValue("@ag_Ration", ag_Ration);
+                        cmd.Parameters.AddWithValue("@AST_SGOT", AST_SGOT);
+                        cmd.Parameters.AddWithValue("@ALT_SGPT", ALT_SGPT);
+                        cmd.Parameters.AddWithValue("@alk_phosphatese", alk_phosphatese);
+                        cmd.Parameters.AddWithValue("@gct", gct);
+                        cmd.Parameters.AddWithValue("@totalbilirubin", totalbilirubin);
+                        cmd.Parameters.AddWithValue("@bun", bun);
+                        cmd.Parameters.AddWithValue("@creatinine", creatinine);
+                        cmd.Parameters.AddWithValue("@renaltech", renaltech);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool SavePatientBloodTestUnits(string pet_id, string superchen, string totalprotein, string albumin, string globulin, string ag_Ration,
+            string AST_SGOT, string ALT_SGPT, string alk_phosphatese, string gct, string totalbilirubin, string bun, string creatinine,
+            string renaltech)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.bloodtest_units(pet_id, superchen, totalprotein, albumin, globulin, ag_Ration,
+                                AST_SGOT, ALT_SGPT, alk_phosphatese, gct, totalbilirubin, bun, creatinine, renaltech)
+                                values(@pet_id, @superchen, @totalprotein, @albumin, @globulin, @ag_Ration,
+                                @AST_SGOT, @ALT_SGPT, @alk_phosphatese, @gct, @totalbilirubin, @bun, @creatinine,@renaltech)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@superchen", superchen);
+                        cmd.Parameters.AddWithValue("@totalprotein", totalprotein);
+                        cmd.Parameters.AddWithValue("@albumin", albumin);
+                        cmd.Parameters.AddWithValue("@globulin", globulin);
+                        cmd.Parameters.AddWithValue("@ag_Ration", ag_Ration);
+                        cmd.Parameters.AddWithValue("@AST_SGOT", AST_SGOT);
+                        cmd.Parameters.AddWithValue("@ALT_SGPT", ALT_SGPT);
+                        cmd.Parameters.AddWithValue("@alk_phosphatese", alk_phosphatese);
+                        cmd.Parameters.AddWithValue("@gct", gct);
+                        cmd.Parameters.AddWithValue("@totalbilirubin", totalbilirubin);
+                        cmd.Parameters.AddWithValue("@bun", bun);
+                        cmd.Parameters.AddWithValue("@creatinine", creatinine);
+                        cmd.Parameters.AddWithValue("@renaltech", renaltech);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool SavePatientCrastration(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
+            string operation, DateTime op_date, string op_time)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.crastration(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, operation, op_date, op_time)
+                                values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease,  @operation, @op_date, @op_time)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@pet_existdisease", pet_existdisease);
+                        cmd.Parameters.AddWithValue("@operation", operation);
+                        cmd.Parameters.AddWithValue("@op_date", op_date);
+                        cmd.Parameters.AddWithValue("@op_time", op_time);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+        public bool SavePatientLygaeidae(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
+            string operation, DateTime op_date, string op_time)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.crastration(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, operation, op_date, op_time)
+                                values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease,  @operation, @op_date, @op_time)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@pet_existdisease", pet_existdisease);
+                        cmd.Parameters.AddWithValue("@operation", operation);
+                        cmd.Parameters.AddWithValue("@op_date", op_date);
+                        cmd.Parameters.AddWithValue("@op_time", op_time);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
     }
 }

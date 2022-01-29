@@ -16,5 +16,23 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void btnVaccination_Click(object sender, EventArgs e)
+        {
+            Vaccination vax = new Vaccination();
+            vax.Show();
+        }
+
+        private void btnCrastration_Click(object sender, EventArgs e)
+        {
+            Crastration crast = new Crastration(); 
+            crast.Show();  
+        }
+
+        private void btnLygaeide_Click(object sender, EventArgs e)
+        {
+            Lygaeidae ly = new Lygaeidae(); 
+            ly.Show();
+        }
     }
 }
