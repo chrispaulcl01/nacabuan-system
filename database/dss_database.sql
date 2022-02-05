@@ -258,19 +258,16 @@ CREATE TABLE dss_database.vaccination (
     id                          INT(8) NOT NULL AUTO_INCREMENT,
     pet_id                      VARCHAR(10) NOT NULL,
     owners_name				 	VARCHAR(55) NOT NULL,
+    phone_num			       VARCHAR (55) NOT NULL,
     address					    VARCHAR(55)NOT NULL,
+    pet_name                   VARCHAR(55) NOT NULL,
     pet_age					    INT(10) NOT NULL,
     pet_gender					VARCHAR(55) NOT NULL,
     pet_bday					VARCHAR(55) NOT NULL,
     pet_species					VARCHAR(55) NOT NULL,
     pet_breed					VARCHAR(55) NOT NULL,
-    pet_weight					VARCHAR(55) NOT NULL,
     pet_allergies				VARCHAR(55) NOT NULL,
-    pet_currentmed				VARCHAR(55) NOT NULL,
-    pet_question				VARCHAR(55) NOT NULL,
-    sched_date					VARCHAR(55) NOT NULL,
-    type_vaccine				VARCHAR(55) NOT NULL,
-    dosage					    VARCHAR(55) NOT NULL,
+    operations				    VARCHAR(55) NOT NULL,
     PRIMARY KEY(id)
 );
 

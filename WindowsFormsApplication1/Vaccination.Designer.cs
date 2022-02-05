@@ -32,7 +32,9 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.gunaComboBox2 = new Guna.UI.WinForms.GunaComboBox();
+            this.txtPetID = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.cmbAllergies = new Guna.UI.WinForms.GunaComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -61,11 +63,11 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtAddress = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label6 = new System.Windows.Forms.Label();
-            this.bunifuMetroTextbox3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtOwnersName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label7 = new System.Windows.Forms.Label();
-            this.bunifuMetroTextbox4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtPhoneNum = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.bunifuMetroTextbox5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -121,8 +123,10 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.iconPictureBox11 = new FontAwesome.Sharp.IconPictureBox();
-            this.txtPetID = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label37 = new System.Windows.Forms.Label();
+            this.cmbOperations = new Guna.UI.WinForms.GunaComboBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.btnBackPreg = new FontAwesome.Sharp.IconButton();
+            this.btnSaveVax = new FontAwesome.Sharp.IconButton();
             this.gunaShadowPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -203,9 +207,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Snow;
+            this.panel2.Controls.Add(this.cmbOperations);
+            this.panel2.Controls.Add(this.label40);
             this.panel2.Controls.Add(this.txtPetID);
             this.panel2.Controls.Add(this.label37);
-            this.panel2.Controls.Add(this.gunaComboBox2);
+            this.panel2.Controls.Add(this.cmbAllergies);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.cmbAnimalBreed);
@@ -225,27 +231,56 @@
             this.panel2.Size = new System.Drawing.Size(384, 432);
             this.panel2.TabIndex = 199;
             // 
-            // gunaComboBox2
+            // txtPetID
             // 
-            this.gunaComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.gunaComboBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaComboBox2.BorderColor = System.Drawing.Color.Silver;
-            this.gunaComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox2.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox2.FormattingEnabled = true;
-            this.gunaComboBox2.Items.AddRange(new object[] {
+            this.txtPetID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPetID.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPetID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetID.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPetID.BorderThickness = 3;
+            this.txtPetID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPetID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPetID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetID.isPassword = false;
+            this.txtPetID.Location = new System.Drawing.Point(78, 47);
+            this.txtPetID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPetID.Name = "txtPetID";
+            this.txtPetID.Size = new System.Drawing.Size(89, 32);
+            this.txtPetID.TabIndex = 219;
+            this.txtPetID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.Color.Transparent;
+            this.label37.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(18, 54);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(53, 19);
+            this.label37.TabIndex = 218;
+            this.label37.Text = "Pet ID";
+            // 
+            // cmbAllergies
+            // 
+            this.cmbAllergies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.cmbAllergies.BaseColor = System.Drawing.Color.White;
+            this.cmbAllergies.BorderColor = System.Drawing.Color.Silver;
+            this.cmbAllergies.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbAllergies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAllergies.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbAllergies.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbAllergies.ForeColor = System.Drawing.Color.Black;
+            this.cmbAllergies.FormattingEnabled = true;
+            this.cmbAllergies.Items.AddRange(new object[] {
             "DOG",
             "CATS",
             "BIRD"});
-            this.gunaComboBox2.Location = new System.Drawing.Point(164, 383);
-            this.gunaComboBox2.Name = "gunaComboBox2";
-            this.gunaComboBox2.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox2.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox2.Size = new System.Drawing.Size(129, 26);
-            this.gunaComboBox2.TabIndex = 209;
+            this.cmbAllergies.Location = new System.Drawing.Point(164, 383);
+            this.cmbAllergies.Name = "cmbAllergies";
+            this.cmbAllergies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbAllergies.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbAllergies.Size = new System.Drawing.Size(129, 26);
+            this.cmbAllergies.TabIndex = 209;
             // 
             // label9
             // 
@@ -304,6 +339,10 @@
             this.cmbAnimalBreed.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbAnimalBreed.ForeColor = System.Drawing.Color.Black;
             this.cmbAnimalBreed.FormattingEnabled = true;
+            this.cmbAnimalBreed.Items.AddRange(new object[] {
+            "dog",
+            "cat",
+            "birl"});
             this.cmbAnimalBreed.Location = new System.Drawing.Point(164, 345);
             this.cmbAnimalBreed.Name = "cmbAnimalBreed";
             this.cmbAnimalBreed.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -597,15 +636,15 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.Snow;
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.bunifuMetroTextbox2);
+            this.panel5.Controls.Add(this.txtAddress);
             this.panel5.Controls.Add(this.label6);
-            this.panel5.Controls.Add(this.bunifuMetroTextbox3);
+            this.panel5.Controls.Add(this.txtOwnersName);
             this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.bunifuMetroTextbox4);
+            this.panel5.Controls.Add(this.txtPhoneNum);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Location = new System.Drawing.Point(12, 524);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(377, 203);
+            this.panel5.Size = new System.Drawing.Size(384, 203);
             this.panel5.TabIndex = 201;
             // 
             // panel6
@@ -643,23 +682,23 @@
             this.iconPictureBox3.TabIndex = 1;
             this.iconPictureBox3.TabStop = false;
             // 
-            // bunifuMetroTextbox2
+            // txtAddress
             // 
-            this.bunifuMetroTextbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox2.BorderThickness = 3;
-            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.isPassword = false;
-            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(136, 140);
-            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
-            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(200, 32);
-            this.bunifuMetroTextbox2.TabIndex = 195;
-            this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtAddress.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtAddress.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAddress.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtAddress.BorderThickness = 3;
+            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAddress.isPassword = false;
+            this.txtAddress.Location = new System.Drawing.Point(136, 140);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(200, 32);
+            this.txtAddress.TabIndex = 195;
+            this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label6
             // 
@@ -672,23 +711,23 @@
             this.label6.TabIndex = 194;
             this.label6.Text = "Address";
             // 
-            // bunifuMetroTextbox3
+            // txtOwnersName
             // 
-            this.bunifuMetroTextbox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox3.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox3.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox3.BorderThickness = 3;
-            this.bunifuMetroTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox3.isPassword = false;
-            this.bunifuMetroTextbox3.Location = new System.Drawing.Point(136, 50);
-            this.bunifuMetroTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox3.Name = "bunifuMetroTextbox3";
-            this.bunifuMetroTextbox3.Size = new System.Drawing.Size(200, 32);
-            this.bunifuMetroTextbox3.TabIndex = 189;
-            this.bunifuMetroTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtOwnersName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtOwnersName.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtOwnersName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOwnersName.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtOwnersName.BorderThickness = 3;
+            this.txtOwnersName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOwnersName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtOwnersName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOwnersName.isPassword = false;
+            this.txtOwnersName.Location = new System.Drawing.Point(136, 50);
+            this.txtOwnersName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOwnersName.Name = "txtOwnersName";
+            this.txtOwnersName.Size = new System.Drawing.Size(200, 32);
+            this.txtOwnersName.TabIndex = 189;
+            this.txtOwnersName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label7
             // 
@@ -701,23 +740,23 @@
             this.label7.TabIndex = 160;
             this.label7.Text = "Owners Name";
             // 
-            // bunifuMetroTextbox4
+            // txtPhoneNum
             // 
-            this.bunifuMetroTextbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox4.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox4.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox4.BorderThickness = 3;
-            this.bunifuMetroTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox4.isPassword = false;
-            this.bunifuMetroTextbox4.Location = new System.Drawing.Point(136, 95);
-            this.bunifuMetroTextbox4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox4.Name = "bunifuMetroTextbox4";
-            this.bunifuMetroTextbox4.Size = new System.Drawing.Size(200, 32);
-            this.bunifuMetroTextbox4.TabIndex = 193;
-            this.bunifuMetroTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPhoneNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPhoneNum.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPhoneNum.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPhoneNum.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPhoneNum.BorderThickness = 3;
+            this.txtPhoneNum.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhoneNum.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPhoneNum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPhoneNum.isPassword = false;
+            this.txtPhoneNum.Location = new System.Drawing.Point(136, 95);
+            this.txtPhoneNum.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPhoneNum.Name = "txtPhoneNum";
+            this.txtPhoneNum.Size = new System.Drawing.Size(200, 32);
+            this.txtPhoneNum.TabIndex = 193;
+            this.txtPhoneNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label8
             // 
@@ -1455,34 +1494,61 @@
             this.iconPictureBox11.TabIndex = 1;
             this.iconPictureBox11.TabStop = false;
             // 
-            // txtPetID
+            // cmbOperations
             // 
-            this.txtPetID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtPetID.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtPetID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetID.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtPetID.BorderThickness = 3;
-            this.txtPetID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPetID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPetID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetID.isPassword = false;
-            this.txtPetID.Location = new System.Drawing.Point(273, 47);
-            this.txtPetID.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPetID.Name = "txtPetID";
-            this.txtPetID.Size = new System.Drawing.Size(89, 32);
-            this.txtPetID.TabIndex = 219;
-            this.txtPetID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.cmbOperations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.cmbOperations.BaseColor = System.Drawing.Color.White;
+            this.cmbOperations.BorderColor = System.Drawing.Color.Silver;
+            this.cmbOperations.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbOperations.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOperations.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbOperations.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbOperations.ForeColor = System.Drawing.Color.Black;
+            this.cmbOperations.FormattingEnabled = true;
+            this.cmbOperations.Items.AddRange(new object[] {
+            "Vaccination"});
+            this.cmbOperations.Location = new System.Drawing.Point(262, 51);
+            this.cmbOperations.Name = "cmbOperations";
+            this.cmbOperations.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbOperations.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbOperations.Size = new System.Drawing.Size(107, 26);
+            this.cmbOperations.TabIndex = 221;
             // 
-            // label37
+            // label40
             // 
-            this.label37.AutoSize = true;
-            this.label37.BackColor = System.Drawing.Color.Transparent;
-            this.label37.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(196, 54);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(53, 19);
-            this.label37.TabIndex = 218;
-            this.label37.Text = "Pet ID";
+            this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.Transparent;
+            this.label40.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(174, 54);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(84, 19);
+            this.label40.TabIndex = 220;
+            this.label40.Text = "Operation";
+            // 
+            // btnBackPreg
+            // 
+            this.btnBackPreg.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnBackPreg.IconColor = System.Drawing.Color.Black;
+            this.btnBackPreg.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBackPreg.Location = new System.Drawing.Point(1163, 680);
+            this.btnBackPreg.Name = "btnBackPreg";
+            this.btnBackPreg.Size = new System.Drawing.Size(79, 47);
+            this.btnBackPreg.TabIndex = 221;
+            this.btnBackPreg.Text = "Back";
+            this.btnBackPreg.UseVisualStyleBackColor = true;
+            // 
+            // btnSaveVax
+            // 
+            this.btnSaveVax.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnSaveVax.IconColor = System.Drawing.Color.Black;
+            this.btnSaveVax.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSaveVax.Location = new System.Drawing.Point(1248, 680);
+            this.btnSaveVax.Name = "btnSaveVax";
+            this.btnSaveVax.Size = new System.Drawing.Size(79, 47);
+            this.btnSaveVax.TabIndex = 220;
+            this.btnSaveVax.Text = "Save";
+            this.btnSaveVax.UseVisualStyleBackColor = true;
+            this.btnSaveVax.Click += new System.EventHandler(this.btnSaveVax_Click);
             // 
             // Vaccination
             // 
@@ -1491,6 +1557,8 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.Controls.Add(this.btnBackPreg);
+            this.Controls.Add(this.btnSaveVax);
             this.Controls.Add(this.panel19);
             this.Controls.Add(this.panel18);
             this.Controls.Add(this.panel17);
@@ -1583,7 +1651,7 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox2;
+        private Guna.UI.WinForms.GunaComboBox cmbAllergies;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
@@ -1593,11 +1661,11 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtAddress;
         private System.Windows.Forms.Label label6;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox3;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtOwnersName;
         private System.Windows.Forms.Label label7;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox4;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtPhoneNum;
         private System.Windows.Forms.Label label8;
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker2;
         private System.Windows.Forms.Label label1;
@@ -1659,5 +1727,9 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox11;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtPetID;
         private System.Windows.Forms.Label label37;
+        private Guna.UI.WinForms.GunaComboBox cmbOperations;
+        private System.Windows.Forms.Label label40;
+        private FontAwesome.Sharp.IconButton btnBackPreg;
+        private FontAwesome.Sharp.IconButton btnSaveVax;
     }
 }

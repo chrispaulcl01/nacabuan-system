@@ -17,6 +17,8 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
+        functions.Patient patient = new functions.Patient();
+
         private void iconButton2_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -35,6 +37,20 @@ namespace WindowsFormsApplication1
         private void gunaDateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSaveVax_Click(object sender, EventArgs e)
+        {
+            if (patient.SavePatientVaccination(txtPetID.Text, txtOwnersName.Text, txtPhoneNum.Text, txtAddress.Text, txtPatientName.Text,
+                int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
+                cmbAllergies.Text, cmbOperations.Text))
+            {
+                MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("failed to save", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

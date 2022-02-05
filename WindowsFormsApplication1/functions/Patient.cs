@@ -112,6 +112,91 @@ namespace WindowsFormsApplication1.functions
             }
 
         }
+
+        public void LoaddVaccination(DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operations AS 'Operation'
+                                    FROM dss_database.vaccination";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        grid.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading patients: " + ex.ToString());
+            }
+
+        }
+
+        public void LoaddCrastration(DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Operation'
+                                    FROM dss_database.crastration";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        grid.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading patients: " + ex.ToString());
+            }
+
+        }
+
+        public void LoaddLygaidae(DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Operation'
+                                    FROM dss_database.lygaeidae";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        grid.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading patients: " + ex.ToString());
+            }
+
+        }
+
         public bool Symptoms(string pet_id, string body_temp, string stool, string behav_att, string appetite, string drink, string weight, string notice, string diagnosis)
         {
             try
@@ -1391,6 +1476,47 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
+        public bool SavePatientVaccination(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_allergies, string operations)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.vaccination(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_allergies, operations)
+                                values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_allergies, @operations)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@operations", operations);
+                        
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
         public bool SavePatientCrastration(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
             string operation, DateTime op_date, string op_time)
@@ -1443,7 +1569,7 @@ namespace WindowsFormsApplication1.functions
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
-                    string sql = @"insert into dss_database.crastration(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                    string sql = @"insert into dss_database.lygaeidae(pet_id, owners_name, phone_num, address, pet_name, pet_age,
                                 pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, operation, op_date, op_time)
                                 values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
                                 @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease,  @operation, @op_date, @op_time)";

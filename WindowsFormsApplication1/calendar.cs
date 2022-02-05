@@ -45,7 +45,7 @@ namespace WindowsFormsApplication1
 
         private void calendar_Load(object sender, EventArgs e)
         {
-            patient.LoaddPatients(gridBookingSchedule);
+            
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
@@ -73,6 +73,29 @@ namespace WindowsFormsApplication1
                     Application.OpenForms["Home"].Hide();
                 }
             }
+        }
+
+        private void cmbLoadOperations_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbLoadOperations.Text == "Vaccination") 
+            {
+                patient.LoaddVaccination(gridBookingSchedule);
+            }
+
+            else if (cmbLoadOperations.Text == "Crastration") 
+            {
+                patient.LoaddCrastration(gridBookingSchedule);
+            }
+
+            else if (cmbLoadOperations.Text == "Lygaeidae")
+            {
+                patient.LoaddLygaidae(gridBookingSchedule);
+            }
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
