@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class MammartOperation : Form
+    public partial class MammaryOperation : Form
     {
-        public MammartOperation()
+        public MammaryOperation()
         {
             InitializeComponent();
         }
@@ -55,6 +55,8 @@ namespace WindowsFormsApplication1
                 txtUnitsALKphos.Text, txtUnitsGCT.Text, txtUnitsTotalbilirubin.Text, txtUnitsBUN.Text, txtUnitsCreatinine.Text, txtUnitsRenalTech.Text);
 
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Application.OpenForms["MammaryOperation"].Close();
+
             }
             else
             {
@@ -65,6 +67,17 @@ namespace WindowsFormsApplication1
         private void gunaComboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnBackMamm_Click(object sender, EventArgs e)
+        {
+            Application.OpenForms["MammaryOperation"].Close();
+            Application.OpenForms["MammaryOperation"].Close();
         }
     }
 }

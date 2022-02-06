@@ -36,6 +36,8 @@ namespace WindowsFormsApplication1
                 txtWeight.Text, cmbAllergies.Text, txtExDisease.Text, cmbOperations.Text, DateOperetion.Value.Date, txtOpTime.Text))
             {
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                Application.OpenForms["PregnancyCesarean"].Close();
             }
             else
             {
@@ -45,7 +47,7 @@ namespace WindowsFormsApplication1
 
         private void btnBackPreg_Click(object sender, EventArgs e)
         {
-
+            Application.OpenForms["PregnancyCesarean"].Close();
         }
 
         private void txtPetID_OnValueChanged(object sender, EventArgs e)

@@ -22,5 +22,17 @@ namespace WindowsFormsApplication1
             this.Close();
 
         }
+
+        private void btnSaveDewarm_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+            Application.OpenForms["Deworming"].Close();
+        }
+
+        private void btnBackDewarm_Click(object sender, EventArgs e)
+        {
+            Application.OpenForms["Deworming"].Close();
+        }
     }
 }

@@ -653,9 +653,6 @@ C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\bi
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\bin\Debug\SqlServerTypes\x86\msvcr120.dll
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
-C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\bin\Debug\MammartOperation.resx
-C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\bin\Debug\MammartOperation.cs
-C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\bin\Debug\MammartOperation.Designer.cs
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
@@ -682,7 +679,6 @@ C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\ob
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmRX.resources
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Lygaeidae.resources
-C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.MammartOperation.resources
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Operation.resources
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PatientInfoViewer.resources
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PatientListEditor.resources
@@ -707,3 +703,7 @@ C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\ob
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\bin\Debug\MammaryOperation.resx
+C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\bin\Debug\MammaryOperation.cs
+C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\bin\Debug\MammaryOperation.Designer.cs
+C:\Users\Christian Paul\Desktop\thes\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.MammaryOperation.resources

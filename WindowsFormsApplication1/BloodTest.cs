@@ -27,7 +27,7 @@ namespace WindowsFormsApplication1
 
         private void btnSavemammry_Click(object sender, EventArgs e)
         {
-            if (patient.SaveBloodtestPatient(txtPetID.Text, txtOwnersName.Text, txtPhoneNumber.Text, txtAddress.Text, txtPatientName.Text,
+           if (patient.SaveBloodtestPatient(txtPetID.Text, txtOwnersName.Text, txtPhoneNumber.Text, txtAddress.Text, txtPatientName.Text,
                 int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
                 txtWeight.Text, cmbAllergies.Text, txtExistDiesease.Text, txtTypevax.Text, VaxDate.Value.Date))
             {
@@ -41,11 +41,20 @@ namespace WindowsFormsApplication1
                 txtUnitsALKphos.Text, txtUnitsGCT.Text, txtUnitsTotalbilirubin.Text, txtUnitsBUN.Text, txtUnitsCreatinine.Text, txtUnitsRenalTech.Text);
 
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Home home = new Home();
+                home.Show();
+                Application.OpenForms["BloodTest"].Close();
             }
             else
             {
                 MessageBox.Show("failed to save", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Application.OpenForms["BloodTest"].Close();
         }
     }
 }

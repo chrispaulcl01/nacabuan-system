@@ -95,6 +95,8 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
+            this.btnBackDewarm = new FontAwesome.Sharp.IconButton();
+            this.btnSaveDewarm = new FontAwesome.Sharp.IconButton();
             this.gunaShadowPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -1078,6 +1080,32 @@
             this.iconPictureBox7.TabIndex = 1;
             this.iconPictureBox7.TabStop = false;
             // 
+            // btnBackDewarm
+            // 
+            this.btnBackDewarm.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnBackDewarm.IconColor = System.Drawing.Color.Black;
+            this.btnBackDewarm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBackDewarm.Location = new System.Drawing.Point(1150, 675);
+            this.btnBackDewarm.Name = "btnBackDewarm";
+            this.btnBackDewarm.Size = new System.Drawing.Size(79, 47);
+            this.btnBackDewarm.TabIndex = 223;
+            this.btnBackDewarm.Text = "Back";
+            this.btnBackDewarm.UseVisualStyleBackColor = true;
+            this.btnBackDewarm.Click += new System.EventHandler(this.btnBackDewarm_Click);
+            // 
+            // btnSaveDewarm
+            // 
+            this.btnSaveDewarm.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnSaveDewarm.IconColor = System.Drawing.Color.Black;
+            this.btnSaveDewarm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSaveDewarm.Location = new System.Drawing.Point(1235, 675);
+            this.btnSaveDewarm.Name = "btnSaveDewarm";
+            this.btnSaveDewarm.Size = new System.Drawing.Size(79, 47);
+            this.btnSaveDewarm.TabIndex = 222;
+            this.btnSaveDewarm.Text = "Save";
+            this.btnSaveDewarm.UseVisualStyleBackColor = true;
+            this.btnSaveDewarm.Click += new System.EventHandler(this.btnSaveDewarm_Click);
+            // 
             // Deworming
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1085,6 +1113,8 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.Controls.Add(this.btnBackDewarm);
+            this.Controls.Add(this.btnSaveDewarm);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel11);
@@ -1206,5 +1236,7 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox7;
+        private FontAwesome.Sharp.IconButton btnBackDewarm;
+        private FontAwesome.Sharp.IconButton btnSaveDewarm;
     }
 }

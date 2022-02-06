@@ -386,6 +386,7 @@
             this.gunaGradientButton4.TabIndex = 249;
             this.gunaGradientButton4.Text = "BACK";
             this.gunaGradientButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaGradientButton4.Click += new System.EventHandler(this.gunaGradientButton4_Click);
             // 
             // rvReciept
             // 

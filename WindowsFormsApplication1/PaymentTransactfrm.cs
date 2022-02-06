@@ -106,5 +106,10 @@ namespace WindowsFormsApplication1
             }
             
         }
+
+        private void gunaGradientButton4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

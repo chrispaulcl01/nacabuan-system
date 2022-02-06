@@ -31,11 +31,20 @@ namespace WindowsFormsApplication1
                 txtWeight.Text, cmbSkinAllergies.Text, txtExistDisease.Text, cmbOperations.Text, DateOperation.Value.Date, txtOpTime.Text))
             {
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Home home = new Home();
+                home.Show();
+                Application.OpenForms["SkinTreatment"].Close();
             }
             else
             {
                 MessageBox.Show("failed to save", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btnBackPreg_Click(object sender, EventArgs e)
+        {
+            Application.OpenForms["SkinTreatment"].Close();
         }
     }
 }

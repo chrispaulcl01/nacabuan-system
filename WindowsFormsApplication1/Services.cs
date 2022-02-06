@@ -21,18 +21,22 @@ namespace WindowsFormsApplication1
         {
             Vaccination vac = new Vaccination();
             vac.Show();
+
         }
 
         private void btnSknTreat_Click(object sender, EventArgs e)
         {
+            
             SkinTreatment skin = new SkinTreatment();
             skin.Show();
+            
         }
 
         private void btnCPTest_Click(object sender, EventArgs e)
         {
             CPTest cp = new CPTest();
             cp.Show();
+            
         }
 
         private void btnCDTest_Click(object sender, EventArgs e)
@@ -45,13 +49,14 @@ namespace WindowsFormsApplication1
         {
             BloodTest blood = new BloodTest();
             blood.Show();
+            
         }
 
         private void btnDeworming_Click(object sender, EventArgs e)
         {
             Deworming deworm = new Deworming();
             deworm.Show();
-
+          
         }
     }
 }

@@ -174,12 +174,12 @@
     <Compile Include="Lygaeidae.Designer.cs">
       <DependentUpon>Lygaeidae.cs</DependentUpon>
     </Compile>
-    <Compile Include="MammartOperation.cs">
+    <Compile Include="MammaryOperation.cs">
       <SubType>Form</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="MammartOperation.Designer.cs">
-      <DependentUpon>MammartOperation.cs</DependentUpon>
+    <Compile Include="MammaryOperation.Designer.cs">
+      <DependentUpon>MammaryOperation.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Operation.cs">
@@ -341,8 +341,8 @@
     <EmbeddedResource Include="Lygaeidae.resx">
       <DependentUpon>Lygaeidae.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MammartOperation.resx">
-      <DependentUpon>MammartOperation.cs</DependentUpon>
+    <EmbeddedResource Include="MammaryOperation.resx">
+      <DependentUpon>MammaryOperation.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Operation.resx">

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class MammartOperation
+    partial class MammaryOperation
     {
         /// <summary>
         /// Required designer variable.
@@ -126,8 +126,8 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.btnBack = new FontAwesome.Sharp.IconButton();
             this.btnSavemammry = new FontAwesome.Sharp.IconButton();
+            this.btnBackMamm = new FontAwesome.Sharp.IconButton();
             this.gunaShadowPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -1711,18 +1711,6 @@
             this.label34.TabIndex = 197;
             this.label34.Text = "Animal Species";
             // 
-            // btnBack
-            // 
-            this.btnBack.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnBack.IconColor = System.Drawing.Color.Black;
-            this.btnBack.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBack.Location = new System.Drawing.Point(1178, 673);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(79, 47);
-            this.btnBack.TabIndex = 219;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            // 
             // btnSavemammry
             // 
             this.btnSavemammry.IconChar = FontAwesome.Sharp.IconChar.None;
@@ -1736,21 +1724,34 @@
             this.btnSavemammry.UseVisualStyleBackColor = true;
             this.btnSavemammry.Click += new System.EventHandler(this.btnSavemammry_Click);
             // 
-            // MammartOperation
+            // btnBackMamm
+            // 
+            this.btnBackMamm.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnBackMamm.IconColor = System.Drawing.Color.Black;
+            this.btnBackMamm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBackMamm.Location = new System.Drawing.Point(1178, 673);
+            this.btnBackMamm.Name = "btnBackMamm";
+            this.btnBackMamm.Size = new System.Drawing.Size(79, 47);
+            this.btnBackMamm.TabIndex = 219;
+            this.btnBackMamm.Text = "Back";
+            this.btnBackMamm.UseVisualStyleBackColor = true;
+            this.btnBackMamm.Click += new System.EventHandler(this.btnBackMamm_Click);
+            // 
+            // MammaryOperation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 749);
-            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnBackMamm);
             this.Controls.Add(this.btnSavemammry);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gunaShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MammartOperation";
+            this.Name = "MammaryOperation";
             this.Text = "MammartOperation";
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
@@ -1871,7 +1872,7 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox txtPatientName;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private FontAwesome.Sharp.IconButton btnBack;
         private FontAwesome.Sharp.IconButton btnSavemammry;
+        private FontAwesome.Sharp.IconButton btnBackMamm;
     }
 }

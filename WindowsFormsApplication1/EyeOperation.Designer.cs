@@ -32,6 +32,8 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtPetID = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtWeight = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -73,8 +75,6 @@
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtPetID = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnBackPreg = new FontAwesome.Sharp.IconButton();
             this.btnSavePreg = new FontAwesome.Sharp.IconButton();
             this.gunaShadowPanel1.SuspendLayout();
@@ -161,6 +161,35 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(384, 529);
             this.panel2.TabIndex = 200;
+            // 
+            // txtPetID
+            // 
+            this.txtPetID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPetID.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPetID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetID.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPetID.BorderThickness = 3;
+            this.txtPetID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPetID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPetID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetID.isPassword = false;
+            this.txtPetID.Location = new System.Drawing.Point(266, 62);
+            this.txtPetID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPetID.Name = "txtPetID";
+            this.txtPetID.Size = new System.Drawing.Size(89, 32);
+            this.txtPetID.TabIndex = 212;
+            this.txtPetID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(189, 69);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 19);
+            this.label4.TabIndex = 211;
+            this.label4.Text = "Pet Name";
             // 
             // txtWeight
             // 
@@ -759,35 +788,6 @@
             this.label13.TabIndex = 154;
             this.label13.Text = "Owners Name";
             // 
-            // txtPetID
-            // 
-            this.txtPetID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtPetID.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtPetID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetID.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtPetID.BorderThickness = 3;
-            this.txtPetID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPetID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPetID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetID.isPassword = false;
-            this.txtPetID.Location = new System.Drawing.Point(266, 62);
-            this.txtPetID.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPetID.Name = "txtPetID";
-            this.txtPetID.Size = new System.Drawing.Size(89, 32);
-            this.txtPetID.TabIndex = 212;
-            this.txtPetID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(189, 69);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 19);
-            this.label4.TabIndex = 211;
-            this.label4.Text = "Pet Name";
-            // 
             // btnBackPreg
             // 
             this.btnBackPreg.IconChar = FontAwesome.Sharp.IconChar.None;
@@ -799,6 +799,7 @@
             this.btnBackPreg.TabIndex = 217;
             this.btnBackPreg.Text = "Back";
             this.btnBackPreg.UseVisualStyleBackColor = true;
+            this.btnBackPreg.Click += new System.EventHandler(this.btnBackPreg_Click);
             // 
             // btnSavePreg
             // 

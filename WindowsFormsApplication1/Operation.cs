@@ -42,7 +42,7 @@ namespace WindowsFormsApplication1
 
         private void btnMammaryOP_Click(object sender, EventArgs e)
         {
-            MammartOperation mam = new MammartOperation();
+            MammaryOperation mam = new MammaryOperation();
             mam.Show();
         }
 

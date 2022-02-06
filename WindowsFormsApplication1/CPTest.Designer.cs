@@ -832,6 +832,7 @@
             this.btnBackPreg.TabIndex = 221;
             this.btnBackPreg.Text = "Back";
             this.btnBackPreg.UseVisualStyleBackColor = true;
+            this.btnBackPreg.Click += new System.EventHandler(this.btnBackPreg_Click);
             // 
             // btnSaveCPTest
             // 

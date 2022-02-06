@@ -31,6 +31,7 @@ namespace WindowsFormsApplication1
                 txtWeight.Text, cmbAllergies.Text, txtCurrMed.Text, cmbOperations.Text, DateOperetion.Value.Date, txtOpTime.Text))
             {
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Application.OpenForms["EarOperation"].Close();
             }
             else
             {
@@ -40,7 +41,7 @@ namespace WindowsFormsApplication1
 
         private void btnBackPreg_Click(object sender, EventArgs e)
         {
-
+            Application.OpenForms["EarOperation"].Close();
         }
     }
 }
