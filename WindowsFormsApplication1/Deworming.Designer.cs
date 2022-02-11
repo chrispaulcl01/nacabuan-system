@@ -52,49 +52,49 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDewormMedicine2weeks = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label15 = new System.Windows.Forms.Label();
-            this.gunaDateTimePicker2 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.Dewormdate2weeks = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.bunifuMetroTextbox3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDewormMedicine4weeks = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label5 = new System.Windows.Forms.Label();
-            this.gunaDateTimePicker3 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.Dewormdate4weeks = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.bunifuMetroTextbox4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDewormMedicine6weeks = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label8 = new System.Windows.Forms.Label();
-            this.gunaDateTimePicker4 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.Dewormdate6weeks = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.bunifuMetroTextbox5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDewormMedicine12weeks = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label12 = new System.Windows.Forms.Label();
-            this.gunaDateTimePicker5 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.Dewormdate12weeks = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.bunifuMetroTextbox6 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDewormMedicine10weeks = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label16 = new System.Windows.Forms.Label();
-            this.gunaDateTimePicker6 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.Dewormdate10weeks = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.bunifuMetroTextbox7 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDewormMedicine8weeks = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label19 = new System.Windows.Forms.Label();
-            this.gunaDateTimePicker7 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.Dewormdate8weeks = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -311,6 +311,10 @@
             this.cmbAnimalBreed.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbAnimalBreed.ForeColor = System.Drawing.Color.Black;
             this.cmbAnimalBreed.FormattingEnabled = true;
+            this.cmbAnimalBreed.Items.AddRange(new object[] {
+            "aw",
+            "meow",
+            "twit"});
             this.cmbAnimalBreed.Location = new System.Drawing.Point(180, 314);
             this.cmbAnimalBreed.Name = "cmbAnimalBreed";
             this.cmbAnimalBreed.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -490,32 +494,32 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Snow;
-            this.panel1.Controls.Add(this.bunifuMetroTextbox2);
+            this.panel1.Controls.Add(this.txtDewormMedicine2weeks);
             this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.gunaDateTimePicker2);
+            this.panel1.Controls.Add(this.Dewormdate2weeks);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Location = new System.Drawing.Point(504, 247);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(249, 203);
             this.panel1.TabIndex = 201;
             // 
-            // bunifuMetroTextbox2
+            // txtDewormMedicine2weeks
             // 
-            this.bunifuMetroTextbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox2.BorderThickness = 3;
-            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.isPassword = false;
-            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(13, 115);
-            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
-            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(219, 65);
-            this.bunifuMetroTextbox2.TabIndex = 214;
-            this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDewormMedicine2weeks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDewormMedicine2weeks.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDewormMedicine2weeks.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDewormMedicine2weeks.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDewormMedicine2weeks.BorderThickness = 3;
+            this.txtDewormMedicine2weeks.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDewormMedicine2weeks.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDewormMedicine2weeks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDewormMedicine2weeks.isPassword = false;
+            this.txtDewormMedicine2weeks.Location = new System.Drawing.Point(13, 115);
+            this.txtDewormMedicine2weeks.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDewormMedicine2weeks.Name = "txtDewormMedicine2weeks";
+            this.txtDewormMedicine2weeks.Size = new System.Drawing.Size(219, 65);
+            this.txtDewormMedicine2weeks.TabIndex = 214;
+            this.txtDewormMedicine2weeks.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label15
             // 
@@ -528,29 +532,29 @@
             this.label15.TabIndex = 214;
             this.label15.Text = "Deworm Date";
             // 
-            // gunaDateTimePicker2
+            // Dewormdate2weeks
             // 
-            this.gunaDateTimePicker2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.gunaDateTimePicker2.BaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker2.BorderColor = System.Drawing.Color.Silver;
-            this.gunaDateTimePicker2.CustomFormat = null;
-            this.gunaDateTimePicker2.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gunaDateTimePicker2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaDateTimePicker2.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.gunaDateTimePicker2.Location = new System.Drawing.Point(119, 81);
-            this.gunaDateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gunaDateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gunaDateTimePicker2.Name = "gunaDateTimePicker2";
-            this.gunaDateTimePicker2.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker2.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker2.Size = new System.Drawing.Size(113, 31);
-            this.gunaDateTimePicker2.TabIndex = 214;
-            this.gunaDateTimePicker2.Text = "8/14/2021";
-            this.gunaDateTimePicker2.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
+            this.Dewormdate2weeks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.Dewormdate2weeks.BaseColor = System.Drawing.Color.White;
+            this.Dewormdate2weeks.BorderColor = System.Drawing.Color.Silver;
+            this.Dewormdate2weeks.CustomFormat = null;
+            this.Dewormdate2weeks.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.Dewormdate2weeks.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate2weeks.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Dewormdate2weeks.ForeColor = System.Drawing.Color.Black;
+            this.Dewormdate2weeks.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Dewormdate2weeks.Location = new System.Drawing.Point(119, 81);
+            this.Dewormdate2weeks.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.Dewormdate2weeks.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.Dewormdate2weeks.Name = "Dewormdate2weeks";
+            this.Dewormdate2weeks.OnHoverBaseColor = System.Drawing.Color.White;
+            this.Dewormdate2weeks.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate2weeks.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate2weeks.OnPressedColor = System.Drawing.Color.Black;
+            this.Dewormdate2weeks.Size = new System.Drawing.Size(113, 31);
+            this.Dewormdate2weeks.TabIndex = 214;
+            this.Dewormdate2weeks.Text = "8/14/2021";
+            this.Dewormdate2weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // panel4
             // 
@@ -602,32 +606,32 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Snow;
-            this.panel5.Controls.Add(this.bunifuMetroTextbox3);
+            this.panel5.Controls.Add(this.txtDewormMedicine4weeks);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.gunaDateTimePicker3);
+            this.panel5.Controls.Add(this.Dewormdate4weeks);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Location = new System.Drawing.Point(776, 247);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(249, 203);
             this.panel5.TabIndex = 215;
             // 
-            // bunifuMetroTextbox3
+            // txtDewormMedicine4weeks
             // 
-            this.bunifuMetroTextbox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox3.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox3.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox3.BorderThickness = 3;
-            this.bunifuMetroTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox3.isPassword = false;
-            this.bunifuMetroTextbox3.Location = new System.Drawing.Point(13, 115);
-            this.bunifuMetroTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox3.Name = "bunifuMetroTextbox3";
-            this.bunifuMetroTextbox3.Size = new System.Drawing.Size(219, 65);
-            this.bunifuMetroTextbox3.TabIndex = 214;
-            this.bunifuMetroTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDewormMedicine4weeks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDewormMedicine4weeks.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDewormMedicine4weeks.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDewormMedicine4weeks.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDewormMedicine4weeks.BorderThickness = 3;
+            this.txtDewormMedicine4weeks.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDewormMedicine4weeks.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDewormMedicine4weeks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDewormMedicine4weeks.isPassword = false;
+            this.txtDewormMedicine4weeks.Location = new System.Drawing.Point(13, 115);
+            this.txtDewormMedicine4weeks.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDewormMedicine4weeks.Name = "txtDewormMedicine4weeks";
+            this.txtDewormMedicine4weeks.Size = new System.Drawing.Size(219, 65);
+            this.txtDewormMedicine4weeks.TabIndex = 214;
+            this.txtDewormMedicine4weeks.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label5
             // 
@@ -640,29 +644,29 @@
             this.label5.TabIndex = 214;
             this.label5.Text = "Deworm Date";
             // 
-            // gunaDateTimePicker3
+            // Dewormdate4weeks
             // 
-            this.gunaDateTimePicker3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.gunaDateTimePicker3.BaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker3.BorderColor = System.Drawing.Color.Silver;
-            this.gunaDateTimePicker3.CustomFormat = null;
-            this.gunaDateTimePicker3.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gunaDateTimePicker3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaDateTimePicker3.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.gunaDateTimePicker3.Location = new System.Drawing.Point(119, 81);
-            this.gunaDateTimePicker3.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gunaDateTimePicker3.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gunaDateTimePicker3.Name = "gunaDateTimePicker3";
-            this.gunaDateTimePicker3.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker3.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker3.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker3.Size = new System.Drawing.Size(113, 31);
-            this.gunaDateTimePicker3.TabIndex = 214;
-            this.gunaDateTimePicker3.Text = "8/14/2021";
-            this.gunaDateTimePicker3.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
+            this.Dewormdate4weeks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.Dewormdate4weeks.BaseColor = System.Drawing.Color.White;
+            this.Dewormdate4weeks.BorderColor = System.Drawing.Color.Silver;
+            this.Dewormdate4weeks.CustomFormat = null;
+            this.Dewormdate4weeks.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.Dewormdate4weeks.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate4weeks.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Dewormdate4weeks.ForeColor = System.Drawing.Color.Black;
+            this.Dewormdate4weeks.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Dewormdate4weeks.Location = new System.Drawing.Point(119, 81);
+            this.Dewormdate4weeks.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.Dewormdate4weeks.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.Dewormdate4weeks.Name = "Dewormdate4weeks";
+            this.Dewormdate4weeks.OnHoverBaseColor = System.Drawing.Color.White;
+            this.Dewormdate4weeks.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate4weeks.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate4weeks.OnPressedColor = System.Drawing.Color.Black;
+            this.Dewormdate4weeks.Size = new System.Drawing.Size(113, 31);
+            this.Dewormdate4weeks.TabIndex = 214;
+            this.Dewormdate4weeks.Text = "8/14/2021";
+            this.Dewormdate4weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // panel6
             // 
@@ -714,32 +718,32 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Snow;
-            this.panel7.Controls.Add(this.bunifuMetroTextbox4);
+            this.panel7.Controls.Add(this.txtDewormMedicine6weeks);
             this.panel7.Controls.Add(this.label8);
-            this.panel7.Controls.Add(this.gunaDateTimePicker4);
+            this.panel7.Controls.Add(this.Dewormdate6weeks);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Location = new System.Drawing.Point(1041, 247);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(249, 203);
             this.panel7.TabIndex = 215;
             // 
-            // bunifuMetroTextbox4
+            // txtDewormMedicine6weeks
             // 
-            this.bunifuMetroTextbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox4.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox4.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox4.BorderThickness = 3;
-            this.bunifuMetroTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox4.isPassword = false;
-            this.bunifuMetroTextbox4.Location = new System.Drawing.Point(13, 115);
-            this.bunifuMetroTextbox4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox4.Name = "bunifuMetroTextbox4";
-            this.bunifuMetroTextbox4.Size = new System.Drawing.Size(219, 65);
-            this.bunifuMetroTextbox4.TabIndex = 214;
-            this.bunifuMetroTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDewormMedicine6weeks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDewormMedicine6weeks.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDewormMedicine6weeks.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDewormMedicine6weeks.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDewormMedicine6weeks.BorderThickness = 3;
+            this.txtDewormMedicine6weeks.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDewormMedicine6weeks.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDewormMedicine6weeks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDewormMedicine6weeks.isPassword = false;
+            this.txtDewormMedicine6weeks.Location = new System.Drawing.Point(13, 115);
+            this.txtDewormMedicine6weeks.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDewormMedicine6weeks.Name = "txtDewormMedicine6weeks";
+            this.txtDewormMedicine6weeks.Size = new System.Drawing.Size(219, 65);
+            this.txtDewormMedicine6weeks.TabIndex = 214;
+            this.txtDewormMedicine6weeks.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label8
             // 
@@ -752,29 +756,29 @@
             this.label8.TabIndex = 214;
             this.label8.Text = "Deworm Date";
             // 
-            // gunaDateTimePicker4
+            // Dewormdate6weeks
             // 
-            this.gunaDateTimePicker4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.gunaDateTimePicker4.BaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker4.BorderColor = System.Drawing.Color.Silver;
-            this.gunaDateTimePicker4.CustomFormat = null;
-            this.gunaDateTimePicker4.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gunaDateTimePicker4.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaDateTimePicker4.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.gunaDateTimePicker4.Location = new System.Drawing.Point(119, 81);
-            this.gunaDateTimePicker4.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gunaDateTimePicker4.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gunaDateTimePicker4.Name = "gunaDateTimePicker4";
-            this.gunaDateTimePicker4.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker4.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker4.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker4.Size = new System.Drawing.Size(113, 31);
-            this.gunaDateTimePicker4.TabIndex = 214;
-            this.gunaDateTimePicker4.Text = "8/14/2021";
-            this.gunaDateTimePicker4.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
+            this.Dewormdate6weeks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.Dewormdate6weeks.BaseColor = System.Drawing.Color.White;
+            this.Dewormdate6weeks.BorderColor = System.Drawing.Color.Silver;
+            this.Dewormdate6weeks.CustomFormat = null;
+            this.Dewormdate6weeks.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.Dewormdate6weeks.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate6weeks.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Dewormdate6weeks.ForeColor = System.Drawing.Color.Black;
+            this.Dewormdate6weeks.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Dewormdate6weeks.Location = new System.Drawing.Point(119, 81);
+            this.Dewormdate6weeks.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.Dewormdate6weeks.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.Dewormdate6weeks.Name = "Dewormdate6weeks";
+            this.Dewormdate6weeks.OnHoverBaseColor = System.Drawing.Color.White;
+            this.Dewormdate6weeks.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate6weeks.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate6weeks.OnPressedColor = System.Drawing.Color.Black;
+            this.Dewormdate6weeks.Size = new System.Drawing.Size(113, 31);
+            this.Dewormdate6weeks.TabIndex = 214;
+            this.Dewormdate6weeks.Text = "8/14/2021";
+            this.Dewormdate6weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // panel8
             // 
@@ -826,32 +830,32 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Snow;
-            this.panel9.Controls.Add(this.bunifuMetroTextbox5);
+            this.panel9.Controls.Add(this.txtDewormMedicine12weeks);
             this.panel9.Controls.Add(this.label12);
-            this.panel9.Controls.Add(this.gunaDateTimePicker5);
+            this.panel9.Controls.Add(this.Dewormdate12weeks);
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Location = new System.Drawing.Point(1041, 459);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(249, 203);
             this.panel9.TabIndex = 218;
             // 
-            // bunifuMetroTextbox5
+            // txtDewormMedicine12weeks
             // 
-            this.bunifuMetroTextbox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox5.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox5.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox5.BorderThickness = 3;
-            this.bunifuMetroTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox5.isPassword = false;
-            this.bunifuMetroTextbox5.Location = new System.Drawing.Point(13, 115);
-            this.bunifuMetroTextbox5.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox5.Name = "bunifuMetroTextbox5";
-            this.bunifuMetroTextbox5.Size = new System.Drawing.Size(219, 65);
-            this.bunifuMetroTextbox5.TabIndex = 214;
-            this.bunifuMetroTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDewormMedicine12weeks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDewormMedicine12weeks.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDewormMedicine12weeks.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDewormMedicine12weeks.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDewormMedicine12weeks.BorderThickness = 3;
+            this.txtDewormMedicine12weeks.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDewormMedicine12weeks.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDewormMedicine12weeks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDewormMedicine12weeks.isPassword = false;
+            this.txtDewormMedicine12weeks.Location = new System.Drawing.Point(13, 115);
+            this.txtDewormMedicine12weeks.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDewormMedicine12weeks.Name = "txtDewormMedicine12weeks";
+            this.txtDewormMedicine12weeks.Size = new System.Drawing.Size(219, 65);
+            this.txtDewormMedicine12weeks.TabIndex = 214;
+            this.txtDewormMedicine12weeks.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label12
             // 
@@ -864,29 +868,29 @@
             this.label12.TabIndex = 214;
             this.label12.Text = "Deworm Date";
             // 
-            // gunaDateTimePicker5
+            // Dewormdate12weeks
             // 
-            this.gunaDateTimePicker5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.gunaDateTimePicker5.BaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker5.BorderColor = System.Drawing.Color.Silver;
-            this.gunaDateTimePicker5.CustomFormat = null;
-            this.gunaDateTimePicker5.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gunaDateTimePicker5.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaDateTimePicker5.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.gunaDateTimePicker5.Location = new System.Drawing.Point(119, 81);
-            this.gunaDateTimePicker5.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gunaDateTimePicker5.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gunaDateTimePicker5.Name = "gunaDateTimePicker5";
-            this.gunaDateTimePicker5.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker5.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker5.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker5.Size = new System.Drawing.Size(113, 31);
-            this.gunaDateTimePicker5.TabIndex = 214;
-            this.gunaDateTimePicker5.Text = "8/14/2021";
-            this.gunaDateTimePicker5.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
+            this.Dewormdate12weeks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.Dewormdate12weeks.BaseColor = System.Drawing.Color.White;
+            this.Dewormdate12weeks.BorderColor = System.Drawing.Color.Silver;
+            this.Dewormdate12weeks.CustomFormat = null;
+            this.Dewormdate12weeks.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.Dewormdate12weeks.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate12weeks.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Dewormdate12weeks.ForeColor = System.Drawing.Color.Black;
+            this.Dewormdate12weeks.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Dewormdate12weeks.Location = new System.Drawing.Point(119, 81);
+            this.Dewormdate12weeks.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.Dewormdate12weeks.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.Dewormdate12weeks.Name = "Dewormdate12weeks";
+            this.Dewormdate12weeks.OnHoverBaseColor = System.Drawing.Color.White;
+            this.Dewormdate12weeks.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate12weeks.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate12weeks.OnPressedColor = System.Drawing.Color.Black;
+            this.Dewormdate12weeks.Size = new System.Drawing.Size(113, 31);
+            this.Dewormdate12weeks.TabIndex = 214;
+            this.Dewormdate12weeks.Text = "8/14/2021";
+            this.Dewormdate12weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // panel10
             // 
@@ -938,32 +942,32 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Snow;
-            this.panel11.Controls.Add(this.bunifuMetroTextbox6);
+            this.panel11.Controls.Add(this.txtDewormMedicine10weeks);
             this.panel11.Controls.Add(this.label16);
-            this.panel11.Controls.Add(this.gunaDateTimePicker6);
+            this.panel11.Controls.Add(this.Dewormdate10weeks);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Location = new System.Drawing.Point(776, 459);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(249, 203);
             this.panel11.TabIndex = 217;
             // 
-            // bunifuMetroTextbox6
+            // txtDewormMedicine10weeks
             // 
-            this.bunifuMetroTextbox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox6.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox6.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox6.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox6.BorderThickness = 3;
-            this.bunifuMetroTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox6.isPassword = false;
-            this.bunifuMetroTextbox6.Location = new System.Drawing.Point(13, 115);
-            this.bunifuMetroTextbox6.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox6.Name = "bunifuMetroTextbox6";
-            this.bunifuMetroTextbox6.Size = new System.Drawing.Size(219, 65);
-            this.bunifuMetroTextbox6.TabIndex = 214;
-            this.bunifuMetroTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDewormMedicine10weeks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDewormMedicine10weeks.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDewormMedicine10weeks.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDewormMedicine10weeks.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDewormMedicine10weeks.BorderThickness = 3;
+            this.txtDewormMedicine10weeks.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDewormMedicine10weeks.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDewormMedicine10weeks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDewormMedicine10weeks.isPassword = false;
+            this.txtDewormMedicine10weeks.Location = new System.Drawing.Point(13, 115);
+            this.txtDewormMedicine10weeks.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDewormMedicine10weeks.Name = "txtDewormMedicine10weeks";
+            this.txtDewormMedicine10weeks.Size = new System.Drawing.Size(219, 65);
+            this.txtDewormMedicine10weeks.TabIndex = 214;
+            this.txtDewormMedicine10weeks.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label16
             // 
@@ -976,29 +980,29 @@
             this.label16.TabIndex = 214;
             this.label16.Text = "Deworm Date";
             // 
-            // gunaDateTimePicker6
+            // Dewormdate10weeks
             // 
-            this.gunaDateTimePicker6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.gunaDateTimePicker6.BaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker6.BorderColor = System.Drawing.Color.Silver;
-            this.gunaDateTimePicker6.CustomFormat = null;
-            this.gunaDateTimePicker6.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gunaDateTimePicker6.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaDateTimePicker6.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.gunaDateTimePicker6.Location = new System.Drawing.Point(119, 81);
-            this.gunaDateTimePicker6.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gunaDateTimePicker6.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gunaDateTimePicker6.Name = "gunaDateTimePicker6";
-            this.gunaDateTimePicker6.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker6.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker6.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker6.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker6.Size = new System.Drawing.Size(113, 31);
-            this.gunaDateTimePicker6.TabIndex = 214;
-            this.gunaDateTimePicker6.Text = "8/14/2021";
-            this.gunaDateTimePicker6.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
+            this.Dewormdate10weeks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.Dewormdate10weeks.BaseColor = System.Drawing.Color.White;
+            this.Dewormdate10weeks.BorderColor = System.Drawing.Color.Silver;
+            this.Dewormdate10weeks.CustomFormat = null;
+            this.Dewormdate10weeks.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.Dewormdate10weeks.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate10weeks.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Dewormdate10weeks.ForeColor = System.Drawing.Color.Black;
+            this.Dewormdate10weeks.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Dewormdate10weeks.Location = new System.Drawing.Point(119, 81);
+            this.Dewormdate10weeks.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.Dewormdate10weeks.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.Dewormdate10weeks.Name = "Dewormdate10weeks";
+            this.Dewormdate10weeks.OnHoverBaseColor = System.Drawing.Color.White;
+            this.Dewormdate10weeks.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate10weeks.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate10weeks.OnPressedColor = System.Drawing.Color.Black;
+            this.Dewormdate10weeks.Size = new System.Drawing.Size(113, 31);
+            this.Dewormdate10weeks.TabIndex = 214;
+            this.Dewormdate10weeks.Text = "8/14/2021";
+            this.Dewormdate10weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // panel12
             // 
@@ -1050,32 +1054,32 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Snow;
-            this.panel13.Controls.Add(this.bunifuMetroTextbox7);
+            this.panel13.Controls.Add(this.txtDewormMedicine8weeks);
             this.panel13.Controls.Add(this.label19);
-            this.panel13.Controls.Add(this.gunaDateTimePicker7);
+            this.panel13.Controls.Add(this.Dewormdate8weeks);
             this.panel13.Controls.Add(this.panel14);
             this.panel13.Location = new System.Drawing.Point(504, 459);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(249, 203);
             this.panel13.TabIndex = 216;
             // 
-            // bunifuMetroTextbox7
+            // txtDewormMedicine8weeks
             // 
-            this.bunifuMetroTextbox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.bunifuMetroTextbox7.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox7.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox7.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox7.BorderThickness = 3;
-            this.bunifuMetroTextbox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox7.isPassword = false;
-            this.bunifuMetroTextbox7.Location = new System.Drawing.Point(13, 115);
-            this.bunifuMetroTextbox7.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox7.Name = "bunifuMetroTextbox7";
-            this.bunifuMetroTextbox7.Size = new System.Drawing.Size(219, 65);
-            this.bunifuMetroTextbox7.TabIndex = 214;
-            this.bunifuMetroTextbox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDewormMedicine8weeks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDewormMedicine8weeks.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDewormMedicine8weeks.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDewormMedicine8weeks.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDewormMedicine8weeks.BorderThickness = 3;
+            this.txtDewormMedicine8weeks.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDewormMedicine8weeks.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDewormMedicine8weeks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDewormMedicine8weeks.isPassword = false;
+            this.txtDewormMedicine8weeks.Location = new System.Drawing.Point(13, 115);
+            this.txtDewormMedicine8weeks.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDewormMedicine8weeks.Name = "txtDewormMedicine8weeks";
+            this.txtDewormMedicine8weeks.Size = new System.Drawing.Size(219, 65);
+            this.txtDewormMedicine8weeks.TabIndex = 214;
+            this.txtDewormMedicine8weeks.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label19
             // 
@@ -1088,29 +1092,29 @@
             this.label19.TabIndex = 214;
             this.label19.Text = "Deworm Date";
             // 
-            // gunaDateTimePicker7
+            // Dewormdate8weeks
             // 
-            this.gunaDateTimePicker7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.gunaDateTimePicker7.BaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker7.BorderColor = System.Drawing.Color.Silver;
-            this.gunaDateTimePicker7.CustomFormat = null;
-            this.gunaDateTimePicker7.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gunaDateTimePicker7.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaDateTimePicker7.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.gunaDateTimePicker7.Location = new System.Drawing.Point(119, 81);
-            this.gunaDateTimePicker7.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gunaDateTimePicker7.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gunaDateTimePicker7.Name = "gunaDateTimePicker7";
-            this.gunaDateTimePicker7.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker7.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker7.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker7.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker7.Size = new System.Drawing.Size(113, 31);
-            this.gunaDateTimePicker7.TabIndex = 214;
-            this.gunaDateTimePicker7.Text = "8/14/2021";
-            this.gunaDateTimePicker7.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
+            this.Dewormdate8weeks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.Dewormdate8weeks.BaseColor = System.Drawing.Color.White;
+            this.Dewormdate8weeks.BorderColor = System.Drawing.Color.Silver;
+            this.Dewormdate8weeks.CustomFormat = null;
+            this.Dewormdate8weeks.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.Dewormdate8weeks.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate8weeks.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Dewormdate8weeks.ForeColor = System.Drawing.Color.Black;
+            this.Dewormdate8weeks.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Dewormdate8weeks.Location = new System.Drawing.Point(119, 81);
+            this.Dewormdate8weeks.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.Dewormdate8weeks.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.Dewormdate8weeks.Name = "Dewormdate8weeks";
+            this.Dewormdate8weeks.OnHoverBaseColor = System.Drawing.Color.White;
+            this.Dewormdate8weeks.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate8weeks.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dewormdate8weeks.OnPressedColor = System.Drawing.Color.Black;
+            this.Dewormdate8weeks.Size = new System.Drawing.Size(113, 31);
+            this.Dewormdate8weeks.TabIndex = 214;
+            this.Dewormdate8weeks.Text = "8/14/2021";
+            this.Dewormdate8weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // panel14
             // 
@@ -1395,49 +1399,49 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDewormMedicine2weeks;
         private System.Windows.Forms.Label label15;
-        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker2;
+        private Guna.UI.WinForms.GunaDateTimePicker Dewormdate2weeks;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private System.Windows.Forms.Panel panel5;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox3;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDewormMedicine4weeks;
         private System.Windows.Forms.Label label5;
-        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker3;
+        private Guna.UI.WinForms.GunaDateTimePicker Dewormdate4weeks;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private System.Windows.Forms.Panel panel7;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox4;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDewormMedicine6weeks;
         private System.Windows.Forms.Label label8;
-        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker4;
+        private Guna.UI.WinForms.GunaDateTimePicker Dewormdate6weeks;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
         private System.Windows.Forms.Panel panel9;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox5;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDewormMedicine12weeks;
         private System.Windows.Forms.Label label12;
-        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker5;
+        private Guna.UI.WinForms.GunaDateTimePicker Dewormdate12weeks;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
         private System.Windows.Forms.Panel panel11;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox6;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDewormMedicine10weeks;
         private System.Windows.Forms.Label label16;
-        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker6;
+        private Guna.UI.WinForms.GunaDateTimePicker Dewormdate10weeks;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
         private System.Windows.Forms.Panel panel13;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox7;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDewormMedicine8weeks;
         private System.Windows.Forms.Label label19;
-        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker7;
+        private Guna.UI.WinForms.GunaDateTimePicker Dewormdate8weeks;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;

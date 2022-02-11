@@ -17,6 +17,8 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
+        functions.Patient patient = new functions.Patient();
+
         private void iconButton2_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -25,6 +27,20 @@ namespace WindowsFormsApplication1
 
         private void btnSaveDewarm_Click(object sender, EventArgs e)
         {
+            if (patient.SaveDewormedPatient(txtPetID.Text, txtOwnersName.Text, txtPhoneNumber.Text, txtAddress.Text, txtPatientName.Text,
+                int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
+                cmbOperation.Text, Dewormdate2weeks.Text, txtDewormMedicine2weeks.Text, Dewormdate4weeks.Text, txtDewormMedicine4weeks.Text, Dewormdate6weeks.Text,txtDewormMedicine6weeks.Text,
+                 Dewormdate8weeks.Text, txtDewormMedicine8weeks.Text, Dewormdate10weeks.Text, txtDewormMedicine10weeks.Text, Dewormdate12weeks.Text, txtDewormMedicine12weeks.Text)) 
+            {
+                MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Application.OpenForms["Deworming"].Close();
+            }
+            else
+            {
+                MessageBox.Show("failed to save", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+
             Home home = new Home();
             home.Show();
             Application.OpenForms["Deworming"].Close();

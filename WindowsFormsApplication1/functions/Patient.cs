@@ -1480,18 +1480,18 @@ namespace WindowsFormsApplication1.functions
         public bool SaveDewormedPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string service, string deworn_2weeks_date, string deworn_2weeks_medicine,
             string deworn_4weeks_date, string deworn_4weeks_medicine, string deworn_6weeks_date, string deworn_6weeks_medicine, string deworn_8weeks_date,
-            string deworn_8weeks_medicine, string deworn_10weeks_date, string deworn_10weeks_medicice, string deworn_12weeks_date, string deworn_12weeks_medicice)
+            string deworn_8weeks_medicine, string deworn_10weeks_date, string deworn_10weeks_medicine, string deworn_12weeks_date, string deworn_12weeks_medicine)
         {
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
-                    string sql = @"insert into dss_database.bloodparasite(pet_id, owners_name, phone_num, address, pet_name, pet_age,
-                                pet_gender, pet_bday, pet_species, pet_breed, service, deworn_2weeks_date, deworn_2weeks_medicine, deworn_4weeks_date, deworn_4weeks_medicine
-                                deworn_6weeks_date, deworn_6weeks_medicine, deworn_8weeks_date, deworn_8weeks_medicine, deworn_10weeks_date, deworn_10weeks_medicice, deworn_12weeks_date, deworn_12weeks_medicice)
+                    string sql = @"insert into dss_database.deworming(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                                pet_gender, pet_bday, pet_species, pet_breed, service, deworn_2weeks_date, deworn_2weeks_medicine, deworn_4weeks_date, deworn_4weeks_medicine,
+                                deworn_6weeks_date, deworn_6weeks_medicine, deworn_8weeks_date, deworn_8weeks_medicine, deworn_10weeks_date, deworn_10weeks_medicine, deworn_12weeks_date, deworn_12weeks_medicine)
                                 values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
-                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @service, @deworn_2weeks_date, @deworn_2weeks_medicine, @deworn_4weeks_date, @deworn_4weeks_medicine
-                                @deworn_6weeks_date, @deworn_6weeks_medicine, @deworn_8weeks_date, @deworn_8weeks_medicine, @deworn_10weeks_date, @deworn_10weeks_medicice, @deworn_12weeks_date, @deworn_12weeks_medicice)";
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @service, @deworn_2weeks_date, @deworn_2weeks_medicine, @deworn_4weeks_date, @deworn_4weeks_medicine,
+                                @deworn_6weeks_date, @deworn_6weeks_medicine, @deworn_8weeks_date, @deworn_8weeks_medicine, @deworn_10weeks_date, @deworn_10weeks_medicine, @deworn_12weeks_date, @deworn_12weeks_medicine)";
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
                     {
                         cmd.Parameters.AddWithValue("@pet_id", pet_id);
@@ -1514,9 +1514,9 @@ namespace WindowsFormsApplication1.functions
                         cmd.Parameters.AddWithValue("@deworn_8weeks_date", deworn_8weeks_date);
                         cmd.Parameters.AddWithValue("@deworn_8weeks_medicine", deworn_8weeks_medicine);
                         cmd.Parameters.AddWithValue("@deworn_10weeks_date", deworn_10weeks_date);
-                        cmd.Parameters.AddWithValue("@deworn_10weeks_medicine", deworn_10weeks_medicice);
+                        cmd.Parameters.AddWithValue("@deworn_10weeks_medicine", deworn_10weeks_medicine);
                         cmd.Parameters.AddWithValue("@deworn_12weeks_date", deworn_12weeks_date);
-                        cmd.Parameters.AddWithValue("@deworn_12weeks_medicine", deworn_12weeks_medicice);
+                        cmd.Parameters.AddWithValue("@deworn_12weeks_medicine", deworn_12weeks_medicine);
 
 
                         connection.Open();
@@ -1782,8 +1782,8 @@ namespace WindowsFormsApplication1.functions
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
                     string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
-                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Services'
-                                    FROM dss_database.bloodparasite";
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', service AS 'Service'
+                                    FROM dss_database.deworming";
 
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
                     {
