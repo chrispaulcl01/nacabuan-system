@@ -32,6 +32,10 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbOperation = new Guna.UI.WinForms.GunaComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtPetID = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label37 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -97,6 +101,15 @@
             this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
             this.btnBackDewarm = new FontAwesome.Sharp.IconButton();
             this.btnSaveDewarm = new FontAwesome.Sharp.IconButton();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.txtPhoneNumber = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtAddress = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.Address = new System.Windows.Forms.Label();
+            this.txtOwnersName = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.gunaShadowPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -119,6 +132,8 @@
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
+            this.panel15.SuspendLayout();
+            this.panel16.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaShadowPanel1
@@ -168,6 +183,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Snow;
+            this.panel2.Controls.Add(this.cmbOperation);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.txtPetID);
+            this.panel2.Controls.Add(this.label37);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.cmbAnimalBreed);
             this.panel2.Controls.Add(this.bdayDatepicker);
@@ -181,10 +200,70 @@
             this.panel2.Controls.Add(this.label25);
             this.panel2.Controls.Add(this.label23);
             this.panel2.Controls.Add(this.label24);
-            this.panel2.Location = new System.Drawing.Point(102, 94);
+            this.panel2.Location = new System.Drawing.Point(86, 143);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(384, 415);
             this.panel2.TabIndex = 200;
+            // 
+            // cmbOperation
+            // 
+            this.cmbOperation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.cmbOperation.BaseColor = System.Drawing.Color.White;
+            this.cmbOperation.BorderColor = System.Drawing.Color.Silver;
+            this.cmbOperation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbOperation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOperation.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbOperation.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbOperation.ForeColor = System.Drawing.Color.Black;
+            this.cmbOperation.FormattingEnabled = true;
+            this.cmbOperation.Items.AddRange(new object[] {
+            "Deworming"});
+            this.cmbOperation.Location = new System.Drawing.Point(180, 349);
+            this.cmbOperation.Name = "cmbOperation";
+            this.cmbOperation.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbOperation.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbOperation.Size = new System.Drawing.Size(129, 26);
+            this.cmbOperation.TabIndex = 225;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(65, 351);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 19);
+            this.label9.TabIndex = 224;
+            this.label9.Text = "Service";
+            // 
+            // txtPetID
+            // 
+            this.txtPetID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPetID.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPetID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetID.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPetID.BorderThickness = 3;
+            this.txtPetID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPetID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPetID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetID.isPassword = false;
+            this.txtPetID.Location = new System.Drawing.Point(80, 43);
+            this.txtPetID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPetID.Name = "txtPetID";
+            this.txtPetID.Size = new System.Drawing.Size(89, 32);
+            this.txtPetID.TabIndex = 216;
+            this.txtPetID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.Color.Transparent;
+            this.label37.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(29, 49);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(53, 19);
+            this.label37.TabIndex = 215;
+            this.label37.Text = "Pet ID";
             // 
             // panel3
             // 
@@ -232,7 +311,7 @@
             this.cmbAnimalBreed.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbAnimalBreed.ForeColor = System.Drawing.Color.Black;
             this.cmbAnimalBreed.FormattingEnabled = true;
-            this.cmbAnimalBreed.Location = new System.Drawing.Point(169, 329);
+            this.cmbAnimalBreed.Location = new System.Drawing.Point(180, 314);
             this.cmbAnimalBreed.Name = "cmbAnimalBreed";
             this.cmbAnimalBreed.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbAnimalBreed.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -250,7 +329,7 @@
             this.bdayDatepicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bdayDatepicker.ForeColor = System.Drawing.Color.Black;
             this.bdayDatepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.bdayDatepicker.Location = new System.Drawing.Point(169, 214);
+            this.bdayDatepicker.Location = new System.Drawing.Point(180, 235);
             this.bdayDatepicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.bdayDatepicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.bdayDatepicker.Name = "bdayDatepicker";
@@ -278,7 +357,7 @@
             "DOG",
             "CATS",
             "BIRD"});
-            this.cmbAnimalSpecies.Location = new System.Drawing.Point(169, 278);
+            this.cmbAnimalSpecies.Location = new System.Drawing.Point(180, 277);
             this.cmbAnimalSpecies.Name = "cmbAnimalSpecies";
             this.cmbAnimalSpecies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbAnimalSpecies.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -299,7 +378,7 @@
             this.cmbGender.Items.AddRange(new object[] {
             "Female",
             "Male"});
-            this.cmbGender.Location = new System.Drawing.Point(169, 163);
+            this.cmbGender.Location = new System.Drawing.Point(180, 197);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbGender.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -317,7 +396,7 @@
             this.txtAge.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAge.isPassword = false;
-            this.txtAge.Location = new System.Drawing.Point(169, 113);
+            this.txtAge.Location = new System.Drawing.Point(180, 153);
             this.txtAge.Margin = new System.Windows.Forms.Padding(4);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(154, 32);
@@ -329,7 +408,7 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(45, 122);
+            this.label20.Location = new System.Drawing.Point(56, 162);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(66, 19);
             this.label20.TabIndex = 159;
@@ -340,7 +419,7 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(45, 221);
+            this.label21.Location = new System.Drawing.Point(56, 242);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(107, 19);
             this.label21.TabIndex = 200;
@@ -357,7 +436,7 @@
             this.txtPatientName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPatientName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPatientName.isPassword = false;
-            this.txtPatientName.Location = new System.Drawing.Point(169, 73);
+            this.txtPatientName.Location = new System.Drawing.Point(180, 115);
             this.txtPatientName.Margin = new System.Windows.Forms.Padding(4);
             this.txtPatientName.Name = "txtPatientName";
             this.txtPatientName.Size = new System.Drawing.Size(154, 32);
@@ -369,7 +448,7 @@
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(45, 329);
+            this.label22.Location = new System.Drawing.Point(56, 314);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(108, 19);
             this.label22.TabIndex = 199;
@@ -380,7 +459,7 @@
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(45, 86);
+            this.label25.Location = new System.Drawing.Point(56, 128);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(107, 19);
             this.label25.TabIndex = 154;
@@ -391,7 +470,7 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(45, 165);
+            this.label23.Location = new System.Drawing.Point(56, 201);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(93, 19);
             this.label23.TabIndex = 198;
@@ -402,7 +481,7 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(45, 280);
+            this.label24.Location = new System.Drawing.Point(56, 274);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(120, 19);
             this.label24.TabIndex = 197;
@@ -415,7 +494,7 @@
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.gunaDateTimePicker2);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Location = new System.Drawing.Point(528, 94);
+            this.panel1.Location = new System.Drawing.Point(504, 247);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(249, 203);
             this.panel1.TabIndex = 201;
@@ -527,7 +606,7 @@
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.gunaDateTimePicker3);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(800, 94);
+            this.panel5.Location = new System.Drawing.Point(776, 247);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(249, 203);
             this.panel5.TabIndex = 215;
@@ -639,7 +718,7 @@
             this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.gunaDateTimePicker4);
             this.panel7.Controls.Add(this.panel8);
-            this.panel7.Location = new System.Drawing.Point(1065, 94);
+            this.panel7.Location = new System.Drawing.Point(1041, 247);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(249, 203);
             this.panel7.TabIndex = 215;
@@ -751,7 +830,7 @@
             this.panel9.Controls.Add(this.label12);
             this.panel9.Controls.Add(this.gunaDateTimePicker5);
             this.panel9.Controls.Add(this.panel10);
-            this.panel9.Location = new System.Drawing.Point(1065, 306);
+            this.panel9.Location = new System.Drawing.Point(1041, 459);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(249, 203);
             this.panel9.TabIndex = 218;
@@ -863,7 +942,7 @@
             this.panel11.Controls.Add(this.label16);
             this.panel11.Controls.Add(this.gunaDateTimePicker6);
             this.panel11.Controls.Add(this.panel12);
-            this.panel11.Location = new System.Drawing.Point(800, 306);
+            this.panel11.Location = new System.Drawing.Point(776, 459);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(249, 203);
             this.panel11.TabIndex = 217;
@@ -975,7 +1054,7 @@
             this.panel13.Controls.Add(this.label19);
             this.panel13.Controls.Add(this.gunaDateTimePicker7);
             this.panel13.Controls.Add(this.panel14);
-            this.panel13.Location = new System.Drawing.Point(528, 306);
+            this.panel13.Location = new System.Drawing.Point(504, 459);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(249, 203);
             this.panel13.TabIndex = 216;
@@ -1106,6 +1185,128 @@
             this.btnSaveDewarm.UseVisualStyleBackColor = true;
             this.btnSaveDewarm.Click += new System.EventHandler(this.btnSaveDewarm_Click);
             // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.Snow;
+            this.panel15.Controls.Add(this.txtPhoneNumber);
+            this.panel15.Controls.Add(this.label1);
+            this.panel15.Controls.Add(this.txtAddress);
+            this.panel15.Controls.Add(this.Address);
+            this.panel15.Controls.Add(this.txtOwnersName);
+            this.panel15.Controls.Add(this.panel16);
+            this.panel15.Controls.Add(this.label29);
+            this.panel15.Location = new System.Drawing.Point(595, 94);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(565, 133);
+            this.panel15.TabIndex = 224;
+            // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPhoneNumber.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPhoneNumber.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPhoneNumber.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPhoneNumber.BorderThickness = 3;
+            this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPhoneNumber.isPassword = false;
+            this.txtPhoneNumber.Location = new System.Drawing.Point(422, 72);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(126, 32);
+            this.txtPhoneNumber.TabIndex = 221;
+            this.txtPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(353, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 17);
+            this.label1.TabIndex = 220;
+            this.label1.Text = "Contact Number";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtAddress.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtAddress.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAddress.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtAddress.BorderThickness = 3;
+            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAddress.isPassword = false;
+            this.txtAddress.Location = new System.Drawing.Point(232, 72);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(126, 32);
+            this.txtAddress.TabIndex = 219;
+            this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // Address
+            // 
+            this.Address.AutoSize = true;
+            this.Address.BackColor = System.Drawing.Color.Transparent;
+            this.Address.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Address.Location = new System.Drawing.Point(163, 49);
+            this.Address.Name = "Address";
+            this.Address.Size = new System.Drawing.Size(65, 17);
+            this.Address.TabIndex = 218;
+            this.Address.Text = "Address";
+            // 
+            // txtOwnersName
+            // 
+            this.txtOwnersName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtOwnersName.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtOwnersName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOwnersName.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtOwnersName.BorderThickness = 3;
+            this.txtOwnersName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOwnersName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtOwnersName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOwnersName.isPassword = false;
+            this.txtOwnersName.Location = new System.Drawing.Point(35, 74);
+            this.txtOwnersName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOwnersName.Name = "txtOwnersName";
+            this.txtOwnersName.Size = new System.Drawing.Size(126, 32);
+            this.txtOwnersName.TabIndex = 213;
+            this.txtOwnersName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(226)))));
+            this.panel16.Controls.Add(this.label28);
+            this.panel16.Location = new System.Drawing.Point(0, 0);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(1330, 36);
+            this.panel16.TabIndex = 207;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(13, 6);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(201, 23);
+            this.label28.TabIndex = 201;
+            this.label28.Text = "Owners Information";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(13, 51);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(114, 19);
+            this.label29.TabIndex = 154;
+            this.label29.Text = "Owners Name";
+            // 
             // Deworming
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1113,16 +1314,17 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.Controls.Add(this.panel15);
             this.Controls.Add(this.btnBackDewarm);
             this.Controls.Add(this.btnSaveDewarm);
             this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel11);
-            this.Controls.Add(this.panel13);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.gunaShadowPanel1);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel13);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Deworming";
             this.Text = "Deworming";
@@ -1163,6 +1365,10 @@
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).EndInit();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1238,5 +1444,18 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox7;
         private FontAwesome.Sharp.IconButton btnBackDewarm;
         private FontAwesome.Sharp.IconButton btnSaveDewarm;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtPetID;
+        private System.Windows.Forms.Label label37;
+        private Guna.UI.WinForms.GunaComboBox cmbOperation;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel15;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtPhoneNumber;
+        private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtAddress;
+        private System.Windows.Forms.Label Address;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtOwnersName;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
     }
 }

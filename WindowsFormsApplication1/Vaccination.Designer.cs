@@ -32,6 +32,8 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbOperations = new Guna.UI.WinForms.GunaComboBox();
+            this.label40 = new System.Windows.Forms.Label();
             this.txtPetID = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label37 = new System.Windows.Forms.Label();
             this.cmbAllergies = new Guna.UI.WinForms.GunaComboBox();
@@ -123,9 +125,7 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.iconPictureBox11 = new FontAwesome.Sharp.IconPictureBox();
-            this.cmbOperations = new Guna.UI.WinForms.GunaComboBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.btnBackPreg = new FontAwesome.Sharp.IconButton();
+            this.btnBackVax = new FontAwesome.Sharp.IconButton();
             this.btnSaveVax = new FontAwesome.Sharp.IconButton();
             this.gunaShadowPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -230,6 +230,37 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(384, 432);
             this.panel2.TabIndex = 199;
+            // 
+            // cmbOperations
+            // 
+            this.cmbOperations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.cmbOperations.BaseColor = System.Drawing.Color.White;
+            this.cmbOperations.BorderColor = System.Drawing.Color.Silver;
+            this.cmbOperations.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbOperations.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOperations.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbOperations.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbOperations.ForeColor = System.Drawing.Color.Black;
+            this.cmbOperations.FormattingEnabled = true;
+            this.cmbOperations.Items.AddRange(new object[] {
+            "Vaccination"});
+            this.cmbOperations.Location = new System.Drawing.Point(262, 51);
+            this.cmbOperations.Name = "cmbOperations";
+            this.cmbOperations.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbOperations.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbOperations.Size = new System.Drawing.Size(107, 26);
+            this.cmbOperations.TabIndex = 221;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.Transparent;
+            this.label40.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(174, 54);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(84, 19);
+            this.label40.TabIndex = 220;
+            this.label40.Text = "Operation";
             // 
             // txtPetID
             // 
@@ -1494,48 +1525,18 @@
             this.iconPictureBox11.TabIndex = 1;
             this.iconPictureBox11.TabStop = false;
             // 
-            // cmbOperations
+            // btnBackVax
             // 
-            this.cmbOperations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.cmbOperations.BaseColor = System.Drawing.Color.White;
-            this.cmbOperations.BorderColor = System.Drawing.Color.Silver;
-            this.cmbOperations.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbOperations.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbOperations.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbOperations.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbOperations.ForeColor = System.Drawing.Color.Black;
-            this.cmbOperations.FormattingEnabled = true;
-            this.cmbOperations.Items.AddRange(new object[] {
-            "Vaccination"});
-            this.cmbOperations.Location = new System.Drawing.Point(262, 51);
-            this.cmbOperations.Name = "cmbOperations";
-            this.cmbOperations.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmbOperations.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmbOperations.Size = new System.Drawing.Size(107, 26);
-            this.cmbOperations.TabIndex = 221;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.BackColor = System.Drawing.Color.Transparent;
-            this.label40.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(174, 54);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(84, 19);
-            this.label40.TabIndex = 220;
-            this.label40.Text = "Operation";
-            // 
-            // btnBackPreg
-            // 
-            this.btnBackPreg.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnBackPreg.IconColor = System.Drawing.Color.Black;
-            this.btnBackPreg.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBackPreg.Location = new System.Drawing.Point(1163, 680);
-            this.btnBackPreg.Name = "btnBackPreg";
-            this.btnBackPreg.Size = new System.Drawing.Size(79, 47);
-            this.btnBackPreg.TabIndex = 221;
-            this.btnBackPreg.Text = "Back";
-            this.btnBackPreg.UseVisualStyleBackColor = true;
+            this.btnBackVax.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnBackVax.IconColor = System.Drawing.Color.Black;
+            this.btnBackVax.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBackVax.Location = new System.Drawing.Point(1163, 680);
+            this.btnBackVax.Name = "btnBackVax";
+            this.btnBackVax.Size = new System.Drawing.Size(79, 47);
+            this.btnBackVax.TabIndex = 221;
+            this.btnBackVax.Text = "Back";
+            this.btnBackVax.UseVisualStyleBackColor = true;
+            this.btnBackVax.Click += new System.EventHandler(this.btnBackVax_Click);
             // 
             // btnSaveVax
             // 
@@ -1557,7 +1558,7 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 749);
-            this.Controls.Add(this.btnBackPreg);
+            this.Controls.Add(this.btnBackVax);
             this.Controls.Add(this.btnSaveVax);
             this.Controls.Add(this.panel19);
             this.Controls.Add(this.panel18);
@@ -1729,7 +1730,7 @@
         private System.Windows.Forms.Label label37;
         private Guna.UI.WinForms.GunaComboBox cmbOperations;
         private System.Windows.Forms.Label label40;
-        private FontAwesome.Sharp.IconButton btnBackPreg;
+        private FontAwesome.Sharp.IconButton btnBackVax;
         private FontAwesome.Sharp.IconButton btnSaveVax;
     }
 }

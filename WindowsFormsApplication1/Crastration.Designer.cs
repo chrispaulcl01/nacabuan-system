@@ -32,6 +32,8 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbGender = new Guna.UI.WinForms.GunaComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.txtPetID = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtWeight = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -73,9 +75,7 @@
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.cmbGender = new Guna.UI.WinForms.GunaComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.btnBackPreg = new FontAwesome.Sharp.IconButton();
+            this.btnBackCrast = new FontAwesome.Sharp.IconButton();
             this.btnSaveCrast = new FontAwesome.Sharp.IconButton();
             this.gunaShadowPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -161,6 +161,40 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(384, 500);
             this.panel2.TabIndex = 199;
+            // 
+            // cmbGender
+            // 
+            this.cmbGender.AccessibleName = "cmbGender";
+            this.cmbGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.cmbGender.BaseColor = System.Drawing.Color.White;
+            this.cmbGender.BorderColor = System.Drawing.Color.Silver;
+            this.cmbGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGender.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbGender.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbGender.ForeColor = System.Drawing.Color.Black;
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cmbGender.Location = new System.Drawing.Point(177, 258);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbGender.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbGender.Size = new System.Drawing.Size(129, 26);
+            this.cmbGender.TabIndex = 222;
+            // 
+            // label14
+            // 
+            this.label14.AccessibleName = "cmbGender";
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(53, 260);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(66, 19);
+            this.label14.TabIndex = 221;
+            this.label14.Text = "Gender";
             // 
             // txtPetID
             // 
@@ -757,51 +791,18 @@
             this.label13.TabIndex = 154;
             this.label13.Text = "Owners Name";
             // 
-            // cmbGender
+            // btnBackCrast
             // 
-            this.cmbGender.AccessibleName = "cmbGender";
-            this.cmbGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.cmbGender.BaseColor = System.Drawing.Color.White;
-            this.cmbGender.BorderColor = System.Drawing.Color.Silver;
-            this.cmbGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbGender.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbGender.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbGender.ForeColor = System.Drawing.Color.Black;
-            this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cmbGender.Location = new System.Drawing.Point(177, 258);
-            this.cmbGender.Name = "cmbGender";
-            this.cmbGender.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmbGender.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmbGender.Size = new System.Drawing.Size(129, 26);
-            this.cmbGender.TabIndex = 222;
-            // 
-            // label14
-            // 
-            this.label14.AccessibleName = "cmbGender";
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(53, 260);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(66, 19);
-            this.label14.TabIndex = 221;
-            this.label14.Text = "Gender";
-            // 
-            // btnBackPreg
-            // 
-            this.btnBackPreg.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnBackPreg.IconColor = System.Drawing.Color.Black;
-            this.btnBackPreg.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBackPreg.Location = new System.Drawing.Point(1159, 690);
-            this.btnBackPreg.Name = "btnBackPreg";
-            this.btnBackPreg.Size = new System.Drawing.Size(79, 47);
-            this.btnBackPreg.TabIndex = 219;
-            this.btnBackPreg.Text = "Back";
-            this.btnBackPreg.UseVisualStyleBackColor = true;
+            this.btnBackCrast.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnBackCrast.IconColor = System.Drawing.Color.Black;
+            this.btnBackCrast.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBackCrast.Location = new System.Drawing.Point(1159, 690);
+            this.btnBackCrast.Name = "btnBackCrast";
+            this.btnBackCrast.Size = new System.Drawing.Size(79, 47);
+            this.btnBackCrast.TabIndex = 219;
+            this.btnBackCrast.Text = "Back";
+            this.btnBackCrast.UseVisualStyleBackColor = true;
+            this.btnBackCrast.Click += new System.EventHandler(this.btnBackCrast_Click);
             // 
             // btnSaveCrast
             // 
@@ -823,7 +824,7 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 749);
-            this.Controls.Add(this.btnBackPreg);
+            this.Controls.Add(this.btnBackCrast);
             this.Controls.Add(this.btnSaveCrast);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
@@ -902,7 +903,7 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI.WinForms.GunaComboBox cmbGender;
         private System.Windows.Forms.Label label14;
-        private FontAwesome.Sharp.IconButton btnBackPreg;
+        private FontAwesome.Sharp.IconButton btnBackCrast;
         private FontAwesome.Sharp.IconButton btnSaveCrast;
     }
 }

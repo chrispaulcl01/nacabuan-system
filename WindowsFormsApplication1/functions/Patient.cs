@@ -1176,16 +1176,16 @@ namespace WindowsFormsApplication1.functions
 
         public bool SaveBloodtestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
-            string typevax, DateTime vaxdate)
+            string operation, string typevax, DateTime vaxdate)
         {
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
                     string sql = @"insert into dss_database.bloodparasite(pet_id, owners_name, phone_num, address, pet_name, pet_age,
-                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, typevax, vaxdate)
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, operation, typevax, vaxdate)
                                 values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
-                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease, @typevax, @vaxdate)";
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease, @operation, @typevax, @vaxdate)";
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
                     {
                         cmd.Parameters.AddWithValue("@pet_id", pet_id);
@@ -1201,6 +1201,7 @@ namespace WindowsFormsApplication1.functions
                         cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
                         cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
                         cmd.Parameters.AddWithValue("@pet_existdisease", pet_existdisease);
+                        cmd.Parameters.AddWithValue("@operation", operation);
                         cmd.Parameters.AddWithValue("@typevax", typevax);
                         cmd.Parameters.AddWithValue("@vaxdate", vaxdate);
 
@@ -1476,6 +1477,62 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
+        public bool SaveDewormedPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string service, string deworn_2weeks_date, string deworn_2weeks_medicine,
+            string deworn_4weeks_date, string deworn_4weeks_medicine, string deworn_6weeks_date, string deworn_6weeks_medicine, string deworn_8weeks_date,
+            string deworn_8weeks_medicine, string deworn_10weeks_date, string deworn_10weeks_medicice, string deworn_12weeks_date, string deworn_12weeks_medicice)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"insert into dss_database.bloodparasite(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                                pet_gender, pet_bday, pet_species, pet_breed, service, deworn_2weeks_date, deworn_2weeks_medicine, deworn_4weeks_date, deworn_4weeks_medicine
+                                deworn_6weeks_date, deworn_6weeks_medicine, deworn_8weeks_date, deworn_8weeks_medicine, deworn_10weeks_date, deworn_10weeks_medicice, deworn_12weeks_date, deworn_12weeks_medicice)
+                                values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @service, @deworn_2weeks_date, @deworn_2weeks_medicine, @deworn_4weeks_date, @deworn_4weeks_medicine
+                                @deworn_6weeks_date, @deworn_6weeks_medicine, @deworn_8weeks_date, @deworn_8weeks_medicine, @deworn_10weeks_date, @deworn_10weeks_medicice, @deworn_12weeks_date, @deworn_12weeks_medicice)";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@service", service);
+                        cmd.Parameters.AddWithValue("@deworn_2weeks_date", deworn_2weeks_date);
+                        cmd.Parameters.AddWithValue("@deworn_2weeks_medicine", deworn_2weeks_medicine);
+                        cmd.Parameters.AddWithValue("@deworn_4weeks_date", deworn_4weeks_date);
+                        cmd.Parameters.AddWithValue("@deworn_4weeks_medicine", deworn_4weeks_medicine);
+                        cmd.Parameters.AddWithValue("@deworn_6weeks_date", deworn_6weeks_date);
+                        cmd.Parameters.AddWithValue("@deworn_6weeks_medicine", deworn_6weeks_medicine);
+                        cmd.Parameters.AddWithValue("@deworn_8weeks_date", deworn_8weeks_date);
+                        cmd.Parameters.AddWithValue("@deworn_8weeks_medicine", deworn_8weeks_medicine);
+                        cmd.Parameters.AddWithValue("@deworn_10weeks_date", deworn_10weeks_date);
+                        cmd.Parameters.AddWithValue("@deworn_10weeks_medicine", deworn_10weeks_medicice);
+                        cmd.Parameters.AddWithValue("@deworn_12weeks_date", deworn_12weeks_date);
+                        cmd.Parameters.AddWithValue("@deworn_12weeks_medicine", deworn_12weeks_medicice);
+
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
         public bool SavePatientVaccination(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_allergies, string operations)
         {
@@ -1604,6 +1661,146 @@ namespace WindowsFormsApplication1.functions
                 Console.WriteLine("Error saving Patient: " + ex.ToString());
                 return false;
             }
+        }
+
+        public void LoadSkinTreatment(DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Services'
+                                    FROM dss_database.skintreatmen";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        grid.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading patients: " + ex.ToString());
+            }
+
+        }
+
+        public void LoadCPT(DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Services'
+                                    FROM dss_database.CPTest";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        grid.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading patients: " + ex.ToString());
+            }
+
+        }
+
+        public void LoadCDT(DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Services'
+                                    FROM dss_database.CDTest";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        grid.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading patients: " + ex.ToString());
+            }
+
+        }
+
+        public void LoadBloodParasite(DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Services'
+                                    FROM dss_database.bloodparasite";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        grid.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading patients: " + ex.ToString());
+            }
+
+        }
+
+        public void LoadDeworming(DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Services'
+                                    FROM dss_database.bloodparasite";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        grid.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading patients: " + ex.ToString());
+            }
+
         }
 
     }

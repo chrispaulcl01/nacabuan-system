@@ -51,7 +51,7 @@
             this.DateOperetion = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnBackPreg = new FontAwesome.Sharp.IconButton();
+            this.btnBackLyg = new FontAwesome.Sharp.IconButton();
             this.btnSaveLy = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cmbGender = new Guna.UI.WinForms.GunaComboBox();
@@ -415,17 +415,18 @@
             this.label9.TabIndex = 154;
             this.label9.Text = "Operation";
             // 
-            // btnBackPreg
+            // btnBackLyg
             // 
-            this.btnBackPreg.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnBackPreg.IconColor = System.Drawing.Color.Black;
-            this.btnBackPreg.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBackPreg.Location = new System.Drawing.Point(1169, 690);
-            this.btnBackPreg.Name = "btnBackPreg";
-            this.btnBackPreg.Size = new System.Drawing.Size(79, 47);
-            this.btnBackPreg.TabIndex = 218;
-            this.btnBackPreg.Text = "Back";
-            this.btnBackPreg.UseVisualStyleBackColor = true;
+            this.btnBackLyg.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnBackLyg.IconColor = System.Drawing.Color.Black;
+            this.btnBackLyg.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBackLyg.Location = new System.Drawing.Point(1169, 690);
+            this.btnBackLyg.Name = "btnBackLyg";
+            this.btnBackLyg.Size = new System.Drawing.Size(79, 47);
+            this.btnBackLyg.TabIndex = 218;
+            this.btnBackLyg.Text = "Back";
+            this.btnBackLyg.UseVisualStyleBackColor = true;
+            this.btnBackLyg.Click += new System.EventHandler(this.btnBackLyg_Click);
             // 
             // btnSaveLy
             // 
@@ -824,7 +825,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 749);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.btnBackPreg);
+            this.Controls.Add(this.btnBackLyg);
             this.Controls.Add(this.btnSaveLy);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
@@ -878,7 +879,7 @@
         private Guna.UI.WinForms.GunaDateTimePicker DateOperetion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
-        private FontAwesome.Sharp.IconButton btnBackPreg;
+        private FontAwesome.Sharp.IconButton btnBackLyg;
         private FontAwesome.Sharp.IconButton btnSaveLy;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI.WinForms.GunaComboBox cmbGender;

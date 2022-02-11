@@ -81,7 +81,7 @@ namespace WindowsFormsApplication1
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.GridPatienlist.Rows[e.RowIndex];
-                this.txtPetidPList.Text = row.Cells[0].Value.ToString();
+
             }
         }
 
@@ -97,11 +97,17 @@ namespace WindowsFormsApplication1
 
         private void btnView_Click_1(object sender, EventArgs e)
         {
-            if (patient.PatientInfoViewer(this.txtPetidPList.Text))
-            {
-                PatientInfoViewer Pviewer = new PatientInfoViewer();
-                Pviewer.Show();
-            }
+            
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPetidPList_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

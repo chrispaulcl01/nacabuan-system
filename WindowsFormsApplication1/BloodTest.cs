@@ -29,7 +29,7 @@ namespace WindowsFormsApplication1
         {
            if (patient.SaveBloodtestPatient(txtPetID.Text, txtOwnersName.Text, txtPhoneNumber.Text, txtAddress.Text, txtPatientName.Text,
                 int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
-                txtWeight.Text, cmbAllergies.Text, txtExistDiesease.Text, txtTypevax.Text, VaxDate.Value.Date))
+                txtWeight.Text, cmbAllergies.Text, txtExistDiesease.Text, cmbOperation.Text, txtTypevax.Text, VaxDate.Value.Date))
             {
                 patient.SavePatientBloodTestResult(txtPetID.Text, txtResultSuperchen.Text, txtResultTotalprotein.Text, txtResultAlbumin.Text, txtResultGlobulin.Text, txtResultAGration.Text, txtResultASTsgot.Text, txtResultALTsgpt.Text,
                txtResultAlkPhosphatase.Text, txtResultGct.Text, txtResultTotalBilirubin.Text, txtResultBun.Text, txtResultCreatinine.Text, txtResultRenalTech.Text);

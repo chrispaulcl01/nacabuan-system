@@ -611,8 +611,7 @@
             this.cmbOperation.ForeColor = System.Drawing.Color.Black;
             this.cmbOperation.FormattingEnabled = true;
             this.cmbOperation.Items.AddRange(new object[] {
-            "Female",
-            "Male"});
+            "CD Test"});
             this.cmbOperation.Location = new System.Drawing.Point(177, 65);
             this.cmbOperation.Name = "cmbOperation";
             this.cmbOperation.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -643,11 +642,11 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(46, 70);
+            this.label9.Location = new System.Drawing.Point(49, 70);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 19);
+            this.label9.Size = new System.Drawing.Size(64, 19);
             this.label9.TabIndex = 212;
-            this.label9.Text = "Operation";
+            this.label9.Text = "Service";
             // 
             // DateOperation
             // 

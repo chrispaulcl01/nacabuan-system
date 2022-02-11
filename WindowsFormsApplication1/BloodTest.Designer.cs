@@ -128,6 +128,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.cmbOperation = new Guna.UI.WinForms.GunaComboBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.gunaShadowPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -307,6 +309,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Snow;
+            this.panel2.Controls.Add(this.cmbOperation);
+            this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.txtPetID);
             this.panel2.Controls.Add(this.label37);
             this.panel2.Controls.Add(this.txtTypevax);
@@ -348,7 +352,7 @@
             this.txtPetID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPetID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPetID.isPassword = false;
-            this.txtPetID.Location = new System.Drawing.Point(267, 43);
+            this.txtPetID.Location = new System.Drawing.Point(64, 38);
             this.txtPetID.Margin = new System.Windows.Forms.Padding(4);
             this.txtPetID.Name = "txtPetID";
             this.txtPetID.Size = new System.Drawing.Size(89, 32);
@@ -360,11 +364,11 @@
             this.label37.AutoSize = true;
             this.label37.BackColor = System.Drawing.Color.Transparent;
             this.label37.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(190, 50);
+            this.label37.Location = new System.Drawing.Point(13, 44);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(80, 19);
+            this.label37.Size = new System.Drawing.Size(53, 19);
             this.label37.TabIndex = 213;
-            this.label37.Text = "Pet Name";
+            this.label37.Text = "Pet ID";
             // 
             // txtTypevax
             // 
@@ -1734,6 +1738,37 @@
             this.label9.TabIndex = 154;
             this.label9.Text = "Superchen";
             // 
+            // cmbOperation
+            // 
+            this.cmbOperation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.cmbOperation.BaseColor = System.Drawing.Color.White;
+            this.cmbOperation.BorderColor = System.Drawing.Color.Silver;
+            this.cmbOperation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbOperation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOperation.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbOperation.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbOperation.ForeColor = System.Drawing.Color.Black;
+            this.cmbOperation.FormattingEnabled = true;
+            this.cmbOperation.Items.AddRange(new object[] {
+            "Bloodtest"});
+            this.cmbOperation.Location = new System.Drawing.Point(249, 42);
+            this.cmbOperation.Name = "cmbOperation";
+            this.cmbOperation.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbOperation.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbOperation.Size = new System.Drawing.Size(129, 26);
+            this.cmbOperation.TabIndex = 218;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(179, 45);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(64, 19);
+            this.label20.TabIndex = 217;
+            this.label20.Text = "Service";
+            // 
             // BloodTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1749,7 +1784,7 @@
             this.Controls.Add(this.gunaShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BloodTest";
-            this.Text = "B";
+            this.Text = "de";
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -1871,5 +1906,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
+        private Guna.UI.WinForms.GunaComboBox cmbOperation;
+        private System.Windows.Forms.Label label20;
     }
 }

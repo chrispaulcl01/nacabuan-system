@@ -77,7 +77,6 @@ namespace WindowsFormsApplication1
         private void btnBackMamm_Click(object sender, EventArgs e)
         {
             Application.OpenForms["MammaryOperation"].Close();
-            Application.OpenForms["MammaryOperation"].Close();
         }
     }
 }
