@@ -23,8 +23,8 @@ namespace WindowsFormsApplication1
 
         private void PaymentTransactfrm_Load(object sender, EventArgs e)
         {
-            this.txtPetID.Text = val.PetID;
-            this.txtPatientName.Text = val.Patientname;
+            this.txtPetID.Text = val.Pet_id;
+            this.txtPatientName.Text = val.Pet_name;
             this.txtOwnersName.Text = val.OwnersName;
         }
 
@@ -90,7 +90,7 @@ namespace WindowsFormsApplication1
             }
             else
             {
-                if (patient.Reciept(this.txtPetID.Text, val.OwnersName, val.Patientname, this.txtTotalAmountfee.Text, this.txtAmountpay.Text, 
+                if (patient.Reciept(this.txtPetID.Text, val.OwnersName, val.Pet_name, this.txtTotalAmountfee.Text, this.txtAmountpay.Text, 
                     this.txtChange.Text))
                 {
                     MessageBox.Show("Reciept Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

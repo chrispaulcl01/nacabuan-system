@@ -16,7 +16,9 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
-        
+
+        components.Connections con = new components.Connections();
+        components.Values val = new components.Values();
         functions.Patient patient = new functions.Patient();
 
         private void iconButton2_Click(object sender, EventArgs e)
@@ -32,9 +34,13 @@ namespace WindowsFormsApplication1
             {
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                Home home = new Home();
-                home.Show();
-                Application.OpenForms["CPTest"].Close();
+                val.Pet_id = this.txtPetID.Text;
+                val.OwnersName = this.txtOwnersName.Text;
+                val.Pet_name = this.txtPatientName.Text;
+
+                frmRX rx = new frmRX();
+                rx.Show();
+                this.Close();
             }
             else
             {

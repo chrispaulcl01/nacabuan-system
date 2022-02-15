@@ -24,7 +24,7 @@ namespace WindowsFormsApplication1
 
         private void frmRX_Load(object sender, EventArgs e)
         {
-            this.txtID.Text = val.PetID;
+            this.txtID.Text = val.Pet_id;
         }
 
         private void gunaLabel2_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace WindowsFormsApplication1
             }
             else 
             {
-                if (patient.PrescriptionRx(this.txtID.Text, val.OwnersName, val.Patientname, this.txtEditor.Text))
+                if (patient.PrescriptionRx(this.txtID.Text, val.OwnersName, val.Pet_name, this.txtEditor.Text))
                 {
                     MessageBox.Show("Prescription Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -79,11 +79,15 @@ namespace WindowsFormsApplication1
             parameters.Add(new ReportParameter("rpPetID", txtID.Text));
             parameters.Add(new ReportParameter("rpDate", DateTime.Now.ToString("MM/dd/y")));
             parameters.Add(new ReportParameter("rpOwnersName", val.OwnersName));
-            parameters.Add(new ReportParameter("rpPatientName", val.Patientname));
+            parameters.Add(new ReportParameter("rpPatientName", val.Pet_name));
             parameters.Add(new ReportParameter("rpPrescription", txtEditor.Text));
 
             this.rprtRX.LocalReport.SetParameters(parameters);
             this.rprtRX.RefreshReport();
         }
+
+        private void btnPConsultExit_Click(object sender, EventArgs e)
+        {
+            this.Close();        }
     }
 }

@@ -27,7 +27,7 @@ namespace WindowsFormsApplication1.components
         }
 
         public static string pet_id;
-        public string PetID
+        public string Pet_id
         {
             get { return pet_id; }
             set { pet_id = value; }
@@ -40,11 +40,11 @@ namespace WindowsFormsApplication1.components
             set { owners_name = value; }
         }
 
-        public static string patient_name;
-        public string Patientname
+        public static string pet_name;
+        public string Pet_name
         {
-            get { return patient_name; }
-            set { patient_name = value; }
+            get { return pet_name; }
+            set { pet_name = value; }
         }
 
         public static string contact_no;
@@ -54,39 +54,39 @@ namespace WindowsFormsApplication1.components
             set { contact_no = value; }
         }
 
-        public static string gender;
-        public string Gender
+        public static string pet_gender;
+        public string Pet_gender
         {
-            get { return gender; }
-            set { gender = value; }
+            get { return pet_gender; }
+            set { pet_gender = value; }
         }
 
-        public static string birthday;
-        public string Birthday
+        public static string pet_bday;
+        public string Pet_bday
         {
-            get { return birthday; }
-            set { birthday = value; }
+            get { return pet_bday; }
+            set { pet_bday = value; }
         }
 
-        public static string age;
-        public string Age
+        public static string pet_age;
+        public string Pet_age
         {
-            get { return age; }
-            set { age = value; }
+            get { return pet_age; }
+            set { pet_age = value; }
         }
 
-        public static string animal_species;
-        public string Animalspecies
+        public static string pet_species;
+        public string Pet_species
         {
-            get { return animal_species; }
-            set { animal_species = value; }
+            get { return pet_species; }
+            set { pet_species  = value; }
         }
 
-        public static string animal_breed;
-        public string Animalbreed
+        public static string pet_breed;
+        public string Pet_breed
         {
-            get { return animal_breed; }
-            set { animal_breed = value; }
+            get { return pet_breed; }
+            set { pet_breed = value; }
         }
 
         public static double temp;
@@ -124,11 +124,11 @@ namespace WindowsFormsApplication1.components
             set { exsist_con = value; }
         }
 
-        public static double weight;
-        public double Weight
+        public static double pet_weight;
+        public double Pet_weight
         {
-            get { return weight; }
-            set { weight = value; }
+            get { return pet_weight; }
+            set { pet_weight = value; }
         }
 
         public static string question;
@@ -299,6 +299,41 @@ namespace WindowsFormsApplication1.components
         {
             get { return reportdate; }
             set { reportdate= value; }
+        }
+
+        public static int phone_num;
+        public int Phone_num
+        {
+            get { return phone_num; }
+            set { phone_num = value; }
+        }
+
+        public static string address;
+        public string Address
+        {
+            get { return address; }
+            set { address = value; }
+        }
+
+        public static string pet_skingallergies;
+        public string Pet_skingallergies
+        {
+            get { return pet_skingallergies; }
+            set { pet_skingallergies = value; }
+        }
+
+        public static string pet_existdisease;
+        public string Pet_existdisease
+        {
+            get { return pet_existdisease; }
+            set { pet_existdisease = value; }
+        }
+
+        public static string operation;
+        public string Operation
+        {
+            get { return operation; }
+            set { operation = value; }
         }
     }
 

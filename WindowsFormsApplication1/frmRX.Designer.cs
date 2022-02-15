@@ -40,6 +40,7 @@
             this.txtEditor = new Guna.UI.WinForms.GunaTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rprtRX = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.btnPConsultExit = new System.Windows.Forms.Button();
             this.gunaShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,6 +78,7 @@
             // 
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel1.Controls.Add(this.btnPConsultExit);
             this.gunaShadowPanel1.Controls.Add(this.button5);
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel2);
             this.gunaShadowPanel1.Location = new System.Drawing.Point(-1, 4);
@@ -215,6 +217,20 @@
             this.rprtRX.TabIndex = 121;
             this.rprtRX.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.FullPage;
             // 
+            // btnPConsultExit
+            // 
+            this.btnPConsultExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnPConsultExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPConsultExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPConsultExit.ForeColor = System.Drawing.Color.Black;
+            this.btnPConsultExit.Location = new System.Drawing.Point(1030, 12);
+            this.btnPConsultExit.Name = "btnPConsultExit";
+            this.btnPConsultExit.Size = new System.Drawing.Size(45, 39);
+            this.btnPConsultExit.TabIndex = 84;
+            this.btnPConsultExit.Text = "X";
+            this.btnPConsultExit.UseVisualStyleBackColor = false;
+            this.btnPConsultExit.Click += new System.EventHandler(this.btnPConsultExit_Click);
+            // 
             // frmRX
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,5 +274,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel1;
         private Microsoft.Reporting.WinForms.ReportViewer rprtRX;
+        private System.Windows.Forms.Button btnPConsultExit;
     }
 }

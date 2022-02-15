@@ -45,7 +45,7 @@ namespace WindowsFormsApplication1
         private void Diagnosis_Load(object sender, EventArgs e)
         {
             this.richPrescriptions.Clear();
-            this.richPrescriptions.Text += "Pet ID:" + val.PetID;
+            this.richPrescriptions.Text += "Pet ID:" + val.Pet_id;
             this.richPrescriptions.Text += Environment.NewLine;
             this.richPrescriptions.Text += "***************************************";
             this.richPrescriptions.Text += Environment.NewLine;
@@ -55,9 +55,9 @@ namespace WindowsFormsApplication1
             this.richPrescriptions.Text += Environment.NewLine;
             this.richPrescriptions.Text += "Owner Name:" + val.OwnersName;
             this.richPrescriptions.Text += Environment.NewLine;
-            this.richPrescriptions.Text += "Patient Name:" + val.Patientname;
+            this.richPrescriptions.Text += "Patient Name:" + val.Pet_name;
             this.richPrescriptions.Text += Environment.NewLine;
-            this.richPrescriptions.Text += "Animal Species:" + val.Animalspecies;
+            this.richPrescriptions.Text += "Animal Species:" + val.Pet_species;
             this.richPrescriptions.Text += Environment.NewLine;
             this.richPrescriptions.Text += Environment.NewLine;
             this.richPrescriptions.Text += Environment.NewLine;

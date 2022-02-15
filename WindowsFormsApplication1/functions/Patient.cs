@@ -58,15 +58,15 @@ namespace WindowsFormsApplication1.functions
 
                         if (dt.Rows.Count == 1)
                         {
-                            val.PetID = dt.Rows[0].Field<string>("pet_id");
+                            //val.PetID = dt.Rows[0].Field<string>("pet_id");
                             val.OwnersName = dt.Rows[0].Field<string>("owners_name");
-                            val.Patientname = dt.Rows[0].Field<string>("patient_name");
+                            // val.Patientname = dt.Rows[0].Field<string>("patient_name");
                             val.Contactno = dt.Rows[0].Field<string>("contact_no");
-                            val.Gender = dt.Rows[0].Field<string>("gender");
-                            val.Birthday = dt.Rows[0].Field<string>("birthday");
-                            val.Age = dt.Rows[0].Field<string>("age");
-                            val.Animalspecies = dt.Rows[0].Field<string>("animal_species");
-                            val.Animalbreed = dt.Rows[0].Field<string>("animal_breed");
+                            //val.Gender = dt.Rows[0].Field<string>("gender");
+                            //val.Birthday = dt.Rows[0].Field<string>("birthday");
+                            // val.Age = dt.Rows[0].Field<string>("age");
+                            // val.Animalspecies = dt.Rows[0].Field<string>("animal_species");
+                            //val.Pet_breed = dt.Rows[0].Field<string>("animal_breed");
 
                             return true;
                         }
@@ -356,21 +356,78 @@ namespace WindowsFormsApplication1.functions
 
                         if (dat.Rows.Count == 1)
                         {
-                            val.PetID = dat.Rows[0].Field<string>("pet_id");
+                            //val.PetID = dat.Rows[0].Field<string>("pet_id");
                             val.OwnersName = dat.Rows[0].Field<string>("owners_name");
-                            val.Patientname = dat.Rows[0].Field<string>("patient_name");
-                            val.Age = dat.Rows[0].Field<string>("age");
-                            val.Gender = dat.Rows[0].Field<string>("gender");
-                            val.Birthday = dat.Rows[0].Field<string>("birthday");
-                            val.Animalspecies = dat.Rows[0].Field<string>("animal_species");
-                            val.Animalbreed = dat.Rows[0].Field<string>("animal_breed");
+                            //val.Patientname = dat.Rows[0].Field<string>("patient_name");
+                            //val.Age = dat.Rows[0].Field<string>("age");
+                            //val.Gender = dat.Rows[0].Field<string>("gender");
+                            //val.Birthday = dat.Rows[0].Field<string>("birthday");
+                            //val.Animalspecies = dat.Rows[0].Field<string>("animal_species");
+                            //val.Pet_breed = dat.Rows[0].Field<string>("animal_breed");
                             val.Contactno = dat.Rows[0].Field<string>("contact_no");
                             val.Temp = dat.Rows[0].Field<double>("temperature");
                             val.lastvacinedate = dat.Rows[0].Field<DateTime>("last_vaccine_date");
                             val.Exsist_con = dat.Rows[0].Field<string>("exsist_condition");
                             val.Allergies = dat.Rows[0].Field<string>("allergies");
                             val.Type_vaccine = dat.Rows[0].Field<string>("type_vaccine");
-                            val.Weight = dat.Rows[0].Field<double>("weight");
+                            // val.Pet_weight = dat.Rows[0].Field<double>("weight");
+                            val.Question = dat.Rows[0].Field<string>("question");
+                            val.Stool = dat.Rows[0].Field<string>("stool");
+                            val.Behav_att = dat.Rows[0].Field<string>("behav_att");
+                            val.Appetite = dat.Rows[0].Field<string>("appetite");
+                            val.Drink = dat.Rows[0].Field<string>("drink");
+                            val.Diagnosis = dat.Rows[0].Field<string>("diagnosis");
+
+
+
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool PatientSkinRX(string pet_id)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT * FROM dss_database.skintreatmen WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@pet_id", pet_id);
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        if (dat.Rows.Count == 1)
+                        {
+                            //val.PetID = dat.Rows[0].Field<string>("pet_id");
+                            val.OwnersName = dat.Rows[0].Field<string>("owners_name");
+                            //val.Patientname = dat.Rows[0].Field<string>("patient_name");
+                            //val.Age = dat.Rows[0].Field<string>("age");
+                            //val.Gender = dat.Rows[0].Field<string>("gender");
+                            //val.Birthday = dat.Rows[0].Field<string>("birthday");
+                            //val.Animalspecies = dat.Rows[0].Field<string>("animal_species");
+                            //val.Pet_breed = dat.Rows[0].Field<string>("animal_breed");
+                            val.Contactno = dat.Rows[0].Field<string>("contact_no");
+                            val.Temp = dat.Rows[0].Field<double>("temperature");
+                            val.lastvacinedate = dat.Rows[0].Field<DateTime>("last_vaccine_date");
+                            val.Exsist_con = dat.Rows[0].Field<string>("exsist_condition");
+                            val.Allergies = dat.Rows[0].Field<string>("allergies");
+                            val.Type_vaccine = dat.Rows[0].Field<string>("type_vaccine");
+                            //val.Pet_weight = dat.Rows[0].Field<double>("weight");
                             val.Question = dat.Rows[0].Field<string>("question");
                             val.Stool = dat.Rows[0].Field<string>("stool");
                             val.Behav_att = dat.Rows[0].Field<string>("behav_att");
@@ -529,9 +586,9 @@ namespace WindowsFormsApplication1.functions
 
                         if (dat.Rows.Count == 1)
                         {
-                            val.PetID = dat.Rows[0].Field<string>("pet_id");
+                            //val.PetID = dat.Rows[0].Field<string>("pet_id");
                             val.OwnersName = dat.Rows[0].Field<string>("owners_name");
-                            val.Patientname = dat.Rows[0].Field<string>("patient_name");
+                            //val.Patientname = dat.Rows[0].Field<string>("patient_name");
                             val.Datee = dat.Rows[0].Field<DateTime>("TimeDate_rx");
                             val.Prescription = dat.Rows[0].Field<string>("prescription");
 

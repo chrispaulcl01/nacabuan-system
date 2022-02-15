@@ -23,20 +23,20 @@ namespace WindowsFormsApplication1
 
         private void gunaLabel2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Consultationfrm_Load(object sender, EventArgs e)
         {
-            this.txtPetID.Text = val.PetID;
+            this.txtPetID.Text = val.Pet_id;
             this.txtOwnersName.Text = val.OwnersName;
-            this.txtPatientName.Text = val.Patientname;
+            this.txtPatientName.Text = val.Pet_name;
             this.txtContactNo.Text = val.Contactno;
-            this.cmbGender.Text = val.Gender;
-            this.bdayDatepicker.Text = val.Birthday;
-            this.txtAge.Text = val.Age;
-            this.cmbAnimalSpecies.Text = val.Animalspecies;
-            this.txtAnimalBreed.Text = val.Animalbreed;
+            this.cmbGender.Text = val.Pet_gender;
+            this.bdayDatepicker.Text = val.Pet_bday;
+            this.txtAge.Text = val.Pet_age;
+            this.cmbAnimalSpecies.Text = val.Pet_species;
+            this.txtAnimalBreed.Text = val.Pet_breed;
         }
 
         private void cmbAnimalBreed_SelectedIndexChanged(object sender, EventArgs e)

@@ -35,11 +35,11 @@ namespace WindowsFormsApplication1
             this.txtRXHistory.Text += "              Roxas City Capiz Philippines 5800";
             this.txtRXHistory.Text += Environment.NewLine;
             this.txtRXHistory.Text += "***********************************************************";
-            this.txtRXHistory.Text += "Pet ID: " + val.PetID;
+            this.txtRXHistory.Text += "Pet ID: " + val.Pet_id;
             this.txtRXHistory.Text += Environment.NewLine;
             this.txtRXHistory.Text += "Ownner Name: " + val.OwnersName;
             this.txtRXHistory.Text += Environment.NewLine;
-            this.txtRXHistory.Text += "Patient Name: " + val.Patientname;
+            this.txtRXHistory.Text += "Patient Name: " + val.Pet_name;
             this.txtRXHistory.Text += Environment.NewLine;
             this.txtRXHistory.Text += "Date: " + date.ToString("MM/dd/yy");
             this.txtRXHistory.Text += Environment.NewLine;

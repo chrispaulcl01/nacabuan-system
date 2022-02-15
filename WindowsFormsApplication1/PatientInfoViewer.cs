@@ -23,21 +23,21 @@ namespace WindowsFormsApplication1
 
         private void PatientInfoViewer_Load(object sender, EventArgs e)
         {
-            this.txtPetID.Text = val.PetID;
+            //this.txtPetID.Text = val.PetID;
             this.txtOwnersName.Text = val.OwnersName;
-            this.txtPatientName.Text = val.Patientname;
+            this.txtPatientName.Text = val.Pet_name;
             this.txtContactNo.Text = val.Contactno;
-            this.cmbGender.Text = val.Gender;
-            this.bdayDatepicker.Text = val.Birthday;
-            this.txtAge.Text = val.Age.ToString();
-            this.cmbAnimalSpecies.Text = val.Animalspecies;
-            this.txtAnimalBreed.Text = val.Animalbreed;
+            this.cmbGender.Text = val.Pet_gender;
+            this.bdayDatepicker.Text = val.Pet_bday;
+            this.txtAge.Text = val.Pet_age.ToString();
+            this.cmbAnimalSpecies.Text = val.Pet_species;
+            this.txtAnimalBreed.Text = val.Pet_breed;
             this.txtTemperature.Text = val.Temp.ToString();
             this.dateLastvaccinedate.Text = val.lastvacinedate.ToString();
             this.txtExistingConditions.Text = val.Exsist_con;
             this.txtAllergies.Text = val.Allergies;
             this.txtTypeOfVaccine.Text = val.Type_vaccine;
-            this.txtWeight.Text = val.Weight.ToString();
+            this.txtWeight.Text = val.Pet_weight.ToString();
             this.txtQuestion.Text = val.Question;
             this.cmbStool.Text = val.Stool;
             this.cmbBehaAtti.Text = val.Behav_att;
@@ -45,7 +45,7 @@ namespace WindowsFormsApplication1
             this.cmbDrinkingwater.Text = val.Drink;
             this.gridnoticeviewer.Text = val.Notice;
             this.txtDiagnosis.Text = val.Diagnosis;
-            patient.PatientInfoViewerNotice(val.PetID, gridnoticeviewer);
+            patient.PatientInfoViewerNotice(val.Pet_id, gridnoticeviewer);
         }
 
         private void btnPConsultExit_Click(object sender, EventArgs e)
