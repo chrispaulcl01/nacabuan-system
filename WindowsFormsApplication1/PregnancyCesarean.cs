@@ -40,7 +40,7 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 val.Pet_id = this.txtPetID.Text;
-                val.OwnersName = this.txtOwnersName.Text;
+                val.OwnersName = this.txtOwnersname.Text;
                 val.Pet_name = this.txtPatientName.Text;
 
                 frmRX rx = new frmRX();
