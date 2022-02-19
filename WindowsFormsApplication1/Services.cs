@@ -54,9 +54,7 @@ namespace WindowsFormsApplication1
 
         private void btnDeworming_Click(object sender, EventArgs e)
         {
-            Deworming deworm = new Deworming();
-            deworm.Show();
-          
+             
         }
     }
 }

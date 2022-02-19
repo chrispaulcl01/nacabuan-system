@@ -41,6 +41,8 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbOperation = new Guna.UI.WinForms.GunaComboBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.txtPetID = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label37 = new System.Windows.Forms.Label();
             this.txtTypevax = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -128,8 +130,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.cmbOperation = new Guna.UI.WinForms.GunaComboBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.gunaShadowPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -341,6 +341,37 @@
             this.panel2.Size = new System.Drawing.Size(384, 526);
             this.panel2.TabIndex = 217;
             // 
+            // cmbOperation
+            // 
+            this.cmbOperation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.cmbOperation.BaseColor = System.Drawing.Color.White;
+            this.cmbOperation.BorderColor = System.Drawing.Color.Silver;
+            this.cmbOperation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbOperation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOperation.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbOperation.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbOperation.ForeColor = System.Drawing.Color.Black;
+            this.cmbOperation.FormattingEnabled = true;
+            this.cmbOperation.Items.AddRange(new object[] {
+            "Bloodtest"});
+            this.cmbOperation.Location = new System.Drawing.Point(249, 42);
+            this.cmbOperation.Name = "cmbOperation";
+            this.cmbOperation.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbOperation.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbOperation.Size = new System.Drawing.Size(129, 26);
+            this.cmbOperation.TabIndex = 218;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(179, 45);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(64, 19);
+            this.label20.TabIndex = 217;
+            this.label20.Text = "Service";
+            // 
             // txtPetID
             // 
             this.txtPetID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
@@ -409,7 +440,7 @@
             this.VaxDate.OnPressedColor = System.Drawing.Color.Black;
             this.VaxDate.Size = new System.Drawing.Size(153, 31);
             this.VaxDate.TabIndex = 211;
-            this.VaxDate.Text = "8/14/2021";
+            this.VaxDate.Text = "14/08/2021";
             this.VaxDate.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // label36
@@ -509,9 +540,6 @@
             this.cmbAnimalBreed.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbAnimalBreed.ForeColor = System.Drawing.Color.Black;
             this.cmbAnimalBreed.FormattingEnabled = true;
-            this.cmbAnimalBreed.Items.AddRange(new object[] {
-            "dog",
-            "cat"});
             this.cmbAnimalBreed.Location = new System.Drawing.Point(164, 293);
             this.cmbAnimalBreed.Name = "cmbAnimalBreed";
             this.cmbAnimalBreed.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -540,7 +568,7 @@
             this.bdayDatepicker.OnPressedColor = System.Drawing.Color.Black;
             this.bdayDatepicker.Size = new System.Drawing.Size(153, 31);
             this.bdayDatepicker.TabIndex = 204;
-            this.bdayDatepicker.Text = "8/14/2021";
+            this.bdayDatepicker.Text = "14/08/2021";
             this.bdayDatepicker.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // cmbAnimalSpecies
@@ -564,6 +592,7 @@
             this.cmbAnimalSpecies.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cmbAnimalSpecies.Size = new System.Drawing.Size(129, 26);
             this.cmbAnimalSpecies.TabIndex = 203;
+            this.cmbAnimalSpecies.SelectedIndexChanged += new System.EventHandler(this.cmbAnimalSpecies_SelectedIndexChanged);
             // 
             // cmbAllergies
             // 
@@ -1737,37 +1766,6 @@
             this.label9.Size = new System.Drawing.Size(88, 19);
             this.label9.TabIndex = 154;
             this.label9.Text = "Superchen";
-            // 
-            // cmbOperation
-            // 
-            this.cmbOperation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.cmbOperation.BaseColor = System.Drawing.Color.White;
-            this.cmbOperation.BorderColor = System.Drawing.Color.Silver;
-            this.cmbOperation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbOperation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbOperation.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbOperation.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbOperation.ForeColor = System.Drawing.Color.Black;
-            this.cmbOperation.FormattingEnabled = true;
-            this.cmbOperation.Items.AddRange(new object[] {
-            "Bloodtest"});
-            this.cmbOperation.Location = new System.Drawing.Point(249, 42);
-            this.cmbOperation.Name = "cmbOperation";
-            this.cmbOperation.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmbOperation.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmbOperation.Size = new System.Drawing.Size(129, 26);
-            this.cmbOperation.TabIndex = 218;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(179, 45);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(64, 19);
-            this.label20.TabIndex = 217;
-            this.label20.Text = "Service";
             // 
             // BloodTest
             // 

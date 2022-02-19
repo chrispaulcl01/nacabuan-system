@@ -301,8 +301,8 @@ namespace WindowsFormsApplication1.components
             set { reportdate= value; }
         }
 
-        public static int phone_num;
-        public int Phone_num
+        public static string phone_num;
+        public string Phone_num
         {
             get { return phone_num; }
             set { phone_num = value; }

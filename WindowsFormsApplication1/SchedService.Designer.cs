@@ -33,6 +33,7 @@
             this.btnLygaeide = new FontAwesome.Sharp.IconButton();
             this.btnCrastration = new FontAwesome.Sharp.IconButton();
             this.btnVaccination = new FontAwesome.Sharp.IconButton();
+            this.btnDeworming = new FontAwesome.Sharp.IconButton();
             this.gunaShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +71,7 @@
             this.btnLygaeide.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnLygaeide.IconColor = System.Drawing.Color.Black;
             this.btnLygaeide.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLygaeide.Location = new System.Drawing.Point(713, 98);
+            this.btnLygaeide.Location = new System.Drawing.Point(564, 98);
             this.btnLygaeide.Name = "btnLygaeide";
             this.btnLygaeide.Size = new System.Drawing.Size(170, 283);
             this.btnLygaeide.TabIndex = 100;
@@ -88,7 +89,7 @@
             this.btnCrastration.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCrastration.IconColor = System.Drawing.Color.Black;
             this.btnCrastration.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCrastration.Location = new System.Drawing.Point(432, 98);
+            this.btnCrastration.Location = new System.Drawing.Point(315, 98);
             this.btnCrastration.Name = "btnCrastration";
             this.btnCrastration.Size = new System.Drawing.Size(170, 283);
             this.btnCrastration.TabIndex = 99;
@@ -106,13 +107,31 @@
             this.btnVaccination.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnVaccination.IconColor = System.Drawing.Color.Black;
             this.btnVaccination.IconFont = FontAwesome.Sharp.IconFont.Brands;
-            this.btnVaccination.Location = new System.Drawing.Point(165, 98);
+            this.btnVaccination.Location = new System.Drawing.Point(56, 98);
             this.btnVaccination.Name = "btnVaccination";
             this.btnVaccination.Size = new System.Drawing.Size(170, 283);
             this.btnVaccination.TabIndex = 101;
             this.btnVaccination.Text = "Vaccination";
             this.btnVaccination.UseVisualStyleBackColor = false;
             this.btnVaccination.Click += new System.EventHandler(this.btnVaccination_Click);
+            // 
+            // btnDeworming
+            // 
+            this.btnDeworming.BackColor = System.Drawing.Color.LightCoral;
+            this.btnDeworming.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.groomer1;
+            this.btnDeworming.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDeworming.Font = new System.Drawing.Font("Rockwell", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeworming.ForeColor = System.Drawing.Color.White;
+            this.btnDeworming.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnDeworming.IconColor = System.Drawing.Color.Black;
+            this.btnDeworming.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDeworming.Location = new System.Drawing.Point(816, 98);
+            this.btnDeworming.Name = "btnDeworming";
+            this.btnDeworming.Size = new System.Drawing.Size(170, 283);
+            this.btnDeworming.TabIndex = 105;
+            this.btnDeworming.Text = "Deworming";
+            this.btnDeworming.UseVisualStyleBackColor = false;
+            this.btnDeworming.Click += new System.EventHandler(this.btnDeworming_Click);
             // 
             // SchedService
             // 
@@ -121,6 +140,7 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1047, 447);
+            this.Controls.Add(this.btnDeworming);
             this.Controls.Add(this.btnVaccination);
             this.Controls.Add(this.btnLygaeide);
             this.Controls.Add(this.gunaShadowPanel1);
@@ -141,5 +161,6 @@
         private FontAwesome.Sharp.IconButton btnLygaeide;
         private FontAwesome.Sharp.IconButton btnCrastration;
         private FontAwesome.Sharp.IconButton btnVaccination;
+        private FontAwesome.Sharp.IconButton btnDeworming;
     }
 }

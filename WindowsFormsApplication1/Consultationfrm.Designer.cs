@@ -156,7 +156,7 @@
             this.bdayDatepicker.OnPressedColor = System.Drawing.Color.Black;
             this.bdayDatepicker.Size = new System.Drawing.Size(153, 31);
             this.bdayDatepicker.TabIndex = 232;
-            this.bdayDatepicker.Text = "8/14/2021";
+            this.bdayDatepicker.Text = "14/08/2021";
             this.bdayDatepicker.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // label4
@@ -299,6 +299,7 @@
             this.cmbAnimalSpecies.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cmbAnimalSpecies.Size = new System.Drawing.Size(129, 26);
             this.cmbAnimalSpecies.TabIndex = 208;
+            this.cmbAnimalSpecies.SelectedIndexChanged += new System.EventHandler(this.cmbAnimalSpecies_SelectedIndexChanged);
             // 
             // txtAge
             // 
@@ -870,7 +871,7 @@
             this.dateLastvaccinedate.OnPressedColor = System.Drawing.Color.Black;
             this.dateLastvaccinedate.Size = new System.Drawing.Size(102, 31);
             this.dateLastvaccinedate.TabIndex = 258;
-            this.dateLastvaccinedate.Text = "8/14/2021";
+            this.dateLastvaccinedate.Text = "14/08/2021";
             this.dateLastvaccinedate.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // txtWeight

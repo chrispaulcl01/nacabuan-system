@@ -97,5 +97,42 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void btnVaccine_Click(object sender, EventArgs e)
+        {
+            patient.LoaddVaccination(gridBookingSchedule);
+        }
+
+        private void btnCrastration_Click(object sender, EventArgs e)
+        {
+            patient.LoaddCrastration(gridBookingSchedule);
+        }
+
+        private void btnLygaeidae_Click(object sender, EventArgs e)
+        {
+            patient.LoaddLygaidae(gridBookingSchedule);
+        }
+
+        private void btnDeworming_Click(object sender, EventArgs e)
+        {
+            patient.LoadDeworming(gridBookingSchedule);
+        }
+
+        private void gridBookingSchedule_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.gridBookingSchedule.Rows[e.RowIndex];
+
+                if (patient.PatientInfoViewer(row.Cells[0].Value.ToString()))
+                {
+                    Consultationfrm consultationfrm = new Consultationfrm();
+                    consultationfrm.Show();
+
+                    this.Close();
+
+                }
+            }
+        }
     }
 }

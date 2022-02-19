@@ -312,6 +312,34 @@ namespace WindowsFormsApplication1.functions
 
         }
 
+        public void loadPatientSched(DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owner Name', patient_name AS 'Patient Name', 
+                                    gender AS 'Gender', birthday AS 'Birthdate', age AS 'Age', animal_breed AS 'Animal Breed'
+                                    FROM dss_database.saved_patient";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        grid.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading patients: " + ex.ToString());
+            }
+
+        }
+
         public bool DeletePatientlist(string pet_id)
         {
             try
@@ -615,6 +643,31 @@ namespace WindowsFormsApplication1.functions
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
                     string sql = @"SELECT pet_id, owners_name, patient_name from dss_database.saved_patient WHERE owners_name like @keyword";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@keyword", string.Format("{0}{1}{2}", "%", keyword, "%"));
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        grid.DataSource = dat;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+            }
+        }
+
+        public void NameFilterSkin(string keyword, DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id, owners_name, patient_name from TABLE dss_database.skintreatmen WHERE owners_name like @keyword";
 
                     using (MySqlCommand cmb = new MySqlCommand(sql, connection))
                     {

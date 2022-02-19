@@ -38,6 +38,10 @@
             this.gridBookingSchedule = new Guna.UI.WinForms.GunaDataGridView();
             this.cmbLoadOperations = new Guna.UI.WinForms.GunaComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnLygaeidae = new FontAwesome.Sharp.IconButton();
+            this.btnCrastration = new FontAwesome.Sharp.IconButton();
+            this.btnVaccine = new FontAwesome.Sharp.IconButton();
+            this.btnDeworming = new FontAwesome.Sharp.IconButton();
             this.gunaShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridBookingSchedule)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +54,7 @@
             this.gunaShadowPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(1016, 69);
+            this.gunaShadowPanel1.Size = new System.Drawing.Size(1146, 69);
             this.gunaShadowPanel1.TabIndex = 92;
             // 
             // gunaLabel2
@@ -70,7 +74,7 @@
             this.dateSchedule.CalendarFont = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateSchedule.CustomFormat = "MM/dd/yy";
             this.dateSchedule.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateSchedule.Location = new System.Drawing.Point(592, 104);
+            this.dateSchedule.Location = new System.Drawing.Point(889, 109);
             this.dateSchedule.Name = "dateSchedule";
             this.dateSchedule.Size = new System.Drawing.Size(188, 20);
             this.dateSchedule.TabIndex = 99;
@@ -87,7 +91,7 @@
             this.btnLoad.ForeColor = System.Drawing.Color.Black;
             this.btnLoad.Image = null;
             this.btnLoad.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnLoad.Location = new System.Drawing.Point(517, 101);
+            this.btnLoad.Location = new System.Drawing.Point(814, 106);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnLoad.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -134,7 +138,7 @@
             this.gridBookingSchedule.RowHeadersVisible = false;
             this.gridBookingSchedule.RowTemplate.Height = 45;
             this.gridBookingSchedule.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridBookingSchedule.Size = new System.Drawing.Size(763, 423);
+            this.gridBookingSchedule.Size = new System.Drawing.Size(1083, 463);
             this.gridBookingSchedule.TabIndex = 117;
             this.gridBookingSchedule.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gridBookingSchedule.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -158,6 +162,7 @@
             this.gridBookingSchedule.ThemeStyle.RowsStyle.Height = 45;
             this.gridBookingSchedule.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridBookingSchedule.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridBookingSchedule.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridBookingSchedule_CellContentDoubleClick);
             this.gridBookingSchedule.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridBookingSchedule_CellMouseDoubleClick);
             // 
             // cmbLoadOperations
@@ -175,7 +180,7 @@
             "Vaccination",
             "Crastration",
             "Lygaeidae"});
-            this.cmbLoadOperations.Location = new System.Drawing.Point(113, 116);
+            this.cmbLoadOperations.Location = new System.Drawing.Point(936, 80);
             this.cmbLoadOperations.Name = "cmbLoadOperations";
             this.cmbLoadOperations.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbLoadOperations.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -188,12 +193,76 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(23, 119);
+            this.label9.Location = new System.Drawing.Point(846, 83);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(84, 19);
             this.label9.TabIndex = 210;
             this.label9.Text = "Operation";
             this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // btnLygaeidae
+            // 
+            this.btnLygaeidae.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnLygaeidae.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLygaeidae.Font = new System.Drawing.Font("Rockwell", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLygaeidae.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnLygaeidae.IconColor = System.Drawing.Color.Black;
+            this.btnLygaeidae.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLygaeidae.Location = new System.Drawing.Point(202, 101);
+            this.btnLygaeidae.Name = "btnLygaeidae";
+            this.btnLygaeidae.Size = new System.Drawing.Size(95, 43);
+            this.btnLygaeidae.TabIndex = 214;
+            this.btnLygaeidae.Text = "Lygaeidae";
+            this.btnLygaeidae.UseVisualStyleBackColor = false;
+            this.btnLygaeidae.Click += new System.EventHandler(this.btnLygaeidae_Click);
+            // 
+            // btnCrastration
+            // 
+            this.btnCrastration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnCrastration.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCrastration.Font = new System.Drawing.Font("Rockwell", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrastration.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCrastration.IconColor = System.Drawing.Color.Black;
+            this.btnCrastration.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCrastration.Location = new System.Drawing.Point(110, 101);
+            this.btnCrastration.Name = "btnCrastration";
+            this.btnCrastration.Size = new System.Drawing.Size(95, 43);
+            this.btnCrastration.TabIndex = 213;
+            this.btnCrastration.Text = "Crastration";
+            this.btnCrastration.UseVisualStyleBackColor = false;
+            this.btnCrastration.Click += new System.EventHandler(this.btnCrastration_Click);
+            // 
+            // btnVaccine
+            // 
+            this.btnVaccine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnVaccine.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVaccine.Font = new System.Drawing.Font("Rockwell", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVaccine.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnVaccine.IconColor = System.Drawing.Color.Black;
+            this.btnVaccine.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVaccine.Location = new System.Drawing.Point(17, 101);
+            this.btnVaccine.Name = "btnVaccine";
+            this.btnVaccine.Size = new System.Drawing.Size(96, 43);
+            this.btnVaccine.TabIndex = 212;
+            this.btnVaccine.Text = "Vaccine";
+            this.btnVaccine.UseVisualStyleBackColor = false;
+            this.btnVaccine.Click += new System.EventHandler(this.btnVaccine_Click);
+            // 
+            // btnDeworming
+            // 
+            this.btnDeworming.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnDeworming.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDeworming.Font = new System.Drawing.Font("Rockwell", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeworming.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnDeworming.IconColor = System.Drawing.Color.Black;
+            this.btnDeworming.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDeworming.Location = new System.Drawing.Point(292, 101);
+            this.btnDeworming.Name = "btnDeworming";
+            this.btnDeworming.Size = new System.Drawing.Size(95, 43);
+            this.btnDeworming.TabIndex = 215;
+            this.btnDeworming.Text = "Deworming";
+            this.btnDeworming.UseVisualStyleBackColor = false;
+            this.btnDeworming.Click += new System.EventHandler(this.btnDeworming_Click);
             // 
             // calendar
             // 
@@ -202,7 +271,11 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(829, 580);
+            this.ClientSize = new System.Drawing.Size(1102, 620);
+            this.Controls.Add(this.btnDeworming);
+            this.Controls.Add(this.btnLygaeidae);
+            this.Controls.Add(this.btnCrastration);
+            this.Controls.Add(this.btnVaccine);
             this.Controls.Add(this.cmbLoadOperations);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.gridBookingSchedule);
@@ -229,5 +302,9 @@
         private Guna.UI.WinForms.GunaDataGridView gridBookingSchedule;
         private Guna.UI.WinForms.GunaComboBox cmbLoadOperations;
         private System.Windows.Forms.Label label9;
+        private FontAwesome.Sharp.IconButton btnLygaeidae;
+        private FontAwesome.Sharp.IconButton btnCrastration;
+        private FontAwesome.Sharp.IconButton btnVaccine;
+        private FontAwesome.Sharp.IconButton btnDeworming;
     }
 }

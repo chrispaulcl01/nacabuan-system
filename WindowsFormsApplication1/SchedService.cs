@@ -34,5 +34,11 @@ namespace WindowsFormsApplication1
             Lygaeidae ly = new Lygaeidae(); 
             ly.Show();
         }
+
+        private void btnDeworming_Click(object sender, EventArgs e)
+        {
+            Deworming deworm = new Deworming();
+            deworm.Show();
+        }
     }
 }

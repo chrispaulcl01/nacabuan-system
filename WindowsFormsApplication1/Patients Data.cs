@@ -51,5 +51,33 @@ namespace WindowsFormsApplication1
                 patient.LoadDeworming(gridPatientData);
             }
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            patient.NameFilterSkin(txtSearch.Text, gridPatientData);
+        }
+
+        private void gridPatientData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gridPatientData_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+
+                if (patient.PatientInfoViewer(row.Cells[0].Value.ToString()))
+                {
+                    SkinTreatmentUpdate skinUP = new SkinTreatmentUpdate();
+                    skinUP.Show();
+
+                    this.Close();
+
+                }
+            }
+        }
     }
 }

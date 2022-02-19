@@ -61,5 +61,13 @@ namespace WindowsFormsApplication1
         {
             Application.OpenForms["BloodTest"].Close();
         }
+
+        private void cmbAnimalSpecies_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbAnimalSpecies.Text == "Dog")
+            {
+                
+            }
+        }
     }
 }

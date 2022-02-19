@@ -297,7 +297,7 @@
             this.bdayDatepicker.OnPressedColor = System.Drawing.Color.Black;
             this.bdayDatepicker.Size = new System.Drawing.Size(153, 31);
             this.bdayDatepicker.TabIndex = 204;
-            this.bdayDatepicker.Text = "8/14/2021";
+            this.bdayDatepicker.Text = "14/08/2021";
             this.bdayDatepicker.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // cmbAnimalSpecies
@@ -626,7 +626,7 @@
             this.DateOperation.OnPressedColor = System.Drawing.Color.Black;
             this.DateOperation.Size = new System.Drawing.Size(106, 31);
             this.DateOperation.TabIndex = 206;
-            this.DateOperation.Text = "9/9/2021";
+            this.DateOperation.Text = "09/09/2021";
             this.DateOperation.Value = new System.DateTime(2021, 9, 9, 14, 54, 26, 0);
             // 
             // label5
@@ -830,6 +830,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SkinTreatment";
             this.Text = "SkinTreatment";
+            this.Load += new System.EventHandler(this.SkinTreatment_Load);
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
             this.panel2.ResumeLayout(false);

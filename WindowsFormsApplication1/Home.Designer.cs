@@ -42,7 +42,6 @@
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.Cliniccal_btn = new FontAwesome.Sharp.IconButton();
             this.btnDashboard = new FontAwesome.Sharp.IconButton();
-            this.PatientList_btn = new FontAwesome.Sharp.IconButton();
             this.Home_panel = new System.Windows.Forms.Panel();
             this.gunaGradient2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
@@ -115,7 +114,6 @@
             this.panel1.Controls.Add(this.gunaLabel1);
             this.panel1.Controls.Add(this.Cliniccal_btn);
             this.panel1.Controls.Add(this.btnDashboard);
-            this.panel1.Controls.Add(this.PatientList_btn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 135);
             this.panel1.Name = "panel1";
@@ -132,7 +130,7 @@
             this.btnReports.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnReports.IconSize = 30;
             this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.Location = new System.Drawing.Point(18, 413);
+            this.btnReports.Location = new System.Drawing.Point(18, 383);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(189, 48);
             this.btnReports.TabIndex = 205;
@@ -174,7 +172,7 @@
             this.btnStaff.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnStaff.IconSize = 30;
             this.btnStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStaff.Location = new System.Drawing.Point(18, 353);
+            this.btnStaff.Location = new System.Drawing.Point(18, 314);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Size = new System.Drawing.Size(189, 48);
             this.btnStaff.TabIndex = 204;
@@ -203,7 +201,7 @@
             this.btnTransHistory.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTransHistory.IconSize = 30;
             this.btnTransHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTransHistory.Location = new System.Drawing.Point(18, 294);
+            this.btnTransHistory.Location = new System.Drawing.Point(18, 246);
             this.btnTransHistory.Name = "btnTransHistory";
             this.btnTransHistory.Size = new System.Drawing.Size(189, 48);
             this.btnTransHistory.TabIndex = 203;
@@ -258,24 +256,6 @@
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // PatientList_btn
-            // 
-            this.PatientList_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PatientList_btn.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PatientList_btn.IconChar = FontAwesome.Sharp.IconChar.List;
-            this.PatientList_btn.IconColor = System.Drawing.Color.Black;
-            this.PatientList_btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.PatientList_btn.IconSize = 30;
-            this.PatientList_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.PatientList_btn.Location = new System.Drawing.Point(18, 239);
-            this.PatientList_btn.Name = "PatientList_btn";
-            this.PatientList_btn.Size = new System.Drawing.Size(189, 48);
-            this.PatientList_btn.TabIndex = 202;
-            this.PatientList_btn.Text = " PATIENT LIST";
-            this.PatientList_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.PatientList_btn.UseVisualStyleBackColor = false;
-            this.PatientList_btn.Click += new System.EventHandler(this.PatientList_btn_Click);
-            // 
             // Home_panel
             // 
             this.Home_panel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -328,7 +308,6 @@
         private FontAwesome.Sharp.IconButton btnStaff;
         private FontAwesome.Sharp.IconButton btnTransHistory;
         private FontAwesome.Sharp.IconButton Cliniccal_btn;
-        private FontAwesome.Sharp.IconButton PatientList_btn;
         private FontAwesome.Sharp.IconButton btnDashboard;
     }
 }

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.cmbLoadServices = new Guna.UI.WinForms.GunaComboBox();
@@ -38,6 +38,8 @@
             this.gridPatientData = new Guna.UI.WinForms.GunaDataGridView();
             this.btnLoad = new Guna.UI.WinForms.GunaButton();
             this.dateSchedule = new System.Windows.Forms.DateTimePicker();
+            this.btnNext = new FontAwesome.Sharp.IconButton();
+            this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
             this.gunaShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridPatientData)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +53,7 @@
             this.gunaShadowPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(1000, 64);
+            this.gunaShadowPanel1.Size = new System.Drawing.Size(1102, 64);
             this.gunaShadowPanel1.TabIndex = 93;
             // 
             // gunaLabel2
@@ -83,7 +85,7 @@
             "CDT",
             "BloodParasite",
             "Deworming"});
-            this.cmbLoadServices.Location = new System.Drawing.Point(111, 92);
+            this.cmbLoadServices.Location = new System.Drawing.Point(110, 128);
             this.cmbLoadServices.Name = "cmbLoadServices";
             this.cmbLoadServices.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbLoadServices.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -96,7 +98,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(41, 96);
+            this.label9.Location = new System.Drawing.Point(40, 132);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(64, 19);
             this.label9.TabIndex = 215;
@@ -104,39 +106,39 @@
             // 
             // gridPatientData
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.gridPatientData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gridPatientData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridPatientData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridPatientData.BackgroundColor = System.Drawing.Color.White;
             this.gridPatientData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridPatientData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridPatientData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridPatientData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridPatientData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridPatientData.ColumnHeadersHeight = 55;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridPatientData.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridPatientData.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridPatientData.EnableHeadersVisualStyles = false;
             this.gridPatientData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gridPatientData.Location = new System.Drawing.Point(39, 121);
+            this.gridPatientData.Location = new System.Drawing.Point(39, 160);
             this.gridPatientData.Name = "gridPatientData";
             this.gridPatientData.ReadOnly = true;
             this.gridPatientData.RowHeadersVisible = false;
             this.gridPatientData.RowTemplate.Height = 45;
             this.gridPatientData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridPatientData.Size = new System.Drawing.Size(763, 423);
+            this.gridPatientData.Size = new System.Drawing.Size(1051, 384);
             this.gridPatientData.TabIndex = 214;
             this.gridPatientData.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gridPatientData.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -160,6 +162,8 @@
             this.gridPatientData.ThemeStyle.RowsStyle.Height = 45;
             this.gridPatientData.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridPatientData.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridPatientData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridPatientData_CellContentClick);
+            this.gridPatientData.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridPatientData_CellMouseDoubleClick);
             // 
             // btnLoad
             // 
@@ -173,7 +177,7 @@
             this.btnLoad.ForeColor = System.Drawing.Color.Black;
             this.btnLoad.Image = null;
             this.btnLoad.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnLoad.Location = new System.Drawing.Point(539, 77);
+            this.btnLoad.Location = new System.Drawing.Point(827, 77);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnLoad.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -190,10 +194,43 @@
             this.dateSchedule.CalendarFont = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateSchedule.CustomFormat = "MM/dd/yy";
             this.dateSchedule.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateSchedule.Location = new System.Drawing.Point(614, 80);
+            this.dateSchedule.Location = new System.Drawing.Point(902, 80);
             this.dateSchedule.Name = "dateSchedule";
             this.dateSchedule.Size = new System.Drawing.Size(188, 20);
             this.dateSchedule.TabIndex = 212;
+            // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnNext.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnNext.IconColor = System.Drawing.Color.Green;
+            this.btnNext.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNext.IconSize = 30;
+            this.btnNext.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNext.Location = new System.Drawing.Point(1011, 118);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(79, 33);
+            this.btnNext.TabIndex = 218;
+            this.btnNext.Text = "Search";
+            this.btnNext.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNext.UseVisualStyleBackColor = false;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.BaseColor = System.Drawing.Color.White;
+            this.txtSearch.BorderColor = System.Drawing.Color.Silver;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtSearch.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtSearch.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(794, 118);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.Size = new System.Drawing.Size(206, 33);
+            this.txtSearch.TabIndex = 217;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // Staff_Memberfrm
             // 
@@ -202,7 +239,9 @@
             this.BackColor = System.Drawing.Color.MistyRose;
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1000, 580);
+            this.ClientSize = new System.Drawing.Size(1102, 620);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.cmbLoadServices);
             this.Controls.Add(this.gunaShadowPanel1);
             this.Controls.Add(this.label9);
@@ -229,5 +268,7 @@
         private Guna.UI.WinForms.GunaDataGridView gridPatientData;
         private Guna.UI.WinForms.GunaButton btnLoad;
         private System.Windows.Forms.DateTimePicker dateSchedule;
+        private FontAwesome.Sharp.IconButton btnNext;
+        private Guna.UI.WinForms.GunaTextBox txtSearch;
     }
 }

@@ -30,7 +30,6 @@
         {
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.btnDeworming = new FontAwesome.Sharp.IconButton();
             this.btnBloodTest = new FontAwesome.Sharp.IconButton();
             this.btnCDTest = new FontAwesome.Sharp.IconButton();
             this.btnCPTest = new FontAwesome.Sharp.IconButton();
@@ -62,24 +61,6 @@
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "Services";
             // 
-            // btnDeworming
-            // 
-            this.btnDeworming.BackColor = System.Drawing.Color.LightCoral;
-            this.btnDeworming.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.groomer1;
-            this.btnDeworming.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDeworming.Font = new System.Drawing.Font("Rockwell", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeworming.ForeColor = System.Drawing.Color.White;
-            this.btnDeworming.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnDeworming.IconColor = System.Drawing.Color.Black;
-            this.btnDeworming.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDeworming.Location = new System.Drawing.Point(773, 110);
-            this.btnDeworming.Name = "btnDeworming";
-            this.btnDeworming.Size = new System.Drawing.Size(170, 270);
-            this.btnDeworming.TabIndex = 104;
-            this.btnDeworming.Text = "Deworming";
-            this.btnDeworming.UseVisualStyleBackColor = false;
-            this.btnDeworming.Click += new System.EventHandler(this.btnDeworming_Click);
-            // 
             // btnBloodTest
             // 
             this.btnBloodTest.BackColor = System.Drawing.Color.LightCoral;
@@ -90,7 +71,7 @@
             this.btnBloodTest.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnBloodTest.IconColor = System.Drawing.Color.Black;
             this.btnBloodTest.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBloodTest.Location = new System.Drawing.Point(598, 110);
+            this.btnBloodTest.Location = new System.Drawing.Point(798, 110);
             this.btnBloodTest.Name = "btnBloodTest";
             this.btnBloodTest.Size = new System.Drawing.Size(170, 270);
             this.btnBloodTest.TabIndex = 103;
@@ -108,7 +89,7 @@
             this.btnCDTest.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCDTest.IconColor = System.Drawing.Color.Black;
             this.btnCDTest.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCDTest.Location = new System.Drawing.Point(422, 110);
+            this.btnCDTest.Location = new System.Drawing.Point(555, 110);
             this.btnCDTest.Name = "btnCDTest";
             this.btnCDTest.Size = new System.Drawing.Size(170, 270);
             this.btnCDTest.TabIndex = 102;
@@ -126,7 +107,7 @@
             this.btnCPTest.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCPTest.IconColor = System.Drawing.Color.Black;
             this.btnCPTest.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCPTest.Location = new System.Drawing.Point(247, 110);
+            this.btnCPTest.Location = new System.Drawing.Point(313, 110);
             this.btnCPTest.Name = "btnCPTest";
             this.btnCPTest.Size = new System.Drawing.Size(170, 270);
             this.btnCPTest.TabIndex = 101;
@@ -159,7 +140,6 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1047, 447);
-            this.Controls.Add(this.btnDeworming);
             this.Controls.Add(this.btnBloodTest);
             this.Controls.Add(this.btnCDTest);
             this.Controls.Add(this.btnCPTest);
@@ -178,7 +158,6 @@
 
         private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private FontAwesome.Sharp.IconButton btnDeworming;
         private FontAwesome.Sharp.IconButton btnBloodTest;
         private FontAwesome.Sharp.IconButton btnCDTest;
         private FontAwesome.Sharp.IconButton btnCPTest;

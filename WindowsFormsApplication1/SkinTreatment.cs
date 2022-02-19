@@ -52,5 +52,10 @@ namespace WindowsFormsApplication1
         {
             Application.OpenForms["SkinTreatment"].Close();
         }
+
+        private void SkinTreatment_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
