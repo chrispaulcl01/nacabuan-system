@@ -189,24 +189,24 @@ CREATE TABLE dss_database.eyeoperation (
     PRIMARY KEY(id)
 );
 
-CREATE TABLE dss_database.skintreatmen (
-    id                  INT(8) NOT NULL AUTO_INCREMENT,
-    pet_id         VARCHAR(10) NOT NULL,
+CREATE TABLE dss_database.skintreatment (
+    id                          INT(8) NOT NULL AUTO_INCREMENT,
+    pet_id                      VARCHAR(10) NOT NULL,
     owners_name					VARCHAR(55) NOT NULL,
-    phone_num			    VARCHAR (55) NOT NULL,
-    address					VARCHAR(55)NOT NULL,
+    phone_num			        VARCHAR (55) NOT NULL,
+    address					    VARCHAR(55)NOT NULL,
     pet_name					VARCHAR(55) NOT NULL,
-    pet_age					INT(10) NOT NULL,
+    pet_age					    INT(10) NOT NULL,
     pet_gender					VARCHAR(55) NOT NULL,
     pet_bday					Date,
     pet_species					VARCHAR(55) NOT NULL,
     pet_breed					VARCHAR(55) NOT NULL,
     pet_weight					VARCHAR(55) NOT NULL,
-    pet_skinallergies					VARCHAR(55) NOT NULL,
-    pet_existdisease					VARCHAR(55) NOT NULL,
+    pet_skinallergies			VARCHAR(55) NOT NULL,
+    pet_existdisease		    VARCHAR(55) NOT NULL,
     operation					VARCHAR(55) NOT NULL,
-    op_date				DATE,
-    op_time             TIME,
+    op_date				        DATE,
+    op_time                     VARCHAR(55) NOT NULL,
     PRIMARY KEY(id)
 );
 
