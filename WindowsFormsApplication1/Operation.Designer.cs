@@ -149,7 +149,7 @@ namespace WindowsFormsApplication1
             this.Controls.Add(this.gunaShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Operation";
-            this.Text = "Operation";
+            this.Text = " ";
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
             this.ResumeLayout(false);

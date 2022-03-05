@@ -440,7 +440,7 @@
             this.VaxDate.OnPressedColor = System.Drawing.Color.Black;
             this.VaxDate.Size = new System.Drawing.Size(153, 31);
             this.VaxDate.TabIndex = 211;
-            this.VaxDate.Text = "14/08/2021";
+            this.VaxDate.Text = "8/14/2021";
             this.VaxDate.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // label36
@@ -568,7 +568,7 @@
             this.bdayDatepicker.OnPressedColor = System.Drawing.Color.Black;
             this.bdayDatepicker.Size = new System.Drawing.Size(153, 31);
             this.bdayDatepicker.TabIndex = 204;
-            this.bdayDatepicker.Text = "14/08/2021";
+            this.bdayDatepicker.Text = "8/14/2021";
             this.bdayDatepicker.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // cmbAnimalSpecies
@@ -584,7 +584,7 @@
             this.cmbAnimalSpecies.FormattingEnabled = true;
             this.cmbAnimalSpecies.Items.AddRange(new object[] {
             "DOG",
-            "CATS",
+            "CAT",
             "BIRD"});
             this.cmbAnimalSpecies.Location = new System.Drawing.Point(165, 254);
             this.cmbAnimalSpecies.Name = "cmbAnimalSpecies";
@@ -606,8 +606,7 @@
             this.cmbAllergies.ForeColor = System.Drawing.Color.Black;
             this.cmbAllergies.FormattingEnabled = true;
             this.cmbAllergies.Items.AddRange(new object[] {
-            "Female",
-            "Male"});
+            "no list"});
             this.cmbAllergies.Location = new System.Drawing.Point(165, 368);
             this.cmbAllergies.Name = "cmbAllergies";
             this.cmbAllergies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -1783,6 +1782,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BloodTest";
             this.Text = "de";
+            this.Load += new System.EventHandler(this.BloodTest_Load);
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
             this.panel5.ResumeLayout(false);

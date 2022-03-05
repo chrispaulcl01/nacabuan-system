@@ -661,13 +661,41 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
+
         public void NameFilterSkin(string keyword, DataGridView grid)
         {
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
-                    string sql = @"SELECT pet_id, owners_name, patient_name from TABLE dss_database.skintreatmen WHERE owners_name like @keyword";
+                    string sql = @"SELECT pet_id, owners_name, pet_name, pet_gender , pet_bday, pet_age, pet_breed, operation
+                    from dss_database.skintreatmen WHERE owners_name like @keyword or pet_id like @keyword";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@keyword", string.Format("{0}{1}{2}", "%", keyword, "%"));
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        grid.DataSource = dat;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+            }
+        }
+
+        public void NameFilterCPT(string keyword, DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id, owners_name, pet_name, pet_gender , pet_bday, pet_age, pet_breed, operation
+                    from dss_database.CPTest WHERE owners_name like @keyword or pet_id like @keyword";
 
                     using (MySqlCommand cmb = new MySqlCommand(sql, connection))
                     {
@@ -1798,7 +1826,6 @@ namespace WindowsFormsApplication1.functions
             {
                 Console.WriteLine("Error loading patients: " + ex.ToString());
             }
-
         }
 
         public void LoadCPT(DataGridView grid)
@@ -1826,7 +1853,6 @@ namespace WindowsFormsApplication1.functions
             {
                 Console.WriteLine("Error loading patients: " + ex.ToString());
             }
-
         }
 
         public void LoadCDT(DataGridView grid)
@@ -1854,7 +1880,6 @@ namespace WindowsFormsApplication1.functions
             {
                 Console.WriteLine("Error loading patients: " + ex.ToString());
             }
-
         }
 
         public void LoadBloodParasite(DataGridView grid)
@@ -1882,7 +1907,6 @@ namespace WindowsFormsApplication1.functions
             {
                 Console.WriteLine("Error loading patients: " + ex.ToString());
             }
-
         }
 
         public void LoadDeworming(DataGridView grid)
@@ -1892,7 +1916,7 @@ namespace WindowsFormsApplication1.functions
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
                     string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
-                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', service AS 'Service'
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Service'
                                     FROM dss_database.deworming";
 
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
@@ -1910,8 +1934,114 @@ namespace WindowsFormsApplication1.functions
             {
                 Console.WriteLine("Error loading patients: " + ex.ToString());
             }
-
         }
 
+        public void LoadPregCesarean(DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Operation'
+                                    FROM dss_database.preg_cesarian";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        grid.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading patients: " + ex.ToString());
+            }
+        }
+
+        public void LoadEyeOperation(DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Operation'
+                                    FROM dss_database.eyeoperation";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        grid.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading patients: " + ex.ToString());
+            }
+        }
+
+        public void LoadEarOperation(DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Operation'
+                                    FROM dss_database.earoperation";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        grid.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading patients: " + ex.ToString());
+            }
+        }
+
+        public void LoadMammary(DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Operation'
+                                    FROM dss_database.mammarry";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        grid.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading patients: " + ex.ToString());
+            }
+        }
     }
 }

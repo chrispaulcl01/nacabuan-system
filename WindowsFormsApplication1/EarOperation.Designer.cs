@@ -266,8 +266,6 @@
             this.cmbAnimalBreed.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbAnimalBreed.ForeColor = System.Drawing.Color.Black;
             this.cmbAnimalBreed.FormattingEnabled = true;
-            this.cmbAnimalBreed.Items.AddRange(new object[] {
-            "awaw"});
             this.cmbAnimalBreed.Location = new System.Drawing.Point(177, 342);
             this.cmbAnimalBreed.Name = "cmbAnimalBreed";
             this.cmbAnimalBreed.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -312,7 +310,7 @@
             this.cmbAnimalSpecies.FormattingEnabled = true;
             this.cmbAnimalSpecies.Items.AddRange(new object[] {
             "DOG",
-            "CATS",
+            "CAT",
             "BIRD"});
             this.cmbAnimalSpecies.Location = new System.Drawing.Point(178, 303);
             this.cmbAnimalSpecies.Name = "cmbAnimalSpecies";
@@ -320,6 +318,7 @@
             this.cmbAnimalSpecies.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cmbAnimalSpecies.Size = new System.Drawing.Size(129, 26);
             this.cmbAnimalSpecies.TabIndex = 203;
+            this.cmbAnimalSpecies.SelectedIndexChanged += new System.EventHandler(this.cmbAnimalSpecies_SelectedIndexChanged);
             // 
             // cmbAllergies
             // 
@@ -333,8 +332,7 @@
             this.cmbAllergies.ForeColor = System.Drawing.Color.Black;
             this.cmbAllergies.FormattingEnabled = true;
             this.cmbAllergies.Items.AddRange(new object[] {
-            "Female",
-            "Male"});
+            "no list"});
             this.cmbAllergies.Location = new System.Drawing.Point(178, 417);
             this.cmbAllergies.Name = "cmbAllergies";
             this.cmbAllergies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -543,8 +541,7 @@
             this.cmbOperations.ForeColor = System.Drawing.Color.Black;
             this.cmbOperations.FormattingEnabled = true;
             this.cmbOperations.Items.AddRange(new object[] {
-            "Female",
-            "Male"});
+            "Ear Operation"});
             this.cmbOperations.Location = new System.Drawing.Point(154, 70);
             this.cmbOperations.Name = "cmbOperations";
             this.cmbOperations.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -830,6 +827,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EarOperation";
             this.Text = "EarOperation";
+            this.Load += new System.EventHandler(this.EarOperation_Load);
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
             this.panel2.ResumeLayout(false);

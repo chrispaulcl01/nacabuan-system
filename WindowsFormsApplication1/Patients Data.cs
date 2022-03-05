@@ -50,11 +50,28 @@ namespace WindowsFormsApplication1
             {
                 patient.LoadDeworming(gridPatientData);
             }
+            else if (cmbLoadServices.Text == "Pregnancy")
+            {
+                patient.LoadPregCesarean(gridPatientData);
+            }
+            else if (cmbLoadServices.Text == "Eye Operation")
+            {
+                patient.LoadEyeOperation(gridPatientData);
+            }
+            else if (cmbLoadServices.Text == "Ear Operation")
+            {
+                patient.LoadEarOperation(gridPatientData);
+            }
+            else if (cmbLoadServices.Text == "Mammary Gland")
+            {
+                patient.LoadMammary(gridPatientData);
+            }
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             patient.NameFilterSkin(txtSearch.Text, gridPatientData);
+            patient.NameFilterCPT(txtSearch.Text, gridPatientData);
         }
 
         private void gridPatientData_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -574,8 +574,7 @@
             this.cmbAllergies.ForeColor = System.Drawing.Color.Black;
             this.cmbAllergies.FormattingEnabled = true;
             this.cmbAllergies.Items.AddRange(new object[] {
-            "Female",
-            "Male"});
+            "no list"});
             this.cmbAllergies.Location = new System.Drawing.Point(179, 414);
             this.cmbAllergies.Name = "cmbAllergies";
             this.cmbAllergies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -669,10 +668,6 @@
             this.cmbAnimalBreed.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbAnimalBreed.ForeColor = System.Drawing.Color.Black;
             this.cmbAnimalBreed.FormattingEnabled = true;
-            this.cmbAnimalBreed.Items.AddRange(new object[] {
-            "dog",
-            "cat",
-            "bird"});
             this.cmbAnimalBreed.Location = new System.Drawing.Point(176, 334);
             this.cmbAnimalBreed.Name = "cmbAnimalBreed";
             this.cmbAnimalBreed.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -717,7 +712,7 @@
             this.cmbAnimalSpecies.FormattingEnabled = true;
             this.cmbAnimalSpecies.Items.AddRange(new object[] {
             "DOG",
-            "CATS",
+            "CAT",
             "BIRD"});
             this.cmbAnimalSpecies.Location = new System.Drawing.Point(176, 294);
             this.cmbAnimalSpecies.Name = "cmbAnimalSpecies";
@@ -725,6 +720,7 @@
             this.cmbAnimalSpecies.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cmbAnimalSpecies.Size = new System.Drawing.Size(129, 26);
             this.cmbAnimalSpecies.TabIndex = 203;
+            this.cmbAnimalSpecies.SelectedIndexChanged += new System.EventHandler(this.cmbAnimalSpecies_SelectedIndexChanged);
             // 
             // txtAge
             // 
@@ -833,6 +829,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Lygaeidae";
             this.Text = "Lygaiene";
+            this.Load += new System.EventHandler(this.Lygaeidae_Load);
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
             this.panel5.ResumeLayout(false);

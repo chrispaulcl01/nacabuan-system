@@ -224,7 +224,8 @@
             this.txtPetID.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtPetID.BorderThickness = 3;
             this.txtPetID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPetID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPetID.Enabled = false;
+            this.txtPetID.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPetID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPetID.isPassword = false;
             this.txtPetID.Location = new System.Drawing.Point(266, 53);
@@ -267,8 +268,6 @@
             this.cmbAnimalBreed.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbAnimalBreed.ForeColor = System.Drawing.Color.Black;
             this.cmbAnimalBreed.FormattingEnabled = true;
-            this.cmbAnimalBreed.Items.AddRange(new object[] {
-            "aw"});
             this.cmbAnimalBreed.Location = new System.Drawing.Point(170, 333);
             this.cmbAnimalBreed.Name = "cmbAnimalBreed";
             this.cmbAnimalBreed.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -297,7 +296,7 @@
             this.bdayDatepicker.OnPressedColor = System.Drawing.Color.Black;
             this.bdayDatepicker.Size = new System.Drawing.Size(153, 31);
             this.bdayDatepicker.TabIndex = 204;
-            this.bdayDatepicker.Text = "14/08/2021";
+            this.bdayDatepicker.Text = "8/14/2021";
             this.bdayDatepicker.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // cmbAnimalSpecies
@@ -313,7 +312,7 @@
             this.cmbAnimalSpecies.FormattingEnabled = true;
             this.cmbAnimalSpecies.Items.AddRange(new object[] {
             "DOG",
-            "CATS",
+            "CAT",
             "BIRD"});
             this.cmbAnimalSpecies.Location = new System.Drawing.Point(171, 294);
             this.cmbAnimalSpecies.Name = "cmbAnimalSpecies";
@@ -321,6 +320,7 @@
             this.cmbAnimalSpecies.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cmbAnimalSpecies.Size = new System.Drawing.Size(129, 26);
             this.cmbAnimalSpecies.TabIndex = 203;
+            this.cmbAnimalSpecies.SelectedIndexChanged += new System.EventHandler(this.cmbAnimalSpecies_SelectedIndexChanged);
             // 
             // cmbSkinAllergies
             // 
@@ -626,7 +626,7 @@
             this.DateOperation.OnPressedColor = System.Drawing.Color.Black;
             this.DateOperation.Size = new System.Drawing.Size(106, 31);
             this.DateOperation.TabIndex = 206;
-            this.DateOperation.Text = "09/09/2021";
+            this.DateOperation.Text = "9/9/2021";
             this.DateOperation.Value = new System.DateTime(2021, 9, 9, 14, 54, 26, 0);
             // 
             // label5

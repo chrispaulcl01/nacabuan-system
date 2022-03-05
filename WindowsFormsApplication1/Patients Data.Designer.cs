@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.cmbLoadServices = new Guna.UI.WinForms.GunaComboBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.gridPatientData = new Guna.UI.WinForms.GunaDataGridView();
             this.btnLoad = new Guna.UI.WinForms.GunaButton();
             this.dateSchedule = new System.Windows.Forms.DateTimePicker();
             this.btnNext = new FontAwesome.Sharp.IconButton();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.gunaShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridPatientData)).BeginInit();
             this.SuspendLayout();
@@ -84,8 +84,12 @@
             "CPT",
             "CDT",
             "BloodParasite",
-            "Deworming"});
-            this.cmbLoadServices.Location = new System.Drawing.Point(110, 128);
+            "Deworming",
+            "Pregnancy",
+            "Eye Operation",
+            "Ear Operation",
+            "Mammary Gland"});
+            this.cmbLoadServices.Location = new System.Drawing.Point(193, 128);
             this.cmbLoadServices.Name = "cmbLoadServices";
             this.cmbLoadServices.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbLoadServices.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -93,43 +97,32 @@
             this.cmbLoadServices.TabIndex = 216;
             this.cmbLoadServices.SelectedIndexChanged += new System.EventHandler(this.cmbLoadServices_SelectedIndexChanged);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(40, 132);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 19);
-            this.label9.TabIndex = 215;
-            this.label9.Text = "Service";
-            // 
             // gridPatientData
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gridPatientData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.gridPatientData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.gridPatientData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridPatientData.BackgroundColor = System.Drawing.Color.White;
             this.gridPatientData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridPatientData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridPatientData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridPatientData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridPatientData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.gridPatientData.ColumnHeadersHeight = 55;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridPatientData.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridPatientData.DefaultCellStyle = dataGridViewCellStyle15;
             this.gridPatientData.EnableHeadersVisualStyles = false;
             this.gridPatientData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridPatientData.Location = new System.Drawing.Point(39, 160);
@@ -232,6 +225,17 @@
             this.txtSearch.TabIndex = 217;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(40, 132);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(150, 19);
+            this.label9.TabIndex = 215;
+            this.label9.Text = "Service/ Operation\r\n";
+            // 
             // Staff_Memberfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -264,11 +268,11 @@
         private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaComboBox cmbLoadServices;
-        private System.Windows.Forms.Label label9;
         private Guna.UI.WinForms.GunaDataGridView gridPatientData;
         private Guna.UI.WinForms.GunaButton btnLoad;
         private System.Windows.Forms.DateTimePicker dateSchedule;
         private FontAwesome.Sharp.IconButton btnNext;
         private Guna.UI.WinForms.GunaTextBox txtSearch;
+        private System.Windows.Forms.Label label9;
     }
 }
