@@ -28,14 +28,14 @@ namespace WindowsFormsApplication1
             this.txtPatientName.Text = val.Pet_name;
             this.txtContactNo.Text = val.Contactno;
             this.cmbGender.Text = val.Pet_gender;
-            this.bdayDatepicker.Text = val.Pet_bday;
+            //this.bdayDatepicker.Text = val.Pet_bday;
             this.txtAge.Text = val.Pet_age.ToString();
             this.cmbAnimalSpecies.Text = val.Pet_species;
             this.txtAnimalBreed.Text = val.Pet_breed;
             this.txtTemperature.Text = val.Temp.ToString();
             this.dateLastvaccinedate.Text = val.lastvacinedate.ToString();
             this.txtExistingConditions.Text = val.Exsist_con;
-            this.txtAllergies.Text = val.Allergies;
+           // this.txtAllergies.Text = val.Allergies;
             this.txtTypeOfVaccine.Text = val.Type_vaccine;
             this.txtWeight.Text = val.Pet_weight.ToString();
             this.txtQuestion.Text = val.Question;
@@ -55,12 +55,7 @@ namespace WindowsFormsApplication1
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if (patient.PatientInfoViewer(this.txtPetID.Text))
-            {
-                PatientListEditor pleditor = new PatientListEditor();
-                pleditor.Show();
-                this.Hide();
-            }
+            
 
         }
 

@@ -48,7 +48,7 @@ namespace WindowsFormsApplication1
             {
                 DataGridViewRow row = this.GridPatienlist.Rows[e.RowIndex];
 
-                if (patient.PatientInfoViewer(row.Cells[0].Value.ToString()))
+                //if (patient.PatientInfoViewer(row.Cells[0].Value.ToString()))
                 {
                     Consultationfrm consultationfrm = new Consultationfrm();
                     consultationfrm.Show();

@@ -77,20 +77,7 @@ namespace WindowsFormsApplication1
 
         private void cmbLoadOperations_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbLoadOperations.Text == "Vaccination") 
-            {
-                patient.LoaddVaccination(gridBookingSchedule);
-            }
-
-            else if (cmbLoadOperations.Text == "Crastration") 
-            {
-                patient.LoaddCrastration(gridBookingSchedule);
-            }
-
-            else if (cmbLoadOperations.Text == "Lygaeidae")
-            {
-                patient.LoaddLygaidae(gridBookingSchedule);
-            }
+            
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -122,16 +109,7 @@ namespace WindowsFormsApplication1
         {
             if (e.RowIndex >= 0)
             {
-                DataGridViewRow row = this.gridBookingSchedule.Rows[e.RowIndex];
-
-                if (patient.PatientInfoViewer(row.Cells[0].Value.ToString()))
-                {
-                    Consultationfrm consultationfrm = new Consultationfrm();
-                    consultationfrm.Show();
-
-                    this.Close();
-
-                }
+                
             }
         }
     }

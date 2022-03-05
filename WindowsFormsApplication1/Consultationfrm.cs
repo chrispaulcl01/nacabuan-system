@@ -33,8 +33,8 @@ namespace WindowsFormsApplication1
             this.txtPatientName.Text = val.Pet_name;
             this.txtContactNo.Text = val.Contactno;
             this.cmbGender.Text = val.Pet_gender;
-            this.bdayDatepicker.Text = val.Pet_bday;
-            this.txtAge.Text = val.Pet_age;
+            //this.bdayDatepicker.Text = val.Pet_bday;
+            //this.txtAge.Text = val.Pet_age;
             this.cmbAnimalSpecies.Text = val.Pet_species;
             this.txtAnimalBreed.Text = val.Pet_breed;
         }
@@ -125,7 +125,7 @@ namespace WindowsFormsApplication1
 
                         patient.DeletePatientlist(this.txtPetID.Text);
 
-                        if(patient.PatientInfoViewer(this.txtPetID.Text))
+                        //if(patient.PatientInfoViewer(this.txtPetID.Text))
                         {
                             this.Close();
 

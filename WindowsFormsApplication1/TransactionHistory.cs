@@ -35,6 +35,11 @@ namespace WindowsFormsApplication1
         {
             patient.TransactionViewer(gridTransacHistory);
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            patient.TransactionHistorySearchFilter(txtSearch.Text, gridTransacHistory);
+        }
     }
 }
 

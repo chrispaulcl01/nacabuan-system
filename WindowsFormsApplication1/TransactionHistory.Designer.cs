@@ -29,13 +29,15 @@ namespace WindowsFormsApplication1
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.button5 = new System.Windows.Forms.Button();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gridTransacHistory = new Guna.UI.WinForms.GunaDataGridView();
+            this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.gunaShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridTransacHistory)).BeginInit();
             this.SuspendLayout();
@@ -80,33 +82,33 @@ namespace WindowsFormsApplication1
             // 
             // gridTransacHistory
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gridTransacHistory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.gridTransacHistory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gridTransacHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridTransacHistory.BackgroundColor = System.Drawing.Color.White;
             this.gridTransacHistory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridTransacHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridTransacHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridTransacHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridTransacHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.gridTransacHistory.ColumnHeadersHeight = 55;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridTransacHistory.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridTransacHistory.DefaultCellStyle = dataGridViewCellStyle12;
             this.gridTransacHistory.EnableHeadersVisualStyles = false;
             this.gridTransacHistory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gridTransacHistory.Location = new System.Drawing.Point(12, 101);
+            this.gridTransacHistory.Location = new System.Drawing.Point(12, 141);
             this.gridTransacHistory.Name = "gridTransacHistory";
             this.gridTransacHistory.ReadOnly = true;
             this.gridTransacHistory.RowHeadersVisible = false;
@@ -138,6 +140,33 @@ namespace WindowsFormsApplication1
             this.gridTransacHistory.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gridTransacHistory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridTransacHistoty_CellContentClick);
             // 
+            // txtSearch
+            // 
+            this.txtSearch.BaseColor = System.Drawing.Color.White;
+            this.txtSearch.BorderColor = System.Drawing.Color.Silver;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtSearch.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtSearch.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(146, 102);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.Size = new System.Drawing.Size(206, 33);
+            this.txtSearch.TabIndex = 218;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(15, 109);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(132, 19);
+            this.label9.TabIndex = 219;
+            this.label9.Text = "Search ID/Name";
+            // 
             // TransactionHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -146,6 +175,8 @@ namespace WindowsFormsApplication1
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 580);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.gridTransacHistory);
             this.Controls.Add(this.gunaShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -156,6 +187,7 @@ namespace WindowsFormsApplication1
             this.gunaShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridTransacHistory)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -165,5 +197,7 @@ namespace WindowsFormsApplication1
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private System.Windows.Forms.Button button5;
         private Guna.UI.WinForms.GunaDataGridView gridTransacHistory;
+        private Guna.UI.WinForms.GunaTextBox txtSearch;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -367,13 +367,13 @@ namespace WindowsFormsApplication1.functions
                 return false;
             }
         }
-        public bool PatientInfoViewer(string pet_id)
+        public bool PatientInfoViewerSkin(string pet_id)
         {
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
-                    string sql = @"SELECT * FROM dss_database.saved_patient WHERE pet_id = @pet_id";
+                    string sql = @"SELECT * FROM dss_database.skintreatment WHERE pet_id = @pet_id";
 
                     using (MySqlCommand cmb = new MySqlCommand(sql, connection))
                     {
@@ -384,28 +384,22 @@ namespace WindowsFormsApplication1.functions
 
                         if (dat.Rows.Count == 1)
                         {
-                            //val.PetID = dat.Rows[0].Field<string>("pet_id");
+                            val.Pet_id = dat.Rows[0].Field<string>("pet_id");
                             val.OwnersName = dat.Rows[0].Field<string>("owners_name");
-                            //val.Patientname = dat.Rows[0].Field<string>("patient_name");
-                            //val.Age = dat.Rows[0].Field<string>("age");
-                            //val.Gender = dat.Rows[0].Field<string>("gender");
-                            //val.Birthday = dat.Rows[0].Field<string>("birthday");
-                            //val.Animalspecies = dat.Rows[0].Field<string>("animal_species");
-                            //val.Pet_breed = dat.Rows[0].Field<string>("animal_breed");
-                            val.Contactno = dat.Rows[0].Field<string>("contact_no");
-                            val.Temp = dat.Rows[0].Field<double>("temperature");
-                            val.lastvacinedate = dat.Rows[0].Field<DateTime>("last_vaccine_date");
-                            val.Exsist_con = dat.Rows[0].Field<string>("exsist_condition");
-                            val.Allergies = dat.Rows[0].Field<string>("allergies");
-                            val.Type_vaccine = dat.Rows[0].Field<string>("type_vaccine");
-                            // val.Pet_weight = dat.Rows[0].Field<double>("weight");
-                            val.Question = dat.Rows[0].Field<string>("question");
-                            val.Stool = dat.Rows[0].Field<string>("stool");
-                            val.Behav_att = dat.Rows[0].Field<string>("behav_att");
-                            val.Appetite = dat.Rows[0].Field<string>("appetite");
-                            val.Drink = dat.Rows[0].Field<string>("drink");
-                            val.Diagnosis = dat.Rows[0].Field<string>("diagnosis");
-
+                            val.Phone_num = dat.Rows[0].Field<string>("phone_num");
+                            val.Address = dat.Rows[0].Field<string>("address");
+                            val.Pet_name= dat.Rows[0].Field<string>("pet_name");
+                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
+                            val.Pet_bday = dat.Rows[0].Field<DateTime>("pet_bday");
+                            val.Pet_species = dat.Rows[0].Field<string>("pet_species");
+                            val.Pet_breed = dat.Rows[0].Field<string>("pet_breed");
+                            val.Pet_weight = dat.Rows[0].Field<string>("pet_weight");
+                            val.Pet_skinallergies = dat.Rows[0].Field<string>("pet_skinallergies");
+                            val.Pet_existdisease = dat.Rows[0].Field<string>("pet_existdisease");
+                            val.Operation = dat.Rows[0].Field<string>("operation");
+                            val.Op_date = dat.Rows[0].Field<DateTime>("op_date");
+                            val.Op_time = dat.Rows[0].Field<string>("op_time");
 
 
                             return true;
@@ -430,7 +424,7 @@ namespace WindowsFormsApplication1.functions
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
-                    string sql = @"SELECT * FROM dss_database.skintreatmen WHERE pet_id = @pet_id";
+                    string sql = @"SELECT * FROM dss_database.skintreatment WHERE pet_id = @pet_id";
 
                     using (MySqlCommand cmb = new MySqlCommand(sql, connection))
                     {
@@ -453,7 +447,7 @@ namespace WindowsFormsApplication1.functions
                             val.Temp = dat.Rows[0].Field<double>("temperature");
                             val.lastvacinedate = dat.Rows[0].Field<DateTime>("last_vaccine_date");
                             val.Exsist_con = dat.Rows[0].Field<string>("exsist_condition");
-                            val.Allergies = dat.Rows[0].Field<string>("allergies");
+                           // val.Allergies = dat.Rows[0].Field<string>("allergies");
                             val.Type_vaccine = dat.Rows[0].Field<string>("type_vaccine");
                             //val.Pet_weight = dat.Rows[0].Field<double>("weight");
                             val.Question = dat.Rows[0].Field<string>("question");
@@ -661,6 +655,31 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
+        public void TransactionHistorySearchFilter(string keyword, DataGridView grid)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id, owners_name, patient_name, total_fee , amount_pay, rchange, TimeDate_rx
+                    from dss_database.reciept WHERE owners_name like @keyword or pet_id like @keyword";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@keyword", string.Format("{0}{1}{2}", "%", keyword, "%"));
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        grid.DataSource = dat;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Transaction History" + ex.ToString());
+            }
+        }
 
         public void NameFilterSkin(string keyword, DataGridView grid)
         {
@@ -669,7 +688,7 @@ namespace WindowsFormsApplication1.functions
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
                     string sql = @"SELECT pet_id, owners_name, pet_name, pet_gender , pet_bday, pet_age, pet_breed, operation
-                    from dss_database.skintreatmen WHERE owners_name like @keyword or pet_id like @keyword";
+                    from dss_database.skintreatment WHERE owners_name like @keyword or pet_id like @keyword";
 
                     using (MySqlCommand cmb = new MySqlCommand(sql, connection))
                     {
@@ -1139,7 +1158,7 @@ namespace WindowsFormsApplication1.functions
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
-                    string sql = @"insert into dss_database.skintreatmen(pet_id, owners_name, phone_num, address, pet_name, pet_age,
+                    string sql = @"insert into dss_database.skintreatment(pet_id, owners_name, phone_num, address, pet_name, pet_age,
                                 pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_skinallergies, pet_existdisease, operation, op_date, op_time)
                                 values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
                                 @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_skinallergies, @pet_existdisease, @operation, @op_date, @op_time)";
@@ -1809,7 +1828,7 @@ namespace WindowsFormsApplication1.functions
                 {
                     string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
                                     pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Services'
-                                    FROM dss_database.skintreatmen";
+                                    FROM dss_database.skintreatment";
 
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
                     {

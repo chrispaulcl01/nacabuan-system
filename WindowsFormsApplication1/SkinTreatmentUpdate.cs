@@ -25,21 +25,27 @@ namespace WindowsFormsApplication1
         {
             this.txtPetID.Text = val.Pet_id;
             this.txtOwnersName.Text = val.OwnersName;
-            this.txtPatientName.Text = val.Pet_name;
             this.txtPhoneNumber.Text = val.Phone_num;
-            this.cmbGender.Text = val.Pet_gender;
-            this.bdayDatepicker.Text = val.Pet_bday;
+            this.txtAddress.Text = val.Address;
+            this.txtPatientName.Text = val.Pet_name;
             this.txtAge.Text = val.Pet_age.ToString();
+            this.cmbGender.Text = val.Pet_gender;
+            this.bdayDatepicker.Value = val.Op_date;
             this.cmbAnimalSpecies.Text = val.Pet_species;
             this.cmbAnimalBreed.Text = val.Pet_breed;
-            
-            
-            this.txtExistDisease.Text = val.Pet_existdisease;
-            this.cmbSkinAllergies.Text = val.Allergies;
-            
             this.txtWeight.Text = val.Pet_weight.ToString();
+            this.cmbSkinAllergies.Text = val.Pet_skinallergies;
+            this.txtExistDisease.Text = val.Pet_existdisease;
+            this.cmbOperations.Text = val.Operation;
+            this.DateOperation.Value = val.Op_date;
+            this.txtOpTime.Text = val.Op_time.ToString();
             
            
+        }
+
+        private void btnBackPreg_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

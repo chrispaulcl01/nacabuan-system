@@ -36,8 +36,6 @@
             this.dateSchedule = new System.Windows.Forms.DateTimePicker();
             this.btnLoad = new Guna.UI.WinForms.GunaButton();
             this.gridBookingSchedule = new Guna.UI.WinForms.GunaDataGridView();
-            this.cmbLoadOperations = new Guna.UI.WinForms.GunaComboBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.btnLygaeidae = new FontAwesome.Sharp.IconButton();
             this.btnCrastration = new FontAwesome.Sharp.IconButton();
             this.btnVaccine = new FontAwesome.Sharp.IconButton();
@@ -165,41 +163,6 @@
             this.gridBookingSchedule.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridBookingSchedule_CellContentDoubleClick);
             this.gridBookingSchedule.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridBookingSchedule_CellMouseDoubleClick);
             // 
-            // cmbLoadOperations
-            // 
-            this.cmbLoadOperations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.cmbLoadOperations.BaseColor = System.Drawing.Color.White;
-            this.cmbLoadOperations.BorderColor = System.Drawing.Color.Silver;
-            this.cmbLoadOperations.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbLoadOperations.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLoadOperations.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbLoadOperations.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbLoadOperations.ForeColor = System.Drawing.Color.Black;
-            this.cmbLoadOperations.FormattingEnabled = true;
-            this.cmbLoadOperations.Items.AddRange(new object[] {
-            "Vaccination",
-            "Crastration",
-            "Lygaeidae"});
-            this.cmbLoadOperations.Location = new System.Drawing.Point(936, 80);
-            this.cmbLoadOperations.Name = "cmbLoadOperations";
-            this.cmbLoadOperations.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmbLoadOperations.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmbLoadOperations.Size = new System.Drawing.Size(129, 26);
-            this.cmbLoadOperations.TabIndex = 211;
-            this.cmbLoadOperations.SelectedIndexChanged += new System.EventHandler(this.cmbLoadOperations_SelectedIndexChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(846, 83);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 19);
-            this.label9.TabIndex = 210;
-            this.label9.Text = "Operation";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
-            // 
             // btnLygaeidae
             // 
             this.btnLygaeidae.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -276,8 +239,6 @@
             this.Controls.Add(this.btnLygaeidae);
             this.Controls.Add(this.btnCrastration);
             this.Controls.Add(this.btnVaccine);
-            this.Controls.Add(this.cmbLoadOperations);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.gridBookingSchedule);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.dateSchedule);
@@ -290,7 +251,6 @@
             this.gunaShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridBookingSchedule)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -300,8 +260,6 @@
         private System.Windows.Forms.DateTimePicker dateSchedule;
         private Guna.UI.WinForms.GunaButton btnLoad;
         private Guna.UI.WinForms.GunaDataGridView gridBookingSchedule;
-        private Guna.UI.WinForms.GunaComboBox cmbLoadOperations;
-        private System.Windows.Forms.Label label9;
         private FontAwesome.Sharp.IconButton btnLygaeidae;
         private FontAwesome.Sharp.IconButton btnCrastration;
         private FontAwesome.Sharp.IconButton btnVaccine;

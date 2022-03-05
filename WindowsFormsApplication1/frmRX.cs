@@ -63,6 +63,8 @@ namespace WindowsFormsApplication1
                     payfrm.Show();
                     Application.OpenForms["frmRX"].Hide();
                     Application.OpenForms["Home"].Hide();
+                    SkinTreatment skin = new SkinTreatment();
+                    skin.Show();    
                 }
                 else
                 {

@@ -70,8 +70,17 @@ namespace WindowsFormsApplication1
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            patient.NameFilterSkin(txtSearch.Text, gridPatientData);
-            patient.NameFilterCPT(txtSearch.Text, gridPatientData);
+            if (cmbLoadServices.Text == "SkinTreatment")
+            {
+                patient.NameFilterSkin(txtSearch.Text, gridPatientData);
+            }
+
+            else if (cmbLoadServices.Text == "CPT")
+            {
+                patient.NameFilterCPT(txtSearch.Text, gridPatientData);
+            }
+            
+            
         }
 
         private void gridPatientData_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -86,15 +95,30 @@ namespace WindowsFormsApplication1
             {
                 DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
 
-                if (patient.PatientInfoViewer(row.Cells[0].Value.ToString()))
+                if (patient.PatientInfoViewerSkin(row.Cells[0].Value.ToString()))
                 {
-                    SkinTreatmentUpdate skinUP = new SkinTreatmentUpdate();
-                    skinUP.Show();
+                    SkinTreatmentUpdate skinUp = new SkinTreatmentUpdate();
+                    skinUp.Show();
 
                     this.Close();
 
                 }
             }
+        }
+
+        private void gridPatientData_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void gridPatientData_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            
         }
     }
 }

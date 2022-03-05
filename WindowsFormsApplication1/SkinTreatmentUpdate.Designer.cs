@@ -97,6 +97,7 @@
             this.txtOwnersName.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtOwnersName.BorderThickness = 3;
             this.txtOwnersName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOwnersName.Enabled = false;
             this.txtOwnersName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtOwnersName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtOwnersName.isPassword = false;
@@ -115,6 +116,7 @@
             this.txtPhoneNumber.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtPhoneNumber.BorderThickness = 3;
             this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhoneNumber.Enabled = false;
             this.txtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPhoneNumber.isPassword = false;
@@ -144,6 +146,7 @@
             this.txtAddress.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtAddress.BorderThickness = 3;
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.Enabled = false;
             this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAddress.isPassword = false;
@@ -162,6 +165,7 @@
             this.txtWeight.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtWeight.BorderThickness = 3;
             this.txtWeight.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtWeight.Enabled = false;
             this.txtWeight.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtWeight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtWeight.isPassword = false;
@@ -215,6 +219,7 @@
             this.txtPetID.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtPetID.BorderThickness = 3;
             this.txtPetID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPetID.Enabled = false;
             this.txtPetID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPetID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPetID.isPassword = false;
@@ -276,6 +281,7 @@
             this.cmbAnimalBreed.BorderColor = System.Drawing.Color.Silver;
             this.cmbAnimalBreed.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbAnimalBreed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAnimalBreed.Enabled = false;
             this.cmbAnimalBreed.FocusedColor = System.Drawing.Color.Empty;
             this.cmbAnimalBreed.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbAnimalBreed.ForeColor = System.Drawing.Color.Black;
@@ -296,6 +302,7 @@
             this.bdayDatepicker.BorderColor = System.Drawing.Color.Silver;
             this.bdayDatepicker.CustomFormat = null;
             this.bdayDatepicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.bdayDatepicker.Enabled = false;
             this.bdayDatepicker.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.bdayDatepicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bdayDatepicker.ForeColor = System.Drawing.Color.Black;
@@ -310,7 +317,7 @@
             this.bdayDatepicker.OnPressedColor = System.Drawing.Color.Black;
             this.bdayDatepicker.Size = new System.Drawing.Size(153, 31);
             this.bdayDatepicker.TabIndex = 204;
-            this.bdayDatepicker.Text = "14/08/2021";
+            this.bdayDatepicker.Text = "8/14/2021";
             this.bdayDatepicker.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // cmbAnimalSpecies
@@ -320,6 +327,7 @@
             this.cmbAnimalSpecies.BorderColor = System.Drawing.Color.Silver;
             this.cmbAnimalSpecies.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbAnimalSpecies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAnimalSpecies.Enabled = false;
             this.cmbAnimalSpecies.FocusedColor = System.Drawing.Color.Empty;
             this.cmbAnimalSpecies.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbAnimalSpecies.ForeColor = System.Drawing.Color.Black;
@@ -342,13 +350,13 @@
             this.cmbSkinAllergies.BorderColor = System.Drawing.Color.Silver;
             this.cmbSkinAllergies.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbSkinAllergies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSkinAllergies.Enabled = false;
             this.cmbSkinAllergies.FocusedColor = System.Drawing.Color.Empty;
             this.cmbSkinAllergies.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbSkinAllergies.ForeColor = System.Drawing.Color.Black;
             this.cmbSkinAllergies.FormattingEnabled = true;
             this.cmbSkinAllergies.Items.AddRange(new object[] {
-            "Female",
-            "Male"});
+            "no list"});
             this.cmbSkinAllergies.Location = new System.Drawing.Point(171, 408);
             this.cmbSkinAllergies.Name = "cmbSkinAllergies";
             this.cmbSkinAllergies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -363,6 +371,7 @@
             this.cmbGender.BorderColor = System.Drawing.Color.Silver;
             this.cmbGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGender.Enabled = false;
             this.cmbGender.FocusedColor = System.Drawing.Color.Empty;
             this.cmbGender.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbGender.ForeColor = System.Drawing.Color.Black;
@@ -471,6 +480,7 @@
             this.txtAge.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtAge.BorderThickness = 3;
             this.txtAge.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAge.Enabled = false;
             this.txtAge.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAge.isPassword = false;
@@ -533,6 +543,7 @@
             this.txtPatientName.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtPatientName.BorderThickness = 3;
             this.txtPatientName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPatientName.Enabled = false;
             this.txtPatientName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPatientName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPatientName.isPassword = false;
@@ -561,6 +572,7 @@
             this.DateOperation.BorderColor = System.Drawing.Color.Silver;
             this.DateOperation.CustomFormat = null;
             this.DateOperation.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DateOperation.Enabled = false;
             this.DateOperation.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.DateOperation.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DateOperation.ForeColor = System.Drawing.Color.Black;
@@ -575,7 +587,7 @@
             this.DateOperation.OnPressedColor = System.Drawing.Color.Black;
             this.DateOperation.Size = new System.Drawing.Size(106, 31);
             this.DateOperation.TabIndex = 206;
-            this.DateOperation.Text = "09/09/2021";
+            this.DateOperation.Text = "9/9/2021";
             this.DateOperation.Value = new System.DateTime(2021, 9, 9, 14, 54, 26, 0);
             // 
             // txtExistDisease
@@ -586,6 +598,7 @@
             this.txtExistDisease.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtExistDisease.BorderThickness = 3;
             this.txtExistDisease.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtExistDisease.Enabled = false;
             this.txtExistDisease.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtExistDisease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtExistDisease.isPassword = false;
@@ -637,6 +650,7 @@
             this.cmbOperations.BorderColor = System.Drawing.Color.Silver;
             this.cmbOperations.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbOperations.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOperations.Enabled = false;
             this.cmbOperations.FocusedColor = System.Drawing.Color.Empty;
             this.cmbOperations.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbOperations.ForeColor = System.Drawing.Color.Black;
@@ -658,6 +672,7 @@
             this.txtOpTime.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtOpTime.BorderThickness = 3;
             this.txtOpTime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOpTime.Enabled = false;
             this.txtOpTime.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtOpTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtOpTime.isPassword = false;
@@ -737,6 +752,7 @@
             this.btnBackPreg.TabIndex = 225;
             this.btnBackPreg.Text = "Back";
             this.btnBackPreg.UseVisualStyleBackColor = true;
+            this.btnBackPreg.Click += new System.EventHandler(this.btnBackPreg_Click);
             // 
             // panel2
             // 

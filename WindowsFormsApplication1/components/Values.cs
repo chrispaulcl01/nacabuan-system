@@ -61,15 +61,15 @@ namespace WindowsFormsApplication1.components
             set { pet_gender = value; }
         }
 
-        public static string pet_bday;
-        public string Pet_bday
+        public static DateTime pet_bday;
+        public DateTime Pet_bday
         {
             get { return pet_bday; }
             set { pet_bday = value; }
         }
 
-        public static string pet_age;
-        public string Pet_age
+        public static int pet_age;
+        public int Pet_age
         {
             get { return pet_age; }
             set { pet_age = value; }
@@ -96,11 +96,11 @@ namespace WindowsFormsApplication1.components
             set { temp = value; }
         }
 
-        public static string allergies;
-        public string Allergies
+        public static string pet_skinallergies;
+        public string Pet_skinallergies
         {
-            get { return allergies; }
-            set { allergies = value; }
+            get { return pet_skinallergies; }
+            set { pet_skinallergies = value; }
         }
 
         public static DateTime last_vaccine_date;
@@ -124,8 +124,8 @@ namespace WindowsFormsApplication1.components
             set { exsist_con = value; }
         }
 
-        public static double pet_weight;
-        public double Pet_weight
+        public static string pet_weight;
+        public string Pet_weight
         {
             get { return pet_weight; }
             set { pet_weight = value; }
@@ -335,6 +335,28 @@ namespace WindowsFormsApplication1.components
             get { return operation; }
             set { operation = value; }
         }
+
+        public static DateTime op_date;
+        public DateTime Op_date
+        {
+            get { return op_date; }
+            set { op_date = value; }
+        }
+
+        public static string op_time;
+        public string Op_time
+        {
+            get { return op_time; }
+            set { op_time = value; }
+        }
+
+        //public static string service;
+        //public string Op_time
+        //{
+            //get { return op_time; }
+           // set { op_time = value; }
+        //}
     }
+
 
 }
