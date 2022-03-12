@@ -366,11 +366,11 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(179, 45);
+            this.label20.Location = new System.Drawing.Point(166, 45);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(64, 19);
+            this.label20.Size = new System.Drawing.Size(84, 19);
             this.label20.TabIndex = 217;
-            this.label20.Text = "Service";
+            this.label20.Text = "Operation";
             // 
             // txtPetID
             // 

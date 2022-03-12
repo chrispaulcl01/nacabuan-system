@@ -391,7 +391,7 @@ namespace WindowsFormsApplication1.functions
                             val.Pet_name= dat.Rows[0].Field<string>("pet_name");
                             val.Pet_age = dat.Rows[0].Field<int>("pet_age");
                             val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
-                            val.Pet_bday = dat.Rows[0].Field<DateTime>("pet_bday");
+                            val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
                             val.Pet_breed = dat.Rows[0].Field<string>("pet_breed");
                             val.Pet_weight = dat.Rows[0].Field<string>("pet_weight");
@@ -401,6 +401,421 @@ namespace WindowsFormsApplication1.functions
                             val.Op_date = dat.Rows[0].Field<DateTime>("op_date");
                             val.Op_time = dat.Rows[0].Field<string>("op_time");
 
+
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool PatientInfoViewerCPT(string pet_id)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT * FROM dss_database.CPTest WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@pet_id", pet_id);
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        if (dat.Rows.Count == 1)
+                        {
+                            val.Pet_id = dat.Rows[0].Field<string>("pet_id");
+                            val.OwnersName = dat.Rows[0].Field<string>("owners_name");
+                            val.Phone_num = dat.Rows[0].Field<string>("phone_num");
+                            val.Address = dat.Rows[0].Field<string>("address");
+                            val.Pet_name = dat.Rows[0].Field<string>("pet_name");
+                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
+                            val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
+                            val.Pet_species = dat.Rows[0].Field<string>("pet_species");
+                            val.Pet_breed = dat.Rows[0].Field<string>("pet_breed");
+                            val.Pet_weight = dat.Rows[0].Field<string>("pet_weight");
+                            val.Pet_skinallergies= dat.Rows[0].Field<string>("pet_allergies");
+                            val.Pet_existdisease = dat.Rows[0].Field<string>("pet_existdisease");
+                            val.Testkit = dat.Rows[0].Field<string>("pet_testkit");
+                            val.Operation = dat.Rows[0].Field<string>("operation");
+                            val.Op_date = dat.Rows[0].Field<DateTime>("op_date");
+                            val.Op_time = dat.Rows[0].Field<string>("op_time");
+
+
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool PatientInfoViewerCDT(string pet_id)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT * FROM dss_database.CDTest WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@pet_id", pet_id);
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        if (dat.Rows.Count == 1)
+                        {
+                            val.Pet_id = dat.Rows[0].Field<string>("pet_id");
+                            val.OwnersName = dat.Rows[0].Field<string>("owners_name");
+                            val.Phone_num = dat.Rows[0].Field<string>("phone_num");
+                            val.Address = dat.Rows[0].Field<string>("address");
+                            val.Pet_name = dat.Rows[0].Field<string>("pet_name");
+                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
+                            val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
+                            val.Pet_species = dat.Rows[0].Field<string>("pet_species");
+                            val.Pet_breed = dat.Rows[0].Field<string>("pet_breed");
+                            val.Pet_weight = dat.Rows[0].Field<string>("pet_weight");
+                            val.Pet_skinallergies = dat.Rows[0].Field<string>("pet_allergies");
+                            val.Pet_existdisease = dat.Rows[0].Field<string>("pet_existdisease");
+                            val.Testkit = dat.Rows[0].Field<string>("pet_testkit");
+                            val.Operation = dat.Rows[0].Field<string>("operation");
+                            val.Op_date = dat.Rows[0].Field<DateTime>("op_date");
+                            val.Op_time = dat.Rows[0].Field<string>("op_time");
+
+
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool PatientInfoViewerBloodTest(string pet_id)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT * FROM dss_database.bloodparasite WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@pet_id", pet_id);
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        if (dat.Rows.Count == 1)
+                        {
+                            val.Pet_id = dat.Rows[0].Field<string>("pet_id");
+                            val.OwnersName = dat.Rows[0].Field<string>("owners_name");
+                            val.Phone_num = dat.Rows[0].Field<string>("phone_num");
+                            val.Address = dat.Rows[0].Field<string>("address");
+                            val.Pet_name = dat.Rows[0].Field<string>("pet_name");
+                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
+                            val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
+                            val.Pet_species = dat.Rows[0].Field<string>("pet_species");
+                            val.Pet_breed = dat.Rows[0].Field<string>("pet_breed");
+                            val.Pet_weight = dat.Rows[0].Field<string>("pet_weight");
+                            val.Pet_skinallergies = dat.Rows[0].Field<string>("pet_allergies");
+                            val.Pet_existdisease = dat.Rows[0].Field<string>("pet_existdisease");
+                            val.Operation = dat.Rows[0].Field<string>("operation");
+                            val.Typevax = dat.Rows[0].Field<string>("typevax");
+                            val.Vaxdate = dat.Rows[0].Field<DateTime>("vaxdate");
+
+
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool PatientInfoViewerMammaryGland(string pet_id)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT * FROM dss_database.mammarry WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@pet_id", pet_id);
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        if (dat.Rows.Count == 1)
+                        {
+                            val.Pet_id = dat.Rows[0].Field<string>("pet_id");
+                            val.OwnersName = dat.Rows[0].Field<string>("owners_name");
+                            val.Phone_num = dat.Rows[0].Field<string>("phone_num");
+                            val.Address = dat.Rows[0].Field<string>("address");
+                            val.Pet_name = dat.Rows[0].Field<string>("pet_name");
+                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
+                            val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
+                            val.Pet_species = dat.Rows[0].Field<string>("pet_species");
+                            val.Pet_breed = dat.Rows[0].Field<string>("pet_breed");
+                            val.Pet_weight = dat.Rows[0].Field<string>("pet_weight");
+                            val.Pet_skinallergies = dat.Rows[0].Field<string>("pet_allergies");
+                            val.Pet_existdisease = dat.Rows[0].Field<string>("pet_existdisease");
+                            val.Operation = dat.Rows[0].Field<string>("operation");
+                            val.Typevax = dat.Rows[0].Field<string>("typevax");
+                            val.Vaxdate = dat.Rows[0].Field<DateTime>("vaxdate");
+
+
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool PatientInfoViewerDeworming(string pet_id)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT * FROM dss_database.deworming WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@pet_id", pet_id);
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        if (dat.Rows.Count == 1)
+                        {
+                            val.Pet_id = dat.Rows[0].Field<string>("pet_id");
+                            val.OwnersName = dat.Rows[0].Field<string>("owners_name");
+                            val.Phone_num = dat.Rows[0].Field<string>("phone_num");
+                            val.Address = dat.Rows[0].Field<string>("address");
+                            val.Pet_name = dat.Rows[0].Field<string>("pet_name");
+                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
+                            val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
+                            val.Pet_species = dat.Rows[0].Field<string>("pet_species");
+                            val.Pet_breed = dat.Rows[0].Field<string>("pet_breed"); 
+                            val.Operation = dat.Rows[0].Field<string>("service");
+
+                            val.Deworn_2weeks_date = dat.Rows[0].Field<string>("deworn_2weeks_date");
+                            val.Deworn_2weeks_medicine = dat.Rows[0].Field<string>("deworn_2weeks_medicine");
+                            val.Deworn_4weeks_date = dat.Rows[0].Field<string>("deworn_2weeks_date");
+                            val.Deworn_4weeks_medicine = dat.Rows[0].Field<string>("deworn_4weeks_medicine");
+                            val.Deworn_6weeks_date = dat.Rows[0].Field<string>("deworn_6weeks_date");
+                            val.Deworn_6weeks_medicine = dat.Rows[0].Field<string>("deworn_6weeks_medicine");
+                            val.Deworn_8weeks_date = dat.Rows[0].Field<string>("deworn_8weeks_date");
+                            val.Deworn_8weeks_medicine = dat.Rows[0].Field<string>("deworn_8weeks_medicine");
+                            val.Deworn_10weeks_date = dat.Rows[0].Field<string>("deworn_10weeks_date");
+                            val.Deworn_10weeks_medicine = dat.Rows[0].Field<string>("deworn_10weeks_medicine");
+                            val.Deworn_12weeks_date = dat.Rows[0].Field<string>("deworn_12weeks_date");
+                            val.Deworn_12weeks_medicine = dat.Rows[0].Field<string>("deworn_12weeks_medicine");
+
+
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool PatientInfoViewerPregCesarean(string pet_id)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT * FROM dss_database.preg_cesarian WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@pet_id", pet_id);
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        if (dat.Rows.Count == 1)
+                        {
+                            val.Pet_id = dat.Rows[0].Field<string>("pet_id");
+                            val.OwnersName = dat.Rows[0].Field<string>("owners_name");
+                            val.Phone_num = dat.Rows[0].Field<string>("phone_num");
+                            val.Address = dat.Rows[0].Field<string>("address");
+                            val.Pet_name = dat.Rows[0].Field<string>("pet_name");
+                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
+                            val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
+                            val.Pet_species = dat.Rows[0].Field<string>("pet_species");
+                            val.Pet_breed = dat.Rows[0].Field<string>("pet_breed");
+                            val.Pet_weight = dat.Rows[0].Field<string>("pet_weight");
+                            val.Pet_skinallergies = dat.Rows[0].Field<string>("pet_allergies");
+                            val.Pet_existdisease = dat.Rows[0].Field<string>("pet_existdesease");
+                            val.Operation = dat.Rows[0].Field<string>("operation");
+                            val.Op_date = dat.Rows[0].Field<DateTime>("op_date");
+                            val.Op_time = dat.Rows[0].Field<string>("op_time");
+
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool PatientInfoViewerEarOperation(string pet_id)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT * FROM dss_database.earoperation WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@pet_id", pet_id);
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        if (dat.Rows.Count == 1)
+                        {
+                            val.Pet_id = dat.Rows[0].Field<string>("pet_id");
+                            val.OwnersName = dat.Rows[0].Field<string>("owners_name");
+                            val.Phone_num = dat.Rows[0].Field<string>("phone_num");
+                            val.Address = dat.Rows[0].Field<string>("address");
+                            val.Pet_name = dat.Rows[0].Field<string>("pet_name");
+                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
+                            val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
+                            val.Pet_species = dat.Rows[0].Field<string>("pet_species");
+                            val.Pet_breed = dat.Rows[0].Field<string>("pet_breed");
+                            val.Pet_weight = dat.Rows[0].Field<string>("pet_weight");
+                            val.Pet_skinallergies = dat.Rows[0].Field<string>("pet_allergies");
+                            val.Curren_med = dat.Rows[0].Field<string>("pet_currmed");
+                            val.Operation = dat.Rows[0].Field<string>("operation");                           
+                            val.Op_date = dat.Rows[0].Field<DateTime>("op_date");
+                            val.Op_time = dat.Rows[0].Field<string>("op_time");
+
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool PatientInfoViewerEyeOperation(string pet_id)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT * FROM dss_database.eyeoperation WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@pet_id", pet_id);
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        if (dat.Rows.Count == 1)
+                        {
+                            val.Pet_id = dat.Rows[0].Field<string>("pet_id");
+                            val.OwnersName = dat.Rows[0].Field<string>("owners_name");
+                            val.Phone_num = dat.Rows[0].Field<string>("phone_num");
+                            val.Address = dat.Rows[0].Field<string>("address");
+                            val.Pet_name = dat.Rows[0].Field<string>("pet_name");
+                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
+                            val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
+                            val.Pet_species = dat.Rows[0].Field<string>("pet_species");
+                            val.Pet_breed = dat.Rows[0].Field<string>("pet_breed");
+                            val.Pet_weight = dat.Rows[0].Field<string>("pet_weight");
+                            val.Pet_skinallergies = dat.Rows[0].Field<string>("pet_allergies");
+                            val.Curren_med = dat.Rows[0].Field<string>("pet_currmed");
+                            val.Operation = dat.Rows[0].Field<string>("operation");
+                            val.Op_date = dat.Rows[0].Field<DateTime>("op_date");
+                            val.Op_time = dat.Rows[0].Field<string>("op_time");
 
                             return true;
                         }
@@ -1289,16 +1704,16 @@ namespace WindowsFormsApplication1.functions
 
         public bool SaveMammryPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
-            string typevax, DateTime vaxdate)
+            string operation, string typevax, DateTime vaxdate)
         {
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
                     string sql = @"insert into dss_database.mammarry(pet_id, owners_name, phone_num, address, pet_name, pet_age,
-                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, typevax, vaxdate)
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, operation, typevax, vaxdate)
                                 values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
-                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease, @typevax, @vaxdate)";
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease,@operation, @typevax, @vaxdate)";
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
                     {
                         cmd.Parameters.AddWithValue("@pet_id", pet_id);
@@ -1314,6 +1729,7 @@ namespace WindowsFormsApplication1.functions
                         cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
                         cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
                         cmd.Parameters.AddWithValue("@pet_existdisease", pet_existdisease);
+                        cmd.Parameters.AddWithValue("@operation", operation);
                         cmd.Parameters.AddWithValue("@typevax", typevax);
                         cmd.Parameters.AddWithValue("@vaxdate", vaxdate);
 
@@ -1935,7 +2351,7 @@ namespace WindowsFormsApplication1.functions
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
                     string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
-                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operation AS 'Service'
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', service AS 'Service'
                                     FROM dss_database.deworming";
 
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))

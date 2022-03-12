@@ -981,7 +981,6 @@ C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplic
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Home.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PaymentTransactfrm.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PregnancyCesarean.resources
-C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Pregrancy.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.btnPReport.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ReportTable.resources
@@ -1000,3 +999,9 @@ C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplic
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.BloodTestView.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.DewormingView.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PregrancyCesareanView.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.EarOperationView.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.EyeOperationView.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.MammryGrandView.resources

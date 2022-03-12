@@ -30,13 +30,13 @@ namespace WindowsFormsApplication1
             this.txtPatientName.Text = val.Pet_name;
             this.txtAge.Text = val.Pet_age.ToString();
             this.cmbGender.Text = val.Pet_gender;
-            this.bdayDatepicker.Value = val.Op_date;
-            this.cmbAnimalSpecies.Text = val.Pet_species;
-            this.cmbAnimalBreed.Text = val.Pet_breed;
+            this.txtPetBday.Text = val.Pet_bday;
+            this.txtPetSpecies.Text = val.Pet_species;
+            this.txtPetBreed.Text = val.Pet_breed;
             this.txtWeight.Text = val.Pet_weight.ToString();
-            this.cmbSkinAllergies.Text = val.Pet_skinallergies;
+            this.txtPetSkinnAllergies.Text = val.Pet_skinallergies;
             this.txtExistDisease.Text = val.Pet_existdisease;
-            this.cmbOperations.Text = val.Operation;
+            this.txtService.Text = val.Operation;
             this.DateOperation.Value = val.Op_date;
             this.txtOpTime.Text = val.Op_time.ToString();
             

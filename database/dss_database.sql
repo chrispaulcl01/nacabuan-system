@@ -127,65 +127,65 @@ INSERT INTO dss_database.user(
 );
 
 CREATE TABLE dss_database.preg_cesarian (
-    id                  INT(8) NOT NULL AUTO_INCREMENT,
-    pet_id         VARCHAR(10) NOT NULL,
+    id                          INT(8) NOT NULL AUTO_INCREMENT,
+    pet_id                      VARCHAR(10) NOT NULL,
     owners_name					VARCHAR(55) NOT NULL,
-    phone_num			    VARCHAR (55) NOT NULL,
-    address					VARCHAR(55)NOT NULL,
+    phone_num			        VARCHAR (55) NOT NULL,
+    address					    VARCHAR(55)NOT NULL,
     pet_name					VARCHAR(55) NOT NULL,
-    pet_age					INT(10) NOT NULL,
+    pet_age					    INT(10) NOT NULL,
     pet_gender					VARCHAR(55) NOT NULL,
-    pet_bday					Date,
+    pet_bday					VARCHAR(55) NOT NULL,
     pet_species					VARCHAR(55) NOT NULL,
     pet_breed					VARCHAR(55) NOT NULL,
     pet_weight					VARCHAR(55) NOT NULL,
-    pet_allergies					VARCHAR(55) NOT NULL,
-    pet_existdesease					VARCHAR(55) NOT NULL,
+    pet_allergies				VARCHAR(55) NOT NULL,
+    pet_existdesease			VARCHAR(55) NOT NULL,
     operation					VARCHAR(55) NOT NULL,
-    op_date				DATE,
-    op_time             TIME,
+    op_date				        DATE,
+    op_time                     VARCHAR(55) NOT NULL,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE dss_database.earoperation (
-    id                  INT(8) NOT NULL AUTO_INCREMENT,
-    pet_id         VARCHAR(10) NOT NULL,
+    id                          INT(8) NOT NULL AUTO_INCREMENT,
+    pet_id                      VARCHAR(10) NOT NULL,
     owners_name					VARCHAR(55) NOT NULL,
-    phone_num			    VARCHAR (55) NOT NULL,
-    address					VARCHAR(55)NOT NULL,
+    phone_num			        VARCHAR (55) NOT NULL,
+    address					    VARCHAR(55)NOT NULL,
     pet_name					VARCHAR(55) NOT NULL,
-    pet_age					INT(10) NOT NULL,
+    pet_age					    INT(10) NOT NULL,
     pet_gender					VARCHAR(55) NOT NULL,
-    pet_bday					Date,
+    pet_bday					VARCHAR(55) NOT NULL,
     pet_species					VARCHAR(55) NOT NULL,
     pet_breed					VARCHAR(55) NOT NULL,
     pet_weight					VARCHAR(55) NOT NULL,
-    pet_allergies					VARCHAR(55) NOT NULL,
+    pet_allergies				VARCHAR(55) NOT NULL,
     pet_currmed					VARCHAR(55) NOT NULL,
     operation					VARCHAR(55) NOT NULL,
-    op_date				DATE,
-    op_time             TIME,
+    op_date				        DATE,
+    op_time                     VARCHAR(55) NOT NULL,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE dss_database.eyeoperation (
-    id                  INT(8) NOT NULL AUTO_INCREMENT,
-    pet_id         VARCHAR(10) NOT NULL,
+    id                          INT(8) NOT NULL AUTO_INCREMENT,
+    pet_id                      VARCHAR(10) NOT NULL,
     owners_name					VARCHAR(55) NOT NULL,
-    phone_num			    VARCHAR (55) NOT NULL,
-    address					VARCHAR(55)NOT NULL,
+    phone_num			        VARCHAR (55) NOT NULL,
+    address					    VARCHAR(55)NOT NULL,
     pet_name					VARCHAR(55) NOT NULL,
-    pet_age					INT(10) NOT NULL,
+    pet_age					    INT(10) NOT NULL,
     pet_gender					VARCHAR(55) NOT NULL,
-    pet_bday					Date,
+    pet_bday					VARCHAR(55) NOT NULL,
     pet_species					VARCHAR(55) NOT NULL,
     pet_breed					VARCHAR(55) NOT NULL,
     pet_weight					VARCHAR(55) NOT NULL,
-    pet_allergies					VARCHAR(55) NOT NULL,
+    pet_allergies				VARCHAR(55) NOT NULL,
     pet_currmed					VARCHAR(55) NOT NULL,
     operation					VARCHAR(55) NOT NULL,
-    op_date				DATE,
-    op_time             TIME,
+    op_date				        DATE,
+    op_time                     VARCHAR(55) NOT NULL,
     PRIMARY KEY(id)
 );
 
@@ -198,7 +198,7 @@ CREATE TABLE dss_database.skintreatment (
     pet_name					VARCHAR(55) NOT NULL,
     pet_age					    INT(10) NOT NULL,
     pet_gender					VARCHAR(55) NOT NULL,
-    pet_bday					Date,
+    pet_bday					VARCHAR(55) NOT NULL,
     pet_species					VARCHAR(55) NOT NULL,
     pet_breed					VARCHAR(55) NOT NULL,
     pet_weight					VARCHAR(55) NOT NULL,
@@ -219,7 +219,7 @@ CREATE TABLE dss_database.CDTest (
     pet_name					VARCHAR(55) NOT NULL,
     pet_age				        INT(10) NOT NULL,
     pet_gender					VARCHAR(55) NOT NULL,
-    pet_bday					Date,
+    pet_bday					VARCHAR(55) NOT NULL,
     pet_species					VARCHAR(55) NOT NULL,
     pet_breed					VARCHAR(55) NOT NULL,
     pet_weight					VARCHAR(55) NOT NULL,
@@ -228,7 +228,7 @@ CREATE TABLE dss_database.CDTest (
     pet_testkit					VARCHAR(55) NOT NULL,
     operation					VARCHAR(55) NOT NULL,
     op_date				        DATE,
-    op_time                     TIME,
+    op_time                     VARCHAR(55) NOT NULL,
     PRIMARY KEY(id)
 );
 
@@ -241,7 +241,7 @@ CREATE TABLE dss_database.CPTest (
     pet_name					VARCHAR(55) NOT NULL,
     pet_age					    INT(10) NOT NULL,
     pet_gender					VARCHAR(55) NOT NULL,
-    pet_bday					Date,
+    pet_bday					VARCHAR(55) NOT NULL,
     pet_species					VARCHAR(55) NOT NULL,
     pet_breed					VARCHAR(55) NOT NULL,
     pet_weight					VARCHAR(55) NOT NULL,
@@ -250,7 +250,7 @@ CREATE TABLE dss_database.CPTest (
     pet_testkit					VARCHAR(55) NOT NULL,
     operation					VARCHAR(55) NOT NULL,
     op_date				        DATE,
-    op_time                     TIME,
+    op_time                     VARCHAR(55) NOT NULL,
     PRIMARY KEY(id)
 );
 
@@ -329,6 +329,7 @@ CREATE TABLE dss_database.mammarry (
     pet_weight					VARCHAR(55) NOT NULL,
     pet_allergies				VARCHAR(55) NOT NULL,
     pet_existdisease			VARCHAR(55) NOT NULL,
+    operation				    VARCHAR(55) NOT NULL,
     typevax					    VARCHAR(55) NOT NULL,
     vaxdate                     DATE,
     PRIMARY KEY(id)
@@ -493,6 +494,7 @@ CREATE TABLE dss_database.deworming (
     deworn_6weeks_medicine		VARCHAR(55) NOT NULL,
     
     deworn_8weeks_date			VARCHAR(55) NOT NULL,
+    deworn_8weeks_medicine		VARCHAR(55) NOT NULL,
     deworn_8weeks_medicine		VARCHAR(55) NOT NULL,
     
     deworn_10weeks_date			VARCHAR(55) NOT NULL,

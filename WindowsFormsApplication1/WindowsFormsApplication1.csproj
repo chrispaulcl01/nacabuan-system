@@ -89,6 +89,12 @@
     <Compile Include="BloodTest.Designer.cs">
       <DependentUpon>BloodTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="BloodTestView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloodTestView.Designer.cs">
+      <DependentUpon>BloodTestView.cs</DependentUpon>
+    </Compile>
     <Compile Include="calendar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,12 @@
     <Compile Include="DewormingMain.Designer.cs">
       <DependentUpon>DewormingMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="DewormingView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DewormingView.Designer.cs">
+      <DependentUpon>DewormingView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Diagnosis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,11 +157,23 @@
     <Compile Include="EarOperation.Designer.cs">
       <DependentUpon>EarOperation.cs</DependentUpon>
     </Compile>
+    <Compile Include="EarOperationView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarOperationView.Designer.cs">
+      <DependentUpon>EarOperationView.cs</DependentUpon>
+    </Compile>
     <Compile Include="EyeOperation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EyeOperation.Designer.cs">
       <DependentUpon>EyeOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EyeOperationView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EyeOperationView.Designer.cs">
+      <DependentUpon>EyeOperationView.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRX.cs">
       <SubType>Form</SubType>
@@ -187,6 +211,12 @@
     <Compile Include="MammaryOperation.Designer.cs">
       <DependentUpon>MammaryOperation.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="MammryGrandView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MammryGrandView.Designer.cs">
+      <DependentUpon>MammryGrandView.cs</DependentUpon>
     </Compile>
     <Compile Include="Operation.cs">
       <SubType>Form</SubType>
@@ -230,11 +260,11 @@
     <Compile Include="PregnancyCesarean.Designer.cs">
       <DependentUpon>PregnancyCesarean.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pregrancy.cs">
+    <Compile Include="PregrancyCesareanView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pregrancy.Designer.cs">
-      <DependentUpon>Pregrancy.cs</DependentUpon>
+    <Compile Include="PregrancyCesareanView.Designer.cs">
+      <DependentUpon>PregrancyCesareanView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -320,6 +350,9 @@
     <EmbeddedResource Include="BloodTest.resx">
       <DependentUpon>BloodTest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BloodTestView.resx">
+      <DependentUpon>BloodTestView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="calendar.resx">
       <DependentUpon>calendar.cs</DependentUpon>
     </EmbeddedResource>
@@ -341,6 +374,9 @@
     <EmbeddedResource Include="DewormingMain.resx">
       <DependentUpon>DewormingMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DewormingView.resx">
+      <DependentUpon>DewormingView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Diagnosis.resx">
       <DependentUpon>Diagnosis.cs</DependentUpon>
     </EmbeddedResource>
@@ -350,8 +386,14 @@
     <EmbeddedResource Include="EarOperation.resx">
       <DependentUpon>EarOperation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EarOperationView.resx">
+      <DependentUpon>EarOperationView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EyeOperation.resx">
       <DependentUpon>EyeOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EyeOperationView.resx">
+      <DependentUpon>EyeOperationView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRX.resx">
       <DependentUpon>frmRX.cs</DependentUpon>
@@ -365,6 +407,9 @@
     <EmbeddedResource Include="MammaryOperation.resx">
       <DependentUpon>MammaryOperation.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MammryGrandView.resx">
+      <DependentUpon>MammryGrandView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Operation.resx">
       <DependentUpon>Operation.cs</DependentUpon>
@@ -387,8 +432,8 @@
     <EmbeddedResource Include="PregnancyCesarean.resx">
       <DependentUpon>PregnancyCesarean.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pregrancy.resx">
-      <DependentUpon>Pregrancy.cs</DependentUpon>
+    <EmbeddedResource Include="PregrancyCesareanView.resx">
+      <DependentUpon>PregrancyCesareanView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

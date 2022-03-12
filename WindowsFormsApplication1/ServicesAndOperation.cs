@@ -31,7 +31,7 @@ namespace WindowsFormsApplication1
         private void btnPregnancy_Click(object sender, EventArgs e)
         {
             panelScheduling.Controls.Clear();
-            Pregrancy cy = new Pregrancy();
+            PregrancyCesareanView cy = new PregrancyCesareanView();
             cy.TopLevel = false;
             panelScheduling.Controls.Add(cy);
             cy.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

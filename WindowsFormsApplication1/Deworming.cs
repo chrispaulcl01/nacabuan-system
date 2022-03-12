@@ -70,12 +70,7 @@ namespace WindowsFormsApplication1
             else
             {
                 MessageBox.Show("failed to save", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-
-
-            Home home = new Home();
-            home.Show();
-            Application.OpenForms["Deworming"].Close();
+            } 
         }
 
         private void btnBackDewarm_Click(object sender, EventArgs e)

@@ -90,18 +90,129 @@ namespace WindowsFormsApplication1
 
         private void gridPatientData_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-
-            if (e.RowIndex >= 0)
+            if (cmbLoadServices.Text == "SkinTreatment") 
             {
-                DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
-
-                if (patient.PatientInfoViewerSkin(row.Cells[0].Value.ToString()))
+                if (e.RowIndex >= 0)
                 {
-                    SkinTreatmentUpdate skinUp = new SkinTreatmentUpdate();
-                    skinUp.Show();
+                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
 
-                    this.Close();
+                    if (patient.PatientInfoViewerSkin(row.Cells[0].Value.ToString()))
+                    {
+                        SkinTreatmentUpdate skinUp = new SkinTreatmentUpdate();
+                        skinUp.Show();
+                    }
+                }
+            }
 
+            else if (cmbLoadServices.Text == "CPT")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerCPT(row.Cells[0].Value.ToString()))
+                    {
+                        SkinTreatmentUpdate skinUp = new SkinTreatmentUpdate();
+                        skinUp.Show();
+                    }
+                }
+            }
+
+            else if (cmbLoadServices.Text == "CDT")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerCDT(row.Cells[0].Value.ToString()))
+                    {
+                        SkinTreatmentUpdate skinUp = new SkinTreatmentUpdate();
+                        skinUp.Show();
+                    }
+                }
+            }
+
+            else if (cmbLoadServices.Text == "BloodParasite")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerBloodTest(row.Cells[0].Value.ToString()))
+                    {
+                        BloodTestView bloodtview = new BloodTestView();
+                        bloodtview.Show();
+                    }
+                }
+            }
+
+            else if (cmbLoadServices.Text == "Deworming")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerDeworming(row.Cells[0].Value.ToString()))
+                    {
+                        DewormingView dewormview = new DewormingView();
+                        dewormview.Show();
+                    }
+                }
+            }
+
+            else if (cmbLoadServices.Text == "Pregnancy")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerPregCesarean(row.Cells[0].Value.ToString()))
+                    {
+                        PregrancyCesareanView pregcesview = new PregrancyCesareanView();
+                        pregcesview.Show();
+                    }
+                }
+            }
+
+            else if (cmbLoadServices.Text == "Ear Operation")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerEarOperation(row.Cells[0].Value.ToString()))
+                    {
+                        EarOperationView earop = new EarOperationView();
+                        earop.Show();
+                    }
+                }
+            }
+
+            else if (cmbLoadServices.Text == "Eye Operation")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerEyeOperation(row.Cells[0].Value.ToString()))
+                    {
+                        EyeOperationView eyeop = new EyeOperationView();
+                        eyeop.Show();
+                    }
+                }
+            }
+
+            else if (cmbLoadServices.Text == "Mammary Gland")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerMammaryGland(row.Cells[0].Value.ToString()))
+                    {
+                        MammryGrandView mammgland = new MammryGrandView();
+                        mammgland.Show();
+                    }
                 }
             }
         }
@@ -119,6 +230,11 @@ namespace WindowsFormsApplication1
         private void gridPatientData_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             
+        }
+
+        private void Staff_Memberfrm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

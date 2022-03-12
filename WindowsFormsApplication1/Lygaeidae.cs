@@ -17,6 +17,8 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
+        components.Connections con = new components.Connections();
+        components.Values val = new components.Values();
         functions.Patient patient = new functions.Patient();
 
         public void autoGenNum()
@@ -59,6 +61,13 @@ namespace WindowsFormsApplication1
             else
             {
                 MessageBox.Show("failed to save", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                val.Pet_id = this.txtPetID.Text;
+                val.OwnersName = this.txtOwnersname.Text;
+                val.Pet_name = this.txtPatientName.Text;
+
+                frmRX rx = new frmRX();
+                rx.Show();
             }
         }
 

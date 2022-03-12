@@ -258,6 +258,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Staff_Memberfrm";
             this.Text = "Staff_Memberfrm";
+            this.Load += new System.EventHandler(this.Staff_Memberfrm_Load);
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridPatientData)).EndInit();

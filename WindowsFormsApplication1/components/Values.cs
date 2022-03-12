@@ -61,8 +61,8 @@ namespace WindowsFormsApplication1.components
             set { pet_gender = value; }
         }
 
-        public static DateTime pet_bday;
-        public DateTime Pet_bday
+        public static string pet_bday;
+        public string Pet_bday
         {
             get { return pet_bday; }
             set { pet_bday = value; }
@@ -315,18 +315,19 @@ namespace WindowsFormsApplication1.components
             set { address = value; }
         }
 
-        public static string pet_skingallergies;
-        public string Pet_skingallergies
-        {
-            get { return pet_skingallergies; }
-            set { pet_skingallergies = value; }
-        }
 
         public static string pet_existdisease;
         public string Pet_existdisease
         {
             get { return pet_existdisease; }
             set { pet_existdisease = value; }
+        }
+
+        public static string testkit;
+        public string Testkit
+        {
+            get { return testkit; }
+            set { testkit = value; }
         }
 
         public static string operation;
@@ -350,11 +351,115 @@ namespace WindowsFormsApplication1.components
             set { op_time = value; }
         }
 
+        public static string typevax;
+        public string Typevax
+        {
+            get { return typevax; }
+            set { typevax = value; }
+        }
+
+        public static DateTime vaxdate;
+        public DateTime Vaxdate
+        {
+            get { return vaxdate; }
+            set { vaxdate = value; }
+        }
+
+        public static string deworn_2weeks_date;
+        public string Deworn_2weeks_date
+        {
+            get { return deworn_2weeks_date; }
+            set { deworn_2weeks_date = value; }
+        }
+
+        public static string deworn_4weeks_date;
+        public string Deworn_4weeks_date
+        {
+            get { return deworn_4weeks_date; }
+            set { deworn_4weeks_date = value; }
+        }
+
+        public static string deworn_6weeks_date;
+        public string Deworn_6weeks_date
+        {
+            get { return deworn_6weeks_date; }
+            set { deworn_6weeks_date = value; }
+        }
+
+        public static string deworn_8weeks_date;
+        public string Deworn_8weeks_date
+        {
+            get { return deworn_8weeks_date; }
+            set { deworn_8weeks_date = value; }
+        }
+
+        public static string deworn_10weeks_date;
+        public string Deworn_10weeks_date
+        {
+            get { return deworn_10weeks_date; }
+            set { deworn_10weeks_date = value; }
+        }
+
+        public static string deworn_12weeks_date;
+        public string Deworn_12weeks_date
+        {
+            get { return deworn_12weeks_date; }
+            set { deworn_12weeks_date = value; }
+        }
+
+        public static string deworn_2weeks_medicine;
+        public string Deworn_2weeks_medicine
+        {
+            get { return deworn_2weeks_medicine; }
+            set { deworn_2weeks_medicine = value; }
+        }
+
+        public static string deworn_4weeks_medicine;
+        public string Deworn_4weeks_medicine
+        {
+            get { return deworn_4weeks_medicine; }
+            set { deworn_4weeks_medicine = value; }
+        }
+
+        public static string deworn_6weeks_medicine;
+        public string Deworn_6weeks_medicine
+        {
+            get { return deworn_6weeks_medicine; }
+            set { deworn_6weeks_medicine = value; }
+        }
+
+        public static string deworn_8weeks_medicine;
+        public string Deworn_8weeks_medicine
+        {
+            get { return deworn_8weeks_medicine; }
+            set { deworn_8weeks_medicine = value; }
+        }
+
+        public static string deworn_10weeks_medicine;
+        public string Deworn_10weeks_medicine
+        {
+            get { return deworn_10weeks_medicine; }
+            set { deworn_10weeks_medicine = value; }
+        }
+
+        public static string deworn_12weeks_medicine;
+        public string Deworn_12weeks_medicine
+        {
+            get { return deworn_12weeks_medicine; }
+            set { deworn_12weeks_medicine = value; }
+        }
+
+        public static string curren_med;
+        public string Curren_med
+        {
+            get { return curren_med; }
+            set { curren_med = value; }
+        }
         //public static string service;
         //public string Op_time
         //{
-            //get { return op_time; }
-           // set { op_time = value; }
+        //get { return op_time; }
+        // set { op_time = value; }
         //}
     }
 
