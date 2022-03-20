@@ -44,5 +44,21 @@ namespace WindowsFormsApplication1
              
 
         }
+
+        private void btnSavemammry_Click(object sender, EventArgs e)
+        {
+            BloodTestUpdate1 bloodupfrm = new BloodTestUpdate1();
+            bloodupfrm.Show();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -89,6 +89,12 @@
     <Compile Include="BloodTest.Designer.cs">
       <DependentUpon>BloodTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="BloodTestUpdate1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloodTestUpdate1.Designer.cs">
+      <DependentUpon>BloodTestUpdate1.cs</DependentUpon>
+    </Compile>
     <Compile Include="BloodTestView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,18 @@
     <Compile Include="CDTest.Designer.cs">
       <DependentUpon>CDTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="CDTestUpgrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDTestUpgrade.Designer.cs">
+      <DependentUpon>CDTestUpgrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CDTestView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDTestView.Designer.cs">
+      <DependentUpon>CDTestView.cs</DependentUpon>
+    </Compile>
     <Compile Include="components\Connections.cs" />
     <Compile Include="components\Values.cs" />
     <Compile Include="Consultationfrm.cs">
@@ -120,6 +138,18 @@
     </Compile>
     <Compile Include="CPTest.Designer.cs">
       <DependentUpon>CPTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPTestUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CPTestUpdate.Designer.cs">
+      <DependentUpon>CPTestUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPTestView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CPTestView.Designer.cs">
+      <DependentUpon>CPTestView.cs</DependentUpon>
     </Compile>
     <Compile Include="Crastration.cs">
       <SubType>Form</SubType>
@@ -138,6 +168,12 @@
     </Compile>
     <Compile Include="DewormingMain.Designer.cs">
       <DependentUpon>DewormingMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DewormingUpdatefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DewormingUpdatefrm.Designer.cs">
+      <DependentUpon>DewormingUpdatefrm.cs</DependentUpon>
     </Compile>
     <Compile Include="DewormingView.cs">
       <SubType>Form</SubType>
@@ -254,6 +290,12 @@
     <Compile Include="PaymentTransactfrm.Designer.cs">
       <DependentUpon>PaymentTransactfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PregnancyCesarianUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregnancyCesarianUpdate.Designer.cs">
+      <DependentUpon>PregnancyCesarianUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="PregnancyCesarean.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -310,11 +352,17 @@
     <Compile Include="SkinTreatment.Designer.cs">
       <DependentUpon>SkinTreatment.cs</DependentUpon>
     </Compile>
-    <Compile Include="SkinTreatmentUpdate.cs">
+    <Compile Include="SkinTreatmentView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SkinTreatmentUpdate.Designer.cs">
-      <DependentUpon>SkinTreatmentUpdate.cs</DependentUpon>
+    <Compile Include="SkinTreatmentView.Designer.cs">
+      <DependentUpon>SkinTreatmentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SkinTreatmentUpdate1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkinTreatmentUpdate1.Designer.cs">
+      <DependentUpon>SkinTreatmentUpdate1.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Patients Data.cs">
@@ -350,6 +398,9 @@
     <EmbeddedResource Include="BloodTest.resx">
       <DependentUpon>BloodTest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BloodTestUpdate1.resx">
+      <DependentUpon>BloodTestUpdate1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BloodTestView.resx">
       <DependentUpon>BloodTestView.cs</DependentUpon>
     </EmbeddedResource>
@@ -359,11 +410,23 @@
     <EmbeddedResource Include="CDTest.resx">
       <DependentUpon>CDTest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CDTestUpgrade.resx">
+      <DependentUpon>CDTestUpgrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDTestView.resx">
+      <DependentUpon>CDTestView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultationfrm.resx">
       <DependentUpon>Consultationfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CPTest.resx">
       <DependentUpon>CPTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPTestUpdate.resx">
+      <DependentUpon>CPTestUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPTestView.resx">
+      <DependentUpon>CPTestView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Crastration.resx">
       <DependentUpon>Crastration.cs</DependentUpon>
@@ -373,6 +436,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DewormingMain.resx">
       <DependentUpon>DewormingMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DewormingUpdatefrm.resx">
+      <DependentUpon>DewormingUpdatefrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DewormingView.resx">
       <DependentUpon>DewormingView.cs</DependentUpon>
@@ -429,6 +495,9 @@
     <EmbeddedResource Include="PaymentTransactfrm.resx">
       <DependentUpon>PaymentTransactfrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PregnancyCesarianUpdate.resx">
+      <DependentUpon>PregnancyCesarianUpdate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PregnancyCesarean.resx">
       <DependentUpon>PregnancyCesarean.cs</DependentUpon>
     </EmbeddedResource>
@@ -472,8 +541,11 @@
     <EmbeddedResource Include="Patients Data.resx">
       <DependentUpon>Patients Data.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SkinTreatmentUpdate.resx">
-      <DependentUpon>SkinTreatmentUpdate.cs</DependentUpon>
+    <EmbeddedResource Include="SkinTreatmentView.resx">
+      <DependentUpon>SkinTreatmentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkinTreatmentUpdate1.resx">
+      <DependentUpon>SkinTreatmentUpdate1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransactionHistory.resx">
       <DependentUpon>TransactionHistory.cs</DependentUpon>

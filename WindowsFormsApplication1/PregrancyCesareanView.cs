@@ -50,5 +50,11 @@ namespace WindowsFormsApplication1
         {
             this.Close();
         }
+
+        private void btnSavePreg_Click(object sender, EventArgs e)
+        {
+            PregnancyCesarianUpdate pregupd = new PregnancyCesarianUpdate();
+            pregupd.Show();
+        }
     }
 }

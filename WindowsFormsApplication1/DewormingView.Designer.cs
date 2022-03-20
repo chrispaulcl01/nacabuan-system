@@ -36,6 +36,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.txtDeworm10weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -43,10 +44,12 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtDewormMedicine12weeks = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.txtDeworm12weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.txtDeworm6weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtDewormMedicine6weeks = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -67,6 +70,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.txtDeworm8weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtAge = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -78,6 +82,11 @@
             this.txtPetID = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label37 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtService = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtPetBreed = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtPetSpecies = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtPetGender = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtBday = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -87,6 +96,7 @@
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtDeworm2weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtDewormMedicine2weeks = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label15 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -99,17 +109,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.txtBday = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtPetGender = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtPetSpecies = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtPetBreed = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtService = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtDeworm2weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtDeworm12weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtDeworm10weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtDeworm6weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtDeworm4weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtDeworm8weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
             this.panel11.SuspendLayout();
@@ -236,6 +236,25 @@
             this.panel11.Size = new System.Drawing.Size(249, 203);
             this.panel11.TabIndex = 231;
             // 
+            // txtDeworm10weeksDate
+            // 
+            this.txtDeworm10weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDeworm10weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDeworm10weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm10weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDeworm10weeksDate.BorderThickness = 3;
+            this.txtDeworm10weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDeworm10weeksDate.Enabled = false;
+            this.txtDeworm10weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDeworm10weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm10weeksDate.isPassword = false;
+            this.txtDeworm10weeksDate.Location = new System.Drawing.Point(126, 79);
+            this.txtDeworm10weeksDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeworm10weeksDate.Name = "txtDeworm10weeksDate";
+            this.txtDeworm10weeksDate.Size = new System.Drawing.Size(113, 32);
+            this.txtDeworm10weeksDate.TabIndex = 233;
+            this.txtDeworm10weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(226)))));
@@ -325,6 +344,25 @@
             this.panel9.Size = new System.Drawing.Size(249, 203);
             this.panel9.TabIndex = 232;
             // 
+            // txtDeworm12weeksDate
+            // 
+            this.txtDeworm12weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDeworm12weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDeworm12weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm12weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDeworm12weeksDate.BorderThickness = 3;
+            this.txtDeworm12weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDeworm12weeksDate.Enabled = false;
+            this.txtDeworm12weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDeworm12weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm12weeksDate.isPassword = false;
+            this.txtDeworm12weeksDate.Location = new System.Drawing.Point(126, 79);
+            this.txtDeworm12weeksDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeworm12weeksDate.Name = "txtDeworm12weeksDate";
+            this.txtDeworm12weeksDate.Size = new System.Drawing.Size(113, 32);
+            this.txtDeworm12weeksDate.TabIndex = 232;
+            this.txtDeworm12weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -372,6 +410,25 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(249, 203);
             this.panel7.TabIndex = 228;
+            // 
+            // txtDeworm6weeksDate
+            // 
+            this.txtDeworm6weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDeworm6weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDeworm6weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm6weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDeworm6weeksDate.BorderThickness = 3;
+            this.txtDeworm6weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDeworm6weeksDate.Enabled = false;
+            this.txtDeworm6weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDeworm6weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm6weeksDate.isPassword = false;
+            this.txtDeworm6weeksDate.Location = new System.Drawing.Point(126, 79);
+            this.txtDeworm6weeksDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeworm6weeksDate.Name = "txtDeworm6weeksDate";
+            this.txtDeworm6weeksDate.Size = new System.Drawing.Size(113, 32);
+            this.txtDeworm6weeksDate.TabIndex = 234;
+            this.txtDeworm6weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtDewormMedicine6weeks
             // 
@@ -550,8 +607,9 @@
             this.btnSaveDewarm.Name = "btnSaveDewarm";
             this.btnSaveDewarm.Size = new System.Drawing.Size(79, 47);
             this.btnSaveDewarm.TabIndex = 233;
-            this.btnSaveDewarm.Text = "Save";
+            this.btnSaveDewarm.Text = "Update";
             this.btnSaveDewarm.UseVisualStyleBackColor = true;
+            this.btnSaveDewarm.Click += new System.EventHandler(this.btnSaveDewarm_Click);
             // 
             // label26
             // 
@@ -641,6 +699,25 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(249, 203);
             this.panel13.TabIndex = 230;
+            // 
+            // txtDeworm8weeksDate
+            // 
+            this.txtDeworm8weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDeworm8weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDeworm8weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm8weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDeworm8weeksDate.BorderThickness = 3;
+            this.txtDeworm8weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDeworm8weeksDate.Enabled = false;
+            this.txtDeworm8weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDeworm8weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm8weeksDate.isPassword = false;
+            this.txtDeworm8weeksDate.Location = new System.Drawing.Point(132, 81);
+            this.txtDeworm8weeksDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeworm8weeksDate.Name = "txtDeworm8weeksDate";
+            this.txtDeworm8weeksDate.Size = new System.Drawing.Size(113, 32);
+            this.txtDeworm8weeksDate.TabIndex = 236;
+            this.txtDeworm8weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtAge
             // 
@@ -804,6 +881,101 @@
             this.panel2.Size = new System.Drawing.Size(384, 415);
             this.panel2.TabIndex = 226;
             // 
+            // txtService
+            // 
+            this.txtService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtService.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtService.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtService.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtService.BorderThickness = 3;
+            this.txtService.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtService.Enabled = false;
+            this.txtService.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtService.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtService.isPassword = false;
+            this.txtService.Location = new System.Drawing.Point(179, 342);
+            this.txtService.Margin = new System.Windows.Forms.Padding(4);
+            this.txtService.Name = "txtService";
+            this.txtService.Size = new System.Drawing.Size(154, 32);
+            this.txtService.TabIndex = 230;
+            this.txtService.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtPetBreed
+            // 
+            this.txtPetBreed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPetBreed.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPetBreed.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetBreed.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPetBreed.BorderThickness = 3;
+            this.txtPetBreed.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPetBreed.Enabled = false;
+            this.txtPetBreed.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPetBreed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetBreed.isPassword = false;
+            this.txtPetBreed.Location = new System.Drawing.Point(179, 308);
+            this.txtPetBreed.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPetBreed.Name = "txtPetBreed";
+            this.txtPetBreed.Size = new System.Drawing.Size(154, 32);
+            this.txtPetBreed.TabIndex = 229;
+            this.txtPetBreed.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtPetSpecies
+            // 
+            this.txtPetSpecies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPetSpecies.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPetSpecies.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetSpecies.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPetSpecies.BorderThickness = 3;
+            this.txtPetSpecies.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPetSpecies.Enabled = false;
+            this.txtPetSpecies.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPetSpecies.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetSpecies.isPassword = false;
+            this.txtPetSpecies.Location = new System.Drawing.Point(179, 270);
+            this.txtPetSpecies.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPetSpecies.Name = "txtPetSpecies";
+            this.txtPetSpecies.Size = new System.Drawing.Size(154, 32);
+            this.txtPetSpecies.TabIndex = 228;
+            this.txtPetSpecies.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtPetGender
+            // 
+            this.txtPetGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPetGender.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPetGender.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetGender.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPetGender.BorderThickness = 3;
+            this.txtPetGender.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPetGender.Enabled = false;
+            this.txtPetGender.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPetGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetGender.isPassword = false;
+            this.txtPetGender.Location = new System.Drawing.Point(180, 194);
+            this.txtPetGender.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPetGender.Name = "txtPetGender";
+            this.txtPetGender.Size = new System.Drawing.Size(154, 32);
+            this.txtPetGender.TabIndex = 227;
+            this.txtPetGender.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtBday
+            // 
+            this.txtBday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtBday.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtBday.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtBday.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtBday.BorderThickness = 3;
+            this.txtBday.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBday.Enabled = false;
+            this.txtBday.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtBday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtBday.isPassword = false;
+            this.txtBday.Location = new System.Drawing.Point(179, 236);
+            this.txtBday.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBday.Name = "txtBday";
+            this.txtBday.Size = new System.Drawing.Size(154, 32);
+            this.txtBday.TabIndex = 226;
+            this.txtBday.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(226)))));
@@ -913,6 +1085,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(249, 203);
             this.panel1.TabIndex = 227;
+            // 
+            // txtDeworm2weeksDate
+            // 
+            this.txtDeworm2weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDeworm2weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDeworm2weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm2weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDeworm2weeksDate.BorderThickness = 3;
+            this.txtDeworm2weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDeworm2weeksDate.Enabled = false;
+            this.txtDeworm2weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDeworm2weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm2weeksDate.isPassword = false;
+            this.txtDeworm2weeksDate.Location = new System.Drawing.Point(125, 79);
+            this.txtDeworm2weeksDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeworm2weeksDate.Name = "txtDeworm2weeksDate";
+            this.txtDeworm2weeksDate.Size = new System.Drawing.Size(113, 32);
+            this.txtDeworm2weeksDate.TabIndex = 231;
+            this.txtDeworm2weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtDewormMedicine2weeks
             // 
@@ -1069,177 +1260,6 @@
             this.panel5.Size = new System.Drawing.Size(249, 203);
             this.panel5.TabIndex = 229;
             // 
-            // txtBday
-            // 
-            this.txtBday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtBday.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtBday.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtBday.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtBday.BorderThickness = 3;
-            this.txtBday.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBday.Enabled = false;
-            this.txtBday.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtBday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtBday.isPassword = false;
-            this.txtBday.Location = new System.Drawing.Point(179, 236);
-            this.txtBday.Margin = new System.Windows.Forms.Padding(4);
-            this.txtBday.Name = "txtBday";
-            this.txtBday.Size = new System.Drawing.Size(154, 32);
-            this.txtBday.TabIndex = 226;
-            this.txtBday.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtPetGender
-            // 
-            this.txtPetGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtPetGender.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtPetGender.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetGender.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtPetGender.BorderThickness = 3;
-            this.txtPetGender.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPetGender.Enabled = false;
-            this.txtPetGender.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPetGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetGender.isPassword = false;
-            this.txtPetGender.Location = new System.Drawing.Point(180, 194);
-            this.txtPetGender.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPetGender.Name = "txtPetGender";
-            this.txtPetGender.Size = new System.Drawing.Size(154, 32);
-            this.txtPetGender.TabIndex = 227;
-            this.txtPetGender.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtPetSpecies
-            // 
-            this.txtPetSpecies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtPetSpecies.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtPetSpecies.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetSpecies.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtPetSpecies.BorderThickness = 3;
-            this.txtPetSpecies.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPetSpecies.Enabled = false;
-            this.txtPetSpecies.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPetSpecies.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetSpecies.isPassword = false;
-            this.txtPetSpecies.Location = new System.Drawing.Point(179, 270);
-            this.txtPetSpecies.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPetSpecies.Name = "txtPetSpecies";
-            this.txtPetSpecies.Size = new System.Drawing.Size(154, 32);
-            this.txtPetSpecies.TabIndex = 228;
-            this.txtPetSpecies.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtPetBreed
-            // 
-            this.txtPetBreed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtPetBreed.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtPetBreed.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetBreed.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtPetBreed.BorderThickness = 3;
-            this.txtPetBreed.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPetBreed.Enabled = false;
-            this.txtPetBreed.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPetBreed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetBreed.isPassword = false;
-            this.txtPetBreed.Location = new System.Drawing.Point(179, 308);
-            this.txtPetBreed.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPetBreed.Name = "txtPetBreed";
-            this.txtPetBreed.Size = new System.Drawing.Size(154, 32);
-            this.txtPetBreed.TabIndex = 229;
-            this.txtPetBreed.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtService
-            // 
-            this.txtService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtService.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtService.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtService.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtService.BorderThickness = 3;
-            this.txtService.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtService.Enabled = false;
-            this.txtService.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtService.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtService.isPassword = false;
-            this.txtService.Location = new System.Drawing.Point(179, 342);
-            this.txtService.Margin = new System.Windows.Forms.Padding(4);
-            this.txtService.Name = "txtService";
-            this.txtService.Size = new System.Drawing.Size(154, 32);
-            this.txtService.TabIndex = 230;
-            this.txtService.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtDeworm2weeksDate
-            // 
-            this.txtDeworm2weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtDeworm2weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtDeworm2weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDeworm2weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtDeworm2weeksDate.BorderThickness = 3;
-            this.txtDeworm2weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDeworm2weeksDate.Enabled = false;
-            this.txtDeworm2weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDeworm2weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDeworm2weeksDate.isPassword = false;
-            this.txtDeworm2weeksDate.Location = new System.Drawing.Point(125, 79);
-            this.txtDeworm2weeksDate.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDeworm2weeksDate.Name = "txtDeworm2weeksDate";
-            this.txtDeworm2weeksDate.Size = new System.Drawing.Size(113, 32);
-            this.txtDeworm2weeksDate.TabIndex = 231;
-            this.txtDeworm2weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtDeworm12weeksDate
-            // 
-            this.txtDeworm12weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtDeworm12weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtDeworm12weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDeworm12weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtDeworm12weeksDate.BorderThickness = 3;
-            this.txtDeworm12weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDeworm12weeksDate.Enabled = false;
-            this.txtDeworm12weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDeworm12weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDeworm12weeksDate.isPassword = false;
-            this.txtDeworm12weeksDate.Location = new System.Drawing.Point(126, 79);
-            this.txtDeworm12weeksDate.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDeworm12weeksDate.Name = "txtDeworm12weeksDate";
-            this.txtDeworm12weeksDate.Size = new System.Drawing.Size(113, 32);
-            this.txtDeworm12weeksDate.TabIndex = 232;
-            this.txtDeworm12weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtDeworm10weeksDate
-            // 
-            this.txtDeworm10weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtDeworm10weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtDeworm10weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDeworm10weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtDeworm10weeksDate.BorderThickness = 3;
-            this.txtDeworm10weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDeworm10weeksDate.Enabled = false;
-            this.txtDeworm10weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDeworm10weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDeworm10weeksDate.isPassword = false;
-            this.txtDeworm10weeksDate.Location = new System.Drawing.Point(126, 79);
-            this.txtDeworm10weeksDate.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDeworm10weeksDate.Name = "txtDeworm10weeksDate";
-            this.txtDeworm10weeksDate.Size = new System.Drawing.Size(113, 32);
-            this.txtDeworm10weeksDate.TabIndex = 233;
-            this.txtDeworm10weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtDeworm6weeksDate
-            // 
-            this.txtDeworm6weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtDeworm6weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtDeworm6weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDeworm6weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtDeworm6weeksDate.BorderThickness = 3;
-            this.txtDeworm6weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDeworm6weeksDate.Enabled = false;
-            this.txtDeworm6weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDeworm6weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDeworm6weeksDate.isPassword = false;
-            this.txtDeworm6weeksDate.Location = new System.Drawing.Point(126, 79);
-            this.txtDeworm6weeksDate.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDeworm6weeksDate.Name = "txtDeworm6weeksDate";
-            this.txtDeworm6weeksDate.Size = new System.Drawing.Size(113, 32);
-            this.txtDeworm6weeksDate.TabIndex = 234;
-            this.txtDeworm6weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // txtDeworm4weeksDate
             // 
             this.txtDeworm4weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
@@ -1258,25 +1278,6 @@
             this.txtDeworm4weeksDate.Size = new System.Drawing.Size(113, 32);
             this.txtDeworm4weeksDate.TabIndex = 235;
             this.txtDeworm4weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtDeworm8weeksDate
-            // 
-            this.txtDeworm8weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtDeworm8weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtDeworm8weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDeworm8weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtDeworm8weeksDate.BorderThickness = 3;
-            this.txtDeworm8weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDeworm8weeksDate.Enabled = false;
-            this.txtDeworm8weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDeworm8weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDeworm8weeksDate.isPassword = false;
-            this.txtDeworm8weeksDate.Location = new System.Drawing.Point(132, 81);
-            this.txtDeworm8weeksDate.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDeworm8weeksDate.Name = "txtDeworm8weeksDate";
-            this.txtDeworm8weeksDate.Size = new System.Drawing.Size(113, 32);
-            this.txtDeworm8weeksDate.TabIndex = 236;
-            this.txtDeworm8weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // DewormingView
             // 

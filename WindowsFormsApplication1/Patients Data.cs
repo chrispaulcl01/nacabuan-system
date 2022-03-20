@@ -98,7 +98,7 @@ namespace WindowsFormsApplication1
 
                     if (patient.PatientInfoViewerSkin(row.Cells[0].Value.ToString()))
                     {
-                        SkinTreatmentUpdate skinUp = new SkinTreatmentUpdate();
+                        SkinTreatmentView skinUp = new SkinTreatmentView();
                         skinUp.Show();
                     }
                 }
@@ -112,8 +112,8 @@ namespace WindowsFormsApplication1
 
                     if (patient.PatientInfoViewerCPT(row.Cells[0].Value.ToString()))
                     {
-                        SkinTreatmentUpdate skinUp = new SkinTreatmentUpdate();
-                        skinUp.Show();
+                        CPTestView cptUp = new CPTestView();
+                        cptUp.Show();
                     }
                 }
             }
@@ -126,8 +126,8 @@ namespace WindowsFormsApplication1
 
                     if (patient.PatientInfoViewerCDT(row.Cells[0].Value.ToString()))
                     {
-                        SkinTreatmentUpdate skinUp = new SkinTreatmentUpdate();
-                        skinUp.Show();
+                        CDTestView cdtnUp = new CDTestView();
+                        cdtnUp.Show();
                     }
                 }
             }

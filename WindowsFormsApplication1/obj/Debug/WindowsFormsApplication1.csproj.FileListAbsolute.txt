@@ -990,7 +990,6 @@ C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplic
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ServicesAndOperation.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SkinTreatment.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Staff_Memberfrm.resources
-C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SkinTreatmentUpdate.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.TransactionHistory.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Vaccination.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.VaxMain.resources
@@ -1005,3 +1004,12 @@ C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplic
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.EarOperationView.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.EyeOperationView.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.MammryGrandView.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.BloodTestUpdate1.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.CDTestView.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.CPTestUpdate.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.CPTestView.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SkinTreatmentView.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SkinTreatmentUpdate1.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.CDTestUpgrade.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.DewormingUpdatefrm.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PregnancyCesarianUpdate.resources

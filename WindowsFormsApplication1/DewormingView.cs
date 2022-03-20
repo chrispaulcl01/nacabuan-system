@@ -38,19 +38,19 @@ namespace WindowsFormsApplication1
             this.txtDeworm2weeksDate.Text = val.Deworn_2weeks_date;
             this.txtDewormMedicine2weeks.Text = val.Deworn_2weeks_medicine;
 
-            this.txtDeworm4weeksDate.Text = val.Deworn_2weeks_date;
+            this.txtDeworm4weeksDate.Text = val.Deworn_4weeks_date;
             this.txtDewormMedicine4weeks.Text = val.Deworn_4weeks_medicine;
 
-            this.txtDeworm6weeksDate.Text = val.Deworn_2weeks_date;
+            this.txtDeworm6weeksDate.Text = val.Deworn_6weeks_date;
             this.txtDewormMedicine6weeks.Text = val.Deworn_6weeks_medicine;
 
-            this.txtDeworm8weeksDate.Text = val.Deworn_2weeks_date;
+            this.txtDeworm8weeksDate.Text = val.Deworn_8weeks_date;
             this.txtDewormMedicine8weeks.Text = val.Deworn_8weeks_medicine;
 
-            this.txtDeworm10weeksDate.Text = val.Deworn_2weeks_date;
+            this.txtDeworm10weeksDate.Text = val.Deworn_10weeks_date;
             this.txtDewormMedicine10weeks.Text = val.Deworn_10weeks_medicine;
 
-            this.txtDeworm12weeksDate.Text = val.Deworn_2weeks_date;
+            this.txtDeworm12weeksDate.Text = val.Deworn_12weeks_date;
             this.txtDewormMedicine12weeks.Text = val.Deworn_12weeks_medicine;
         }
 
@@ -62,6 +62,12 @@ namespace WindowsFormsApplication1
         private void iconButton2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSaveDewarm_Click(object sender, EventArgs e)
+        {
+            DewormingUpdatefrm dewupd = new DewormingUpdatefrm();
+            dewupd.Show();
         }
     }
 }

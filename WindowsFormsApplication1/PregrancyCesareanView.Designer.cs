@@ -65,20 +65,20 @@ namespace WindowsFormsApplication1
             this.panel4 = new System.Windows.Forms.Panel();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtOpDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtOperation = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.btnSavePreg = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtPetAllergies = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtPetBreed = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtPetSpecies = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtBday = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtPetGender = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
-            this.txtPetGender = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtBday = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtPetSpecies = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtPetBreed = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtPetAllergies = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtOperation = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtOpDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
@@ -576,6 +576,44 @@ namespace WindowsFormsApplication1
             this.panel1.Size = new System.Drawing.Size(384, 231);
             this.panel1.TabIndex = 218;
             // 
+            // txtOpDate
+            // 
+            this.txtOpDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtOpDate.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtOpDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOpDate.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtOpDate.BorderThickness = 3;
+            this.txtOpDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOpDate.Enabled = false;
+            this.txtOpDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtOpDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOpDate.isPassword = false;
+            this.txtOpDate.Location = new System.Drawing.Point(154, 113);
+            this.txtOpDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOpDate.Name = "txtOpDate";
+            this.txtOpDate.Size = new System.Drawing.Size(154, 32);
+            this.txtOpDate.TabIndex = 217;
+            this.txtOpDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtOperation
+            // 
+            this.txtOperation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtOperation.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtOperation.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOperation.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtOperation.BorderThickness = 3;
+            this.txtOperation.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOperation.Enabled = false;
+            this.txtOperation.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtOperation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOperation.isPassword = false;
+            this.txtOperation.Location = new System.Drawing.Point(154, 66);
+            this.txtOperation.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOperation.Name = "txtOperation";
+            this.txtOperation.Size = new System.Drawing.Size(154, 32);
+            this.txtOperation.TabIndex = 216;
+            this.txtOperation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -607,8 +645,9 @@ namespace WindowsFormsApplication1
             this.btnSavePreg.Name = "btnSavePreg";
             this.btnSavePreg.Size = new System.Drawing.Size(79, 47);
             this.btnSavePreg.TabIndex = 221;
-            this.btnSavePreg.Text = "Save";
+            this.btnSavePreg.Text = "Update";
             this.btnSavePreg.UseVisualStyleBackColor = true;
+            this.btnSavePreg.Click += new System.EventHandler(this.btnSavePreg_Click);
             // 
             // panel2
             // 
@@ -638,6 +677,101 @@ namespace WindowsFormsApplication1
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(384, 520);
             this.panel2.TabIndex = 217;
+            // 
+            // txtPetAllergies
+            // 
+            this.txtPetAllergies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPetAllergies.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPetAllergies.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetAllergies.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPetAllergies.BorderThickness = 3;
+            this.txtPetAllergies.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPetAllergies.Enabled = false;
+            this.txtPetAllergies.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPetAllergies.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetAllergies.isPassword = false;
+            this.txtPetAllergies.Location = new System.Drawing.Point(165, 395);
+            this.txtPetAllergies.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPetAllergies.Name = "txtPetAllergies";
+            this.txtPetAllergies.Size = new System.Drawing.Size(154, 32);
+            this.txtPetAllergies.TabIndex = 215;
+            this.txtPetAllergies.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtPetBreed
+            // 
+            this.txtPetBreed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPetBreed.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPetBreed.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetBreed.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPetBreed.BorderThickness = 3;
+            this.txtPetBreed.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPetBreed.Enabled = false;
+            this.txtPetBreed.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPetBreed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetBreed.isPassword = false;
+            this.txtPetBreed.Location = new System.Drawing.Point(166, 319);
+            this.txtPetBreed.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPetBreed.Name = "txtPetBreed";
+            this.txtPetBreed.Size = new System.Drawing.Size(154, 32);
+            this.txtPetBreed.TabIndex = 214;
+            this.txtPetBreed.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtPetSpecies
+            // 
+            this.txtPetSpecies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPetSpecies.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPetSpecies.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetSpecies.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPetSpecies.BorderThickness = 3;
+            this.txtPetSpecies.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPetSpecies.Enabled = false;
+            this.txtPetSpecies.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPetSpecies.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetSpecies.isPassword = false;
+            this.txtPetSpecies.Location = new System.Drawing.Point(166, 281);
+            this.txtPetSpecies.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPetSpecies.Name = "txtPetSpecies";
+            this.txtPetSpecies.Size = new System.Drawing.Size(154, 32);
+            this.txtPetSpecies.TabIndex = 213;
+            this.txtPetSpecies.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtBday
+            // 
+            this.txtBday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtBday.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtBday.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtBday.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtBday.BorderThickness = 3;
+            this.txtBday.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBday.Enabled = false;
+            this.txtBday.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtBday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtBday.isPassword = false;
+            this.txtBday.Location = new System.Drawing.Point(166, 238);
+            this.txtBday.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBday.Name = "txtBday";
+            this.txtBday.Size = new System.Drawing.Size(154, 32);
+            this.txtBday.TabIndex = 212;
+            this.txtBday.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtPetGender
+            // 
+            this.txtPetGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtPetGender.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPetGender.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetGender.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPetGender.BorderThickness = 3;
+            this.txtPetGender.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPetGender.Enabled = false;
+            this.txtPetGender.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPetGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPetGender.isPassword = false;
+            this.txtPetGender.Location = new System.Drawing.Point(167, 195);
+            this.txtPetGender.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPetGender.Name = "txtPetGender";
+            this.txtPetGender.Size = new System.Drawing.Size(154, 32);
+            this.txtPetGender.TabIndex = 211;
+            this.txtPetGender.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // iconButton2
             // 
@@ -682,139 +816,6 @@ namespace WindowsFormsApplication1
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.gunaShadowPanel1.Size = new System.Drawing.Size(1366, 69);
             this.gunaShadowPanel1.TabIndex = 216;
-            // 
-            // txtPetGender
-            // 
-            this.txtPetGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtPetGender.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtPetGender.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetGender.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtPetGender.BorderThickness = 3;
-            this.txtPetGender.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPetGender.Enabled = false;
-            this.txtPetGender.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPetGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetGender.isPassword = false;
-            this.txtPetGender.Location = new System.Drawing.Point(167, 195);
-            this.txtPetGender.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPetGender.Name = "txtPetGender";
-            this.txtPetGender.Size = new System.Drawing.Size(154, 32);
-            this.txtPetGender.TabIndex = 211;
-            this.txtPetGender.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtBday
-            // 
-            this.txtBday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtBday.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtBday.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtBday.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtBday.BorderThickness = 3;
-            this.txtBday.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBday.Enabled = false;
-            this.txtBday.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtBday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtBday.isPassword = false;
-            this.txtBday.Location = new System.Drawing.Point(166, 238);
-            this.txtBday.Margin = new System.Windows.Forms.Padding(4);
-            this.txtBday.Name = "txtBday";
-            this.txtBday.Size = new System.Drawing.Size(154, 32);
-            this.txtBday.TabIndex = 212;
-            this.txtBday.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtPetSpecies
-            // 
-            this.txtPetSpecies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtPetSpecies.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtPetSpecies.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetSpecies.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtPetSpecies.BorderThickness = 3;
-            this.txtPetSpecies.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPetSpecies.Enabled = false;
-            this.txtPetSpecies.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPetSpecies.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetSpecies.isPassword = false;
-            this.txtPetSpecies.Location = new System.Drawing.Point(166, 281);
-            this.txtPetSpecies.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPetSpecies.Name = "txtPetSpecies";
-            this.txtPetSpecies.Size = new System.Drawing.Size(154, 32);
-            this.txtPetSpecies.TabIndex = 213;
-            this.txtPetSpecies.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtPetBreed
-            // 
-            this.txtPetBreed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtPetBreed.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtPetBreed.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetBreed.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtPetBreed.BorderThickness = 3;
-            this.txtPetBreed.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPetBreed.Enabled = false;
-            this.txtPetBreed.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPetBreed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetBreed.isPassword = false;
-            this.txtPetBreed.Location = new System.Drawing.Point(166, 319);
-            this.txtPetBreed.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPetBreed.Name = "txtPetBreed";
-            this.txtPetBreed.Size = new System.Drawing.Size(154, 32);
-            this.txtPetBreed.TabIndex = 214;
-            this.txtPetBreed.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtPetAllergies
-            // 
-            this.txtPetAllergies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtPetAllergies.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtPetAllergies.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetAllergies.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtPetAllergies.BorderThickness = 3;
-            this.txtPetAllergies.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPetAllergies.Enabled = false;
-            this.txtPetAllergies.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPetAllergies.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPetAllergies.isPassword = false;
-            this.txtPetAllergies.Location = new System.Drawing.Point(165, 395);
-            this.txtPetAllergies.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPetAllergies.Name = "txtPetAllergies";
-            this.txtPetAllergies.Size = new System.Drawing.Size(154, 32);
-            this.txtPetAllergies.TabIndex = 215;
-            this.txtPetAllergies.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtOperation
-            // 
-            this.txtOperation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtOperation.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtOperation.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtOperation.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtOperation.BorderThickness = 3;
-            this.txtOperation.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOperation.Enabled = false;
-            this.txtOperation.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtOperation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtOperation.isPassword = false;
-            this.txtOperation.Location = new System.Drawing.Point(154, 66);
-            this.txtOperation.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOperation.Name = "txtOperation";
-            this.txtOperation.Size = new System.Drawing.Size(154, 32);
-            this.txtOperation.TabIndex = 216;
-            this.txtOperation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtOpDate
-            // 
-            this.txtOpDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtOpDate.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtOpDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtOpDate.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtOpDate.BorderThickness = 3;
-            this.txtOpDate.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOpDate.Enabled = false;
-            this.txtOpDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtOpDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtOpDate.isPassword = false;
-            this.txtOpDate.Location = new System.Drawing.Point(154, 113);
-            this.txtOpDate.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOpDate.Name = "txtOpDate";
-            this.txtOpDate.Size = new System.Drawing.Size(154, 32);
-            this.txtOpDate.TabIndex = 217;
-            this.txtOpDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // PregrancyCesareanView
             // 
