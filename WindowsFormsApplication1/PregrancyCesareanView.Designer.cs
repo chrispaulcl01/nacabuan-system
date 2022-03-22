@@ -280,7 +280,7 @@ namespace WindowsFormsApplication1
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.label13);
-            this.panel5.Location = new System.Drawing.Point(602, 331);
+            this.panel5.Location = new System.Drawing.Point(691, 403);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(384, 231);
             this.panel5.TabIndex = 219;
@@ -571,7 +571,7 @@ namespace WindowsFormsApplication1
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Location = new System.Drawing.Point(602, 67);
+            this.panel1.Location = new System.Drawing.Point(691, 139);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(384, 231);
             this.panel1.TabIndex = 218;
@@ -673,9 +673,9 @@ namespace WindowsFormsApplication1
             this.panel2.Controls.Add(this.label25);
             this.panel2.Controls.Add(this.label23);
             this.panel2.Controls.Add(this.label24);
-            this.panel2.Location = new System.Drawing.Point(195, 67);
+            this.panel2.Location = new System.Drawing.Point(284, 139);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(384, 520);
+            this.panel2.Size = new System.Drawing.Size(384, 495);
             this.panel2.TabIndex = 217;
             // 
             // txtPetAllergies

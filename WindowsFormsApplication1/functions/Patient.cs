@@ -1511,6 +1511,100 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
+        public bool UpdateEarOpPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_currmed,
+            string operation, DateTime op_date, string op_time)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"update dss_database.earoperation set owners_name = @owners_name, phone_num = @phone_num, address = @address, pet_name = @pet_name, pet_age = @pet_age,
+                                pet_gender = @pet_gender, pet_bday = @pet_bday, pet_species = @pet_species, pet_breed = @pet_breed, pet_weight = @pet_weight, pet_allergies = @pet_allergies,
+                                pet_currmed = @pet_currmed, operation = @operation, op_date = @op_date, op_time = @op_time
+                                WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@pet_currmed", pet_currmed);
+                        cmd.Parameters.AddWithValue("@operation", operation);
+                        cmd.Parameters.AddWithValue("@op_date", op_date);
+                        cmd.Parameters.AddWithValue("@op_time", op_time);
+
+
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error Update Ear Operation Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool UpdateEyeOpPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_currmed,
+            string operation, DateTime op_date, string op_time)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"update dss_database.eyeoperation set owners_name = @owners_name, phone_num = @phone_num, address = @address, pet_name = @pet_name, pet_age = @pet_age,
+                                pet_gender = @pet_gender, pet_bday = @pet_bday, pet_species = @pet_species, pet_breed = @pet_breed, pet_weight = @pet_weight, pet_allergies = @pet_allergies,
+                                pet_currmed = @pet_currmed, operation = @operation, op_date = @op_date, op_time = @op_time
+                                WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@pet_currmed", pet_currmed);
+                        cmd.Parameters.AddWithValue("@operation", operation);
+                        cmd.Parameters.AddWithValue("@op_date", op_date);
+                        cmd.Parameters.AddWithValue("@op_time", op_time);
+
+
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error Update Eye Operation Patient" + ex.ToString());
+                return false;
+            }
+        }
+
         public void CountTotalPatientDog(string date_month, string date_year)
         {
             try

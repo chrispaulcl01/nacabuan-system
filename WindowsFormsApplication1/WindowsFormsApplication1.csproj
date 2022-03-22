@@ -193,6 +193,12 @@
     <Compile Include="EarOperation.Designer.cs">
       <DependentUpon>EarOperation.cs</DependentUpon>
     </Compile>
+    <Compile Include="EarOperationUpdatefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarOperationUpdatefrm.Designer.cs">
+      <DependentUpon>EarOperationUpdatefrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EarOperationView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,12 @@
     </Compile>
     <Compile Include="EyeOperation.Designer.cs">
       <DependentUpon>EyeOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EyeOperationUpdatefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EyeOperationUpdatefrm.Designer.cs">
+      <DependentUpon>EyeOperationUpdatefrm.cs</DependentUpon>
     </Compile>
     <Compile Include="EyeOperationView.cs">
       <SubType>Form</SubType>
@@ -452,11 +464,17 @@
     <EmbeddedResource Include="EarOperation.resx">
       <DependentUpon>EarOperation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EarOperationUpdatefrm.resx">
+      <DependentUpon>EarOperationUpdatefrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EarOperationView.resx">
       <DependentUpon>EarOperationView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EyeOperation.resx">
       <DependentUpon>EyeOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EyeOperationUpdatefrm.resx">
+      <DependentUpon>EyeOperationUpdatefrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EyeOperationView.resx">
       <DependentUpon>EyeOperationView.cs</DependentUpon>

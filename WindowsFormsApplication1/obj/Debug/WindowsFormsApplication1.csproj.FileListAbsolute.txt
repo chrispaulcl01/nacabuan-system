@@ -1013,3 +1013,5 @@ C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplic
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.CDTestUpgrade.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.DewormingUpdatefrm.resources
 C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.PregnancyCesarianUpdate.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.EarOperationUpdatefrm.resources
+C:\Users\Christian Paul\Desktop\Thesis 3-6-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.EyeOperationUpdatefrm.resources

@@ -481,8 +481,9 @@
             this.btnSavePreg.Name = "btnSavePreg";
             this.btnSavePreg.Size = new System.Drawing.Size(79, 47);
             this.btnSavePreg.TabIndex = 222;
-            this.btnSavePreg.Text = "Save";
+            this.btnSavePreg.Text = "Update";
             this.btnSavePreg.UseVisualStyleBackColor = true;
+            this.btnSavePreg.Click += new System.EventHandler(this.btnSavePreg_Click);
             // 
             // label25
             // 

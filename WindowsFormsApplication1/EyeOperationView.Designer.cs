@@ -344,8 +344,9 @@
             this.btnSavePreg.Name = "btnSavePreg";
             this.btnSavePreg.Size = new System.Drawing.Size(79, 47);
             this.btnSavePreg.TabIndex = 228;
-            this.btnSavePreg.Text = "Save";
+            this.btnSavePreg.Text = "Update";
             this.btnSavePreg.UseVisualStyleBackColor = true;
+            this.btnSavePreg.Click += new System.EventHandler(this.btnSavePreg_Click);
             // 
             // btnBackPreg
             // 
@@ -358,6 +359,7 @@
             this.btnBackPreg.TabIndex = 229;
             this.btnBackPreg.Text = "Back";
             this.btnBackPreg.UseVisualStyleBackColor = true;
+            this.btnBackPreg.Click += new System.EventHandler(this.btnBackPreg_Click);
             // 
             // txtPetAllergies
             // 
@@ -520,6 +522,7 @@
             this.iconButton2.TabIndex = 65;
             this.iconButton2.Text = "X";
             this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // label1
             // 

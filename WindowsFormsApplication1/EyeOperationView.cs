@@ -41,5 +41,21 @@ namespace WindowsFormsApplication1
             this.txtOpDate.Text = val.Op_date.ToString();
             this.txtOpTime.Text = val.Op_time;
         }
+
+        private void btnSavePreg_Click(object sender, EventArgs e)
+        {
+            EyeOperationUpdatefrm eyeupd = new EyeOperationUpdatefrm();
+            eyeupd.Show();
+        }
+
+        private void btnBackPreg_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
