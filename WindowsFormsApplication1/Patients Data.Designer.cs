@@ -60,11 +60,11 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel2.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gunaLabel2.Location = new System.Drawing.Point(34, 18);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(169, 29);
+            this.gunaLabel2.Size = new System.Drawing.Size(167, 29);
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "Patients Data";
             // 
@@ -84,7 +84,6 @@
             "CPT",
             "CDT",
             "BloodParasite",
-            "Deworming",
             "Pregnancy",
             "Eye Operation",
             "Ear Operation",
@@ -168,7 +167,7 @@
             this.btnLoad.BaseColor = System.Drawing.Color.Transparent;
             this.btnLoad.BorderColor = System.Drawing.Color.Black;
             this.btnLoad.FocusedColor = System.Drawing.Color.Empty;
-            this.btnLoad.Font = new System.Drawing.Font("Rockwell Extra Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoad.ForeColor = System.Drawing.Color.Black;
             this.btnLoad.Image = null;
             this.btnLoad.ImageSize = new System.Drawing.Size(20, 20);
@@ -186,7 +185,7 @@
             // 
             // dateSchedule
             // 
-            this.dateSchedule.CalendarFont = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateSchedule.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateSchedule.CustomFormat = "MM/dd/yy";
             this.dateSchedule.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateSchedule.Location = new System.Drawing.Point(902, 80);
@@ -197,7 +196,7 @@
             // btnNext
             // 
             this.btnNext.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnNext.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.IconChar = FontAwesome.Sharp.IconChar.Search;
             this.btnNext.IconColor = System.Drawing.Color.Green;
             this.btnNext.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -220,7 +219,7 @@
             this.txtSearch.FocusedBaseColor = System.Drawing.Color.White;
             this.txtSearch.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtSearch.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(794, 118);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -232,10 +231,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(40, 132);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(150, 19);
+            this.label9.Size = new System.Drawing.Size(139, 20);
             this.label9.TabIndex = 215;
             this.label9.Text = "Service/ Operation\r\n";
             // 

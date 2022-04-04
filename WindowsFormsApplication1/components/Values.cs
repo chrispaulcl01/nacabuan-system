@@ -449,12 +449,100 @@ namespace WindowsFormsApplication1.components
             set { deworn_12weeks_medicine = value; }
         }
 
+        public static string first_boost_distemper;
+        public string First_boost_distemper
+        {
+            get { return first_boost_distemper; }
+            set { first_boost_distemper = value; }
+        }
+
+        public static string first_date_distemper;
+        public string First_date_distemper
+        {
+            get { return first_date_distemper; }
+            set { first_date_distemper = value; }
+        }
+
+        public static string second_boost_distemper;
+        public string Second_boost_distemper
+        {
+            get { return second_boost_distemper; }
+            set { second_boost_distemper = value; }
+        }
+
+        public static string second_date_distemper;
+        public string Second_date_distemper
+        {
+            get { return second_date_distemper; }
+            set { second_date_distemper = value; }
+        }
+
+        public static string third_boost_distemper;
+        public string Third_boost_distemper
+        {
+            get { return third_boost_distemper; }
+            set { third_boost_distemper = value; }
+        }
+
+        public static string third_date_distemper;
+        public string Third_date_distemper
+        {
+            get { return third_date_distemper; }
+            set { third_date_distemper = value; }
+        }
+
+
+        public static string first_boost_feline;
+        public string First_boost_feline
+        {
+            get { return first_boost_feline; }
+            set { first_boost_feline = value; }
+        }
+
+        public static string first_date_feline;
+        public string First_date_feline
+        {
+            get { return first_date_feline; }
+            set { first_date_feline = value; }
+        }
+
+        public static string second_boost_feline;
+        public string Second_boost_feline
+        {
+            get { return second_boost_feline; }
+            set { second_boost_feline = value; }
+        }
+
+        public static string second_date_feline;
+        public string Second_date_feline
+        {
+            get { return second_date_feline; }
+            set { second_date_feline = value; }
+        }
+
+        public static string first_boost_rabies;
+        public string First_boost_rabies
+        {
+            get { return first_boost_rabies; }
+            set { first_boost_rabies = value; }
+        }
+
+        public static string first_date_rabies;
+        public string First_date_rabies
+        {
+            get { return first_date_rabies; }
+            set { first_date_rabies = value; }
+        }
+
+
         public static string curren_med;
         public string Curren_med
         {
             get { return curren_med; }
             set { curren_med = value; }
         }
+
+
         //public static string service;
         //public string Op_time
         //{

@@ -67,7 +67,11 @@ namespace WindowsFormsApplication1
         {
             if (patient.SavePatientVaccination(txtPetID.Text, txtOwnersName.Text, txtPhoneNum.Text, txtAddress.Text, txtPatientName.Text,
                 int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
-                cmbAllergies.Text, cmbOperations.Text))
+                cmbAllergies.Text, cmbOperations.Text,
+                txt1stboostdistemper.Text, Date1stboostdistemper.Text, txt2ndboostdistemper.Text, Date2ndboostdistemper.Text,
+                txt3rdboostdistemper.Text, Date3rdboostdistemper.Text,  txt1stboostfeline.Text, Date1stboostfeline.Text,  txt2ndboostfeline.Text, date2ndboostfeline.Text,
+                txt1stboostrabies.Text, date1stboostrabies.Text
+                ))
             {
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

@@ -146,19 +146,19 @@ namespace WindowsFormsApplication1
                 }
             }
 
-            else if (cmbLoadServices.Text == "Deworming")
-            {
-                if (e.RowIndex >= 0)
-                {
-                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+            //else if (cmbLoadServices.Text == "Deworming")
+            //{
+               // if (e.RowIndex >= 0)
+                //{
+                 //  DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
 
-                    if (patient.PatientInfoViewerDeworming(row.Cells[0].Value.ToString()))
-                    {
-                        DewormingView dewormview = new DewormingView();
-                        dewormview.Show();
-                    }
-                }
-            }
+                  //  if (patient.PatientInfoViewerDeworming(row.Cells[0].Value.ToString()))
+                  //  {
+                  //      DewormingView dewormview = new DewormingView();
+                    //    dewormview.Show();
+//}
+                //}
+//}
 
             else if (cmbLoadServices.Text == "Pregnancy")
             {

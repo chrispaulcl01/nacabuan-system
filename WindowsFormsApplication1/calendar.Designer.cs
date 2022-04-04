@@ -40,6 +40,7 @@
             this.btnCrastration = new FontAwesome.Sharp.IconButton();
             this.btnVaccine = new FontAwesome.Sharp.IconButton();
             this.btnDeworming = new FontAwesome.Sharp.IconButton();
+            this.txtSchedIdentifier = new System.Windows.Forms.TextBox();
             this.gunaShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridBookingSchedule)).BeginInit();
             this.SuspendLayout();
@@ -59,17 +60,17 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel2.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gunaLabel2.Location = new System.Drawing.Point(42, 21);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(251, 29);
+            this.gunaLabel2.Size = new System.Drawing.Size(239, 29);
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "CLINIC CALENDAR";
             // 
             // dateSchedule
             // 
-            this.dateSchedule.CalendarFont = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateSchedule.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateSchedule.CustomFormat = "MM/dd/yy";
             this.dateSchedule.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateSchedule.Location = new System.Drawing.Point(889, 109);
@@ -85,7 +86,7 @@
             this.btnLoad.BaseColor = System.Drawing.Color.Transparent;
             this.btnLoad.BorderColor = System.Drawing.Color.Black;
             this.btnLoad.FocusedColor = System.Drawing.Color.Empty;
-            this.btnLoad.Font = new System.Drawing.Font("Rockwell Extra Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoad.ForeColor = System.Drawing.Color.Black;
             this.btnLoad.Image = null;
             this.btnLoad.ImageSize = new System.Drawing.Size(20, 20);
@@ -167,7 +168,7 @@
             // 
             this.btnLygaeidae.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnLygaeidae.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLygaeidae.Font = new System.Drawing.Font("Rockwell", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLygaeidae.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLygaeidae.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnLygaeidae.IconColor = System.Drawing.Color.Black;
             this.btnLygaeidae.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -183,7 +184,7 @@
             // 
             this.btnCrastration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnCrastration.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCrastration.Font = new System.Drawing.Font("Rockwell", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrastration.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrastration.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCrastration.IconColor = System.Drawing.Color.Black;
             this.btnCrastration.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -199,7 +200,7 @@
             // 
             this.btnVaccine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnVaccine.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnVaccine.Font = new System.Drawing.Font("Rockwell", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVaccine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVaccine.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnVaccine.IconColor = System.Drawing.Color.Black;
             this.btnVaccine.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -215,7 +216,7 @@
             // 
             this.btnDeworming.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnDeworming.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDeworming.Font = new System.Drawing.Font("Rockwell", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeworming.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeworming.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnDeworming.IconColor = System.Drawing.Color.Black;
             this.btnDeworming.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -227,6 +228,14 @@
             this.btnDeworming.UseVisualStyleBackColor = false;
             this.btnDeworming.Click += new System.EventHandler(this.btnDeworming_Click);
             // 
+            // txtSchedIdentifier
+            // 
+            this.txtSchedIdentifier.Location = new System.Drawing.Point(394, 119);
+            this.txtSchedIdentifier.Name = "txtSchedIdentifier";
+            this.txtSchedIdentifier.Size = new System.Drawing.Size(100, 20);
+            this.txtSchedIdentifier.TabIndex = 216;
+            this.txtSchedIdentifier.Visible = false;
+            // 
             // calendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -235,6 +244,7 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1102, 620);
+            this.Controls.Add(this.txtSchedIdentifier);
             this.Controls.Add(this.btnDeworming);
             this.Controls.Add(this.btnLygaeidae);
             this.Controls.Add(this.btnCrastration);
@@ -251,6 +261,7 @@
             this.gunaShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridBookingSchedule)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -264,5 +275,6 @@
         private FontAwesome.Sharp.IconButton btnCrastration;
         private FontAwesome.Sharp.IconButton btnVaccine;
         private FontAwesome.Sharp.IconButton btnDeworming;
+        private System.Windows.Forms.TextBox txtSchedIdentifier;
     }
 }

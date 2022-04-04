@@ -87,29 +87,46 @@ namespace WindowsFormsApplication1
 
         private void btnVaccine_Click(object sender, EventArgs e)
         {
+            txtSchedIdentifier.Clear();
+            this.txtSchedIdentifier.Text = "Vaccine";
             patient.LoaddVaccination(gridBookingSchedule);
         }
 
         private void btnCrastration_Click(object sender, EventArgs e)
         {
+            txtSchedIdentifier.Clear();
+            this.txtSchedIdentifier.Text = "Crastration";
             patient.LoaddCrastration(gridBookingSchedule);
         }
 
         private void btnLygaeidae_Click(object sender, EventArgs e)
         {
+            txtSchedIdentifier.Clear();
+            this.txtSchedIdentifier.Text = "Lygaeidae";
             patient.LoaddLygaidae(gridBookingSchedule);
         }
 
         private void btnDeworming_Click(object sender, EventArgs e)
         {
+            txtSchedIdentifier.Clear();
+            this.txtSchedIdentifier.Text = "Deworming";
             patient.LoadDeworming(gridBookingSchedule);
         }
 
         private void gridBookingSchedule_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            if (txtSchedIdentifier.Text == "Deworming")
             {
-                
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridBookingSchedule.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerDeworming(row.Cells[0].Value.ToString()))
+                    {
+                        DewormingView dewormview = new DewormingView();
+                        dewormview.Show();
+                    }
+                }
             }
         }
     }
