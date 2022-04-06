@@ -1104,3 +1104,5 @@ C:\Users\root\Desktop\thesis 4-4-22\nacabuan-system\WindowsFormsApplication1\obj
 C:\Users\root\Desktop\thesis 4-4-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
 C:\Users\root\Desktop\thesis 4-4-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\root\Desktop\thesis 4-4-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\root\Desktop\thesis 4-4-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.VaccinationViewerfrm.resources
+C:\Users\root\Desktop\thesis 4-4-22\nacabuan-system\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.VaccinationUpdatefrm.resources

@@ -60,17 +60,31 @@ namespace WindowsFormsApplication1
 
         private void gridBookingSchedule_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            if (txtSchedIdentifier.Text == "Deworming")
             {
-                DataGridViewRow row = this.gridBookingSchedule.Rows[e.RowIndex];
-
-                if (patient.GetPatient(row.Cells[0].Value.ToString()))
+                if (e.RowIndex >= 0)
                 {
-                    Consultationfrm consultationfrm = new Consultationfrm();
-                    consultationfrm.Show();
+                    DataGridViewRow row = this.gridBookingSchedule.Rows[e.RowIndex];
 
-                    this.Close();
-                    Application.OpenForms["Home"].Hide();
+                    if (patient.PatientInfoViewerDeworming(row.Cells[0].Value.ToString()))
+                    {
+                        DewormingView dewormview = new DewormingView();
+                        dewormview.Show();
+                    }
+                }
+            }
+
+            else if (txtSchedIdentifier.Text == "Vaccine")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridBookingSchedule.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerVaccination(row.Cells[0].Value.ToString()))
+                    {
+                        VaccinationViewerfrm vaxview = new VaccinationViewerfrm();
+                        vaxview.Show();
+                    }
                 }
             }
         }
@@ -115,19 +129,9 @@ namespace WindowsFormsApplication1
 
         private void gridBookingSchedule_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (txtSchedIdentifier.Text == "Deworming")
-            {
-                if (e.RowIndex >= 0)
-                {
-                    DataGridViewRow row = this.gridBookingSchedule.Rows[e.RowIndex];
+            
 
-                    if (patient.PatientInfoViewerDeworming(row.Cells[0].Value.ToString()))
-                    {
-                        DewormingView dewormview = new DewormingView();
-                        dewormview.Show();
-                    }
-                }
-            }
+            
         }
     }
 }

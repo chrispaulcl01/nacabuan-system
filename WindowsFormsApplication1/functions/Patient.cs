@@ -973,20 +973,26 @@ namespace WindowsFormsApplication1.functions
                             val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
                             val.Pet_breed = dat.Rows[0].Field<string>("pet_breed");
-                            val.Operation = dat.Rows[0].Field<string>("service");
+                            val.Pet_skinallergies = dat.Rows[0].Field<string>("pet_allergies");
+                            val.Operation = dat.Rows[0].Field<string>("operations");
 
-                            val.Deworn_2weeks_date = dat.Rows[0].Field<string>("deworn_2weeks_date");
-                            val.Deworn_2weeks_medicine = dat.Rows[0].Field<string>("deworn_2weeks_medicine");
-                            val.Deworn_4weeks_date = dat.Rows[0].Field<string>("deworn_2weeks_date");
-                            val.Deworn_4weeks_medicine = dat.Rows[0].Field<string>("deworn_4weeks_medicine");
-                            val.Deworn_6weeks_date = dat.Rows[0].Field<string>("deworn_6weeks_date");
-                            val.Deworn_6weeks_medicine = dat.Rows[0].Field<string>("deworn_6weeks_medicine");
-                            val.Deworn_8weeks_date = dat.Rows[0].Field<string>("deworn_8weeks_date");
-                            val.Deworn_8weeks_medicine = dat.Rows[0].Field<string>("deworn_8weeks_medicine");
-                            val.Deworn_10weeks_date = dat.Rows[0].Field<string>("deworn_10weeks_date");
-                            val.Deworn_10weeks_medicine = dat.Rows[0].Field<string>("deworn_10weeks_medicine");
-                            val.Deworn_12weeks_date = dat.Rows[0].Field<string>("deworn_12weeks_date");
-                            val.Deworn_12weeks_medicine = dat.Rows[0].Field<string>("deworn_12weeks_medicine");
+                            val.First_boost_distemper = dat.Rows[0].Field<string>("first_boost_distemper");
+                            val.First_date_distemper = dat.Rows[0].Field<string>("first_date_distemper");
+
+                            val.Second_boost_distemper = dat.Rows[0].Field<string>("second_boost_distemper");
+                            val.Second_date_distemper = dat.Rows[0].Field<string>("second_date_distemper");
+
+                            val.Third_boost_distemper = dat.Rows[0].Field<string>("third_boost_distemper");
+                            val.Third_date_distemper = dat.Rows[0].Field<string>("third_date_distemper");
+
+                            val.First_boost_feline = dat.Rows[0].Field<string>("first_boost_feline");
+                            val.First_date_feline= dat.Rows[0].Field<string>("first_date_feline");
+
+                            val.Second_boost_feline = dat.Rows[0].Field<string>("second_boost_feline");
+                            val.Second_date_feline= dat.Rows[0].Field<string>("second_date_feline");
+
+                            val.First_boost_rabies = dat.Rows[0].Field<string>("first_boost_rabies");
+                            val.First_date_rabies= dat.Rows[0].Field<string>("first_date_rabies");
 
 
                             return true;
@@ -1282,6 +1288,67 @@ namespace WindowsFormsApplication1.functions
             catch (Exception ex)
             {
                 Console.WriteLine("error View Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool UpdatePatientVaccine(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_allergies, string operations,
+            string first_boost_distemper, string first_date_distemper, string second_boost_distemper, string second_date_distemper, string third_boost_distemper,
+            string third_date_distemper, string first_boost_feline, string first_date_feline, string second_boost_feline, string second_date_feline, string first_boost_rabies, string first_date_rabies)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"update dss_database.vaccination set owners_name = @owners_name, phone_num = @phone_num, address = @address, pet_name = @pet_name, pet_age = @pet_age,
+                                pet_gender = @pet_gender, pet_bday = @pet_bday, pet_species = @pet_species, pet_breed = @pet_breed, pet_allergies = @pet_allergies, operations = @operations,
+
+                                first_boost_distemper = @first_boost_distemper, first_date_distemper = @first_date_distemper, second_boost_distemper = @second_boost_distemper,
+                                second_date_distemper = @second_date_distemper, third_boost_distemper = @third_boost_distemper, third_date_distemper = @third_date_distemper, first_boost_feline = @first_boost_feline,
+                                first_date_feline = @first_date_feline, second_boost_feline = @second_boost_feline,
+                                second_date_feline = @second_date_feline, first_boost_rabies = @first_boost_rabies, first_date_rabies = @first_date_rabies  WHERE pet_id = @pet_id";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@operations", operations);
+
+                        cmd.Parameters.AddWithValue("@first_boost_distemper", first_boost_distemper);
+                        cmd.Parameters.AddWithValue("@first_date_distemper", first_date_distemper);
+                        cmd.Parameters.AddWithValue("@second_boost_distemper", second_boost_distemper);
+                        cmd.Parameters.AddWithValue("@second_date_distemper", second_date_distemper);
+                        cmd.Parameters.AddWithValue("@third_boost_distemper", third_boost_distemper);
+                        cmd.Parameters.AddWithValue("@third_date_distemper", third_date_distemper);
+
+                        cmd.Parameters.AddWithValue("@first_boost_feline", first_boost_feline);
+                        cmd.Parameters.AddWithValue("@first_date_feline", first_date_feline);
+                        cmd.Parameters.AddWithValue("@second_boost_feline", second_boost_feline);
+                        cmd.Parameters.AddWithValue("@second_date_feline", second_date_feline);
+
+                        cmd.Parameters.AddWithValue("@first_boost_rabies", first_boost_rabies);
+                        cmd.Parameters.AddWithValue("@first_date_rabies", first_date_rabies);
+
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
                 return false;
             }
         }
