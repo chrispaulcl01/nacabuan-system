@@ -177,22 +177,22 @@ namespace WindowsFormsApplication1
                 this.txtTotalYear.Text = "0";
             }
 
-            foreach (var series in ChartDog.Series)
+            //foreach (var series in ChartDog.Series)
             {
-                series.Points.Clear();
+                ///series.Points.Clear();
             }
-            foreach (var series in ChartCat.Series)
+            //foreach (var series in ChartCat.Series)
             {
-                series.Points.Clear();
+            //    series.Points.Clear();
             }
-            foreach (var series in ChartBird.Series)
+            //foreach (var series in ChartBird.Series)
             {
-                series.Points.Clear();
+              //  series.Points.Clear();
             }
 
-            foreach (var series in ChartSales.Series)
+            //foreach (var series in ChartSales.Series)
             {
-                series.Points.Clear();
+              //  series.Points.Clear();
             }
 
             this.ChartDog.Series[0].Points.AddXY("Total Dog of Month", this.txtTotalDog.Text.ToString());

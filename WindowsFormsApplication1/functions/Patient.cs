@@ -396,6 +396,109 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
+        public bool PatientInfoViewerLygaedae(string pet_id)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT * FROM dss_database.lygaeidae WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@pet_id", pet_id);
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        if (dat.Rows.Count == 1)
+                        {
+                            val.Pet_id = dat.Rows[0].Field<string>("pet_id");
+                            val.OwnersName = dat.Rows[0].Field<string>("owners_name");
+                            val.Phone_num = dat.Rows[0].Field<string>("phone_num");
+                            val.Address = dat.Rows[0].Field<string>("address");
+                            val.Pet_name = dat.Rows[0].Field<string>("pet_name");
+                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
+                            val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
+                            val.Pet_species = dat.Rows[0].Field<string>("pet_species");
+                            val.Pet_breed = dat.Rows[0].Field<string>("pet_breed");
+                            val.Pet_weight = dat.Rows[0].Field<string>("pet_weight");
+                            val.Pet_skinallergies = dat.Rows[0].Field<string>("pet_allergies");
+                            val.Pet_existdisease = dat.Rows[0].Field<string>("pet_existdisease");
+                            val.Operation = dat.Rows[0].Field<string>("operation");
+                            val.Op_date = dat.Rows[0].Field<DateTime>("op_date");
+                            val.Op_time = dat.Rows[0].Field<string>("op_time");
+
+
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool PatientInfoViewerCrastration(string pet_id)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT * FROM dss_database.crastration WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@pet_id", pet_id);
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        if (dat.Rows.Count == 1)
+                        {
+                            val.Pet_id = dat.Rows[0].Field<string>("pet_id");
+                            val.OwnersName = dat.Rows[0].Field<string>("owners_name");
+                            val.Phone_num = dat.Rows[0].Field<string>("phone_num");
+                            val.Address = dat.Rows[0].Field<string>("address");
+                            val.Pet_name = dat.Rows[0].Field<string>("pet_name");
+                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
+                            val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
+                            val.Pet_species = dat.Rows[0].Field<string>("pet_species");
+                            val.Pet_breed = dat.Rows[0].Field<string>("pet_breed");
+                            val.Pet_weight = dat.Rows[0].Field<string>("pet_weight");
+                            val.Pet_skinallergies = dat.Rows[0].Field<string>("pet_allergies");
+                            val.Pet_existdisease = dat.Rows[0].Field<string>("pet_existdisease");
+                            val.Operation = dat.Rows[0].Field<string>("operation");
+                            val.Op_date = dat.Rows[0].Field<DateTime>("op_date");
+                            val.Op_time = dat.Rows[0].Field<string>("op_time");
+
+
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+
         public bool PatientInfoViewerSkin(string pet_id)
         {
             try
@@ -1728,6 +1831,100 @@ namespace WindowsFormsApplication1.functions
             catch (Exception ex)
             {
                 Console.WriteLine("error Update Eye Operation Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool UpdateLygaedaeOpPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
+            string operation, DateTime op_date, string op_time)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"update dss_database.lygaeidae set owners_name = @owners_name, phone_num = @phone_num, address = @address, pet_name = @pet_name, pet_age = @pet_age,
+                                pet_gender = @pet_gender, pet_bday = @pet_bday, pet_species = @pet_species, pet_breed = @pet_breed, pet_weight = @pet_weight, pet_allergies = @pet_allergies,
+                                pet_existdisease = @pet_existdisease, operation = @operation, op_date = @op_date, op_time = @op_time
+                                WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@pet_existdisease", pet_existdisease);
+                        cmd.Parameters.AddWithValue("@operation", operation);
+                        cmd.Parameters.AddWithValue("@op_date", op_date);
+                        cmd.Parameters.AddWithValue("@op_time", op_time);
+
+
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error Update Lygaeidae Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool UpdateCrastrationOpPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
+            string operation, DateTime op_date, string op_time)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"update dss_database.crastraion set owners_name = @owners_name, phone_num = @phone_num, address = @address, pet_name = @pet_name, pet_age = @pet_age,
+                                pet_gender = @pet_gender, pet_bday = @pet_bday, pet_species = @pet_species, pet_breed = @pet_breed, pet_weight = @pet_weight, pet_allergies = @pet_allergies,
+                                pet_existdisease = @pet_existdisease, operation = @operation, op_date = @op_date, op_time = @op_time
+                                WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@pet_existdisease", pet_existdisease);
+                        cmd.Parameters.AddWithValue("@operation", operation);
+                        cmd.Parameters.AddWithValue("@op_date", op_date);
+                        cmd.Parameters.AddWithValue("@op_time", op_time);
+
+
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error Update Lygaeidae Patient" + ex.ToString());
                 return false;
             }
         }

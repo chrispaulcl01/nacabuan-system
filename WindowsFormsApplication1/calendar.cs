@@ -87,6 +87,34 @@ namespace WindowsFormsApplication1
                     }
                 }
             }
+
+            else if (txtSchedIdentifier.Text == "Lygaeidae")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridBookingSchedule.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerLygaedae(row.Cells[0].Value.ToString()))
+                    {
+                        lygaeidaeViewerfrm luview = new lygaeidaeViewerfrm();
+                        luview.Show();
+                    }
+                }
+            }
+
+            else if (txtSchedIdentifier.Text == "Crastration")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridBookingSchedule.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerCrastration(row.Cells[0].Value.ToString()))
+                    {
+                        CrastrationViewfrm crasiew = new CrastrationViewfrm();
+                        crasiew.Show();
+                    }
+                }
+            }
         }
 
         private void cmbLoadOperations_SelectedIndexChanged(object sender, EventArgs e)

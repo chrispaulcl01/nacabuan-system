@@ -157,6 +157,18 @@
     <Compile Include="Crastration.Designer.cs">
       <DependentUpon>Crastration.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrastrationUpdatefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrastrationUpdatefrm.Designer.cs">
+      <DependentUpon>CrastrationUpdatefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrastrationViewfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrastrationViewfrm.Designer.cs">
+      <DependentUpon>CrastrationViewfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Deworming.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +263,18 @@
     </Compile>
     <Compile Include="Lygaeidae.Designer.cs">
       <DependentUpon>Lygaeidae.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LygaeidaeUpdatefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LygaeidaeUpdatefrm.Designer.cs">
+      <DependentUpon>LygaeidaeUpdatefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lygaeidaeViewerfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lygaeidaeViewerfrm.Designer.cs">
+      <DependentUpon>lygaeidaeViewerfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="MammaryOperation.cs">
       <SubType>Form</SubType>
@@ -455,6 +479,12 @@
     <EmbeddedResource Include="Crastration.resx">
       <DependentUpon>Crastration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrastrationUpdatefrm.resx">
+      <DependentUpon>CrastrationUpdatefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrastrationViewfrm.resx">
+      <DependentUpon>CrastrationViewfrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Deworming.resx">
       <DependentUpon>Deworming.cs</DependentUpon>
     </EmbeddedResource>
@@ -499,6 +529,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lygaeidae.resx">
       <DependentUpon>Lygaeidae.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LygaeidaeUpdatefrm.resx">
+      <DependentUpon>LygaeidaeUpdatefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lygaeidaeViewerfrm.resx">
+      <DependentUpon>lygaeidaeViewerfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MammaryOperation.resx">
       <DependentUpon>MammaryOperation.cs</DependentUpon>

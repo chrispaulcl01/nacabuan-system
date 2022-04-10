@@ -60,7 +60,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtWeight = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmbAllergies = new Guna.UI.WinForms.GunaComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtExDisease = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label6 = new System.Windows.Forms.Label();
@@ -77,6 +76,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.cmbAllergies = new Guna.UI.WinForms.GunaComboBox();
             this.gunaShadowPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -562,26 +562,6 @@
             this.label1.TabIndex = 209;
             this.label1.Text = "Weight";
             // 
-            // cmbAllergies
-            // 
-            this.cmbAllergies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.cmbAllergies.BaseColor = System.Drawing.Color.White;
-            this.cmbAllergies.BorderColor = System.Drawing.Color.Silver;
-            this.cmbAllergies.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbAllergies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAllergies.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbAllergies.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbAllergies.ForeColor = System.Drawing.Color.Black;
-            this.cmbAllergies.FormattingEnabled = true;
-            this.cmbAllergies.Items.AddRange(new object[] {
-            "no list"});
-            this.cmbAllergies.Location = new System.Drawing.Point(179, 414);
-            this.cmbAllergies.Name = "cmbAllergies";
-            this.cmbAllergies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmbAllergies.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmbAllergies.Size = new System.Drawing.Size(129, 26);
-            this.cmbAllergies.TabIndex = 215;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -813,6 +793,26 @@
             this.label24.TabIndex = 197;
             this.label24.Text = "Animal Species";
             // 
+            // cmbAllergies
+            // 
+            this.cmbAllergies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.cmbAllergies.BaseColor = System.Drawing.Color.White;
+            this.cmbAllergies.BorderColor = System.Drawing.Color.Silver;
+            this.cmbAllergies.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbAllergies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAllergies.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbAllergies.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbAllergies.ForeColor = System.Drawing.Color.Black;
+            this.cmbAllergies.FormattingEnabled = true;
+            this.cmbAllergies.Items.AddRange(new object[] {
+            "no list"});
+            this.cmbAllergies.Location = new System.Drawing.Point(179, 414);
+            this.cmbAllergies.Name = "cmbAllergies";
+            this.cmbAllergies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbAllergies.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbAllergies.Size = new System.Drawing.Size(129, 26);
+            this.cmbAllergies.TabIndex = 215;
+            // 
             // Lygaeidae
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -885,7 +885,6 @@
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtWeight;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaComboBox cmbAllergies;
         private System.Windows.Forms.Label label10;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtExDisease;
         private System.Windows.Forms.Label label6;
@@ -902,5 +901,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
+        private Guna.UI.WinForms.GunaComboBox cmbAllergies;
     }
 }
