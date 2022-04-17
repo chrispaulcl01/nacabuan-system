@@ -41,6 +41,12 @@ namespace WindowsFormsApplication1
             this.txtTypevax.Text = val.Typevax;
             this.VaxDate.Value = val.Vaxdate;
 
+            this.txtResultSuperchen.Text = val.Superchen;
+            this.txtResultTotalprotein.Text = val.Totalprotein;
+            this.txtResultAlbumin.Text = val.Albumin;
+            this.txtResultGlobulin.Text = val.Globulin;
+
+
              
 
         }

@@ -277,12 +277,18 @@
       <DependentUpon>lygaeidaeViewerfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="MammaryOperation.cs">
-      <SubType>Form</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="MammaryOperation.Designer.cs">
       <DependentUpon>MammaryOperation.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="MammaryUpdatefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MammaryUpdatefrm.Designer.cs">
+      <DependentUpon>MammaryUpdatefrm.cs</DependentUpon>
     </Compile>
     <Compile Include="MammryGrandView.cs">
       <SubType>Form</SubType>
@@ -539,6 +545,9 @@
     <EmbeddedResource Include="MammaryOperation.resx">
       <DependentUpon>MammaryOperation.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MammaryUpdatefrm.resx">
+      <DependentUpon>MammaryUpdatefrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MammryGrandView.resx">
       <DependentUpon>MammryGrandView.cs</DependentUpon>

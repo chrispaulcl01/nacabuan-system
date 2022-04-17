@@ -771,7 +771,7 @@
             this.btnSaveLy.Name = "btnSaveLy";
             this.btnSaveLy.Size = new System.Drawing.Size(79, 47);
             this.btnSaveLy.TabIndex = 229;
-            this.btnSaveLy.Text = "Save";
+            this.btnSaveLy.Text = "Update";
             this.btnSaveLy.UseVisualStyleBackColor = true;
             this.btnSaveLy.Click += new System.EventHandler(this.btnSaveLy_Click);
             // 

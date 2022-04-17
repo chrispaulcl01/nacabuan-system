@@ -20,6 +20,7 @@ namespace WindowsFormsApplication1
         components.Connections con = new components.Connections();
         components.Values val = new components.Values();
         functions.Patient patient = new functions.Patient();
+        
 
         private void ReportTable_Load(object sender, EventArgs e)
         {
@@ -28,8 +29,8 @@ namespace WindowsFormsApplication1
             parameters.Add(new ReportParameter("pTotalSalesOfTheDay", val.TotalSalesToday));
             parameters.Add(new ReportParameter("pTotalSalesOfTheMonth", val.TotalSalesMonth));
             parameters.Add(new ReportParameter("pTotalSalesOfTheYear", val.TotalSalesYear));
-            parameters.Add(new ReportParameter("pTotalPatientsCats", val.Totalcat.ToString()));
-            parameters.Add(new ReportParameter("pTotalPatientsDogs", val.Totaldogs.ToString()));
+            parameters.Add(new ReportParameter("pTotalPatientsCats", val.Totalcat.ToString()));;
+            parameters.Add(new ReportParameter("pTotalPatientsDogs", val.Totalpdogs.ToString()));
             parameters.Add(new ReportParameter("pTotalPatientsBirds", val.Totalbird.ToString()));
             parameters.Add(new ReportParameter("pTotalPatients", val.Totalpatient.ToString()));
             parameters.Add(new ReportParameter("pDate", val.ReportDate.ToString()));

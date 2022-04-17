@@ -69,6 +69,7 @@ namespace WindowsFormsApplication1
 
                 frmRX rx = new frmRX();
                 rx.Show();
+                this.Close();
             }
             else
             {

@@ -49,10 +49,19 @@ namespace WindowsFormsApplication1
             {
                 MessageBox.Show("Amount Pay is Empty!", "Missing", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            else if (string.IsNullOrEmpty(this.txtTotalAmountfee.Text)) 
+            {
+                MessageBox.Show("ENTER NUMBER ONLY!", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
+                
                 double calculate = (double.Parse(txtAmountpay.Text) - double.Parse(txtTotalAmountfee.Text));
+
                 this.txtChange.Text = calculate.ToString();
+
+
             }
 
             this.rvReciept.Clear();
@@ -95,9 +104,9 @@ namespace WindowsFormsApplication1
                 {
                     MessageBox.Show("Reciept Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    Home home = new Home();
-                    home.Show();
-                    Application.OpenForms["PaymentTransactfrm"].Hide();
+                    //Home home = new Home();
+                    //home.Show();
+                    this.Close(); ;
                 }
                 else
                 {

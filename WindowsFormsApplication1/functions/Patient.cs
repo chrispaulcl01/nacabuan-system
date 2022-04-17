@@ -447,6 +447,47 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
+        public bool PatientInfoViewerBloodResult(string pet_id)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT * FROM dss_database.mammary_result WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmb = new MySqlCommand(sql, connection))
+                    {
+                        cmb.Parameters.AddWithValue("@pet_id", pet_id);
+                        MySqlDataAdapter daa = new MySqlDataAdapter(cmb);
+                        DataTable dat = new DataTable();
+                        daa.Fill(dat);
+
+                        if (dat.Rows.Count == 1)
+                        {
+                            val.Pet_id = dat.Rows[0].Field<string>("pet_id");
+                            val.OwnersName = dat.Rows[0].Field<string>("superchen");
+                            val.Phone_num = dat.Rows[0].Field<string>("phone_num");
+                            val.Address = dat.Rows[0].Field<string>("totalprotein");
+                            val.Pet_name = dat.Rows[0].Field<string>("albumin");
+                            
+
+
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error View Patient" + ex.ToString());
+                return false;
+            }
+        }
+
         public bool PatientInfoViewerCrastration(string pet_id)
         {
             try
@@ -688,6 +729,12 @@ namespace WindowsFormsApplication1.functions
                             val.Typevax = dat.Rows[0].Field<string>("typevax");
                             val.Vaxdate = dat.Rows[0].Field<DateTime>("vaxdate");
 
+                            val.Superchen = dat.Rows[0].Field<string>("superchen");
+                            val.Totalprotein = dat.Rows[0].Field<string>("totalprotein");
+                            val.Albumin = dat.Rows[0].Field<string>("albumin");
+                            val.Globulin = dat.Rows[0].Field<string>("globulin");
+
+
 
                             return true;
                         }
@@ -739,6 +786,10 @@ namespace WindowsFormsApplication1.functions
                             val.Typevax = dat.Rows[0].Field<string>("typevax");
                             val.Vaxdate = dat.Rows[0].Field<DateTime>("vaxdate");
 
+                            val.Superchen = dat.Rows[0].Field<string>("superchen");
+                            val.Totalprotein = dat.Rows[0].Field<string>("totalprotein");
+                            val.Albumin = dat.Rows[0].Field<string>("albumin");
+                            val.Globulin = dat.Rows[0].Field<string>("globulin");
 
                             return true;
                         }
@@ -1595,7 +1646,7 @@ namespace WindowsFormsApplication1.functions
 
         public bool UpdateBloodTestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
             string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
-            string operation, string typevax, DateTime vaxdate)
+            string operation, string typevax, DateTime vaxdate, string superchen, string totalprotein, string albumin, string globulin)
         {
             try
             {
@@ -1603,7 +1654,8 @@ namespace WindowsFormsApplication1.functions
                 {
                     string sql = @"update dss_database.bloodparasite set owners_name = @owners_name, phone_num = @phone_num, address = @address, pet_name = @pet_name,
                                 pet_age = @pet_age, pet_gender = @pet_gender, pet_bday = @pet_bday, pet_species = @pet_species, pet_breed = @pet_breed, pet_weight = @pet_weight, pet_allergies = @pet_allergies,
-                                pet_existdisease = @pet_existdisease, operation = @operation, typevax = @typevax, vaxdate = @vaxdate WHERE pet_id = @pet_id";
+                                pet_existdisease = @pet_existdisease, operation = @operation, typevax = @typevax, vaxdate = @vaxdate, superchen = @superchen, totalprotein = @totalprotein, 
+                                albumin = @albumin, globulin = @globulin  WHERE pet_id = @pet_id";
 
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
                     {
@@ -1624,6 +1676,12 @@ namespace WindowsFormsApplication1.functions
                         cmd.Parameters.AddWithValue("@typevax", typevax);
                         cmd.Parameters.AddWithValue("@vaxdate", vaxdate);
 
+                        cmd.Parameters.AddWithValue("@superchen", superchen);
+                        cmd.Parameters.AddWithValue("@totalprotein", totalprotein);
+                        cmd.Parameters.AddWithValue("@albumin", albumin);
+                        cmd.Parameters.AddWithValue("@globulin", globulin);
+
+
 
                         connection.Open();
                         cmd.ExecuteReader();
@@ -1634,6 +1692,96 @@ namespace WindowsFormsApplication1.functions
             catch (Exception ex)
             {
                 Console.WriteLine("error Update BloodTest Patient" + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool UpdatePatientBloodTestResult(string pet_id, string superchen, string totalprotein, string albumin, string globulin)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"update dss_database.bloodtest_result set superchen = superchen, totalprotein = totalprotein, albumin = albumin, globulin = globulin WHERE pet_id = @pet_id";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@superchen", superchen);
+                        cmd.Parameters.AddWithValue("@totalprotein", totalprotein);
+                        cmd.Parameters.AddWithValue("@albumin", albumin);
+                        cmd.Parameters.AddWithValue("@globulin", globulin);
+                        //cmd.Parameters.AddWithValue("@ag_Ration", ag_Ration);
+                        //cmd.Parameters.AddWithValue("@AST_SGOT", AST_SGOT);
+                        //cmd.Parameters.AddWithValue("@ALT_SGPT", ALT_SGPT);
+                        //cmd.Parameters.AddWithValue("@alk_phosphatese", alk_phosphatese);
+                        //cmd.Parameters.AddWithValue("@gct", gct);
+                        //cmd.Parameters.AddWithValue("@totalbilirubin", totalbilirubin);
+                        //cmd.Parameters.AddWithValue("@bun", bun);
+                        //cmd.Parameters.AddWithValue("@creatinine", creatinine);
+                        //cmd.Parameters.AddWithValue("@renaltech", renaltech);
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool UpdateMammaryGlandPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+            string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
+            string operation, string typevax, DateTime vaxdate, string superchen, string totalprotein, string albumin, string globulin)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"update dss_database.mammarry set owners_name = @owners_name, phone_num = @phone_num, address = @address, pet_name = @pet_name,
+                                pet_age = @pet_age, pet_gender = @pet_gender, pet_bday = @pet_bday, pet_species = @pet_species, pet_breed = @pet_breed, pet_weight = @pet_weight, pet_allergies = @pet_allergies,
+                                pet_existdisease = @pet_existdisease, operation = @operation, typevax = @typevax, vaxdate = @vaxdate, superchen = @superchen, totalprotein = @totalprotein, 
+                                albumin = @albumin, globulin = @globulin  WHERE pet_id = @pet_id";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@pet_id", pet_id);
+                        cmd.Parameters.AddWithValue("@owners_name", owners_name);
+                        cmd.Parameters.AddWithValue("@phone_num", phone_num);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@pet_name", pet_name);
+                        cmd.Parameters.AddWithValue("@pet_age", pet_age);
+                        cmd.Parameters.AddWithValue("@pet_gender", pet_gender);
+                        cmd.Parameters.AddWithValue("@pet_bday", pet_bday);
+                        cmd.Parameters.AddWithValue("@pet_species", pet_species);
+                        cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
+                        cmd.Parameters.AddWithValue("@pet_weight", pet_weight);
+                        cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@pet_existdisease", pet_existdisease);
+                        cmd.Parameters.AddWithValue("@operation", operation);
+                        cmd.Parameters.AddWithValue("@typevax", typevax);
+                        cmd.Parameters.AddWithValue("@vaxdate", vaxdate);
+
+                        cmd.Parameters.AddWithValue("@superchen", superchen);
+                        cmd.Parameters.AddWithValue("@totalprotein", totalprotein);
+                        cmd.Parameters.AddWithValue("@albumin", albumin);
+                        cmd.Parameters.AddWithValue("@globulin", globulin);
+
+
+
+                        connection.Open();
+                        cmd.ExecuteReader();
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("error Update Mammary Patient" + ex.ToString());
                 return false;
             }
         }
@@ -1693,6 +1841,8 @@ namespace WindowsFormsApplication1.functions
                 return false;
             }
         }
+
+        
 
         public bool UpdatePregnCersarPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
             string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdesease,
@@ -1890,7 +2040,7 @@ namespace WindowsFormsApplication1.functions
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
-                    string sql = @"update dss_database.crastraion set owners_name = @owners_name, phone_num = @phone_num, address = @address, pet_name = @pet_name, pet_age = @pet_age,
+                    string sql = @"update dss_database.crastration set owners_name = @owners_name, phone_num = @phone_num, address = @address, pet_name = @pet_name, pet_age = @pet_age,
                                 pet_gender = @pet_gender, pet_bday = @pet_bday, pet_species = @pet_species, pet_breed = @pet_breed, pet_weight = @pet_weight, pet_allergies = @pet_allergies,
                                 pet_existdisease = @pet_existdisease, operation = @operation, op_date = @op_date, op_time = @op_time
                                 WHERE pet_id = @pet_id";
@@ -1929,6 +2079,1019 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
+
+        public void CountTotalSkinPatientDog()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.skintreatment WHERE pet_species = 'DOG'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients SKIN DOGS: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalCDTPatientDog()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.CDTest WHERE pet_species = 'DOG'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients CDT DOG: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalCPTPatientDog()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.CPTest WHERE pet_species = 'DOG'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients CPT DOG: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalBloodPPatientDog()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.bloodparasite WHERE pet_species = 'DOG'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients BlOODPARASITE DOG: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalPregnancyPatientDog()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.preg_cesarian WHERE pet_species = 'DOG'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients PREGNANCY DOG: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalEyeOpPatientDog()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.eyeoperation WHERE pet_species = 'DOG'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients EYE OPERARION DOG: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalEarOpPatientDog()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.earoperation WHERE pet_species = 'DOG'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients EAR OPERARION DOG: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalMammaryPatientDog()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.mammarry WHERE pet_species = 'DOG'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients MAMMARY GLAND DOG: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalVaccinePatientDog()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.vaccination WHERE pet_species = 'DOG'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients  VACCINE DOG: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalCrastraionPatientDog()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.crastration WHERE pet_species = 'DOG'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients CRASTRATION DOG: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalLygPatientDog()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.lygaeidae WHERE pet_species = 'DOG'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients lygaeidae DOG: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalDewormingPatientDog()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.deworming WHERE pet_species = 'DOG'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients DEWORMING DOG: " + ex.ToString());
+            }
+        }
+
+
+        public void CountTotalSkinPatientCAT()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.skintreatment WHERE pet_species = 'CAT'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients SKIN CAT: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalCDTPatientCAT()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.CDTest WHERE pet_species = 'CAT'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients CDT CAT: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalCPTPatientCAT()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.CPTest WHERE pet_species = 'CAT'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients CPT CAT: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalBloodPPatientCAT()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.bloodparasite WHERE pet_species = 'CAT'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients BlOODPARASITE CAT: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalPregnancyPatientCAT()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.preg_cesarian WHERE pet_species = 'CAT'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients PREGNANCY CAT: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalEyeOpPatientCAT()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.eyeoperation WHERE pet_species = 'CAT'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients EYE OPERARION CAT: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalEarOpPatientCAT()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.earoperation WHERE pet_species = 'CAT'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients EAR OPERARION CAT: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalMammaryPatientCAT()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.mammarry WHERE pet_species = 'CAT'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients MAMMARY GLAND CAT: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalVaccinePatientCAT()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.vaccination WHERE pet_species = 'CAT'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients  VACCINE CAT: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalCrastraionPatientCAT()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.crastration WHERE pet_species = 'CAT'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients CRASTRATION CAT: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalLygPatientCAT()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.lygaeidae WHERE pet_species = 'CAT'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients lygaeidae CAT: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalDewormingPatientCAT()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.deworming WHERE pet_species = 'CAT'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients DEWORMING CAT: " + ex.ToString());
+            }
+        }
+
+
+        public void CountTotalSkinPatientBIRD()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.skintreatment WHERE pet_species = 'BIRD'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients SKIN BIRD: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalCDTPatientBIRD()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.CDTest WHERE pet_species = 'BIRD'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients CDT BIRD: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalCPTPatientBIRD()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.CPTest WHERE pet_species = 'BIRD'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients CPT BIRD: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalBloodPPatientBIRD()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.bloodparasite WHERE pet_species = 'BIRD'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients BlOODPARASITE BIRD: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalPregnancyPatientBIRD()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.preg_cesarian WHERE pet_species = 'BIRD'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients PREGNANCY BIRD: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalEyeOpPatientBIRD()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.eyeoperation WHERE pet_species = 'BIRD'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients EYE OPERARION BIRD: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalEarOpPatientBIRD()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.earoperation WHERE pet_species = 'BIRD'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients EAR OPERARION BIRD: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalMammaryPatientBIRD()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.mammarry WHERE pet_species = 'BIRD'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients MAMMARY GLAND BIRD: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalVaccinePatientBIRD()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.vaccination WHERE pet_species = 'BIRD'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients  VACCINE BIRD: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalCrastraionPatientBIRD()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.crastration WHERE pet_species = 'BIRD'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients CRASTRATION BIRD: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalLygPatientBIRD()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.lygaeidae WHERE pet_species = 'BIRD'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients lygaeidae BIRD: " + ex.ToString());
+            }
+        }
+
+        public void CountTotalDewormingPatientBIRD()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                    FROM dss_database.deworming WHERE pet_species = 'BIRD'; ";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Totaldogs = cmd.ExecuteScalar().ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error getting total of patients DEWORMING BIRD: " + ex.ToString());
+            }
+        }
+
+
+
         public void CountTotalPatientDog(string date_month, string date_year)
         {
             try
@@ -1936,8 +3099,8 @@ namespace WindowsFormsApplication1.functions
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
                     string sql = @"SELECT COUNT(*)
-                                    FROM dss_database.saved_patient
-                                    WHERE animal_species = 'DOG' AND DATE_FORMAT(primary_date, '%m') = @date_month
+                                    FROM dss_database.skintreatment
+                                    WHERE pet_species = 'DOG' AND DATE_FORMAT(primary_date, '%m') = @date_month
                                     AND DATE_FORMAT(primary_date, '%y') = @date_year;";
 
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
@@ -1950,7 +3113,7 @@ namespace WindowsFormsApplication1.functions
                         da.Fill(dt);
 
                         connection.Open();
-                        val.Totaldogs = int.Parse(cmd.ExecuteScalar().ToString());
+                        //val.Totaldogs = int.Parse(cmd.ExecuteScalar().ToString());
                     }
                 }
             }
@@ -1959,6 +3122,7 @@ namespace WindowsFormsApplication1.functions
                 Console.WriteLine("Error getting total of patients month: " + ex.ToString());
             }
         }
+
         public void CountTotalPatientCat(string date_month, string date_year)
         {
             try
@@ -2437,16 +3601,16 @@ namespace WindowsFormsApplication1.functions
 
         public bool SaveMammryPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
-            string operation, string typevax, DateTime vaxdate)
+            string operation, string typevax, DateTime vaxdate, string superchen, string totalprotein, string albumin, string globulin)
         {
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
                     string sql = @"insert into dss_database.mammarry(pet_id, owners_name, phone_num, address, pet_name, pet_age,
-                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, operation, typevax, vaxdate)
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, operation, typevax, vaxdate, superchen, totalprotein, albumin, globulin)
                                 values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
-                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease,@operation, @typevax, @vaxdate)";
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease,@operation, @typevax, @vaxdate, @superchen, @totalprotein, @albumin, @globulin)";
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
                     {
                         cmd.Parameters.AddWithValue("@pet_id", pet_id);
@@ -2465,6 +3629,11 @@ namespace WindowsFormsApplication1.functions
                         cmd.Parameters.AddWithValue("@operation", operation);
                         cmd.Parameters.AddWithValue("@typevax", typevax);
                         cmd.Parameters.AddWithValue("@vaxdate", vaxdate);
+
+                        cmd.Parameters.AddWithValue("@superchen", superchen);
+                        cmd.Parameters.AddWithValue("@totalprotein", totalprotein);
+                        cmd.Parameters.AddWithValue("@albumin", albumin);
+                        cmd.Parameters.AddWithValue("@globulin", globulin);
 
                         connection.Open();
                         cmd.ExecuteReader();
@@ -2482,16 +3651,17 @@ namespace WindowsFormsApplication1.functions
 
         public bool SaveBloodtestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
             string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
-            string operation, string typevax, DateTime vaxdate)
+            string operation, string typevax, DateTime vaxdate, string superchen, string totalprotein, string albumin, string globulin)
         {
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
                     string sql = @"insert into dss_database.bloodparasite(pet_id, owners_name, phone_num, address, pet_name, pet_age,
-                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, operation, typevax, vaxdate)
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_weight, pet_allergies, pet_existdisease, operation, typevax, vaxdate, superchen, totalprotein, albumin, globulin)
                                 values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
-                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease, @operation, @typevax, @vaxdate)";
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_weight, @pet_allergies, @pet_existdisease, @operation,
+                                @typevax, @vaxdate, @superchen, @totalprotein, @albumin, @globulin)";
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
                     {
                         cmd.Parameters.AddWithValue("@pet_id", pet_id);
@@ -2510,6 +3680,11 @@ namespace WindowsFormsApplication1.functions
                         cmd.Parameters.AddWithValue("@operation", operation);
                         cmd.Parameters.AddWithValue("@typevax", typevax);
                         cmd.Parameters.AddWithValue("@vaxdate", vaxdate);
+                        cmd.Parameters.AddWithValue("@superchen", superchen);                        
+                        cmd.Parameters.AddWithValue("@totalprotein", totalprotein);
+                        cmd.Parameters.AddWithValue("@albumin", albumin);
+                        cmd.Parameters.AddWithValue("@globulin", globulin);
+
 
                         connection.Open();
                         cmd.ExecuteReader();
@@ -2654,18 +3829,14 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool SavePatientBloodTestResult(string pet_id, string superchen, string totalprotein, string albumin, string globulin, string ag_Ration,
-            string AST_SGOT, string ALT_SGPT, string alk_phosphatese, string gct, string totalbilirubin, string bun, string creatinine,
-            string renaltech)
+        public bool SavePatientBloodTestResult(string pet_id, string superchen, string totalprotein, string albumin, string globulin)
         {
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
-                    string sql = @"insert into dss_database.bloodtest_result(pet_id, superchen, totalprotein, albumin, globulin, ag_Ration,
-                                AST_SGOT, ALT_SGPT, alk_phosphatese, gct, totalbilirubin, bun, creatinine, renaltech)
-                                values(@pet_id, @superchen, @totalprotein, @albumin, @globulin, @ag_Ration,
-                                @AST_SGOT, @ALT_SGPT, @alk_phosphatese, @gct, @totalbilirubin, @bun, @creatinine,@renaltech)";
+                    string sql = @"insert into dss_database.bloodtest_result(pet_id, superchen, totalprotein, albumin, globulin)
+                                values(@pet_id, @superchen, @totalprotein, @albumin, @globulin)";
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
                     {
                         cmd.Parameters.AddWithValue("@pet_id", pet_id);
@@ -2673,15 +3844,15 @@ namespace WindowsFormsApplication1.functions
                         cmd.Parameters.AddWithValue("@totalprotein", totalprotein);
                         cmd.Parameters.AddWithValue("@albumin", albumin);
                         cmd.Parameters.AddWithValue("@globulin", globulin);
-                        cmd.Parameters.AddWithValue("@ag_Ration", ag_Ration);
-                        cmd.Parameters.AddWithValue("@AST_SGOT", AST_SGOT);
-                        cmd.Parameters.AddWithValue("@ALT_SGPT", ALT_SGPT);
-                        cmd.Parameters.AddWithValue("@alk_phosphatese", alk_phosphatese);
-                        cmd.Parameters.AddWithValue("@gct", gct);
-                        cmd.Parameters.AddWithValue("@totalbilirubin", totalbilirubin);
-                        cmd.Parameters.AddWithValue("@bun", bun);
-                        cmd.Parameters.AddWithValue("@creatinine", creatinine);
-                        cmd.Parameters.AddWithValue("@renaltech", renaltech);
+                        //cmd.Parameters.AddWithValue("@ag_Ration", ag_Ration);
+                        //cmd.Parameters.AddWithValue("@AST_SGOT", AST_SGOT);
+                        //cmd.Parameters.AddWithValue("@ALT_SGPT", ALT_SGPT);
+                        //cmd.Parameters.AddWithValue("@alk_phosphatese", alk_phosphatese);
+                        //cmd.Parameters.AddWithValue("@gct", gct);
+                        //cmd.Parameters.AddWithValue("@totalbilirubin", totalbilirubin);
+                        //cmd.Parameters.AddWithValue("@bun", bun);
+                        //cmd.Parameters.AddWithValue("@creatinine", creatinine);
+                        //cmd.Parameters.AddWithValue("@renaltech", renaltech);
 
                         connection.Open();
                         cmd.ExecuteReader();

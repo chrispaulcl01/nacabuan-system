@@ -44,12 +44,14 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.txtAge = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -65,28 +67,26 @@
             this.txtOpTime = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            this.btnSavePreg = new FontAwesome.Sharp.IconButton();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.btnBackPreg = new FontAwesome.Sharp.IconButton();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.btnSavePreg = new FontAwesome.Sharp.IconButton();
+            this.btnBackPreg = new FontAwesome.Sharp.IconButton();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.gunaShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtOwnersname
@@ -181,6 +181,7 @@
             this.cmbAnimalSpecies.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cmbAnimalSpecies.Size = new System.Drawing.Size(129, 26);
             this.cmbAnimalSpecies.TabIndex = 203;
+            this.cmbAnimalSpecies.SelectedIndexChanged += new System.EventHandler(this.cmbAnimalSpecies_SelectedIndexChanged);
             // 
             // cmbAllergies
             // 
@@ -353,6 +354,20 @@
             this.label11.TabIndex = 201;
             this.label11.Text = "Owners Information";
             // 
+            // iconPictureBox3
+            // 
+            this.iconPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(226)))));
+            this.iconPictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.iconPictureBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Paw;
+            this.iconPictureBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox3.Location = new System.Drawing.Point(346, 4);
+            this.iconPictureBox3.Name = "iconPictureBox3";
+            this.iconPictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox3.TabIndex = 0;
+            this.iconPictureBox3.TabStop = false;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -417,6 +432,20 @@
             this.label3.Size = new System.Drawing.Size(159, 23);
             this.label3.TabIndex = 201;
             this.label3.Text = "Pet Information";
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(226)))));
+            this.iconPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Paw;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.Location = new System.Drawing.Point(346, 4);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox1.TabIndex = 0;
+            this.iconPictureBox1.TabStop = false;
             // 
             // txtAge
             // 
@@ -632,6 +661,20 @@
             this.label2.TabIndex = 201;
             this.label2.Text = "Surgery Information";
             // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(226)))));
+            this.iconPictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Paw;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.Location = new System.Drawing.Point(346, 4);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox2.TabIndex = 0;
+            this.iconPictureBox2.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Snow;
@@ -723,74 +766,6 @@
             this.gunaShadowPanel1.Size = new System.Drawing.Size(1366, 69);
             this.gunaShadowPanel1.TabIndex = 218;
             // 
-            // iconPictureBox3
-            // 
-            this.iconPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(226)))));
-            this.iconPictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.iconPictureBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Paw;
-            this.iconPictureBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.Location = new System.Drawing.Point(346, 4);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox3.TabIndex = 0;
-            this.iconPictureBox3.TabStop = false;
-            // 
-            // btnSavePreg
-            // 
-            this.btnSavePreg.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnSavePreg.IconColor = System.Drawing.Color.Black;
-            this.btnSavePreg.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSavePreg.Location = new System.Drawing.Point(1230, 696);
-            this.btnSavePreg.Name = "btnSavePreg";
-            this.btnSavePreg.Size = new System.Drawing.Size(79, 47);
-            this.btnSavePreg.TabIndex = 222;
-            this.btnSavePreg.Text = "Save";
-            this.btnSavePreg.UseVisualStyleBackColor = true;
-            this.btnSavePreg.Click += new System.EventHandler(this.btnSavePreg_Click);
-            // 
-            // iconPictureBox2
-            // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(226)))));
-            this.iconPictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Paw;
-            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.Location = new System.Drawing.Point(346, 4);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox2.TabIndex = 0;
-            this.iconPictureBox2.TabStop = false;
-            // 
-            // btnBackPreg
-            // 
-            this.btnBackPreg.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnBackPreg.IconColor = System.Drawing.Color.Black;
-            this.btnBackPreg.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBackPreg.Location = new System.Drawing.Point(1145, 696);
-            this.btnBackPreg.Name = "btnBackPreg";
-            this.btnBackPreg.Size = new System.Drawing.Size(79, 47);
-            this.btnBackPreg.TabIndex = 223;
-            this.btnBackPreg.Text = "Back";
-            this.btnBackPreg.UseVisualStyleBackColor = true;
-            this.btnBackPreg.Click += new System.EventHandler(this.btnBackPreg_Click);
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(226)))));
-            this.iconPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Paw;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.Location = new System.Drawing.Point(346, 4);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox1.TabIndex = 0;
-            this.iconPictureBox1.TabStop = false;
-            // 
             // iconButton2
             // 
             this.iconButton2.BackColor = System.Drawing.Color.Transparent;
@@ -809,6 +784,32 @@
             this.iconButton2.Text = "X";
             this.iconButton2.UseVisualStyleBackColor = false;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // btnSavePreg
+            // 
+            this.btnSavePreg.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnSavePreg.IconColor = System.Drawing.Color.Black;
+            this.btnSavePreg.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSavePreg.Location = new System.Drawing.Point(1230, 696);
+            this.btnSavePreg.Name = "btnSavePreg";
+            this.btnSavePreg.Size = new System.Drawing.Size(79, 47);
+            this.btnSavePreg.TabIndex = 222;
+            this.btnSavePreg.Text = "Save";
+            this.btnSavePreg.UseVisualStyleBackColor = true;
+            this.btnSavePreg.Click += new System.EventHandler(this.btnSavePreg_Click);
+            // 
+            // btnBackPreg
+            // 
+            this.btnBackPreg.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnBackPreg.IconColor = System.Drawing.Color.Black;
+            this.btnBackPreg.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBackPreg.Location = new System.Drawing.Point(1145, 696);
+            this.btnBackPreg.Name = "btnBackPreg";
+            this.btnBackPreg.Size = new System.Drawing.Size(79, 47);
+            this.btnBackPreg.TabIndex = 223;
+            this.btnBackPreg.Text = "Back";
+            this.btnBackPreg.UseVisualStyleBackColor = true;
+            this.btnBackPreg.Click += new System.EventHandler(this.btnBackPreg_Click);
             // 
             // EarOperationUpdatefrm
             // 
@@ -831,19 +832,19 @@
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

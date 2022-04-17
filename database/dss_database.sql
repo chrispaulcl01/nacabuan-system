@@ -207,6 +207,7 @@ CREATE TABLE dss_database.skintreatment (
     operation					VARCHAR(55) NOT NULL,
     op_date				        DATE,
     op_time                     VARCHAR(55) NOT NULL,
+    primary_date            TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id)
 );
 
@@ -268,6 +269,23 @@ CREATE TABLE dss_database.vaccination (
     pet_breed					VARCHAR(55) NOT NULL,
     pet_allergies				VARCHAR(55) NOT NULL,
     operations				    VARCHAR(55) NOT NULL,
+    
+    first_boost_distemper       VARCHAR(55) NOT NULL, 
+    first_date_distemper        VARCHAR(55) NOT NULL,
+    second_boost_distemper      VARCHAR(55) NOT NULL,
+    second_date_distemper       VARCHAR(55) NOT NULL, 
+    third_boost_distemper       VARCHAR(55) NOT NULL, 
+    third_date_distemper        VARCHAR(55) NOT NULL, 
+    
+    first_boost_feline          VARCHAR(55) NOT NULL, 
+    first_date_feline           VARCHAR(55) NOT NULL, 
+    second_boost_feline         VARCHAR(55) NOT NULL,
+    second_date_feline          VARCHAR(55) NOT NULL, 
+    
+    first_boost_rabies          VARCHAR(55) NOT NULL, 
+    first_date_rabies           VARCHAR(55) NOT NULL,
+    
+    
     PRIMARY KEY(id)
 );
 
@@ -332,6 +350,11 @@ CREATE TABLE dss_database.mammarry (
     operation				    VARCHAR(55) NOT NULL,
     typevax					    VARCHAR(55) NOT NULL,
     vaxdate                     DATE,
+    
+    superchen					VARCHAR(55) NOT NULL,
+    totalprotein			    VARCHAR (55) NOT NULL,
+    albumin					    VARCHAR(55)NOT NULL,
+    globulin                    VARCHAR(55) NOT NULL,
     PRIMARY KEY(id)
 );
 
@@ -353,6 +376,11 @@ CREATE TABLE dss_database.bloodparasite (
     operation				    VARCHAR(55) NOT NULL,
     typevax					    VARCHAR(55) NOT NULL,
     vaxdate                     DATE,
+    
+    superchen					VARCHAR(55) NOT NULL,
+    totalprotein			    VARCHAR (55) NOT NULL,
+    albumin					    VARCHAR(55)NOT NULL,
+    globulin                    VARCHAR(55) NOT NULL,
     PRIMARY KEY(id)
 );
 

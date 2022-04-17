@@ -50,6 +50,7 @@
             this.txtPatientName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label22 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbAllergies = new Guna.UI.WinForms.GunaComboBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.btnSaveLy = new FontAwesome.Sharp.IconButton();
@@ -76,7 +77,6 @@
             this.DateOperetion = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.cmbAllergies = new Guna.UI.WinForms.GunaComboBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -440,6 +440,27 @@
             this.panel2.Size = new System.Drawing.Size(384, 500);
             this.panel2.TabIndex = 225;
             // 
+            // cmbAllergies
+            // 
+            this.cmbAllergies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.cmbAllergies.BaseColor = System.Drawing.Color.White;
+            this.cmbAllergies.BorderColor = System.Drawing.Color.Silver;
+            this.cmbAllergies.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbAllergies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAllergies.Enabled = false;
+            this.cmbAllergies.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbAllergies.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbAllergies.ForeColor = System.Drawing.Color.Black;
+            this.cmbAllergies.FormattingEnabled = true;
+            this.cmbAllergies.Items.AddRange(new object[] {
+            "no list"});
+            this.cmbAllergies.Location = new System.Drawing.Point(179, 414);
+            this.cmbAllergies.Name = "cmbAllergies";
+            this.cmbAllergies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbAllergies.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbAllergies.Size = new System.Drawing.Size(129, 26);
+            this.cmbAllergies.TabIndex = 215;
+            // 
             // label25
             // 
             this.label25.AutoSize = true;
@@ -471,7 +492,7 @@
             this.btnSaveLy.Name = "btnSaveLy";
             this.btnSaveLy.Size = new System.Drawing.Size(79, 47);
             this.btnSaveLy.TabIndex = 223;
-            this.btnSaveLy.Text = "Save";
+            this.btnSaveLy.Text = "Update";
             this.btnSaveLy.UseVisualStyleBackColor = true;
             this.btnSaveLy.Click += new System.EventHandler(this.btnSaveLy_Click);
             // 
@@ -808,27 +829,6 @@
             this.label9.Size = new System.Drawing.Size(84, 19);
             this.label9.TabIndex = 154;
             this.label9.Text = "Operation";
-            // 
-            // cmbAllergies
-            // 
-            this.cmbAllergies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.cmbAllergies.BaseColor = System.Drawing.Color.White;
-            this.cmbAllergies.BorderColor = System.Drawing.Color.Silver;
-            this.cmbAllergies.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbAllergies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAllergies.Enabled = false;
-            this.cmbAllergies.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbAllergies.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbAllergies.ForeColor = System.Drawing.Color.Black;
-            this.cmbAllergies.FormattingEnabled = true;
-            this.cmbAllergies.Items.AddRange(new object[] {
-            "no list"});
-            this.cmbAllergies.Location = new System.Drawing.Point(179, 414);
-            this.cmbAllergies.Name = "cmbAllergies";
-            this.cmbAllergies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmbAllergies.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmbAllergies.Size = new System.Drawing.Size(129, 26);
-            this.cmbAllergies.TabIndex = 215;
             // 
             // lygaeidaeViewerfrm
             // 

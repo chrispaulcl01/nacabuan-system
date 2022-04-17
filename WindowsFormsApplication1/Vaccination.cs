@@ -79,6 +79,8 @@ namespace WindowsFormsApplication1
             {
                 MessageBox.Show("failed to save", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
+            this.Close();
         }
 
         private void btnBackVax_Click(object sender, EventArgs e)

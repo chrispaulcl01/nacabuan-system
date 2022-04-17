@@ -61,10 +61,8 @@ namespace WindowsFormsApplication1
 
                     PaymentTransactfrm payfrm = new PaymentTransactfrm();
                     payfrm.Show();
-                    Application.OpenForms["frmRX"].Hide();
-                    Application.OpenForms["Home"].Hide();
-                    SkinTreatment skin = new SkinTreatment();
-                    skin.Show();    
+                    this.Close();
+                        
                 }
                 else
                 {

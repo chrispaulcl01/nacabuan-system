@@ -39,6 +39,28 @@ namespace WindowsFormsApplication1
             this.txtOperation.Text = val.Operation;
             this.txtTypevax.Text = val.Typevax;
             this.VaxDate.Value = val.Vaxdate;
+
+            this.txtResultSuperchen.Text = val.Superchen;
+            this.txtResultTotalprotein.Text = val.Totalprotein;
+            this.txtResultAlbumin.Text = val.Albumin;
+            this.txtResultGlobulin.Text = val.Globulin;
+        }
+
+        private void btnSavemammry_Click(object sender, EventArgs e)
+        {
+            MammaryUpdatefrm mamup = new MammaryUpdatefrm();
+            mamup.Show();
+            this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

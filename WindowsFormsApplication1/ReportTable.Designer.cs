@@ -31,7 +31,6 @@ namespace WindowsFormsApplication1
         {
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.rprtReportTable = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -43,7 +42,6 @@ namespace WindowsFormsApplication1
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
             this.gunaShadowPanel1.Controls.Add(this.iconButton3);
-            this.gunaShadowPanel1.Controls.Add(this.iconButton2);
             this.gunaShadowPanel1.Controls.Add(this.iconButton1);
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel2);
             this.gunaShadowPanel1.Location = new System.Drawing.Point(-1, -2);
@@ -65,18 +63,6 @@ namespace WindowsFormsApplication1
             this.iconButton3.Text = "X";
             this.iconButton3.UseVisualStyleBackColor = false;
             this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(-14, -13);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(75, 23);
-            this.iconButton2.TabIndex = 3;
-            this.iconButton2.Text = "iconButton2";
-            this.iconButton2.UseVisualStyleBackColor = true;
             // 
             // iconButton1
             // 
@@ -137,6 +123,5 @@ namespace WindowsFormsApplication1
         private FontAwesome.Sharp.IconButton iconButton1;
         private Microsoft.Reporting.WinForms.ReportViewer rprtReportTable;
         private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
     }
 }

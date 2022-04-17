@@ -66,8 +66,9 @@ namespace WindowsFormsApplication1
                 val.OwnersName = this.txtOwnersname.Text;
                 val.Pet_name = this.txtPatientName.Text;
 
-                frmRX rx = new frmRX();
-                rx.Show();
+                //frmRX rx = new frmRX();
+                //rx.Show();
+                this.Close();
             }
         }
 

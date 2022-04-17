@@ -334,8 +334,12 @@
             this.cmbSkinAllergies.ForeColor = System.Drawing.Color.Black;
             this.cmbSkinAllergies.FormattingEnabled = true;
             this.cmbSkinAllergies.Items.AddRange(new object[] {
-            "Female",
-            "Male"});
+            "None",
+            "Flea Allergy",
+            "Atopic Dermatitis",
+            "Food Allergy",
+            "Mange",
+            "Hot Spots"});
             this.cmbSkinAllergies.Location = new System.Drawing.Point(171, 408);
             this.cmbSkinAllergies.Name = "cmbSkinAllergies";
             this.cmbSkinAllergies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));

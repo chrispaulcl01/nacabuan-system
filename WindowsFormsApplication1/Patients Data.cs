@@ -140,6 +140,8 @@ namespace WindowsFormsApplication1
 
                     if (patient.PatientInfoViewerBloodTest(row.Cells[0].Value.ToString()))
                     {
+                        
+
                         BloodTestView bloodtview = new BloodTestView();
                         bloodtview.Show();
                     }

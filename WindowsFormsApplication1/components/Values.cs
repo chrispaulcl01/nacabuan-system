@@ -238,8 +238,8 @@ namespace WindowsFormsApplication1.components
             set { dashbdata = value; }
         }
 
-        public static int totaldogs;
-        public int Totaldogs
+        public static string totaldogs;
+        public string Totaldogs
         {
             get { return totaldogs; }
             set { totaldogs = value; }
@@ -541,6 +541,67 @@ namespace WindowsFormsApplication1.components
             get { return curren_med; }
             set { curren_med = value; }
         }
+
+
+        public static string totalpdogs;
+        public string Totalpdogs
+        {
+            get { return totaldogs; }
+            set { curren_med = value; }
+        }
+
+        public static string totalpcats;
+        public string Totalpcats
+        {
+            get { return totalpcats; }
+            set { totalpcats = value; }
+        }
+
+        public static string totalpbird;
+        public string Totalpbird
+        {
+            get { return totalpbird; }
+            set { totalpbird = value; }
+        }
+
+        public static string totalpatientss;
+        public string Totalpatientss
+        {
+            get { return totalpatientss; }
+            set { totalpatientss = value; }
+        }
+
+
+
+        public static string superchen;
+        public string Superchen
+        {
+            get { return superchen; }
+            set { superchen = value; }
+        }
+
+        public static string totalprotein;
+        public string Totalprotein
+        {
+            get { return totalprotein; }
+            set { totalprotein = value; }
+        }
+
+        public static string albumin;
+        public string Albumin
+        {
+            get { return albumin; }
+            set { albumin = value; }
+        }
+
+        public static string globulin;
+        public string Globulin
+        {
+            get { return globulin; }
+            set { globulin = value; }
+        }
+
+
 
 
         //public static string service;
