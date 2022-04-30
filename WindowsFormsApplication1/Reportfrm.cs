@@ -23,6 +23,7 @@ namespace WindowsFormsApplication1
 
         private void Reportfrm_Load(object sender, EventArgs e)
         {
+            this.ChartDatePick.Text = DateTime.Now.ToString("MM/dd/yy");
 
             patient.CountTotalSkinPatientDog();
             txtSkinDog.Text = val.Totaldogs.ToString();
@@ -174,7 +175,7 @@ namespace WindowsFormsApplication1
             //totalBirds = (double.Parse(val.Totalpbird));
             //totalaPtients = (double.Parse(val.Totalpatientss));
 
-            this.ChartDatePick.Text = DateTime.Now.ToString("MM/dd/yy");
+            
 
             
             //patient.CountTotalSkinPatientDog();
@@ -282,7 +283,6 @@ namespace WindowsFormsApplication1
 
         private void btnCheck_Click_1(object sender, EventArgs e)
         {
-            this.ChartDatePick.Text = DateTime.Now.ToString("MM/dd/yy");
 
             //patient.CountTotalSkinPatientDog();
             //txtSkinDog.Text = val.Totaldogs.ToString();

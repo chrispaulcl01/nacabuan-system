@@ -41,6 +41,8 @@
             this.btnVaccine = new FontAwesome.Sharp.IconButton();
             this.btnDeworming = new FontAwesome.Sharp.IconButton();
             this.txtSchedIdentifier = new System.Windows.Forms.TextBox();
+            this.txtPatientToday = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.gunaShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridBookingSchedule)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +75,7 @@
             this.dateSchedule.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateSchedule.CustomFormat = "MM/dd/yy";
             this.dateSchedule.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateSchedule.Location = new System.Drawing.Point(889, 109);
+            this.dateSchedule.Location = new System.Drawing.Point(902, 86);
             this.dateSchedule.Name = "dateSchedule";
             this.dateSchedule.Size = new System.Drawing.Size(188, 20);
             this.dateSchedule.TabIndex = 99;
@@ -90,7 +92,7 @@
             this.btnLoad.ForeColor = System.Drawing.Color.Black;
             this.btnLoad.Image = null;
             this.btnLoad.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnLoad.Location = new System.Drawing.Point(814, 106);
+            this.btnLoad.Location = new System.Drawing.Point(827, 83);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnLoad.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -161,6 +163,7 @@
             this.gridBookingSchedule.ThemeStyle.RowsStyle.Height = 45;
             this.gridBookingSchedule.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridBookingSchedule.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridBookingSchedule.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridBookingSchedule_CellContentClick);
             this.gridBookingSchedule.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridBookingSchedule_CellContentDoubleClick);
             this.gridBookingSchedule.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridBookingSchedule_CellMouseDoubleClick);
             // 
@@ -236,6 +239,26 @@
             this.txtSchedIdentifier.TabIndex = 216;
             this.txtSchedIdentifier.Visible = false;
             // 
+            // txtPatientToday
+            // 
+            this.txtPatientToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPatientToday.Location = new System.Drawing.Point(1021, 110);
+            this.txtPatientToday.Name = "txtPatientToday";
+            this.txtPatientToday.Size = new System.Drawing.Size(69, 26);
+            this.txtPatientToday.TabIndex = 217;
+            this.txtPatientToday.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(899, 113);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 18);
+            this.label1.TabIndex = 218;
+            this.label1.Text = "Pantients Today:";
+            // 
             // calendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -244,6 +267,8 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1102, 620);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtPatientToday);
             this.Controls.Add(this.txtSchedIdentifier);
             this.Controls.Add(this.btnDeworming);
             this.Controls.Add(this.btnLygaeidae);
@@ -276,5 +301,7 @@
         private FontAwesome.Sharp.IconButton btnVaccine;
         private FontAwesome.Sharp.IconButton btnDeworming;
         private System.Windows.Forms.TextBox txtSchedIdentifier;
+        private System.Windows.Forms.TextBox txtPatientToday;
+        private System.Windows.Forms.Label label1;
     }
 }

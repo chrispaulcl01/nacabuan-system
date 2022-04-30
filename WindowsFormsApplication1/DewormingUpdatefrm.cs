@@ -35,22 +35,22 @@ namespace WindowsFormsApplication1
             this.cmbAnimalBreed.Text = val.Pet_breed;
             this.cmbOperation.Text = val.Operation;
 
-            this.Dewormdate2weeks.Text = val.Deworn_2weeks_date;
+            this.txtDeworm2weeksDate.Text = val.Deworn_2weeks_date;
             this.txtDewormMedicine2weeks.Text = val.Deworn_2weeks_medicine;
 
-            this.Dewormdate4weeks.Text = val.Deworn_4weeks_date;
+            this.txtDeworm4weeksDate.Text = val.Deworn_4weeks_date;
             this.txtDewormMedicine4weeks.Text = val.Deworn_4weeks_medicine;
 
-            this.Dewormdate6weeks.Text = val.Deworn_6weeks_date;
+            this.txtDeworm6weeksDate.Text = val.Deworn_6weeks_date;
             this.txtDewormMedicine6weeks.Text = val.Deworn_6weeks_medicine;
 
-            this.Dewormdate8weeks.Text = val.Deworn_8weeks_date;
+            this.txtDeworm8weeksDate.Text = val.Deworn_8weeks_date;
             this.txtDewormMedicine8weeks.Text = val.Deworn_8weeks_medicine;
 
-            this.Dewormdate10weeks.Text = val.Deworn_10weeks_date;
+            this.txtDeworm10weeksDate.Text = val.Deworn_10weeks_date;
             this.txtDewormMedicine10weeks.Text = val.Deworn_10weeks_medicine;
 
-            this.Dewormdate12weeks.Text = val.Deworn_12weeks_date;
+            this.txtDeworm12weeksDate.Text = val.Deworn_12weeks_date;
             this.txtDewormMedicine12weeks.Text = val.Deworn_12weeks_medicine;
         }
 

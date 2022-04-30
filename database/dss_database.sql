@@ -268,6 +268,7 @@ CREATE TABLE dss_database.vaccination (
     pet_species					VARCHAR(55) NOT NULL,
     pet_breed					VARCHAR(55) NOT NULL,
     pet_allergies				VARCHAR(55) NOT NULL,
+    vax_date   				    VARCHAR(55) NOT NULL,
     operations				    VARCHAR(55) NOT NULL,
     
     first_boost_distemper       VARCHAR(55) NOT NULL, 
@@ -284,8 +285,8 @@ CREATE TABLE dss_database.vaccination (
     
     first_boost_rabies          VARCHAR(55) NOT NULL, 
     first_date_rabies           VARCHAR(55) NOT NULL,
-    
-    
+    date					DATETIME,
+    primary_date            TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id)
 );
 

@@ -601,6 +601,13 @@ namespace WindowsFormsApplication1.components
             set { globulin = value; }
         }
 
+        public static int total_schedtoday;
+        public int Total_schedtoday
+        {
+            get { return total_schedtoday; }
+            set { total_schedtoday = value; }
+        }
+
 
 
 

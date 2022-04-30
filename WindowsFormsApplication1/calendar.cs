@@ -50,7 +50,10 @@ namespace WindowsFormsApplication1
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            patient.LoadPatients(gridBookingSchedule, dateSchedule.Text);
+            //this.dateSchedule.Text = DateTime.Now.ToString("MM/dd/yy");
+
+            patient.CountPatientsTodayVax(this.dateSchedule.Text.Substring(this.dateSchedule.Text.Length - 2));
+            this.txtPatientToday.Text = val.Total_schedtoday.ToString();
         }
 
         private void btnProcTransac_Click(object sender, EventArgs e)
@@ -160,6 +163,11 @@ namespace WindowsFormsApplication1
             
 
             
+        }
+
+        private void gridBookingSchedule_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

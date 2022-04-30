@@ -110,6 +110,12 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
+            this.txtDeworm2weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDeworm4weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDeworm6weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDeworm8weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDeworm10weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDeworm12weeksDate = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.gunaShadowPanel1.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
@@ -331,6 +337,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Snow;
+            this.panel9.Controls.Add(this.txtDeworm12weeksDate);
             this.panel9.Controls.Add(this.txtDewormMedicine12weeks);
             this.panel9.Controls.Add(this.label12);
             this.panel9.Controls.Add(this.Dewormdate12weeks);
@@ -380,7 +387,7 @@
             this.Dewormdate12weeks.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Dewormdate12weeks.ForeColor = System.Drawing.Color.Black;
             this.Dewormdate12weeks.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Dewormdate12weeks.Location = new System.Drawing.Point(119, 81);
+            this.Dewormdate12weeks.Location = new System.Drawing.Point(215, 81);
             this.Dewormdate12weeks.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.Dewormdate12weeks.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.Dewormdate12weeks.Name = "Dewormdate12weeks";
@@ -388,7 +395,7 @@
             this.Dewormdate12weeks.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Dewormdate12weeks.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Dewormdate12weeks.OnPressedColor = System.Drawing.Color.Black;
-            this.Dewormdate12weeks.Size = new System.Drawing.Size(113, 31);
+            this.Dewormdate12weeks.Size = new System.Drawing.Size(31, 31);
             this.Dewormdate12weeks.TabIndex = 214;
             this.Dewormdate12weeks.Text = "8/14/2021";
             this.Dewormdate12weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
@@ -751,6 +758,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Snow;
+            this.panel7.Controls.Add(this.txtDeworm6weeksDate);
             this.panel7.Controls.Add(this.txtDewormMedicine6weeks);
             this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.Dewormdate6weeks);
@@ -800,7 +808,7 @@
             this.Dewormdate6weeks.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Dewormdate6weeks.ForeColor = System.Drawing.Color.Black;
             this.Dewormdate6weeks.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Dewormdate6weeks.Location = new System.Drawing.Point(119, 81);
+            this.Dewormdate6weeks.Location = new System.Drawing.Point(211, 81);
             this.Dewormdate6weeks.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.Dewormdate6weeks.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.Dewormdate6weeks.Name = "Dewormdate6weeks";
@@ -808,7 +816,7 @@
             this.Dewormdate6weeks.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Dewormdate6weeks.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Dewormdate6weeks.OnPressedColor = System.Drawing.Color.Black;
-            this.Dewormdate6weeks.Size = new System.Drawing.Size(113, 31);
+            this.Dewormdate6weeks.Size = new System.Drawing.Size(33, 31);
             this.Dewormdate6weeks.TabIndex = 214;
             this.Dewormdate6weeks.Text = "8/14/2021";
             this.Dewormdate6weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
@@ -863,6 +871,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Snow;
+            this.panel1.Controls.Add(this.txtDeworm2weeksDate);
             this.panel1.Controls.Add(this.txtDewormMedicine2weeks);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.Dewormdate2weeks);
@@ -912,7 +921,7 @@
             this.Dewormdate2weeks.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Dewormdate2weeks.ForeColor = System.Drawing.Color.Black;
             this.Dewormdate2weeks.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Dewormdate2weeks.Location = new System.Drawing.Point(119, 81);
+            this.Dewormdate2weeks.Location = new System.Drawing.Point(214, 81);
             this.Dewormdate2weeks.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.Dewormdate2weeks.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.Dewormdate2weeks.Name = "Dewormdate2weeks";
@@ -920,7 +929,7 @@
             this.Dewormdate2weeks.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Dewormdate2weeks.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Dewormdate2weeks.OnPressedColor = System.Drawing.Color.Black;
-            this.Dewormdate2weeks.Size = new System.Drawing.Size(113, 31);
+            this.Dewormdate2weeks.Size = new System.Drawing.Size(30, 31);
             this.Dewormdate2weeks.TabIndex = 214;
             this.Dewormdate2weeks.Text = "8/14/2021";
             this.Dewormdate2weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
@@ -975,6 +984,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Snow;
+            this.panel5.Controls.Add(this.txtDeworm4weeksDate);
             this.panel5.Controls.Add(this.txtDewormMedicine4weeks);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.Dewormdate4weeks);
@@ -1024,7 +1034,7 @@
             this.Dewormdate4weeks.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Dewormdate4weeks.ForeColor = System.Drawing.Color.Black;
             this.Dewormdate4weeks.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Dewormdate4weeks.Location = new System.Drawing.Point(119, 81);
+            this.Dewormdate4weeks.Location = new System.Drawing.Point(215, 81);
             this.Dewormdate4weeks.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.Dewormdate4weeks.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.Dewormdate4weeks.Name = "Dewormdate4weeks";
@@ -1032,7 +1042,7 @@
             this.Dewormdate4weeks.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Dewormdate4weeks.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Dewormdate4weeks.OnPressedColor = System.Drawing.Color.Black;
-            this.Dewormdate4weeks.Size = new System.Drawing.Size(113, 31);
+            this.Dewormdate4weeks.Size = new System.Drawing.Size(30, 31);
             this.Dewormdate4weeks.TabIndex = 214;
             this.Dewormdate4weeks.Text = "8/14/2021";
             this.Dewormdate4weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
@@ -1087,6 +1097,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Snow;
+            this.panel11.Controls.Add(this.txtDeworm10weeksDate);
             this.panel11.Controls.Add(this.txtDewormMedicine10weeks);
             this.panel11.Controls.Add(this.label16);
             this.panel11.Controls.Add(this.Dewormdate10weeks);
@@ -1136,7 +1147,7 @@
             this.Dewormdate10weeks.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Dewormdate10weeks.ForeColor = System.Drawing.Color.Black;
             this.Dewormdate10weeks.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Dewormdate10weeks.Location = new System.Drawing.Point(119, 81);
+            this.Dewormdate10weeks.Location = new System.Drawing.Point(214, 81);
             this.Dewormdate10weeks.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.Dewormdate10weeks.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.Dewormdate10weeks.Name = "Dewormdate10weeks";
@@ -1144,7 +1155,7 @@
             this.Dewormdate10weeks.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Dewormdate10weeks.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Dewormdate10weeks.OnPressedColor = System.Drawing.Color.Black;
-            this.Dewormdate10weeks.Size = new System.Drawing.Size(113, 31);
+            this.Dewormdate10weeks.Size = new System.Drawing.Size(31, 31);
             this.Dewormdate10weeks.TabIndex = 214;
             this.Dewormdate10weeks.Text = "8/14/2021";
             this.Dewormdate10weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
@@ -1199,6 +1210,7 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Snow;
+            this.panel13.Controls.Add(this.txtDeworm8weeksDate);
             this.panel13.Controls.Add(this.txtDewormMedicine8weeks);
             this.panel13.Controls.Add(this.label19);
             this.panel13.Controls.Add(this.Dewormdate8weeks);
@@ -1248,7 +1260,7 @@
             this.Dewormdate8weeks.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Dewormdate8weeks.ForeColor = System.Drawing.Color.Black;
             this.Dewormdate8weeks.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Dewormdate8weeks.Location = new System.Drawing.Point(119, 81);
+            this.Dewormdate8weeks.Location = new System.Drawing.Point(213, 81);
             this.Dewormdate8weeks.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.Dewormdate8weeks.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.Dewormdate8weeks.Name = "Dewormdate8weeks";
@@ -1256,7 +1268,7 @@
             this.Dewormdate8weeks.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Dewormdate8weeks.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Dewormdate8weeks.OnPressedColor = System.Drawing.Color.Black;
-            this.Dewormdate8weeks.Size = new System.Drawing.Size(113, 31);
+            this.Dewormdate8weeks.Size = new System.Drawing.Size(31, 31);
             this.Dewormdate8weeks.TabIndex = 214;
             this.Dewormdate8weeks.Text = "8/14/2021";
             this.Dewormdate8weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
@@ -1307,6 +1319,120 @@
             this.iconPictureBox7.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox7.TabIndex = 1;
             this.iconPictureBox7.TabStop = false;
+            // 
+            // txtDeworm2weeksDate
+            // 
+            this.txtDeworm2weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDeworm2weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDeworm2weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm2weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDeworm2weeksDate.BorderThickness = 3;
+            this.txtDeworm2weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDeworm2weeksDate.Enabled = false;
+            this.txtDeworm2weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDeworm2weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm2weeksDate.isPassword = false;
+            this.txtDeworm2weeksDate.Location = new System.Drawing.Point(119, 80);
+            this.txtDeworm2weeksDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeworm2weeksDate.Name = "txtDeworm2weeksDate";
+            this.txtDeworm2weeksDate.Size = new System.Drawing.Size(95, 32);
+            this.txtDeworm2weeksDate.TabIndex = 254;
+            this.txtDeworm2weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtDeworm4weeksDate
+            // 
+            this.txtDeworm4weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDeworm4weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDeworm4weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm4weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDeworm4weeksDate.BorderThickness = 3;
+            this.txtDeworm4weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDeworm4weeksDate.Enabled = false;
+            this.txtDeworm4weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDeworm4weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm4weeksDate.isPassword = false;
+            this.txtDeworm4weeksDate.Location = new System.Drawing.Point(119, 80);
+            this.txtDeworm4weeksDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeworm4weeksDate.Name = "txtDeworm4weeksDate";
+            this.txtDeworm4weeksDate.Size = new System.Drawing.Size(96, 32);
+            this.txtDeworm4weeksDate.TabIndex = 255;
+            this.txtDeworm4weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtDeworm6weeksDate
+            // 
+            this.txtDeworm6weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDeworm6weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDeworm6weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm6weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDeworm6weeksDate.BorderThickness = 3;
+            this.txtDeworm6weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDeworm6weeksDate.Enabled = false;
+            this.txtDeworm6weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDeworm6weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm6weeksDate.isPassword = false;
+            this.txtDeworm6weeksDate.Location = new System.Drawing.Point(114, 80);
+            this.txtDeworm6weeksDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeworm6weeksDate.Name = "txtDeworm6weeksDate";
+            this.txtDeworm6weeksDate.Size = new System.Drawing.Size(97, 32);
+            this.txtDeworm6weeksDate.TabIndex = 254;
+            this.txtDeworm6weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtDeworm8weeksDate
+            // 
+            this.txtDeworm8weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDeworm8weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDeworm8weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm8weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDeworm8weeksDate.BorderThickness = 3;
+            this.txtDeworm8weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDeworm8weeksDate.Enabled = false;
+            this.txtDeworm8weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDeworm8weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm8weeksDate.isPassword = false;
+            this.txtDeworm8weeksDate.Location = new System.Drawing.Point(104, 80);
+            this.txtDeworm8weeksDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeworm8weeksDate.Name = "txtDeworm8weeksDate";
+            this.txtDeworm8weeksDate.Size = new System.Drawing.Size(113, 32);
+            this.txtDeworm8weeksDate.TabIndex = 254;
+            this.txtDeworm8weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtDeworm10weeksDate
+            // 
+            this.txtDeworm10weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDeworm10weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDeworm10weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm10weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDeworm10weeksDate.BorderThickness = 3;
+            this.txtDeworm10weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDeworm10weeksDate.Enabled = false;
+            this.txtDeworm10weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDeworm10weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm10weeksDate.isPassword = false;
+            this.txtDeworm10weeksDate.Location = new System.Drawing.Point(119, 81);
+            this.txtDeworm10weeksDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeworm10weeksDate.Name = "txtDeworm10weeksDate";
+            this.txtDeworm10weeksDate.Size = new System.Drawing.Size(95, 32);
+            this.txtDeworm10weeksDate.TabIndex = 234;
+            this.txtDeworm10weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtDeworm12weeksDate
+            // 
+            this.txtDeworm12weeksDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtDeworm12weeksDate.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtDeworm12weeksDate.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm12weeksDate.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtDeworm12weeksDate.BorderThickness = 3;
+            this.txtDeworm12weeksDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDeworm12weeksDate.Enabled = false;
+            this.txtDeworm12weeksDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDeworm12weeksDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDeworm12weeksDate.isPassword = false;
+            this.txtDeworm12weeksDate.Location = new System.Drawing.Point(115, 80);
+            this.txtDeworm12weeksDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeworm12weeksDate.Name = "txtDeworm12weeksDate";
+            this.txtDeworm12weeksDate.Size = new System.Drawing.Size(97, 32);
+            this.txtDeworm12weeksDate.TabIndex = 235;
+            this.txtDeworm12weeksDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // DewormingUpdatefrm
             // 
@@ -1458,5 +1584,11 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox7;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDeworm2weeksDate;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDeworm4weeksDate;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDeworm6weeksDate;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDeworm8weeksDate;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDeworm10weeksDate;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDeworm12weeksDate;
     }
 }

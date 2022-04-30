@@ -838,7 +838,7 @@ namespace WindowsFormsApplication1.functions
 
                             val.Deworn_2weeks_date = dat.Rows[0].Field<string>("deworn_2weeks_date");
                             val.Deworn_2weeks_medicine = dat.Rows[0].Field<string>("deworn_2weeks_medicine");
-                            val.Deworn_4weeks_date = dat.Rows[0].Field<string>("deworn_2weeks_date");
+                            val.Deworn_4weeks_date = dat.Rows[0].Field<string>("deworn_4weeks_date");
                             val.Deworn_4weeks_medicine = dat.Rows[0].Field<string>("deworn_4weeks_medicine");
                             val.Deworn_6weeks_date = dat.Rows[0].Field<string>("deworn_6weeks_date");
                             val.Deworn_6weeks_medicine = dat.Rows[0].Field<string>("deworn_6weeks_medicine");
@@ -3326,6 +3326,35 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
+        public void CountPatientsTodayVax(string today_sched)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT COUNT(*)
+                                FROM dss_database.vaccination
+                                WHERE DATE_FORMAT(primary_date, '%m/%d/%y') = @today_sched;";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@today_sched", today_sched);
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        connection.Open();
+                        val.Total_schedtoday = int.Parse(cmd.ExecuteScalar().ToString());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error show patients today: " + ex.ToString());
+            }
+        }
+
         public bool SavePregnant(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdesease,
             string operation, DateTime op_date, string op_time)
@@ -4011,7 +4040,7 @@ namespace WindowsFormsApplication1.functions
         }
 
         public bool SavePatientVaccination(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
-            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_allergies, string operations,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_allergies, string vax_date, string operations,
             string first_boost_distemper, string first_date_distemper, string second_boost_distemper, string second_date_distemper, string third_boost_distemper,
             string third_date_distemper, string first_boost_feline, string first_date_feline, string second_boost_feline, string second_date_feline, string first_boost_rabies, string first_date_rabies)
         {
@@ -4020,11 +4049,11 @@ namespace WindowsFormsApplication1.functions
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
                     string sql = @"insert into dss_database.vaccination(pet_id, owners_name, phone_num, address, pet_name, pet_age,
-                                pet_gender, pet_bday, pet_species, pet_breed, pet_allergies, operations, first_boost_distemper, first_date_distemper, second_boost_distemper,
+                                pet_gender, pet_bday, pet_species, pet_breed, pet_allergies, vax_date, operations, first_boost_distemper, first_date_distemper, second_boost_distemper,
                                 second_date_distemper, third_boost_distemper, third_date_distemper, first_boost_feline, first_date_feline, second_boost_feline,
                                 second_date_feline, first_boost_rabies, first_date_rabies)
                                 values(@pet_id, @owners_name, @phone_num, @address, @pet_name, @pet_age,
-                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_allergies, @operations, @first_boost_distemper, @first_date_distemper, @second_boost_distemper,
+                                @pet_gender, @pet_bday, @pet_species, @pet_breed, @pet_allergies, @vax_date, @operations, @first_boost_distemper, @first_date_distemper, @second_boost_distemper,
                                 @second_date_distemper, @third_boost_distemper, @third_date_distemper, @first_boost_feline, @first_date_feline, @second_boost_feline,
                                 @second_date_feline, @first_boost_rabies, @first_date_rabies)";
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
@@ -4040,6 +4069,7 @@ namespace WindowsFormsApplication1.functions
                         cmd.Parameters.AddWithValue("@pet_species", pet_species);
                         cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
                         cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@vax_date", vax_date);
                         cmd.Parameters.AddWithValue("@operations", operations);
 
                         cmd.Parameters.AddWithValue("@first_boost_distemper", first_boost_distemper);
