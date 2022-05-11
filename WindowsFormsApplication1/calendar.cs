@@ -53,6 +53,8 @@ namespace WindowsFormsApplication1
             //this.dateSchedule.Text = DateTime.Now.ToString("MM/dd/yy");
             if (txtSchedIdentifier.Text == "Vaccine") 
             {
+                patient.VaxCalendarFilter(gridBookingSchedule, this.dateSchedule.Value.ToString("MM"), this.dateSchedule.Value.ToString("dd"),
+                this.dateSchedule.Value.ToString("yy"));
                 patient.CountPatientsTodayVax(this.dateSchedule.Value.ToString("MM"), this.dateSchedule.Value.ToString("dd"),
                 this.dateSchedule.Value.ToString("yy"));
                 this.txtPatientToday.Text = val.Total_schedtoday.ToString();

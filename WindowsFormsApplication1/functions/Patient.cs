@@ -3359,6 +3359,44 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
+        public void VaxCalendarFilter(DataGridView grid, string month, string day, string year)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(con.conString()))
+                {
+                    string sql = @"SELECT pet_id AS 'Pet ID', owners_name AS 'Owners Name', pet_name AS 'Patient Name', 
+                                    pet_gender AS 'Gender', pet_bday AS 'Birthdate', pet_age AS 'Age', pet_breed AS 'Animal Breed', operations AS 'Operation'
+                                FROM dss_database.vaccination
+                                WHERE DATE_FORMAT(vax_date, '%m') = @month AND
+                                DATE_FORMAT(vax_date, '%d') = @day AND
+                                DATE_FORMAT(vax_date, '%y') = @year;";
+
+                    using (MySqlCommand cmd = new MySqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@month", month);
+                        cmd.Parameters.AddWithValue("@day", day);
+                        cmd.Parameters.AddWithValue("@year", year);
+
+
+                        connection.Open();
+
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+
+                        grid.DataSource = dt;
+                        connection.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error show patients Vax today: " + ex.ToString());
+            }
+        }
+
         public bool SavePregnant(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdesease,
             string operation, DateTime op_date, string op_time)
