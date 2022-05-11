@@ -268,7 +268,7 @@ CREATE TABLE dss_database.vaccination (
     pet_species					VARCHAR(55) NOT NULL,
     pet_breed					VARCHAR(55) NOT NULL,
     pet_allergies				VARCHAR(55) NOT NULL,
-    vax_date   				    VARCHAR(55) NOT NULL,
+    vax_date   				    DATE,
     operations				    VARCHAR(55) NOT NULL,
     
     first_boost_distemper       VARCHAR(55) NOT NULL, 

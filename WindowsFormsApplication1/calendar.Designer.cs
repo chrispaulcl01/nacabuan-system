@@ -237,7 +237,6 @@
             this.txtSchedIdentifier.Name = "txtSchedIdentifier";
             this.txtSchedIdentifier.Size = new System.Drawing.Size(100, 20);
             this.txtSchedIdentifier.TabIndex = 216;
-            this.txtSchedIdentifier.Visible = false;
             // 
             // txtPatientToday
             // 

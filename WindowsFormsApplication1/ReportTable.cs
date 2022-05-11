@@ -24,15 +24,16 @@ namespace WindowsFormsApplication1
 
         private void ReportTable_Load(object sender, EventArgs e)
         {
+
             this.rprtReportTable.Clear();
             ReportParameterCollection parameters = new ReportParameterCollection();
             parameters.Add(new ReportParameter("pTotalSalesOfTheDay", val.TotalSalesToday));
             parameters.Add(new ReportParameter("pTotalSalesOfTheMonth", val.TotalSalesMonth));
             parameters.Add(new ReportParameter("pTotalSalesOfTheYear", val.TotalSalesYear));
-            parameters.Add(new ReportParameter("pTotalPatientsCats", val.Totalcat.ToString()));;
-            parameters.Add(new ReportParameter("pTotalPatientsDogs", val.Totalpdogs.ToString()));
-            parameters.Add(new ReportParameter("pTotalPatientsBirds", val.Totalbird.ToString()));
-            parameters.Add(new ReportParameter("pTotalPatients", val.Totalpatient.ToString()));
+            parameters.Add(new ReportParameter("pTotalPatientsCats", val.Totalpcats));;
+            parameters.Add(new ReportParameter("pTotalPatientsDogs", val.Totalpdogs));
+            parameters.Add(new ReportParameter("pTotalPatientsBirds", val.Totalpbird));
+            parameters.Add(new ReportParameter("pTotalPatients", val.Totalpatientss));
             parameters.Add(new ReportParameter("pDate", val.ReportDate.ToString()));
             this.rprtReportTable.LocalReport.SetParameters(parameters);
             this.rprtReportTable.RefreshReport();

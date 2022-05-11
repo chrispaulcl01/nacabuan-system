@@ -175,7 +175,10 @@ namespace WindowsFormsApplication1
             //totalBirds = (double.Parse(val.Totalpbird));
             //totalaPtients = (double.Parse(val.Totalpatientss));
 
-            
+            val.Totaldogs = (txtTotalPatientDogs.Text);
+            val.Totalpcats = (txtTotalPatientCats.Text);
+            val.Totalpbird = (txtTotalPatientsBirds.Text);
+            val.Totalpatientss = (txtTotalPatients.Text);
 
             
             //patient.CountTotalSkinPatientDog();

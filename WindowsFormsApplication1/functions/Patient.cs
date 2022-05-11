@@ -3326,7 +3326,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public void CountPatientsTodayVax(string today_sched)
+        public void CountPatientsTodayVax(string month, string day, string year)
         {
             try
             {
@@ -3334,11 +3334,15 @@ namespace WindowsFormsApplication1.functions
                 {
                     string sql = @"SELECT COUNT(*)
                                 FROM dss_database.vaccination
-                                WHERE DATE_FORMAT(primary_date, '%m/%d/%y') = @today_sched;";
+                                WHERE DATE_FORMAT(vax_date, '%m') = @month AND
+                                DATE_FORMAT(vax_date, '%d') = @day AND
+                                DATE_FORMAT(vax_date, '%y') = @year;";
 
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
                     {
-                        cmd.Parameters.AddWithValue("@today_sched", today_sched);
+                        cmd.Parameters.AddWithValue("@month", month);
+                        cmd.Parameters.AddWithValue("@day", day);
+                        cmd.Parameters.AddWithValue("@year", year);
 
                         MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                         DataTable dt = new DataTable();
@@ -3351,7 +3355,7 @@ namespace WindowsFormsApplication1.functions
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error show patients today: " + ex.ToString());
+                Console.WriteLine("Error show patients Vax today: " + ex.ToString());
             }
         }
 
@@ -4040,7 +4044,7 @@ namespace WindowsFormsApplication1.functions
         }
 
         public bool SavePatientVaccination(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
-            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_allergies, string vax_date, string operations,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_allergies, DateTime vax_date, string operations,
             string first_boost_distemper, string first_date_distemper, string second_boost_distemper, string second_date_distemper, string third_boost_distemper,
             string third_date_distemper, string first_boost_feline, string first_date_feline, string second_boost_feline, string second_date_feline, string first_boost_rabies, string first_date_rabies)
         {

@@ -51,9 +51,13 @@ namespace WindowsFormsApplication1
         private void btnLoad_Click(object sender, EventArgs e)
         {
             //this.dateSchedule.Text = DateTime.Now.ToString("MM/dd/yy");
-
-            patient.CountPatientsTodayVax(this.dateSchedule.Text.Substring(this.dateSchedule.Text.Length - 2));
-            this.txtPatientToday.Text = val.Total_schedtoday.ToString();
+            if (txtSchedIdentifier.Text == "Vaccine") 
+            {
+                patient.CountPatientsTodayVax(this.dateSchedule.Value.ToString("MM"), this.dateSchedule.Value.ToString("dd"),
+                this.dateSchedule.Value.ToString("yy"));
+                this.txtPatientToday.Text = val.Total_schedtoday.ToString();
+            }
+            
         }
 
         private void btnProcTransac_Click(object sender, EventArgs e)
