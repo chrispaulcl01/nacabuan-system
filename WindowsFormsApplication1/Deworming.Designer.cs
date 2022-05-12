@@ -32,7 +32,9 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Dewormdatetimepicker = new System.Windows.Forms.DateTimePicker();
             this.cmbOperation = new Guna.UI.WinForms.GunaComboBox();
+            this.label41 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtPetID = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label37 = new System.Windows.Forms.Label();
@@ -172,18 +174,20 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel2.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gunaLabel2.Location = new System.Drawing.Point(42, 21);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(153, 29);
+            this.gunaLabel2.Size = new System.Drawing.Size(146, 29);
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "Deworming";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Snow;
+            this.panel2.Controls.Add(this.Dewormdatetimepicker);
             this.panel2.Controls.Add(this.cmbOperation);
+            this.panel2.Controls.Add(this.label41);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.txtPetID);
             this.panel2.Controls.Add(this.label37);
@@ -202,8 +206,16 @@
             this.panel2.Controls.Add(this.label24);
             this.panel2.Location = new System.Drawing.Point(86, 143);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(384, 415);
+            this.panel2.Size = new System.Drawing.Size(384, 442);
             this.panel2.TabIndex = 200;
+            // 
+            // Dewormdatetimepicker
+            // 
+            this.Dewormdatetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Dewormdatetimepicker.Location = new System.Drawing.Point(181, 391);
+            this.Dewormdatetimepicker.Name = "Dewormdatetimepicker";
+            this.Dewormdatetimepicker.Size = new System.Drawing.Size(129, 20);
+            this.Dewormdatetimepicker.TabIndex = 225;
             // 
             // cmbOperation
             // 
@@ -225,16 +237,27 @@
             this.cmbOperation.Size = new System.Drawing.Size(129, 26);
             this.cmbOperation.TabIndex = 225;
             // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.BackColor = System.Drawing.Color.Transparent;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(56, 392);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(107, 20);
+            this.label41.TabIndex = 226;
+            this.label41.Text = "Deworm Date";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(65, 351);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(58, 351);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 19);
+            this.label9.Size = new System.Drawing.Size(79, 20);
             this.label9.TabIndex = 224;
-            this.label9.Text = "Service";
+            this.label9.Text = "Operation";
             // 
             // txtPetID
             // 
@@ -244,7 +267,7 @@
             this.txtPetID.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtPetID.BorderThickness = 3;
             this.txtPetID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPetID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPetID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtPetID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPetID.isPassword = false;
             this.txtPetID.Location = new System.Drawing.Point(80, 43);
@@ -258,10 +281,10 @@
             // 
             this.label37.AutoSize = true;
             this.label37.BackColor = System.Drawing.Color.Transparent;
-            this.label37.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.Location = new System.Drawing.Point(29, 49);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(53, 19);
+            this.label37.Size = new System.Drawing.Size(54, 20);
             this.label37.TabIndex = 215;
             this.label37.Text = "Pet ID";
             // 
@@ -279,10 +302,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(13, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 23);
+            this.label2.Size = new System.Drawing.Size(182, 24);
             this.label2.TabIndex = 201;
             this.label2.Text = "Patient Information";
             // 
@@ -394,7 +417,7 @@
             this.txtAge.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtAge.BorderThickness = 3;
             this.txtAge.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAge.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAge.isPassword = false;
             this.txtAge.Location = new System.Drawing.Point(180, 153);
@@ -408,10 +431,10 @@
             // 
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(56, 162);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(66, 19);
+            this.label20.Size = new System.Drawing.Size(66, 20);
             this.label20.TabIndex = 159;
             this.label20.Text = "Pet Age";
             // 
@@ -419,10 +442,10 @@
             // 
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(56, 242);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(107, 19);
+            this.label21.Size = new System.Drawing.Size(106, 20);
             this.label21.TabIndex = 200;
             this.label21.Text = "Pet Birthdate ";
             // 
@@ -434,7 +457,7 @@
             this.txtPatientName.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtPatientName.BorderThickness = 3;
             this.txtPatientName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPatientName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPatientName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtPatientName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPatientName.isPassword = false;
             this.txtPatientName.Location = new System.Drawing.Point(180, 115);
@@ -448,10 +471,10 @@
             // 
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(56, 314);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(108, 19);
+            this.label22.Size = new System.Drawing.Size(104, 20);
             this.label22.TabIndex = 199;
             this.label22.Text = "Animal Breed";
             // 
@@ -459,10 +482,10 @@
             // 
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(56, 128);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(107, 19);
+            this.label25.Size = new System.Drawing.Size(105, 20);
             this.label25.TabIndex = 154;
             this.label25.Text = "Patient Name";
             // 
@@ -470,10 +493,10 @@
             // 
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(56, 201);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(93, 19);
+            this.label23.Size = new System.Drawing.Size(91, 20);
             this.label23.TabIndex = 198;
             this.label23.Text = "Pet Gender";
             // 
@@ -481,10 +504,10 @@
             // 
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(56, 274);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(120, 19);
+            this.label24.Size = new System.Drawing.Size(118, 20);
             this.label24.TabIndex = 197;
             this.label24.Text = "Animal Species";
             // 
@@ -508,7 +531,7 @@
             this.txtDewormMedicine2weeks.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtDewormMedicine2weeks.BorderThickness = 3;
             this.txtDewormMedicine2weeks.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDewormMedicine2weeks.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDewormMedicine2weeks.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtDewormMedicine2weeks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtDewormMedicine2weeks.isPassword = false;
             this.txtDewormMedicine2weeks.Location = new System.Drawing.Point(13, 115);
@@ -522,10 +545,10 @@
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(8, 86);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(111, 19);
+            this.label15.Size = new System.Drawing.Size(107, 20);
             this.label15.TabIndex = 214;
             this.label15.Text = "Deworm Date";
             // 
@@ -568,10 +591,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(24, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 23);
+            this.label3.Size = new System.Drawing.Size(135, 24);
             this.label3.TabIndex = 203;
             this.label3.Text = "(2 weeks) old";
             // 
@@ -579,10 +602,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(24, 7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 23);
+            this.label4.Size = new System.Drawing.Size(116, 24);
             this.label4.TabIndex = 202;
             this.label4.Text = "Deworming";
             // 
@@ -620,7 +643,7 @@
             this.txtDewormMedicine4weeks.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtDewormMedicine4weeks.BorderThickness = 3;
             this.txtDewormMedicine4weeks.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDewormMedicine4weeks.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDewormMedicine4weeks.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtDewormMedicine4weeks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtDewormMedicine4weeks.isPassword = false;
             this.txtDewormMedicine4weeks.Location = new System.Drawing.Point(13, 115);
@@ -634,10 +657,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(8, 86);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 19);
+            this.label5.Size = new System.Drawing.Size(107, 20);
             this.label5.TabIndex = 214;
             this.label5.Text = "Deworm Date";
             // 
@@ -680,10 +703,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(24, 40);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(133, 23);
+            this.label6.Size = new System.Drawing.Size(135, 24);
             this.label6.TabIndex = 203;
             this.label6.Text = "(4 weeks) old";
             // 
@@ -691,10 +714,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(24, 7);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 23);
+            this.label7.Size = new System.Drawing.Size(116, 24);
             this.label7.TabIndex = 202;
             this.label7.Text = "Deworming";
             // 
@@ -732,7 +755,7 @@
             this.txtDewormMedicine6weeks.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtDewormMedicine6weeks.BorderThickness = 3;
             this.txtDewormMedicine6weeks.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDewormMedicine6weeks.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDewormMedicine6weeks.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtDewormMedicine6weeks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtDewormMedicine6weeks.isPassword = false;
             this.txtDewormMedicine6weeks.Location = new System.Drawing.Point(13, 115);
@@ -746,10 +769,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(8, 86);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(111, 19);
+            this.label8.Size = new System.Drawing.Size(107, 20);
             this.label8.TabIndex = 214;
             this.label8.Text = "Deworm Date";
             // 
@@ -792,10 +815,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(24, 40);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(133, 23);
+            this.label10.Size = new System.Drawing.Size(135, 24);
             this.label10.TabIndex = 203;
             this.label10.Text = "(6 weeks) old";
             // 
@@ -803,10 +826,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(24, 7);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(121, 23);
+            this.label11.Size = new System.Drawing.Size(116, 24);
             this.label11.TabIndex = 202;
             this.label11.Text = "Deworming";
             // 
@@ -844,7 +867,7 @@
             this.txtDewormMedicine12weeks.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtDewormMedicine12weeks.BorderThickness = 3;
             this.txtDewormMedicine12weeks.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDewormMedicine12weeks.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDewormMedicine12weeks.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtDewormMedicine12weeks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtDewormMedicine12weeks.isPassword = false;
             this.txtDewormMedicine12weeks.Location = new System.Drawing.Point(13, 115);
@@ -858,10 +881,10 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(8, 86);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(111, 19);
+            this.label12.Size = new System.Drawing.Size(107, 20);
             this.label12.TabIndex = 214;
             this.label12.Text = "Deworm Date";
             // 
@@ -904,10 +927,10 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(24, 40);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(143, 23);
+            this.label13.Size = new System.Drawing.Size(146, 24);
             this.label13.TabIndex = 203;
             this.label13.Text = "(12 weeks) old";
             // 
@@ -915,10 +938,10 @@
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(24, 7);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(121, 23);
+            this.label14.Size = new System.Drawing.Size(116, 24);
             this.label14.TabIndex = 202;
             this.label14.Text = "Deworming";
             // 
@@ -956,7 +979,7 @@
             this.txtDewormMedicine10weeks.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtDewormMedicine10weeks.BorderThickness = 3;
             this.txtDewormMedicine10weeks.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDewormMedicine10weeks.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDewormMedicine10weeks.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtDewormMedicine10weeks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtDewormMedicine10weeks.isPassword = false;
             this.txtDewormMedicine10weeks.Location = new System.Drawing.Point(13, 115);
@@ -970,10 +993,10 @@
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(8, 86);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(111, 19);
+            this.label16.Size = new System.Drawing.Size(107, 20);
             this.label16.TabIndex = 214;
             this.label16.Text = "Deworm Date";
             // 
@@ -1016,10 +1039,10 @@
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(24, 40);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(143, 23);
+            this.label17.Size = new System.Drawing.Size(146, 24);
             this.label17.TabIndex = 203;
             this.label17.Text = "(10 weeks) old";
             // 
@@ -1027,10 +1050,10 @@
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(24, 7);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(121, 23);
+            this.label18.Size = new System.Drawing.Size(116, 24);
             this.label18.TabIndex = 202;
             this.label18.Text = "Deworming";
             // 
@@ -1068,7 +1091,7 @@
             this.txtDewormMedicine8weeks.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtDewormMedicine8weeks.BorderThickness = 3;
             this.txtDewormMedicine8weeks.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDewormMedicine8weeks.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDewormMedicine8weeks.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtDewormMedicine8weeks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtDewormMedicine8weeks.isPassword = false;
             this.txtDewormMedicine8weeks.Location = new System.Drawing.Point(13, 115);
@@ -1082,10 +1105,10 @@
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(8, 86);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(111, 19);
+            this.label19.Size = new System.Drawing.Size(107, 20);
             this.label19.TabIndex = 214;
             this.label19.Text = "Deworm Date";
             // 
@@ -1128,10 +1151,10 @@
             // 
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(24, 40);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(133, 23);
+            this.label26.Size = new System.Drawing.Size(135, 24);
             this.label26.TabIndex = 203;
             this.label26.Text = "(8 weeks) old";
             // 
@@ -1139,10 +1162,10 @@
             // 
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(24, 7);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(121, 23);
+            this.label27.Size = new System.Drawing.Size(116, 24);
             this.label27.TabIndex = 202;
             this.label27.Text = "Deworming";
             // 
@@ -1209,7 +1232,7 @@
             this.txtPhoneNumber.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtPhoneNumber.BorderThickness = 3;
             this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPhoneNumber.isPassword = false;
             this.txtPhoneNumber.Location = new System.Drawing.Point(422, 72);
@@ -1223,10 +1246,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(353, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 17);
+            this.label1.Size = new System.Drawing.Size(117, 18);
             this.label1.TabIndex = 220;
             this.label1.Text = "Contact Number";
             // 
@@ -1238,7 +1261,7 @@
             this.txtAddress.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtAddress.BorderThickness = 3;
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAddress.isPassword = false;
             this.txtAddress.Location = new System.Drawing.Point(232, 72);
@@ -1252,10 +1275,10 @@
             // 
             this.Address.AutoSize = true;
             this.Address.BackColor = System.Drawing.Color.Transparent;
-            this.Address.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Address.Location = new System.Drawing.Point(163, 49);
             this.Address.Name = "Address";
-            this.Address.Size = new System.Drawing.Size(65, 17);
+            this.Address.Size = new System.Drawing.Size(62, 18);
             this.Address.TabIndex = 218;
             this.Address.Text = "Address";
             // 
@@ -1267,7 +1290,7 @@
             this.txtOwnersName.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtOwnersName.BorderThickness = 3;
             this.txtOwnersName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOwnersName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtOwnersName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtOwnersName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtOwnersName.isPassword = false;
             this.txtOwnersName.Location = new System.Drawing.Point(35, 74);
@@ -1290,10 +1313,10 @@
             // 
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(13, 6);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(201, 23);
+            this.label28.Size = new System.Drawing.Size(191, 24);
             this.label28.TabIndex = 201;
             this.label28.Text = "Owners Information";
             // 
@@ -1301,10 +1324,10 @@
             // 
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(13, 51);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(114, 19);
+            this.label29.Size = new System.Drawing.Size(109, 20);
             this.label29.TabIndex = 154;
             this.label29.Text = "Owners Name";
             // 
@@ -1459,5 +1482,7 @@
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.DateTimePicker Dewormdatetimepicker;
+        private System.Windows.Forms.Label label41;
     }
 }

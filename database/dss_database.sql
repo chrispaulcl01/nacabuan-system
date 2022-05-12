@@ -512,6 +512,7 @@ CREATE TABLE dss_database.deworming (
     pet_species					VARCHAR(55) NOT NULL,
     pet_breed					VARCHAR(55) NOT NULL,
     service					    VARCHAR(55) NOT NULL,
+    deworm_date                 VARCHAR(55) NOT NULL,
     
     deworn_2weeks_date			VARCHAR(55) NOT NULL,
     deworn_2weeks_medicine		VARCHAR(55) NOT NULL,
@@ -523,7 +524,6 @@ CREATE TABLE dss_database.deworming (
     deworn_6weeks_medicine		VARCHAR(55) NOT NULL,
     
     deworn_8weeks_date			VARCHAR(55) NOT NULL,
-    deworn_8weeks_medicine		VARCHAR(55) NOT NULL,
     deworn_8weeks_medicine		VARCHAR(55) NOT NULL,
     
     deworn_10weeks_date			VARCHAR(55) NOT NULL,

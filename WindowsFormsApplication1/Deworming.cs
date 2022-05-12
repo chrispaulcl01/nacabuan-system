@@ -55,7 +55,7 @@ namespace WindowsFormsApplication1
         {
             if (patient.SaveDewormedPatient(txtPetID.Text, txtOwnersName.Text, txtPhoneNumber.Text, txtAddress.Text, txtPatientName.Text,
                 int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
-                cmbOperation.Text, Dewormdate2weeks.Text, txtDewormMedicine2weeks.Text, Dewormdate4weeks.Text, txtDewormMedicine4weeks.Text, Dewormdate6weeks.Text,txtDewormMedicine6weeks.Text,
+                cmbOperation.Text, Dewormdatetimepicker.Value.Date, Dewormdate2weeks.Text, txtDewormMedicine2weeks.Text, Dewormdate4weeks.Text, txtDewormMedicine4weeks.Text, Dewormdate6weeks.Text,txtDewormMedicine6weeks.Text,
                  Dewormdate8weeks.Text, txtDewormMedicine8weeks.Text, Dewormdate10weeks.Text, txtDewormMedicine10weeks.Text, Dewormdate12weeks.Text, txtDewormMedicine12weeks.Text)) 
             {
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -64,8 +64,7 @@ namespace WindowsFormsApplication1
                 val.OwnersName = this.txtOwnersName.Text;
                 val.Pet_name = this.txtPatientName.Text;
 
-                frmRX rx = new frmRX();
-                rx.Show();
+                this.Close();
             }
             else
             {

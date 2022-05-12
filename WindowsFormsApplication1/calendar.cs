@@ -50,16 +50,42 @@ namespace WindowsFormsApplication1
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            //this.dateSchedule.Text = DateTime.Now.ToString("MM/dd/yy");
-            if (txtSchedIdentifier.Text == "Vaccine") 
+
+            if (txtSchedIdentifier.Text == "Vaccine")
             {
-                patient.VaxCalendarFilter(gridBookingSchedule, this.dateSchedule.Value.ToString("MM"), this.dateSchedule.Value.ToString("dd"),
-                this.dateSchedule.Value.ToString("yy"));
                 patient.CountPatientsTodayVax(this.dateSchedule.Value.ToString("MM"), this.dateSchedule.Value.ToString("dd"),
                 this.dateSchedule.Value.ToString("yy"));
                 this.txtPatientToday.Text = val.Total_schedtoday.ToString();
+                patient.VaxCalendarFilter(gridBookingSchedule, this.dateSchedule.Value.ToString("MM"), this.dateSchedule.Value.ToString("dd"),
+                this.dateSchedule.Value.ToString("yy"));
             }
-            
+
+            else if (txtSchedIdentifier.Text == "Crastration") 
+            {
+                patient.CountPatientsTodayCras(this.dateSchedule.Value.ToString("MM"), this.dateSchedule.Value.ToString("dd"),
+                this.dateSchedule.Value.ToString("yy"));
+                this.txtPatientToday.Text = val.Total_schedtoday.ToString();
+                patient.CrasCalendarFilter(gridBookingSchedule, this.dateSchedule.Value.ToString("MM"), this.dateSchedule.Value.ToString("dd"),
+                this.dateSchedule.Value.ToString("yy"));
+            }
+
+            else if (txtSchedIdentifier.Text == "Lygate")
+            {
+                patient.CountPatientsTodayLygate(this.dateSchedule.Value.ToString("MM"), this.dateSchedule.Value.ToString("dd"),
+                this.dateSchedule.Value.ToString("yy"));
+                this.txtPatientToday.Text = val.Total_schedtoday.ToString();
+                patient.LygateCalendarFilter(gridBookingSchedule, this.dateSchedule.Value.ToString("MM"), this.dateSchedule.Value.ToString("dd"),
+                this.dateSchedule.Value.ToString("yy"));
+            }
+
+            else if (txtSchedIdentifier.Text == "Deworming")
+            {
+                patient.CountPatientsTodayDeworm(this.dateSchedule.Value.ToString("MM"), this.dateSchedule.Value.ToString("dd"),
+                this.dateSchedule.Value.ToString("yy"));
+                this.txtPatientToday.Text = val.Total_schedtoday.ToString();
+                patient.DewormCalendarFilter(gridBookingSchedule, this.dateSchedule.Value.ToString("MM"), this.dateSchedule.Value.ToString("dd"),
+                this.dateSchedule.Value.ToString("yy"));
+            }
         }
 
         private void btnProcTransac_Click(object sender, EventArgs e)
@@ -97,7 +123,7 @@ namespace WindowsFormsApplication1
                 }
             }
 
-            else if (txtSchedIdentifier.Text == "Lygaeidae")
+            else if (txtSchedIdentifier.Text == "Lygate")
             {
                 if (e.RowIndex >= 0)
                 {
@@ -153,7 +179,7 @@ namespace WindowsFormsApplication1
         private void btnLygaeidae_Click(object sender, EventArgs e)
         {
             txtSchedIdentifier.Clear();
-            this.txtSchedIdentifier.Text = "Lygaeidae";
+            this.txtSchedIdentifier.Text = "Lygate";
             patient.LoaddLygaidae(gridBookingSchedule);
         }
 
