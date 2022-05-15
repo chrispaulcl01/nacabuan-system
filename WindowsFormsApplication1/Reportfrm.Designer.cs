@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.ChartDatePick = new Guna.UI.WinForms.GunaDateTimePicker();
@@ -292,16 +292,16 @@
             // 
             // ChartSales
             // 
-            chartArea2.Name = "ChartArea1";
-            this.ChartSales.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.ChartSales.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.ChartSales.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.ChartSales.Legends.Add(legend1);
             this.ChartSales.Location = new System.Drawing.Point(12, 114);
             this.ChartSales.Name = "ChartSales";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.ChartSales.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.ChartSales.Series.Add(series1);
             this.ChartSales.Size = new System.Drawing.Size(300, 269);
             this.ChartSales.TabIndex = 129;
             this.ChartSales.Text = "chart1";
@@ -399,9 +399,9 @@
             this.gunaLabel13.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel13.Location = new System.Drawing.Point(405, 477);
             this.gunaLabel13.Name = "gunaLabel13";
-            this.gunaLabel13.Size = new System.Drawing.Size(86, 21);
+            this.gunaLabel13.Size = new System.Drawing.Size(61, 21);
             this.gunaLabel13.TabIndex = 209;
-            this.gunaLabel13.Text = "Lygaidae";
+            this.gunaLabel13.Text = "Ligate";
             // 
             // gunaLabel14
             // 

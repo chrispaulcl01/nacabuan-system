@@ -75,7 +75,7 @@
             this.btnLygaeide.Name = "btnLygaeide";
             this.btnLygaeide.Size = new System.Drawing.Size(170, 283);
             this.btnLygaeide.TabIndex = 100;
-            this.btnLygaeide.Text = "Lygaeidae";
+            this.btnLygaeide.Text = "Ligate";
             this.btnLygaeide.UseVisualStyleBackColor = false;
             this.btnLygaeide.Click += new System.EventHandler(this.btnLygaeide_Click);
             // 

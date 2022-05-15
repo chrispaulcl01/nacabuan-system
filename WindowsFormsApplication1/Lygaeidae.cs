@@ -68,8 +68,9 @@ namespace WindowsFormsApplication1
 
                 //frmRX rx = new frmRX();
                 //rx.Show();
-                this.Close();
+                
             }
+            this.Close();
         }
 
         private void btnBackLyg_Click(object sender, EventArgs e)
@@ -133,6 +134,7 @@ namespace WindowsFormsApplication1
         private void Lygaeidae_Load(object sender, EventArgs e)
         {
             autoGenNum();
+            this.DateOperetion.Text = DateTime.Now.ToString("MM/dd/yy");
         }
     }
 }

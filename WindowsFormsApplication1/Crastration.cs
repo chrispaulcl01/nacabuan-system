@@ -62,6 +62,8 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("failed to save", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+            this.Close();
+
         }
 
         private void btnBackCrast_Click(object sender, EventArgs e)
@@ -124,6 +126,7 @@ namespace WindowsFormsApplication1
         private void Crastration_Load(object sender, EventArgs e)
         {
             autoGenNum();
+            this.DateOperetion.Text = DateTime.Now.ToString("MM/dd/yy");
         }
     }
 }

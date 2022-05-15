@@ -308,7 +308,7 @@
             this.cmbOperations.ForeColor = System.Drawing.Color.Black;
             this.cmbOperations.FormattingEnabled = true;
             this.cmbOperations.Items.AddRange(new object[] {
-            "Lygaeidae"});
+            "Ligate"});
             this.cmbOperations.Location = new System.Drawing.Point(154, 70);
             this.cmbOperations.Name = "cmbOperations";
             this.cmbOperations.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
