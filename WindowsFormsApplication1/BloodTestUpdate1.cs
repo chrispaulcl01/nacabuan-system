@@ -49,7 +49,7 @@ namespace WindowsFormsApplication1
         private void btnSavemammry_Click(object sender, EventArgs e)
         {
             if (patient.UpdateBloodTestPatient(this.txtPetID.Text, this.txtOwnersName.Text, this.txtPhoneNumber.Text, this.txtAddress.Text, this.txtPatientName.Text,
-               int.Parse(this.txtAge.Text), this.cmbGender.Text, this.bdayDatepicker.Text, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text,
+               this.txtAge.Text, this.cmbGender.Text, this.bdayDatepicker.Text, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text,
                this.txtWeight.Text, this.cmbAllergies.Text, this.txtExistDiesease.Text, this.cmbOperation.Text, this.txtTypevax.Text, this.VaxDate.Value.Date,
                this.txtResultSuperchen.Text, this.txtResultTotalprotein.Text, this.txtResultAlbumin.Text, this.txtResultGlobulin.Text))
             {

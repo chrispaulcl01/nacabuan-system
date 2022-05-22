@@ -101,6 +101,8 @@
             this.cmbAllergies = new Guna.UI.WinForms.GunaComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Vaccinedatetimepicker = new System.Windows.Forms.DateTimePicker();
+            this.label41 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -127,6 +129,7 @@
             this.Date1stboostdistemper = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSavePatient = new FontAwesome.Sharp.IconButton();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
             this.panel13.SuspendLayout();
@@ -566,11 +569,11 @@
             this.btnSaveVax.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnSaveVax.IconColor = System.Drawing.Color.Black;
             this.btnSaveVax.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSaveVax.Location = new System.Drawing.Point(1248, 691);
+            this.btnSaveVax.Location = new System.Drawing.Point(1141, 691);
             this.btnSaveVax.Name = "btnSaveVax";
             this.btnSaveVax.Size = new System.Drawing.Size(79, 47);
             this.btnSaveVax.TabIndex = 234;
-            this.btnSaveVax.Text = "Save";
+            this.btnSaveVax.Text = "Update";
             this.btnSaveVax.UseVisualStyleBackColor = true;
             this.btnSaveVax.Click += new System.EventHandler(this.btnSaveVax_Click);
             // 
@@ -867,7 +870,7 @@
             this.btnBackVax.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnBackVax.IconColor = System.Drawing.Color.Black;
             this.btnBackVax.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBackVax.Location = new System.Drawing.Point(1163, 691);
+            this.btnBackVax.Location = new System.Drawing.Point(1056, 691);
             this.btnBackVax.Name = "btnBackVax";
             this.btnBackVax.Size = new System.Drawing.Size(79, 47);
             this.btnBackVax.TabIndex = 235;
@@ -886,7 +889,7 @@
             this.cmbAnimalBreed.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbAnimalBreed.ForeColor = System.Drawing.Color.Black;
             this.cmbAnimalBreed.FormattingEnabled = true;
-            this.cmbAnimalBreed.Location = new System.Drawing.Point(164, 345);
+            this.cmbAnimalBreed.Location = new System.Drawing.Point(164, 292);
             this.cmbAnimalBreed.Name = "cmbAnimalBreed";
             this.cmbAnimalBreed.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbAnimalBreed.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -904,7 +907,7 @@
             this.bdayDatepicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bdayDatepicker.ForeColor = System.Drawing.Color.Black;
             this.bdayDatepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.bdayDatepicker.Location = new System.Drawing.Point(164, 230);
+            this.bdayDatepicker.Location = new System.Drawing.Point(164, 215);
             this.bdayDatepicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.bdayDatepicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.bdayDatepicker.Name = "bdayDatepicker";
@@ -932,7 +935,7 @@
             "DOG",
             "CAT",
             "BIRD"});
-            this.cmbAnimalSpecies.Location = new System.Drawing.Point(164, 294);
+            this.cmbAnimalSpecies.Location = new System.Drawing.Point(164, 255);
             this.cmbAnimalSpecies.Name = "cmbAnimalSpecies";
             this.cmbAnimalSpecies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbAnimalSpecies.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -995,7 +998,7 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(40, 237);
+            this.label21.Location = new System.Drawing.Point(40, 222);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(106, 20);
             this.label21.TabIndex = 200;
@@ -1024,7 +1027,7 @@
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(40, 345);
+            this.label22.Location = new System.Drawing.Point(40, 292);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(104, 20);
             this.label22.TabIndex = 199;
@@ -1139,7 +1142,7 @@
             this.cmbAllergies.FormattingEnabled = true;
             this.cmbAllergies.Items.AddRange(new object[] {
             "no list"});
-            this.cmbAllergies.Location = new System.Drawing.Point(164, 383);
+            this.cmbAllergies.Location = new System.Drawing.Point(164, 330);
             this.cmbAllergies.Name = "cmbAllergies";
             this.cmbAllergies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbAllergies.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -1151,7 +1154,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(40, 388);
+            this.label9.Location = new System.Drawing.Point(40, 335);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(69, 20);
             this.label9.TabIndex = 208;
@@ -1160,6 +1163,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Snow;
+            this.panel2.Controls.Add(this.Vaccinedatetimepicker);
+            this.panel2.Controls.Add(this.label41);
             this.panel2.Controls.Add(this.cmbOperations);
             this.panel2.Controls.Add(this.label40);
             this.panel2.Controls.Add(this.txtPetID);
@@ -1183,6 +1188,25 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(384, 432);
             this.panel2.TabIndex = 223;
+            // 
+            // Vaccinedatetimepicker
+            // 
+            this.Vaccinedatetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Vaccinedatetimepicker.Location = new System.Drawing.Point(164, 380);
+            this.Vaccinedatetimepicker.Name = "Vaccinedatetimepicker";
+            this.Vaccinedatetimepicker.Size = new System.Drawing.Size(129, 20);
+            this.Vaccinedatetimepicker.TabIndex = 226;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.BackColor = System.Drawing.Color.Transparent;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(39, 381);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(115, 20);
+            this.label41.TabIndex = 227;
+            this.label41.Text = "Date Schedule";
             // 
             // panel3
             // 
@@ -1210,7 +1234,7 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(40, 296);
+            this.label24.Location = new System.Drawing.Point(40, 257);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(118, 20);
             this.label24.TabIndex = 197;
@@ -1545,6 +1569,19 @@
             this.panel1.Size = new System.Drawing.Size(241, 187);
             this.panel1.TabIndex = 224;
             // 
+            // btnSavePatient
+            // 
+            this.btnSavePatient.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnSavePatient.IconColor = System.Drawing.Color.Black;
+            this.btnSavePatient.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSavePatient.Location = new System.Drawing.Point(1275, 690);
+            this.btnSavePatient.Name = "btnSavePatient";
+            this.btnSavePatient.Size = new System.Drawing.Size(79, 47);
+            this.btnSavePatient.TabIndex = 236;
+            this.btnSavePatient.Text = "Save Patient";
+            this.btnSavePatient.UseVisualStyleBackColor = true;
+            this.btnSavePatient.Click += new System.EventHandler(this.btnSavePatient_Click);
+            // 
             // VaccinationUpdatefrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1552,6 +1589,7 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._68_687504_s;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.Controls.Add(this.btnSavePatient);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel9);
@@ -1726,5 +1764,8 @@
         private Guna.UI.WinForms.GunaDateTimePicker Date1stboostdistemper;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DateTimePicker Vaccinedatetimepicker;
+        private System.Windows.Forms.Label label41;
+        private FontAwesome.Sharp.IconButton btnSavePatient;
     }
 }

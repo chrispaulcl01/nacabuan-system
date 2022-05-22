@@ -49,7 +49,7 @@ namespace WindowsFormsApplication1
         private void btnSavePreg_Click(object sender, EventArgs e)
         {
             if (patient.UpdatePregnCersarPatient(this.txtPetID.Text, this.txtOwnersname.Text, this.txtPhoneNumber.Text, this.txtAddress.Text, this.txtPatientName.Text,
-                int.Parse(this.txtAge.Text), this.cmbGender.Text, this.bdayDatepicker.Text, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text, this.txtWeight.Text, this.cmbAllergies.Text,
+                this.txtAge.Text, this.cmbGender.Text, this.bdayDatepicker.Text, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text, this.txtWeight.Text, this.cmbAllergies.Text,
                 this.txtExDisease.Text, this.cmbOperations.Text, this.cmbDateOperetion.Value.Date, this.txtOpTime.Text))
             {
 

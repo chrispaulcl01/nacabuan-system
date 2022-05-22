@@ -35,22 +35,22 @@ namespace WindowsFormsApplication1
             this.cmbAnimalBreed.Text = val.Pet_breed;
             this.cmbOperation.Text = val.Operation;
 
-            this.txtDeworm2weeksDate.Text = val.Deworn_2weeks_date;
+            this.Dewormdate2weeks.Value= val.Deworn_2weeks_date;
             this.txtDewormMedicine2weeks.Text = val.Deworn_2weeks_medicine;
 
-            this.txtDeworm4weeksDate.Text = val.Deworn_4weeks_date;
+            this.Dewormdate4weeks.Value = val.Deworn_4weeks_date;
             this.txtDewormMedicine4weeks.Text = val.Deworn_4weeks_medicine;
 
-            this.txtDeworm6weeksDate.Text = val.Deworn_6weeks_date;
+            this.Dewormdate6weeks.Value = val.Deworn_6weeks_date;
             this.txtDewormMedicine6weeks.Text = val.Deworn_6weeks_medicine;
 
-            this.txtDeworm8weeksDate.Text = val.Deworn_8weeks_date;
+            this.Dewormdate8weeks.Value = val.Deworn_8weeks_date;
             this.txtDewormMedicine8weeks.Text = val.Deworn_8weeks_medicine;
 
-            this.txtDeworm10weeksDate.Text = val.Deworn_10weeks_date;
+            this.Dewormdate10weeks.Value = val.Deworn_10weeks_date;
             this.txtDewormMedicine10weeks.Text = val.Deworn_10weeks_medicine;
 
-            this.txtDeworm12weeksDate.Text = val.Deworn_12weeks_date;
+            this.Dewormdate12weeks.Value = val.Deworn_12weeks_date;
             this.txtDewormMedicine12weeks.Text = val.Deworn_12weeks_medicine;
         }
 
@@ -67,14 +67,15 @@ namespace WindowsFormsApplication1
         private void btnSaveDewarm_Click(object sender, EventArgs e)
         {
             if (patient.UpdateDewormPatient(this.txtPetID.Text, this.txtOwnersName.Text, this.txtPhoneNumber.Text, this.txtAddress.Text, this.txtPatientName.Text,
-                int.Parse(this.txtAge.Text), this.cmbGender.Text, this.bdayDatepicker.Text, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text,
-                this.cmbOperation.Text, this.Dewormdate2weeks.Text, this.txtDewormMedicine2weeks.Text, this.Dewormdate4weeks.Text, this.txtDewormMedicine4weeks.Text, this.Dewormdate6weeks.Text, this.txtDewormMedicine6weeks.Text,
-                 this. Dewormdate8weeks.Text, this.txtDewormMedicine8weeks.Text, this.Dewormdate10weeks.Text, this.txtDewormMedicine10weeks.Text, this.Dewormdate12weeks.Text, this.txtDewormMedicine12weeks.Text))
+                this.txtAge.Text, this.cmbGender.Text, this.bdayDatepicker.Text, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text,
+                this.cmbOperation.Text, this.Dewormdatetimepicker.Value, this.Dewormdate2weeks.Value, this.txtDewormMedicine2weeks.Text, this.Dewormdate4weeks.Value, this.txtDewormMedicine4weeks.Text, this.Dewormdate6weeks.Value, this.txtDewormMedicine6weeks.Text,
+                 this. Dewormdate8weeks.Value, this.txtDewormMedicine8weeks.Text, this.Dewormdate10weeks.Value, this.txtDewormMedicine10weeks.Text, this.Dewormdate12weeks.Value, this.txtDewormMedicine12weeks.Text))
             {
 
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 //patient.DeleteSkinPatientData(this.txtPetID.Text);
+                this.Close();
 
             }
             else
@@ -82,6 +83,8 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Failed to Saved!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+            frmRX rx = new frmRX();
+            rx.Show();
             this.Close();
         }
 
@@ -135,6 +138,29 @@ namespace WindowsFormsApplication1
                     cmbAnimalBreed.Items.Add(bird[i]);
                 }
             }
+        }
+
+        private void btnSavePatient_Click(object sender, EventArgs e)
+        {
+            if (patient.UpdateDewormPatient(this.txtPetID.Text, this.txtOwnersName.Text, this.txtPhoneNumber.Text, this.txtAddress.Text, this.txtPatientName.Text,
+                this.txtAge.Text, this.cmbGender.Text, this.bdayDatepicker.Text, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text,
+                this.cmbOperation.Text, this.Dewormdatetimepicker.Value, this.Dewormdate2weeks.Value, this.txtDewormMedicine2weeks.Text, this.Dewormdate4weeks.Value, this.txtDewormMedicine4weeks.Text, this.Dewormdate6weeks.Value, this.txtDewormMedicine6weeks.Text,
+                 this.Dewormdate8weeks.Value, this.txtDewormMedicine8weeks.Text, this.Dewormdate10weeks.Value, this.txtDewormMedicine10weeks.Text, this.Dewormdate12weeks.Value, this.txtDewormMedicine12weeks.Text))
+            {
+
+                MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //patient.DeleteSkinPatientData(this.txtPetID.Text);
+                this.Close();
+
+            }
+            else
+            {
+                MessageBox.Show("Failed to Saved!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            
+            this.Close();
         }
     }
 }

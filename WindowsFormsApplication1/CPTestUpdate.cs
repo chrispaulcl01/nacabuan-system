@@ -55,7 +55,7 @@ namespace WindowsFormsApplication1
         private void btnSaveCPTest_Click(object sender, EventArgs e)
         {
             if (patient.UpdateCPTPatient(this.txtPetID.Text, this.txtOwnersName.Text, this.txtPhoneNumber.Text, this.txtAddress.Text, this.txtPatientName.Text,
-               int.Parse(this.txtAge.Text), this.cmbGender.Text, this.bdayDatepicker.Value.Date, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text,
+               this.txtAge.Text, this.cmbGender.Text, this.bdayDatepicker.Value.Date, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text,
                this.txtWeight.Text, this.cmbAllergies.Text, this.txtExistDisease.Text, this.txtTestKitResult.Text, this.cmbOperation.Text, this.DateOperation.Value.Date, this.txtOpTime.Text))
             {
 

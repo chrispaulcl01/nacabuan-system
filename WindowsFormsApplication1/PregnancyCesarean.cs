@@ -58,7 +58,7 @@ namespace WindowsFormsApplication1
         private void btnSavePreg_Click(object sender, EventArgs e)
         {
             if (patient.SavePregnant(txtPetID.Text, txtOwnersname.Text, txtPhoneNumber.Text, txtAddress.Text, txtPatientName.Text,
-                int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
+                txtAge.Text, cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
                 txtWeight.Text, cmbAllergies.Text, txtExDisease.Text, cmbOperations.Text, DateOperetion.Value.Date, txtOpTime.Text))
             {
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

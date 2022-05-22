@@ -55,7 +55,7 @@ namespace WindowsFormsApplication1
         private void btnSaveCDTest_Click(object sender, EventArgs e)
         {
             if (patient.SaveCDTestPatient(txtPetID.Text, txtOwnersName.Text, txtPhoneNumber.Text, txtAddress.Text, txtPatientName.Text,
-                int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
+                txtAge.Text, cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
                 txtWeight.Text, cmbAllergies.Text, txtExistDisease.Text, txtTestKitResult.Text, cmbOperation.Text, DateOperation.Value.Date, txtOpTime.Text))
             {
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

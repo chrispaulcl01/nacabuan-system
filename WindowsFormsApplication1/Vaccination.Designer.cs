@@ -32,6 +32,8 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Vaccinedatetimepicker = new System.Windows.Forms.DateTimePicker();
+            this.label41 = new System.Windows.Forms.Label();
             this.cmbOperations = new Guna.UI.WinForms.GunaComboBox();
             this.label40 = new System.Windows.Forms.Label();
             this.txtPetID = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -127,8 +129,6 @@
             this.iconPictureBox11 = new FontAwesome.Sharp.IconPictureBox();
             this.btnBackVax = new FontAwesome.Sharp.IconButton();
             this.btnSaveVax = new FontAwesome.Sharp.IconButton();
-            this.label41 = new System.Windows.Forms.Label();
-            this.Vaccinedatetimepicker = new System.Windows.Forms.DateTimePicker();
             this.gunaShadowPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -234,6 +234,25 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(384, 432);
             this.panel2.TabIndex = 199;
+            // 
+            // Vaccinedatetimepicker
+            // 
+            this.Vaccinedatetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Vaccinedatetimepicker.Location = new System.Drawing.Point(165, 375);
+            this.Vaccinedatetimepicker.Name = "Vaccinedatetimepicker";
+            this.Vaccinedatetimepicker.Size = new System.Drawing.Size(129, 20);
+            this.Vaccinedatetimepicker.TabIndex = 222;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.BackColor = System.Drawing.Color.Transparent;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(40, 376);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(115, 20);
+            this.label41.TabIndex = 222;
+            this.label41.Text = "Date Schedule";
             // 
             // cmbOperations
             // 
@@ -1554,25 +1573,6 @@
             this.btnSaveVax.Text = "Save";
             this.btnSaveVax.UseVisualStyleBackColor = true;
             this.btnSaveVax.Click += new System.EventHandler(this.btnSaveVax_Click);
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.BackColor = System.Drawing.Color.Transparent;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(40, 376);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(101, 20);
-            this.label41.TabIndex = 222;
-            this.label41.Text = "VaccineDate";
-            // 
-            // Vaccinedatetimepicker
-            // 
-            this.Vaccinedatetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Vaccinedatetimepicker.Location = new System.Drawing.Point(165, 375);
-            this.Vaccinedatetimepicker.Name = "Vaccinedatetimepicker";
-            this.Vaccinedatetimepicker.Size = new System.Drawing.Size(129, 20);
-            this.Vaccinedatetimepicker.TabIndex = 222;
             // 
             // Vaccination
             // 

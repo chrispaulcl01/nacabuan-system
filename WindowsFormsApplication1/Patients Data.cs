@@ -66,6 +66,22 @@ namespace WindowsFormsApplication1
             {
                 patient.LoadMammary(gridPatientData);
             }
+            else if (cmbLoadServices.Text == "Vaccination")
+            {
+                patient.LoaddVaccination(gridPatientData);
+            }
+            else if (cmbLoadServices.Text == "Castration")
+            {
+                patient.LoaddCrastration(gridPatientData);
+            }
+            else if (cmbLoadServices.Text == "Ligate")
+            {
+                patient.LoaddLygaidae(gridPatientData);
+            }
+            else if (cmbLoadServices.Text == "Deworming")
+            {
+                patient.LoadDeworming(gridPatientData);
+            }
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -211,6 +227,62 @@ namespace WindowsFormsApplication1
                     DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
 
                     if (patient.PatientInfoViewerMammaryGland(row.Cells[0].Value.ToString()))
+                    {
+                        MammryGrandView mammgland = new MammryGrandView();
+                        mammgland.Show();
+                    }
+                }
+            }
+
+            else if (cmbLoadServices.Text == "Vaccination")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerVaccination(row.Cells[0].Value.ToString()))
+                    {
+                        MammryGrandView mammgland = new MammryGrandView();
+                        mammgland.Show();
+                    }
+                }
+            }
+
+            else if (cmbLoadServices.Text == "Castration")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerCrastration(row.Cells[0].Value.ToString()))
+                    {
+                        MammryGrandView mammgland = new MammryGrandView();
+                        mammgland.Show();
+                    }
+                }
+            }
+
+            else if (cmbLoadServices.Text == "Ligate")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerLygaedae(row.Cells[0].Value.ToString()))
+                    {
+                        MammryGrandView mammgland = new MammryGrandView();
+                        mammgland.Show();
+                    }
+                }
+            }
+
+            else if (cmbLoadServices.Text == "Deworming")
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.gridPatientData.Rows[e.RowIndex];
+
+                    if (patient.PatientInfoViewerDeworming(row.Cells[0].Value.ToString()))
                     {
                         MammryGrandView mammgland = new MammryGrandView();
                         mammgland.Show();

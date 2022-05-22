@@ -197,7 +197,7 @@
             this.Dewormdate10weeks.OnPressedColor = System.Drawing.Color.Black;
             this.Dewormdate10weeks.Size = new System.Drawing.Size(113, 31);
             this.Dewormdate10weeks.TabIndex = 214;
-            this.Dewormdate10weeks.Text = "14/08/2021";
+            this.Dewormdate10weeks.Text = "8/14/2021";
             this.Dewormdate10weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // panel12
@@ -368,7 +368,7 @@
             this.Dewormdate12weeks.OnPressedColor = System.Drawing.Color.Black;
             this.Dewormdate12weeks.Size = new System.Drawing.Size(113, 31);
             this.Dewormdate12weeks.TabIndex = 214;
-            this.Dewormdate12weeks.Text = "14/08/2021";
+            this.Dewormdate12weeks.Text = "8/14/2021";
             this.Dewormdate12weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // label10
@@ -469,7 +469,7 @@
             this.Dewormdate6weeks.OnPressedColor = System.Drawing.Color.Black;
             this.Dewormdate6weeks.Size = new System.Drawing.Size(113, 31);
             this.Dewormdate6weeks.TabIndex = 214;
-            this.Dewormdate6weeks.Text = "14/08/2021";
+            this.Dewormdate6weeks.Text = "8/14/2021";
             this.Dewormdate6weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // panel8
@@ -704,7 +704,7 @@
             this.Dewormdate8weeks.OnPressedColor = System.Drawing.Color.Black;
             this.Dewormdate8weeks.Size = new System.Drawing.Size(113, 31);
             this.Dewormdate8weeks.TabIndex = 214;
-            this.Dewormdate8weeks.Text = "14/08/2021";
+            this.Dewormdate8weeks.Text = "8/14/2021";
             this.Dewormdate8weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // panel14
@@ -773,7 +773,7 @@
             this.bdayDatepicker.OnPressedColor = System.Drawing.Color.Black;
             this.bdayDatepicker.Size = new System.Drawing.Size(153, 31);
             this.bdayDatepicker.TabIndex = 204;
-            this.bdayDatepicker.Text = "14/08/2021";
+            this.bdayDatepicker.Text = "8/14/2021";
             this.bdayDatepicker.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // cmbAnimalSpecies
@@ -1157,7 +1157,7 @@
             this.Dewormdate2weeks.OnPressedColor = System.Drawing.Color.Black;
             this.Dewormdate2weeks.Size = new System.Drawing.Size(113, 31);
             this.Dewormdate2weeks.TabIndex = 214;
-            this.Dewormdate2weeks.Text = "14/08/2021";
+            this.Dewormdate2weeks.Text = "8/14/2021";
             this.Dewormdate2weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // panel4
@@ -1268,7 +1268,7 @@
             this.Dewormdate4weeks.OnPressedColor = System.Drawing.Color.Black;
             this.Dewormdate4weeks.Size = new System.Drawing.Size(113, 31);
             this.Dewormdate4weeks.TabIndex = 214;
-            this.Dewormdate4weeks.Text = "14/08/2021";
+            this.Dewormdate4weeks.Text = "8/14/2021";
             this.Dewormdate4weeks.Value = new System.DateTime(2021, 8, 14, 13, 50, 22, 159);
             // 
             // panel6
@@ -1330,6 +1330,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DewormingMain";
             this.Text = "DewormingMain";
+            this.Load += new System.EventHandler(this.DewormingMain_Load);
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();

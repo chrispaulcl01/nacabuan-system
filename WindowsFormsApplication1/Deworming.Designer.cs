@@ -244,9 +244,9 @@
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.Location = new System.Drawing.Point(56, 392);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(107, 20);
+            this.label41.Size = new System.Drawing.Size(115, 20);
             this.label41.TabIndex = 226;
-            this.label41.Text = "Deworm Date";
+            this.label41.Text = "Date Schedule";
             // 
             // label9
             // 

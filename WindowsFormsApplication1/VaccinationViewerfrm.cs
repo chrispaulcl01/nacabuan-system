@@ -34,25 +34,26 @@ namespace WindowsFormsApplication1
             this.cmbAnimalSpecies.Text = val.Pet_species;
             this.txtanimalbreed.Text = val.Pet_breed;
             this.txtallergies.Text = val.Pet_skinallergies;
+            //this.Vaccinedatetimepicker.Value = val.Total_schedtoday;
             this.cmbOperations.Text = val.Operation;
 
             this.txt1stboostdistemper.Text = val.First_boost_distemper;
-            this.Date1stboostdistemper.Text = val.First_date_distemper;
+            this.Date1stboostdistemper.Value = val.First_date_distemper;
 
             this.txt2ndboostdistemper.Text = val.Second_boost_distemper;
-            this.date2ndboostfeline.Text = val.Second_date_distemper;
+            this.Date2ndboostdistemper.Value = val.Second_date_distemper;
 
             this.txt3rdboostdistemper.Text = val.Third_boost_distemper;
-            this.Date3rdboostdistemper.Text = val.Third_date_distemper;
+            this.Date3rdboostdistemper.Value = val.Third_date_distemper;
 
             this.txt1stboostfeline.Text = val.First_boost_feline;
-            this.Date1stboostfeline.Text = val.First_date_feline;
+            this.Date1stboostfeline.Value = val.First_date_feline;
 
             this.txt2ndboostfeline.Text = val.Third_boost_distemper;
-            this.date2ndboostfeline.Text = val.Third_date_distemper;
+            this.date2ndboostfeline.Value = val.Third_date_distemper;
 
             this.txt1stboostrabies.Text = val.First_boost_rabies;
-            this.date1stboostrabies.Text = val.First_date_rabies;
+            this.date1stboostrabies.Value = val.First_date_rabies;
         }
 
         private void btnSaveVax_Click(object sender, EventArgs e)

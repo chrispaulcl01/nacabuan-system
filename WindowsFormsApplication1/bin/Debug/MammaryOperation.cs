@@ -68,7 +68,7 @@ namespace WindowsFormsApplication1
         private void btnSavemammry_Click(object sender, EventArgs e)
         {
             if (patient.SaveMammryPatient(txtPetID.Text, txtOwnersName.Text, txtPhoneNumber.Text, txtAddress.Text, txtPatientName.Text,
-                int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
+                txtAge.Text, cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
                 txtWeight.Text, cmbAllergies.Text, txtExistDiesease.Text, cmbOperation.Text, txtTypevax.Text, VaxDate.Value.Date, txtResultSuperchen.Text, txtResultTotalprotein.Text, txtResultAlbumin.Text, txtResultGlobulin.Text))
                 
             {

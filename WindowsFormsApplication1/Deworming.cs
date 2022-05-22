@@ -54,9 +54,9 @@ namespace WindowsFormsApplication1
         private void btnSaveDewarm_Click(object sender, EventArgs e)
         {
             if (patient.SaveDewormedPatient(txtPetID.Text, txtOwnersName.Text, txtPhoneNumber.Text, txtAddress.Text, txtPatientName.Text,
-                int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
-                cmbOperation.Text, Dewormdatetimepicker.Value.Date, Dewormdate2weeks.Text, txtDewormMedicine2weeks.Text, Dewormdate4weeks.Text, txtDewormMedicine4weeks.Text, Dewormdate6weeks.Text,txtDewormMedicine6weeks.Text,
-                 Dewormdate8weeks.Text, txtDewormMedicine8weeks.Text, Dewormdate10weeks.Text, txtDewormMedicine10weeks.Text, Dewormdate12weeks.Text, txtDewormMedicine12weeks.Text)) 
+                txtAge.Text, cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
+                cmbOperation.Text, Dewormdatetimepicker.Value.Date, Dewormdate2weeks.Value.Date, txtDewormMedicine2weeks.Text, Dewormdate4weeks.Value.Date, txtDewormMedicine4weeks.Text, Dewormdate6weeks.Value.Date, txtDewormMedicine6weeks.Text,
+                 Dewormdate8weeks.Value.Date, txtDewormMedicine8weeks.Text, Dewormdate10weeks.Value.Date, txtDewormMedicine10weeks.Text, Dewormdate12weeks.Value.Date, txtDewormMedicine12weeks.Text)) 
             {
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

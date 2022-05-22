@@ -99,6 +99,8 @@
             this.label37 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtallergies = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtanimalbreed = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -125,8 +127,8 @@
             this.Date1stboostdistemper = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtanimalbreed = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtallergies = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.Vaccinedatetimepicker = new System.Windows.Forms.DateTimePicker();
+            this.label41 = new System.Windows.Forms.Label();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
             this.panel13.SuspendLayout();
@@ -896,7 +898,7 @@
             this.bdayDatepicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bdayDatepicker.ForeColor = System.Drawing.Color.Black;
             this.bdayDatepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.bdayDatepicker.Location = new System.Drawing.Point(164, 230);
+            this.bdayDatepicker.Location = new System.Drawing.Point(163, 211);
             this.bdayDatepicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.bdayDatepicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.bdayDatepicker.Name = "bdayDatepicker";
@@ -925,7 +927,7 @@
             "DOG",
             "CAT",
             "BIRD"});
-            this.cmbAnimalSpecies.Location = new System.Drawing.Point(164, 294);
+            this.cmbAnimalSpecies.Location = new System.Drawing.Point(163, 248);
             this.cmbAnimalSpecies.Name = "cmbAnimalSpecies";
             this.cmbAnimalSpecies.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbAnimalSpecies.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -991,7 +993,7 @@
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Enabled = false;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(40, 237);
+            this.label21.Location = new System.Drawing.Point(39, 218);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(106, 20);
             this.label21.TabIndex = 200;
@@ -1022,7 +1024,7 @@
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Enabled = false;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(40, 345);
+            this.label22.Location = new System.Drawing.Point(40, 289);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(104, 20);
             this.label22.TabIndex = 199;
@@ -1135,7 +1137,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Enabled = false;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(40, 388);
+            this.label9.Location = new System.Drawing.Point(40, 332);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(69, 20);
             this.label9.TabIndex = 208;
@@ -1144,6 +1146,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Snow;
+            this.panel2.Controls.Add(this.Vaccinedatetimepicker);
+            this.panel2.Controls.Add(this.label41);
             this.panel2.Controls.Add(this.txtallergies);
             this.panel2.Controls.Add(this.txtanimalbreed);
             this.panel2.Controls.Add(this.cmbOperations);
@@ -1167,6 +1171,44 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(384, 432);
             this.panel2.TabIndex = 223;
+            // 
+            // txtallergies
+            // 
+            this.txtallergies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtallergies.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtallergies.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtallergies.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtallergies.BorderThickness = 3;
+            this.txtallergies.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtallergies.Enabled = false;
+            this.txtallergies.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txtallergies.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtallergies.isPassword = false;
+            this.txtallergies.Location = new System.Drawing.Point(163, 323);
+            this.txtallergies.Margin = new System.Windows.Forms.Padding(4);
+            this.txtallergies.Name = "txtallergies";
+            this.txtallergies.Size = new System.Drawing.Size(154, 32);
+            this.txtallergies.TabIndex = 223;
+            this.txtallergies.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtanimalbreed
+            // 
+            this.txtanimalbreed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
+            this.txtanimalbreed.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtanimalbreed.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtanimalbreed.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtanimalbreed.BorderThickness = 3;
+            this.txtanimalbreed.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtanimalbreed.Enabled = false;
+            this.txtanimalbreed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txtanimalbreed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtanimalbreed.isPassword = false;
+            this.txtanimalbreed.Location = new System.Drawing.Point(163, 281);
+            this.txtanimalbreed.Margin = new System.Windows.Forms.Padding(4);
+            this.txtanimalbreed.Name = "txtanimalbreed";
+            this.txtanimalbreed.Size = new System.Drawing.Size(154, 32);
+            this.txtanimalbreed.TabIndex = 222;
+            this.txtanimalbreed.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // panel3
             // 
@@ -1196,7 +1238,7 @@
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Enabled = false;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(40, 296);
+            this.label24.Location = new System.Drawing.Point(39, 250);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(118, 20);
             this.label24.TabIndex = 197;
@@ -1536,43 +1578,24 @@
             this.panel1.Size = new System.Drawing.Size(241, 187);
             this.panel1.TabIndex = 224;
             // 
-            // txtanimalbreed
+            // Vaccinedatetimepicker
             // 
-            this.txtanimalbreed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtanimalbreed.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtanimalbreed.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtanimalbreed.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtanimalbreed.BorderThickness = 3;
-            this.txtanimalbreed.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtanimalbreed.Enabled = false;
-            this.txtanimalbreed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtanimalbreed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtanimalbreed.isPassword = false;
-            this.txtanimalbreed.Location = new System.Drawing.Point(163, 337);
-            this.txtanimalbreed.Margin = new System.Windows.Forms.Padding(4);
-            this.txtanimalbreed.Name = "txtanimalbreed";
-            this.txtanimalbreed.Size = new System.Drawing.Size(154, 32);
-            this.txtanimalbreed.TabIndex = 222;
-            this.txtanimalbreed.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Vaccinedatetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Vaccinedatetimepicker.Location = new System.Drawing.Point(164, 380);
+            this.Vaccinedatetimepicker.Name = "Vaccinedatetimepicker";
+            this.Vaccinedatetimepicker.Size = new System.Drawing.Size(129, 20);
+            this.Vaccinedatetimepicker.TabIndex = 224;
             // 
-            // txtallergies
+            // label41
             // 
-            this.txtallergies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(226)))));
-            this.txtallergies.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtallergies.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtallergies.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtallergies.BorderThickness = 3;
-            this.txtallergies.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtallergies.Enabled = false;
-            this.txtallergies.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtallergies.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtallergies.isPassword = false;
-            this.txtallergies.Location = new System.Drawing.Point(163, 379);
-            this.txtallergies.Margin = new System.Windows.Forms.Padding(4);
-            this.txtallergies.Name = "txtallergies";
-            this.txtallergies.Size = new System.Drawing.Size(154, 32);
-            this.txtallergies.TabIndex = 223;
-            this.txtallergies.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.label41.AutoSize = true;
+            this.label41.BackColor = System.Drawing.Color.Transparent;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(39, 381);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(101, 20);
+            this.label41.TabIndex = 225;
+            this.label41.Text = "VaccineDate";
             // 
             // VaccinationViewerfrm
             // 
@@ -1755,5 +1778,7 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtallergies;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtanimalbreed;
+        private System.Windows.Forms.DateTimePicker Vaccinedatetimepicker;
+        private System.Windows.Forms.Label label41;
     }
 }

@@ -68,8 +68,8 @@ namespace WindowsFormsApplication1.components
             set { pet_bday = value; }
         }
 
-        public static int pet_age;
-        public int Pet_age
+        public static string pet_age;
+        public string Pet_age
         {
             get { return pet_age; }
             set { pet_age = value; }
@@ -365,43 +365,43 @@ namespace WindowsFormsApplication1.components
             set { vaxdate = value; }
         }
 
-        public static string deworn_2weeks_date;
-        public string Deworn_2weeks_date
+        public static DateTime deworn_2weeks_date;
+        public DateTime Deworn_2weeks_date
         {
             get { return deworn_2weeks_date; }
             set { deworn_2weeks_date = value; }
         }
 
-        public static string deworn_4weeks_date;
-        public string Deworn_4weeks_date
+        public static DateTime deworn_4weeks_date;
+        public DateTime Deworn_4weeks_date
         {
             get { return deworn_4weeks_date; }
             set { deworn_4weeks_date = value; }
         }
 
-        public static string deworn_6weeks_date;
-        public string Deworn_6weeks_date
+        public static DateTime deworn_6weeks_date;
+        public DateTime Deworn_6weeks_date
         {
             get { return deworn_6weeks_date; }
             set { deworn_6weeks_date = value; }
         }
 
-        public static string deworn_8weeks_date;
-        public string Deworn_8weeks_date
+        public static DateTime deworn_8weeks_date;
+        public DateTime Deworn_8weeks_date
         {
             get { return deworn_8weeks_date; }
             set { deworn_8weeks_date = value; }
         }
 
-        public static string deworn_10weeks_date;
-        public string Deworn_10weeks_date
+        public static DateTime deworn_10weeks_date;
+        public DateTime Deworn_10weeks_date
         {
             get { return deworn_10weeks_date; }
             set { deworn_10weeks_date = value; }
         }
 
-        public static string deworn_12weeks_date;
-        public string Deworn_12weeks_date
+        public static DateTime deworn_12weeks_date;
+        public DateTime Deworn_12weeks_date
         {
             get { return deworn_12weeks_date; }
             set { deworn_12weeks_date = value; }
@@ -456,8 +456,8 @@ namespace WindowsFormsApplication1.components
             set { first_boost_distemper = value; }
         }
 
-        public static string first_date_distemper;
-        public string First_date_distemper
+        public static DateTime first_date_distemper;
+        public DateTime First_date_distemper
         {
             get { return first_date_distemper; }
             set { first_date_distemper = value; }
@@ -470,8 +470,8 @@ namespace WindowsFormsApplication1.components
             set { second_boost_distemper = value; }
         }
 
-        public static string second_date_distemper;
-        public string Second_date_distemper
+        public static DateTime second_date_distemper;
+        public DateTime Second_date_distemper
         {
             get { return second_date_distemper; }
             set { second_date_distemper = value; }
@@ -484,8 +484,8 @@ namespace WindowsFormsApplication1.components
             set { third_boost_distemper = value; }
         }
 
-        public static string third_date_distemper;
-        public string Third_date_distemper
+        public static DateTime third_date_distemper;
+        public DateTime Third_date_distemper
         {
             get { return third_date_distemper; }
             set { third_date_distemper = value; }
@@ -499,8 +499,8 @@ namespace WindowsFormsApplication1.components
             set { first_boost_feline = value; }
         }
 
-        public static string first_date_feline;
-        public string First_date_feline
+        public static DateTime first_date_feline;
+        public DateTime First_date_feline
         {
             get { return first_date_feline; }
             set { first_date_feline = value; }
@@ -513,8 +513,8 @@ namespace WindowsFormsApplication1.components
             set { second_boost_feline = value; }
         }
 
-        public static string second_date_feline;
-        public string Second_date_feline
+        public static DateTime second_date_feline;
+        public DateTime Second_date_feline
         {
             get { return second_date_feline; }
             set { second_date_feline = value; }
@@ -527,8 +527,8 @@ namespace WindowsFormsApplication1.components
             set { first_boost_rabies = value; }
         }
 
-        public static string first_date_rabies;
-        public string First_date_rabies
+        public static DateTime first_date_rabies;
+        public DateTime First_date_rabies
         {
             get { return first_date_rabies; }
             set { first_date_rabies = value; }

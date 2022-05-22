@@ -87,7 +87,11 @@
             "Pregnancy",
             "Eye Operation",
             "Ear Operation",
-            "Mammary Gland"});
+            "Mammary Gland",
+            "Vaccination",
+            "Castration",
+            "Ligate",
+            "Deworming"});
             this.cmbLoadServices.Location = new System.Drawing.Point(193, 128);
             this.cmbLoadServices.Name = "cmbLoadServices";
             this.cmbLoadServices.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));

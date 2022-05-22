@@ -54,7 +54,7 @@ namespace WindowsFormsApplication1
         private void btnSavePreg_Click(object sender, EventArgs e)
         {
             if (patient.UpdateSkinPatient(this.txtPetID.Text, this.txtOwnersName.Text, this.txtPhoneNumber.Text, this.txtAddress.Text, this.txtPatientName.Text,
-                int.Parse(this.txtAge.Text), this.cmbGender.Text, this.bdayDatepicker.Value.Date, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text,
+                this.txtAge.Text, this.cmbGender.Text, this.bdayDatepicker.Value.Date, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text,
                 this.txtWeight.Text, this.cmbSkinAllergies.Text, this.txtExistDisease.Text, this.cmbOperations.Text, this.DateOperation.Value.Date, this.txtOpTime.Text))
             {
 

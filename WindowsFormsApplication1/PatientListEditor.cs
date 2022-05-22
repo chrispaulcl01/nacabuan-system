@@ -64,7 +64,7 @@ namespace WindowsFormsApplication1
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            if (patient.UpdatePatient(this.txtPetID.Text, this.txtOwnersName.Text, this.txtPatientName.Text, int.Parse(this.txtAge.Text),
+            if (patient.UpdatePatient(this.txtPetID.Text, this.txtOwnersName.Text, this.txtPatientName.Text, this.txtAge.Text,
                 this.cmbGender.Text, this.bdayDatepicker.Text, this.cmbAnimalSpecies.Text, this.txtAnimalBreed.Text, this.txtContactNo.Text,
                 double.Parse(this.txtTemperature.Text), DateTime.Parse(this.dateLastvaccinedate.Text), this.txtExistingConditions.Text,
                 this.txtAllergies.Text, this.txtTypeOfVaccine.Text, double.Parse(this.txtWeight.Text), this.txtQuestion.Text, this.cmbStool.Text,

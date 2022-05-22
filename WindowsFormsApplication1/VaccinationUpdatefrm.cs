@@ -25,10 +25,10 @@ namespace WindowsFormsApplication1
         {
             if (patient.UpdatePatientVaccine(txtPetID.Text, txtOwnersName.Text, txtPhoneNum.Text, txtAddress.Text, txtPatientName.Text,
                int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
-               cmbAllergies.Text, cmbOperations.Text,
-               txt1stboostdistemper.Text, Date1stboostdistemper.Text, txt2ndboostdistemper.Text, Date2ndboostdistemper.Text,
-               txt3rdboostdistemper.Text, Date3rdboostdistemper.Text, txt1stboostfeline.Text, Date1stboostfeline.Text, txt2ndboostfeline.Text, date2ndboostfeline.Text,
-               txt1stboostrabies.Text, date1stboostrabies.Text
+               cmbAllergies.Text, Vaccinedatetimepicker.Value.Date, cmbOperations.Text,
+               txt1stboostdistemper.Text, Date1stboostdistemper.Value.Date, txt2ndboostdistemper.Text, Date2ndboostdistemper.Value.Date,
+               txt3rdboostdistemper.Text, Date3rdboostdistemper.Value.Date, txt1stboostfeline.Text, Date1stboostfeline.Value.Date, txt2ndboostfeline.Text, date2ndboostfeline.Value.Date,
+               txt1stboostrabies.Text, date1stboostrabies.Value.Date
                ))
             {
 
@@ -42,6 +42,8 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Failed to Saved!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+            frmRX rx = new frmRX();
+            rx.Show();
             this.Close();
         }
 
@@ -71,22 +73,22 @@ namespace WindowsFormsApplication1
             this.cmbOperations.Text = val.Operation;
 
             this.txt1stboostdistemper.Text = val.First_boost_distemper;
-            this.Date1stboostdistemper.Text = val.First_date_distemper;
+            this.Date1stboostdistemper.Value = val.First_date_distemper;
 
             this.txt2ndboostdistemper.Text = val.Second_boost_distemper;
-            this.date2ndboostfeline.Text = val.Second_date_distemper;
+            this.Date2ndboostdistemper.Value = val.Second_date_distemper;
 
             this.txt3rdboostdistemper.Text = val.Third_boost_distemper;
-            this.Date3rdboostdistemper.Text = val.Third_date_distemper;
+            this.Date3rdboostdistemper.Value = val.Third_date_distemper;
 
             this.txt1stboostfeline.Text = val.First_boost_feline;
-            this.Date1stboostfeline.Text = val.First_date_feline;
+            this.Date1stboostfeline.Value = val.First_date_feline;
 
             this.txt2ndboostfeline.Text = val.Third_boost_distemper;
-            this.date2ndboostfeline.Text = val.Third_date_distemper;
+            this.date2ndboostfeline.Value = val.Third_date_distemper;
 
             this.txt1stboostrabies.Text = val.First_boost_rabies;
-            this.date1stboostrabies.Text = val.First_date_rabies;
+            this.date1stboostrabies.Value = val.First_date_rabies;
         }
 
         private void cmbAnimalSpecies_SelectedIndexChanged(object sender, EventArgs e)
@@ -139,6 +141,31 @@ namespace WindowsFormsApplication1
                     cmbAnimalBreed.Items.Add(bird[i]);
                 }
             }
+        }
+
+        private void btnSavePatient_Click(object sender, EventArgs e)
+        {
+            if (patient.UpdatePatientVaccine(txtPetID.Text, txtOwnersName.Text, txtPhoneNum.Text, txtAddress.Text, txtPatientName.Text,
+               int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
+               cmbAllergies.Text, Vaccinedatetimepicker.Value.Date, cmbOperations.Text,
+               txt1stboostdistemper.Text, Date1stboostdistemper.Value.Date, txt2ndboostdistemper.Text, Date2ndboostdistemper.Value.Date,
+               txt3rdboostdistemper.Text, Date3rdboostdistemper.Value.Date, txt1stboostfeline.Text, Date1stboostfeline.Value.Date, txt2ndboostfeline.Text, date2ndboostfeline.Value.Date,
+               txt1stboostrabies.Text, date1stboostrabies.Value.Date
+               ))
+            {
+
+                MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //patient.DeleteSkinPatientData(this.txtPetID.Text);
+
+            }
+            else
+            {
+                MessageBox.Show("Failed to Saved!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            
+            this.Close();
         }
     }
 }

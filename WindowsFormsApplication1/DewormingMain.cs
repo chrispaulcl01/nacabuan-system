@@ -16,5 +16,10 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void DewormingMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -418,7 +418,7 @@ namespace WindowsFormsApplication1.functions
                             val.Phone_num = dat.Rows[0].Field<string>("phone_num");
                             val.Address = dat.Rows[0].Field<string>("address");
                             val.Pet_name = dat.Rows[0].Field<string>("pet_name");
-                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_age = dat.Rows[0].Field<string>("pet_age");
                             val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
                             val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
@@ -510,7 +510,7 @@ namespace WindowsFormsApplication1.functions
                             val.Phone_num = dat.Rows[0].Field<string>("phone_num");
                             val.Address = dat.Rows[0].Field<string>("address");
                             val.Pet_name = dat.Rows[0].Field<string>("pet_name");
-                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_age = dat.Rows[0].Field<string>("pet_age");
                             val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
                             val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
@@ -562,7 +562,7 @@ namespace WindowsFormsApplication1.functions
                             val.Phone_num = dat.Rows[0].Field<string>("phone_num");
                             val.Address = dat.Rows[0].Field<string>("address");
                             val.Pet_name= dat.Rows[0].Field<string>("pet_name");
-                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_age = dat.Rows[0].Field<string>("pet_age");
                             val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
                             val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
@@ -613,7 +613,7 @@ namespace WindowsFormsApplication1.functions
                             val.Phone_num = dat.Rows[0].Field<string>("phone_num");
                             val.Address = dat.Rows[0].Field<string>("address");
                             val.Pet_name = dat.Rows[0].Field<string>("pet_name");
-                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_age = dat.Rows[0].Field<string>("pet_age");
                             val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
                             val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
@@ -665,7 +665,7 @@ namespace WindowsFormsApplication1.functions
                             val.Phone_num = dat.Rows[0].Field<string>("phone_num");
                             val.Address = dat.Rows[0].Field<string>("address");
                             val.Pet_name = dat.Rows[0].Field<string>("pet_name");
-                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_age = dat.Rows[0].Field<string>("pet_age");
                             val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
                             val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
@@ -717,7 +717,7 @@ namespace WindowsFormsApplication1.functions
                             val.Phone_num = dat.Rows[0].Field<string>("phone_num");
                             val.Address = dat.Rows[0].Field<string>("address");
                             val.Pet_name = dat.Rows[0].Field<string>("pet_name");
-                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_age = dat.Rows[0].Field<string>("pet_age");
                             val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
                             val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
@@ -774,7 +774,7 @@ namespace WindowsFormsApplication1.functions
                             val.Phone_num = dat.Rows[0].Field<string>("phone_num");
                             val.Address = dat.Rows[0].Field<string>("address");
                             val.Pet_name = dat.Rows[0].Field<string>("pet_name");
-                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_age = dat.Rows[0].Field<string>("pet_age");
                             val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
                             val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
@@ -829,24 +829,24 @@ namespace WindowsFormsApplication1.functions
                             val.Phone_num = dat.Rows[0].Field<string>("phone_num");
                             val.Address = dat.Rows[0].Field<string>("address");
                             val.Pet_name = dat.Rows[0].Field<string>("pet_name");
-                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_age = dat.Rows[0].Field<string>("pet_age");
                             val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
                             val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
                             val.Pet_breed = dat.Rows[0].Field<string>("pet_breed"); 
                             val.Operation = dat.Rows[0].Field<string>("service");
 
-                            val.Deworn_2weeks_date = dat.Rows[0].Field<string>("deworn_2weeks_date");
+                            val.Deworn_2weeks_date = dat.Rows[0].Field<DateTime>("deworn_2weeks_date");
                             val.Deworn_2weeks_medicine = dat.Rows[0].Field<string>("deworn_2weeks_medicine");
-                            val.Deworn_4weeks_date = dat.Rows[0].Field<string>("deworn_4weeks_date");
+                            val.Deworn_4weeks_date = dat.Rows[0].Field<DateTime>("deworn_4weeks_date");
                             val.Deworn_4weeks_medicine = dat.Rows[0].Field<string>("deworn_4weeks_medicine");
-                            val.Deworn_6weeks_date = dat.Rows[0].Field<string>("deworn_6weeks_date");
+                            val.Deworn_6weeks_date = dat.Rows[0].Field<DateTime>("deworn_6weeks_date");
                             val.Deworn_6weeks_medicine = dat.Rows[0].Field<string>("deworn_6weeks_medicine");
-                            val.Deworn_8weeks_date = dat.Rows[0].Field<string>("deworn_8weeks_date");
+                            val.Deworn_8weeks_date = dat.Rows[0].Field<DateTime>("deworn_8weeks_date");
                             val.Deworn_8weeks_medicine = dat.Rows[0].Field<string>("deworn_8weeks_medicine");
-                            val.Deworn_10weeks_date = dat.Rows[0].Field<string>("deworn_10weeks_date");
+                            val.Deworn_10weeks_date = dat.Rows[0].Field<DateTime>("deworn_10weeks_date");
                             val.Deworn_10weeks_medicine = dat.Rows[0].Field<string>("deworn_10weeks_medicine");
-                            val.Deworn_12weeks_date = dat.Rows[0].Field<string>("deworn_12weeks_date");
+                            val.Deworn_12weeks_date = dat.Rows[0].Field<DateTime>("deworn_12weeks_date");
                             val.Deworn_12weeks_medicine = dat.Rows[0].Field<string>("deworn_12weeks_medicine");
 
 
@@ -888,7 +888,7 @@ namespace WindowsFormsApplication1.functions
                             val.Phone_num = dat.Rows[0].Field<string>("phone_num");
                             val.Address = dat.Rows[0].Field<string>("address");
                             val.Pet_name = dat.Rows[0].Field<string>("pet_name");
-                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_age = dat.Rows[0].Field<string>("pet_age");
                             val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
                             val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
@@ -938,7 +938,7 @@ namespace WindowsFormsApplication1.functions
                             val.Phone_num = dat.Rows[0].Field<string>("phone_num");
                             val.Address = dat.Rows[0].Field<string>("address");
                             val.Pet_name = dat.Rows[0].Field<string>("pet_name");
-                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_age = dat.Rows[0].Field<string>("pet_age");
                             val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
                             val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
@@ -988,7 +988,7 @@ namespace WindowsFormsApplication1.functions
                             val.Phone_num = dat.Rows[0].Field<string>("phone_num");
                             val.Address = dat.Rows[0].Field<string>("address");
                             val.Pet_name = dat.Rows[0].Field<string>("pet_name");
-                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_age = dat.Rows[0].Field<string>("pet_age");
                             val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
                             val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
@@ -1122,31 +1122,32 @@ namespace WindowsFormsApplication1.functions
                             val.Phone_num = dat.Rows[0].Field<string>("phone_num");
                             val.Address = dat.Rows[0].Field<string>("address");
                             val.Pet_name = dat.Rows[0].Field<string>("pet_name");
-                            val.Pet_age = dat.Rows[0].Field<int>("pet_age");
+                            val.Pet_age = dat.Rows[0].Field<string>("pet_age");
                             val.Pet_gender = dat.Rows[0].Field<string>("pet_gender");
                             val.Pet_bday = dat.Rows[0].Field<string>("pet_bday");
                             val.Pet_species = dat.Rows[0].Field<string>("pet_species");
                             val.Pet_breed = dat.Rows[0].Field<string>("pet_breed");
+                            //val.Total_schedtoday = dat.Rows[0].Field<int>("date.vax");
                             val.Pet_skinallergies = dat.Rows[0].Field<string>("pet_allergies");
                             val.Operation = dat.Rows[0].Field<string>("operations");
 
                             val.First_boost_distemper = dat.Rows[0].Field<string>("first_boost_distemper");
-                            val.First_date_distemper = dat.Rows[0].Field<string>("first_date_distemper");
+                            val.First_date_distemper = dat.Rows[0].Field<DateTime>("first_date_distemper");
 
                             val.Second_boost_distemper = dat.Rows[0].Field<string>("second_boost_distemper");
-                            val.Second_date_distemper = dat.Rows[0].Field<string>("second_date_distemper");
+                            val.Second_date_distemper = dat.Rows[0].Field<DateTime>("second_date_distemper");
 
                             val.Third_boost_distemper = dat.Rows[0].Field<string>("third_boost_distemper");
-                            val.Third_date_distemper = dat.Rows[0].Field<string>("third_date_distemper");
+                            val.Third_date_distemper = dat.Rows[0].Field<DateTime>("third_date_distemper");
 
                             val.First_boost_feline = dat.Rows[0].Field<string>("first_boost_feline");
-                            val.First_date_feline= dat.Rows[0].Field<string>("first_date_feline");
+                            val.First_date_feline= dat.Rows[0].Field<DateTime>("first_date_feline");
 
                             val.Second_boost_feline = dat.Rows[0].Field<string>("second_boost_feline");
-                            val.Second_date_feline= dat.Rows[0].Field<string>("second_date_feline");
+                            val.Second_date_feline= dat.Rows[0].Field<DateTime>("second_date_feline");
 
                             val.First_boost_rabies = dat.Rows[0].Field<string>("first_boost_rabies");
-                            val.First_date_rabies= dat.Rows[0].Field<string>("first_date_rabies");
+                            val.First_date_rabies= dat.Rows[0].Field<DateTime>("first_date_rabies");
 
 
                             return true;
@@ -1397,7 +1398,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool UpdatePatient(string pet_id, string owners_name, string patient_name, int age, string gender, string birthday, string animal_species,
+        public bool UpdatePatient(string pet_id, string owners_name, string patient_name, string age, string gender, string birthday, string animal_species,
             string animal_breed, string contact_no, double temperature, DateTime last_vaccine_date, string exsist_condition, string allergies,
             string type_vaccine, double weight, string question, string stool, string behave_attitude, string apptite, string drink, string diagnosis)
         {
@@ -1447,16 +1448,16 @@ namespace WindowsFormsApplication1.functions
         }
 
         public bool UpdatePatientVaccine(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
-            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_allergies, string operations,
-            string first_boost_distemper, string first_date_distemper, string second_boost_distemper, string second_date_distemper, string third_boost_distemper,
-            string third_date_distemper, string first_boost_feline, string first_date_feline, string second_boost_feline, string second_date_feline, string first_boost_rabies, string first_date_rabies)
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_allergies, DateTime vax_date, string operations,
+            string first_boost_distemper, DateTime first_date_distemper, string second_boost_distemper, DateTime second_date_distemper, string third_boost_distemper,
+            DateTime third_date_distemper, string first_boost_feline, DateTime first_date_feline, string second_boost_feline, DateTime second_date_feline, string first_boost_rabies, DateTime first_date_rabies)
         {
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
                     string sql = @"update dss_database.vaccination set owners_name = @owners_name, phone_num = @phone_num, address = @address, pet_name = @pet_name, pet_age = @pet_age,
-                                pet_gender = @pet_gender, pet_bday = @pet_bday, pet_species = @pet_species, pet_breed = @pet_breed, pet_allergies = @pet_allergies, operations = @operations,
+                                pet_gender = @pet_gender, pet_bday = @pet_bday, pet_species = @pet_species, pet_breed = @pet_breed, pet_allergies = @pet_allergies, vax_date = @vax_date, operations = @operations,
 
                                 first_boost_distemper = @first_boost_distemper, first_date_distemper = @first_date_distemper, second_boost_distemper = @second_boost_distemper,
                                 second_date_distemper = @second_date_distemper, third_boost_distemper = @third_boost_distemper, third_date_distemper = @third_date_distemper, first_boost_feline = @first_boost_feline,
@@ -1475,6 +1476,7 @@ namespace WindowsFormsApplication1.functions
                         cmd.Parameters.AddWithValue("@pet_species", pet_species);
                         cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
                         cmd.Parameters.AddWithValue("@pet_allergies", pet_allergies);
+                        cmd.Parameters.AddWithValue("@vax_date", vax_date);
                         cmd.Parameters.AddWithValue("@operations", operations);
 
                         cmd.Parameters.AddWithValue("@first_boost_distemper", first_boost_distemper);
@@ -1502,12 +1504,12 @@ namespace WindowsFormsApplication1.functions
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                Console.WriteLine("Error saving Vaccine Patient: " + ex.ToString());
                 return false;
             }
         }
 
-        public bool UpdateSkinPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool UpdateSkinPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_skinallergies, string pet_existdisease,
             string operation, DateTime op_date, string op_time)
         {
@@ -1552,7 +1554,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool UpdateCDTPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool UpdateCDTPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
             string pet_testkit, string operation, DateTime op_date, string op_time)
         {
@@ -1598,7 +1600,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool UpdateCPTPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool UpdateCPTPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
             string pet_testkit, string operation, DateTime op_date, string op_time)
         {
@@ -1644,7 +1646,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool UpdateBloodTestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool UpdateBloodTestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
             string operation, string typevax, DateTime vaxdate, string superchen, string totalprotein, string albumin, string globulin)
         {
@@ -1734,7 +1736,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool UpdateMammaryGlandPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool UpdateMammaryGlandPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
             string operation, string typevax, DateTime vaxdate, string superchen, string totalprotein, string albumin, string globulin)
         {
@@ -1786,20 +1788,20 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool UpdateDewormPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
-            string pet_gender, string pet_bday, string pet_species, string pet_breed, string service, string deworn_2weeks_date, string deworn_2weeks_medicine,
-            string deworn_4weeks_date, string deworn_4weeks_medicine, string deworn_6weeks_date, string deworn_6weeks_medicine, string deworn_8weeks_date,
-            string deworn_8weeks_medicine, string deworn_10weeks_date, string deworn_10weeks_medicine, string deworn_12weeks_date, string deworn_12weeks_medicine)
+        public bool UpdateDewormPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
+            string pet_gender, string pet_bday, string pet_species, string pet_breed, string service, DateTime deworm_date, DateTime deworn_2weeks_date, string deworn_2weeks_medicine,
+            DateTime deworn_4weeks_date, string deworn_4weeks_medicine, DateTime deworn_6weeks_date, string deworn_6weeks_medicine, DateTime deworn_8weeks_date,
+            string deworn_8weeks_medicine, DateTime deworn_10weeks_date, string deworn_10weeks_medicine, DateTime deworn_12weeks_date, string deworn_12weeks_medicine)
         {
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(con.conString()))
                 {
                     string sql = @"update dss_database.deworming set owners_name = @owners_name, phone_num = @phone_num, address = @address, pet_name = @pet_name, pet_age = @pet_age,
-                                pet_gender = @pet_gender, pet_bday = @pet_bday, pet_species = @pet_species, pet_breed = @pet_breed, service = @service, deworn_2weeks_date = @deworn_2weeks_date,deworn_2weeks_medicine = @deworn_2weeks_medicine, 
+                                pet_gender = @pet_gender, pet_bday = @pet_bday, pet_species = @pet_species, pet_breed = @pet_breed, service = @service, deworm_date = @deworm_date, deworn_2weeks_date = @deworn_2weeks_date,deworn_2weeks_medicine = @deworn_2weeks_medicine, 
                                 deworn_4weeks_date = @deworn_4weeks_date, deworn_4weeks_medicine = @deworn_4weeks_medicine,
                                 deworn_6weeks_date = @deworn_6weeks_date, deworn_6weeks_medicine = @deworn_6weeks_medicine, deworn_8weeks_date = @deworn_8weeks_date, deworn_8weeks_medicine = @deworn_8weeks_medicine,
-                                deworn_10weeks_medicine = @deworn_10weeks_date, deworn_10weeks_medicine = @deworn_10weeks_medicine, deworn_12weeks_date = @deworn_12weeks_date, deworn_12weeks_medicine = @deworn_12weeks_medicine 
+                                deworn_10weeks_date = @deworn_10weeks_date, deworn_10weeks_medicine = @deworn_10weeks_medicine, deworn_12weeks_date = @deworn_12weeks_date, deworn_12weeks_medicine = @deworn_12weeks_medicine 
                                 WHERE pet_id = @pet_id";
 
                     using (MySqlCommand cmd = new MySqlCommand(sql, connection))
@@ -1815,6 +1817,7 @@ namespace WindowsFormsApplication1.functions
                         cmd.Parameters.AddWithValue("@pet_species", pet_species);
                         cmd.Parameters.AddWithValue("@pet_breed", pet_breed);
                         cmd.Parameters.AddWithValue("@service", service);
+                        cmd.Parameters.AddWithValue("@deworm_date", deworm_date);
                         cmd.Parameters.AddWithValue("@deworn_2weeks_date", deworn_2weeks_date);
                         cmd.Parameters.AddWithValue("@deworn_2weeks_medicine", deworn_2weeks_medicine);
                         cmd.Parameters.AddWithValue("@deworn_4weeks_date", deworn_4weeks_date);
@@ -1844,7 +1847,7 @@ namespace WindowsFormsApplication1.functions
 
         
 
-        public bool UpdatePregnCersarPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool UpdatePregnCersarPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdesease,
             string operation, DateTime op_date, string op_time)
         {
@@ -1891,7 +1894,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool UpdateEarOpPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool UpdateEarOpPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_currmed,
             string operation, DateTime op_date, string op_time)
         {
@@ -1938,7 +1941,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool UpdateEyeOpPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool UpdateEyeOpPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_currmed,
             string operation, DateTime op_date, string op_time)
         {
@@ -1985,7 +1988,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool UpdateLygaedaeOpPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool UpdateLygaedaeOpPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
             string operation, DateTime op_date, string op_time)
         {
@@ -2032,7 +2035,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool UpdateCrastrationOpPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool UpdateCrastrationOpPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
             string operation, DateTime op_date, string op_time)
         {
@@ -3610,7 +3613,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool SavePregnant(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool SavePregnant(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdesease,
             string operation, DateTime op_date, string op_time)
         {
@@ -3655,7 +3658,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool SaveEarPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool SaveEarPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_currmed,
             string operation, DateTime op_date, string op_time)
         {
@@ -3701,7 +3704,7 @@ namespace WindowsFormsApplication1.functions
 
         }
 
-        public bool SaveEyePatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool SaveEyePatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_currmed,
             string operation, DateTime op_date, string op_time)
         {
@@ -3746,7 +3749,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool SaveSkinTreatment(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool SaveSkinTreatment(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_skinallergies, string pet_existdisease,
             string operation, DateTime op_date, string op_time)
         {
@@ -3791,7 +3794,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool SaveCDTestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool SaveCDTestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
             string pet_testkit, string operation, DateTime op_date, string op_time)
         {
@@ -3837,7 +3840,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool SaveCPTestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool SaveCPTestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
             string pet_testkit, string operation, DateTime op_date, string op_time)
         {
@@ -3883,7 +3886,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool SaveMammryPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool SaveMammryPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
             string operation, string typevax, DateTime vaxdate, string superchen, string totalprotein, string albumin, string globulin)
         {
@@ -3933,7 +3936,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool SaveBloodtestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool SaveBloodtestPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, string pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
             string operation, string typevax, DateTime vaxdate, string superchen, string totalprotein, string albumin, string globulin)
         {
@@ -4238,10 +4241,10 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool SaveDewormedPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
-            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string service, DateTime deworm_date, string deworn_2weeks_date, string deworn_2weeks_medicine,
-            string deworn_4weeks_date, string deworn_4weeks_medicine, string deworn_6weeks_date, string deworn_6weeks_medicine, string deworn_8weeks_date,
-            string deworn_8weeks_medicine, string deworn_10weeks_date, string deworn_10weeks_medicine, string deworn_12weeks_date, string deworn_12weeks_medicine)
+        public bool SaveDewormedPatient(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
+            string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string service, DateTime deworm_date, DateTime deworn_2weeks_date, string deworn_2weeks_medicine,
+            DateTime deworn_4weeks_date, string deworn_4weeks_medicine, DateTime deworn_6weeks_date, string deworn_6weeks_medicine, DateTime deworn_8weeks_date,
+            string deworn_8weeks_medicine, DateTime deworn_10weeks_date, string deworn_10weeks_medicine, DateTime deworn_12weeks_date, string deworn_12weeks_medicine)
         {
             try
             {
@@ -4295,10 +4298,10 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool SavePatientVaccination(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool SavePatientVaccination(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_allergies, DateTime vax_date, string operations,
-            string first_boost_distemper, string first_date_distemper, string second_boost_distemper, string second_date_distemper, string third_boost_distemper,
-            string third_date_distemper, string first_boost_feline, string first_date_feline, string second_boost_feline, string second_date_feline, string first_boost_rabies, string first_date_rabies)
+            string first_boost_distemper, DateTime first_date_distemper, string second_boost_distemper, DateTime second_date_distemper, string third_boost_distemper,
+            DateTime third_date_distemper, string first_boost_feline, DateTime first_date_feline, string second_boost_feline, DateTime second_date_feline, string first_boost_rabies, DateTime first_date_rabies)
         {
             try
             {
@@ -4353,12 +4356,12 @@ namespace WindowsFormsApplication1.functions
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error saving Patient: " + ex.ToString());
+                Console.WriteLine("Error saving Vaccine Patient: " + ex.ToString());
                 return false;
             }
         }
 
-        public bool SavePatientCrastration(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool SavePatientCrastration(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
             string operation, DateTime op_date, string op_time)
         {
@@ -4402,7 +4405,7 @@ namespace WindowsFormsApplication1.functions
                 return false;
             }
         }
-        public bool SavePatientLygaeidae(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool SavePatientLygaeidae(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_weight, string pet_allergies, string pet_existdisease,
             string operation, DateTime op_date, string op_time)
         {

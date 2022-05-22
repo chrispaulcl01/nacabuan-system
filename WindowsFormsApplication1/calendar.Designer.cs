@@ -195,7 +195,7 @@
             this.btnCrastration.Name = "btnCrastration";
             this.btnCrastration.Size = new System.Drawing.Size(95, 43);
             this.btnCrastration.TabIndex = 213;
-            this.btnCrastration.Text = "Crastration";
+            this.btnCrastration.Text = "Castration";
             this.btnCrastration.UseVisualStyleBackColor = false;
             this.btnCrastration.Click += new System.EventHandler(this.btnCrastration_Click);
             // 

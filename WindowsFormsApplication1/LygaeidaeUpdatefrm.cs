@@ -24,7 +24,7 @@ namespace WindowsFormsApplication1
         private void btnSaveLy_Click(object sender, EventArgs e)
         {
             if (patient.UpdateLygaedaeOpPatient(this.txtPetID.Text, this.txtOwnersname.Text, this.txtPhoneNumber.Text, this.txtAddress.Text, this.txtPatientName.Text,
-                int.Parse(this.txtAge.Text), this.cmbGender.Text, this.bdayDatepicker.Text, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text, this.txtWeight.Text,
+                this.txtAge.Text, this.cmbGender.Text, this.bdayDatepicker.Text, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text, this.txtWeight.Text,
                 this.cmbAllergies.Text, this.txtExDisease.Text, this.cmbOperations.Text, this.DateOperetion.Value.Date, this.txtOpTime.Text))
             {
 
@@ -38,6 +38,8 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Failed to Saved!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+            frmRX rx = new frmRX();
+            rx.Show();
             this.Close();
         }
 
