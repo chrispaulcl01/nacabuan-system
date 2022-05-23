@@ -33,7 +33,7 @@ namespace WindowsFormsApplication1
             this.txtBday.Text = val.Pet_bday;
             this.txtPetSpecies.Text = val.Pet_species;
             this.txtPetBreed.Text = val.Pet_breed;
-            this.txtWeight.Text = val.Pet_weight.ToString();
+            this.txtWeight.Text = val.Pet_weight;
             this.txtPetSkinnAllergies.Text = val.Pet_skinallergies;
             this.txtExistDiesease.Text = val.Pet_existdisease;
             this.txtOperation.Text = val.Operation;

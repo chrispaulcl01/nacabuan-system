@@ -1447,7 +1447,7 @@ namespace WindowsFormsApplication1.functions
             }
         }
 
-        public bool UpdatePatientVaccine(string pet_id, string owners_name, string phone_num, string address, string pet_name, int pet_age,
+        public bool UpdatePatientVaccine(string pet_id, string owners_name, string phone_num, string address, string pet_name, string pet_age,
             string pet_gender, DateTime pet_bday, string pet_species, string pet_breed, string pet_allergies, DateTime vax_date, string operations,
             string first_boost_distemper, DateTime first_date_distemper, string second_boost_distemper, DateTime second_date_distemper, string third_boost_distemper,
             DateTime third_date_distemper, string first_boost_feline, DateTime first_date_feline, string second_boost_feline, DateTime second_date_feline, string first_boost_rabies, DateTime first_date_rabies)

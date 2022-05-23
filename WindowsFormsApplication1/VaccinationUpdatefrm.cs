@@ -24,7 +24,7 @@ namespace WindowsFormsApplication1
         private void btnSaveVax_Click(object sender, EventArgs e)
         {
             if (patient.UpdatePatientVaccine(txtPetID.Text, txtOwnersName.Text, txtPhoneNum.Text, txtAddress.Text, txtPatientName.Text,
-               int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
+               txtAge.Text, cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
                cmbAllergies.Text, Vaccinedatetimepicker.Value.Date, cmbOperations.Text,
                txt1stboostdistemper.Text, Date1stboostdistemper.Value.Date, txt2ndboostdistemper.Text, Date2ndboostdistemper.Value.Date,
                txt3rdboostdistemper.Text, Date3rdboostdistemper.Value.Date, txt1stboostfeline.Text, Date1stboostfeline.Value.Date, txt2ndboostfeline.Text, date2ndboostfeline.Value.Date,
@@ -145,8 +145,78 @@ namespace WindowsFormsApplication1
 
         private void btnSavePatient_Click(object sender, EventArgs e)
         {
-            if (patient.UpdatePatientVaccine(txtPetID.Text, txtOwnersName.Text, txtPhoneNum.Text, txtAddress.Text, txtPatientName.Text,
-               int.Parse(txtAge.Text), cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
+            if (String.IsNullOrWhiteSpace(txtPetID.Text))
+            {
+                MessageBox.Show("Pet ID is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            else if (String.IsNullOrWhiteSpace(txtOwnersName.Text))
+            {
+                MessageBox.Show("Owners name is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtPhoneNum.Text))
+            {
+                MessageBox.Show("Phone number is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtAddress.Text))
+            {
+                MessageBox.Show("Address is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtPatientName.Text))
+            {
+                MessageBox.Show("Patient name is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtAge.Text))
+            {
+                MessageBox.Show("Pet age is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(cmbGender.Text))
+            {
+                MessageBox.Show("Pet gender is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(cmbAnimalSpecies.Text))
+            {
+                MessageBox.Show("Animal spiecies is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(cmbAnimalBreed.Text))
+            {
+                MessageBox.Show("Animal breed is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(cmbAllergies.Text))
+            {
+                MessageBox.Show("Allergies is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(cmbOperations.Text))
+            {
+                MessageBox.Show("Operation is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txt1stboostdistemper.Text))
+            {
+                MessageBox.Show("1stBooster distemper is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txt2ndboostdistemper.Text))
+            {
+                MessageBox.Show("2ndBooster distemper is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txt3rdboostdistemper.Text))
+            {
+                MessageBox.Show("3rdBooster distemper is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txt1stboostfeline.Text))
+            {
+                MessageBox.Show("1stBoost feline is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txt2ndboostfeline.Text))
+            {
+                MessageBox.Show("2ndBoost feline is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txt1stboostrabies.Text))
+            {
+                MessageBox.Show("1st Rabbies is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            else if (patient.UpdatePatientVaccine(txtPetID.Text, txtOwnersName.Text, txtPhoneNum.Text, txtAddress.Text, txtPatientName.Text,
+               txtAge.Text, cmbGender.Text, bdayDatepicker.Value.Date, cmbAnimalSpecies.Text, cmbAnimalBreed.Text,
                cmbAllergies.Text, Vaccinedatetimepicker.Value.Date, cmbOperations.Text,
                txt1stboostdistemper.Text, Date1stboostdistemper.Value.Date, txt2ndboostdistemper.Text, Date2ndboostdistemper.Value.Date,
                txt3rdboostdistemper.Text, Date3rdboostdistemper.Value.Date, txt1stboostfeline.Text, Date1stboostfeline.Value.Date, txt2ndboostfeline.Text, date2ndboostfeline.Value.Date,
@@ -157,15 +227,13 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Successfully Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 //patient.DeleteSkinPatientData(this.txtPetID.Text);
+                this.Close();
 
             }
             else
             {
                 MessageBox.Show("Failed to Saved!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
-            
-            this.Close();
         }
     }
 }

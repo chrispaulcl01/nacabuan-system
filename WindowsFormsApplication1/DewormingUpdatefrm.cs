@@ -142,7 +142,73 @@ namespace WindowsFormsApplication1
 
         private void btnSavePatient_Click(object sender, EventArgs e)
         {
-            if (patient.UpdateDewormPatient(this.txtPetID.Text, this.txtOwnersName.Text, this.txtPhoneNumber.Text, this.txtAddress.Text, this.txtPatientName.Text,
+            if (String.IsNullOrWhiteSpace(txtPetID.Text))
+            {
+                MessageBox.Show("Pet ID is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            else if (String.IsNullOrWhiteSpace(txtOwnersName.Text))
+            {
+                MessageBox.Show("Owners name is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtPhoneNumber.Text))
+            {
+                MessageBox.Show("Phone number is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtAddress.Text))
+            {
+                MessageBox.Show("Address is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtPatientName.Text))
+            {
+                MessageBox.Show("Patient name is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtAge.Text))
+            {
+                MessageBox.Show("Pet age is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(cmbGender.Text))
+            {
+                MessageBox.Show("Pet gender is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(cmbAnimalSpecies.Text))
+            {
+                MessageBox.Show("Animal spiecies is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(cmbAnimalBreed.Text))
+            {
+                MessageBox.Show("Animal breed is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(cmbOperation.Text))
+            {
+                MessageBox.Show("Service is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtDewormMedicine2weeks.Text))
+            {
+                MessageBox.Show("Deworm 2weeks is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtDewormMedicine4weeks.Text))
+            {
+                MessageBox.Show("Deworm 4weeks is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtDewormMedicine6weeks.Text))
+            {
+                MessageBox.Show("Deworm 6weeks is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtDewormMedicine8weeks.Text))
+            {
+                MessageBox.Show("Deworm 8weeks is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtDewormMedicine10weeks.Text))
+            {
+                MessageBox.Show("Deworm 10weeks is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (String.IsNullOrWhiteSpace(txtDewormMedicine12weeks.Text))
+            {
+                MessageBox.Show("Deworm 12weeks is empty", "Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            else if (patient.UpdateDewormPatient(this.txtPetID.Text, this.txtOwnersName.Text, this.txtPhoneNumber.Text, this.txtAddress.Text, this.txtPatientName.Text,
                 this.txtAge.Text, this.cmbGender.Text, this.bdayDatepicker.Text, this.cmbAnimalSpecies.Text, this.cmbAnimalBreed.Text,
                 this.cmbOperation.Text, this.Dewormdatetimepicker.Value, this.Dewormdate2weeks.Value, this.txtDewormMedicine2weeks.Text, this.Dewormdate4weeks.Value, this.txtDewormMedicine4weeks.Text, this.Dewormdate6weeks.Value, this.txtDewormMedicine6weeks.Text,
                  this.Dewormdate8weeks.Value, this.txtDewormMedicine8weeks.Text, this.Dewormdate10weeks.Value, this.txtDewormMedicine10weeks.Text, this.Dewormdate12weeks.Value, this.txtDewormMedicine12weeks.Text))
@@ -160,7 +226,7 @@ namespace WindowsFormsApplication1
             }
 
             
-            this.Close();
+            
         }
     }
 }

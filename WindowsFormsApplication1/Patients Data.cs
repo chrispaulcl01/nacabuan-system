@@ -242,8 +242,9 @@ namespace WindowsFormsApplication1
 
                     if (patient.PatientInfoViewerVaccination(row.Cells[0].Value.ToString()))
                     {
-                        MammryGrandView mammgland = new MammryGrandView();
-                        mammgland.Show();
+                        VaccinationViewerfrm vaxview = new VaccinationViewerfrm();
+                        vaxview.Show();
+                        
                     }
                 }
             }
@@ -256,8 +257,8 @@ namespace WindowsFormsApplication1
 
                     if (patient.PatientInfoViewerCrastration(row.Cells[0].Value.ToString()))
                     {
-                        MammryGrandView mammgland = new MammryGrandView();
-                        mammgland.Show();
+                        CrastrationViewfrm crasview = new CrastrationViewfrm();
+                        crasview.Show();
                     }
                 }
             }
@@ -270,8 +271,8 @@ namespace WindowsFormsApplication1
 
                     if (patient.PatientInfoViewerLygaedae(row.Cells[0].Value.ToString()))
                     {
-                        MammryGrandView mammgland = new MammryGrandView();
-                        mammgland.Show();
+                        lygaeidaeViewerfrm ligview = new lygaeidaeViewerfrm();
+                        ligview.Show();
                     }
                 }
             }
@@ -284,8 +285,8 @@ namespace WindowsFormsApplication1
 
                     if (patient.PatientInfoViewerDeworming(row.Cells[0].Value.ToString()))
                     {
-                        MammryGrandView mammgland = new MammryGrandView();
-                        mammgland.Show();
+                        DewormingView dewormview = new DewormingView();
+                        dewormview.Show();
                     }
                 }
             }
