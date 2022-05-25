@@ -207,6 +207,7 @@
             this.txtTotalYear.Name = "txtTotalYear";
             this.txtTotalYear.Size = new System.Drawing.Size(88, 32);
             this.txtTotalYear.TabIndex = 122;
+            this.txtTotalYear.Text = "0";
             // 
             // txtTotalMonth
             // 
@@ -215,6 +216,7 @@
             this.txtTotalMonth.Name = "txtTotalMonth";
             this.txtTotalMonth.Size = new System.Drawing.Size(88, 32);
             this.txtTotalMonth.TabIndex = 121;
+            this.txtTotalMonth.Text = "0";
             // 
             // txtTotalDay
             // 
@@ -223,6 +225,7 @@
             this.txtTotalDay.Name = "txtTotalDay";
             this.txtTotalDay.Size = new System.Drawing.Size(88, 32);
             this.txtTotalDay.TabIndex = 120;
+            this.txtTotalDay.Text = "0";
             // 
             // gunaLabel7
             // 

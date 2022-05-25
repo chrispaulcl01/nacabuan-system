@@ -176,7 +176,7 @@
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Size = new System.Drawing.Size(189, 48);
             this.btnStaff.TabIndex = 204;
-            this.btnStaff.Text = "PATIENT DATA";
+            this.btnStaff.Text = "RECORD MANAGEMENT";
             this.btnStaff.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStaff.UseVisualStyleBackColor = false;
             this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
